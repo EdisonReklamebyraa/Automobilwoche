@@ -1,0 +1,131 @@
+.quiz 
+{
+	background: image-url("gray_pattern_bg.png");
+	padding: $m/2;
+	overflow: hidden;
+	margin-bottom: $m/2;
+	
+	h3 {
+		
+	}
+	form {
+		label {
+			float: left;
+			display: block;
+			margin-bottom: $m/2;
+		}
+		input {
+			display: block;
+			clear: both;
+			float: left;
+		}
+	}
+}
+
+.sideColumn_box 
+{
+	$blue_bg: "header_bg_blue.png";
+	$orange_bg: "header_bg_orange.png";
+	$header_height: 38px;
+	$header_width: 300px;
+	background-color: #f2f2f2!important;
+	overflow: hidden;
+	
+	&.no-background {
+		background: none;
+		margin-top: $m;
+		h3 {
+			color: $black;
+			
+			clear: both;
+			border: none;
+			height: $header_height;
+			margin: 0;
+		}
+
+	}
+	&.blue {
+		background:transparent image-url($blue_bg) no-repeat center top;
+	}
+	&.orange {
+		background:transparent image-url($orange_bg) no-repeat center top;
+	}
+	.articleview_picturelist {
+		padding: 0 $m/2;
+	}
+	h3 {
+		width: $header_width - $header_height;
+		height: $header_height;
+		margin-bottom: 0px;
+		color: #fff;
+		line-height: $header_height;
+		padding-left: $m/2;
+			&.icon_video {
+				background:transparent image-url("icon_VIDEO.png") no-repeat;
+				background-position: $m/2 10px;
+				padding-left: $header_height;
+			}
+			&.icon_rss {
+				background:transparent image-url("icon_RSS.png") no-repeat;
+				background-position: $m/2 10px;
+				padding-left: $header_height;
+			}
+			&.icon_FB {
+				background:transparent image-url("icon_FB.png") no-repeat;
+				background-position: $m/2 10px;
+				padding-left: $header_height;
+			}
+			a {
+				color: $SideColumnBox-Header-LinkColor!important;
+				&:hover {
+					text-decoration: none!important;
+				}
+			}
+		}
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			
+		}
+		a:hover {
+			color: #fff;
+			text-decoration: underline;
+			
+		}
+		small {
+			font-size: 11px;
+			color: #87a5c3;
+			float: right;
+			padding-right: $m/2;
+			
+			a {
+				color: #87a5c3;
+			}
+		}
+	dl {
+		padding: $m/2;
+		clear: both;
+		overflow: hidden;
+		dt {
+			float:left;
+			width: 30%;
+			clear: left;
+		}
+		dd {
+			float:left;
+			width: 70%;
+			margin: 0;
+			
+		}
+		hr {
+			clear: both;
+			height: $m;
+		}		
+	}
+	.videoplaceholder {
+		padding: $m/2 $m/2 0 $m/2;
+		clear: left;
+		
+	}
+}

@@ -1,0 +1,32 @@
+@mixin inputText($img-url:"input.png") {
+  width: image-width($img-url) - $m;
+  height: image-height($img-url) - $m;
+  padding: $m/2;
+  background:transparent image-url($img-url) left top no-repeat;
+  border: 0;
+  @include fontsize;
+  color: $lightlightGrey;
+};
+
+
+@mixin submitbtn($bg:"login_bg.png") {
+  background: #053463 image-url($bg) left top no-repeat;
+  width: image-width($bg) ;
+  height: image-height($bg);
+  border: 0;
+  margin: 0;
+  color: #fff;
+  padding: (image-height($bg)- 14px)/2 ;
+  font-weight: bold;
+  @include fontsize(12px);
+  line-height: 14px;
+  @include border-radius;
+  margin: $m/2 $m/2 $m/2 0;
+};
+
+
+@mixin fontsize($fz:$fs){
+  font-size: ($fz/$fs)*100%;
+}
+
+

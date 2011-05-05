@@ -1,0 +1,236 @@
+@import "blueprint/reset";
+@import "partials/base";
+@import "partials/functions";
+@import "blueprint";
+@import "compass/utilities";
+@import "compass/css3";
+@import "partials/articleviews";
+@import "partials/boxes";
+
+
+body {
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-interaction;
+}
+
+#Top
+{
+   #main{
+     text-align: right;
+     background:transparent image-url('top_bg.png') left bottom repeat-x;
+     overflow: hidden;
+     ul{
+       float: left;
+       width: $fm;
+       color: $lightGrey;
+       font-size: 85%;
+       text-align:right;
+       padding: 0px;
+       margin-right: 0px;
+       margin-left: $leftBorder;
+       li
+       {
+         display:inline;
+         padding: 0 0 0 10px;
+         a {
+			color: $TopNavigationColor;
+			text-decoration: none;
+        }
+       }
+     }
+   }
+
+
+
+   aside{
+     background:transparent image-url('top_bg.png') left bottom repeat-x;
+     padding: $vm $leftBorder;
+   }
+
+   section{
+     width: $fm;
+     padding: 0 0 $m $leftBorder;    
+     overflow: hidden;
+     h1
+     {
+        margin: 0 0 $m 0 ;
+        @include replace-text-with-dimensions("logo.png");
+        float: left;
+     }
+
+     forms
+     {
+
+       form{
+         float: right;
+         &.login
+         {
+           padding: $m/2 0 $m/2 $m;
+           margin: 0 0 $m/2;
+           $lf_bg: "login_form_bg.png";
+           background:transparent image-url($lf_bg) right bottom no-repeat;
+           width: image-width($lf_bg) -$m/2;
+           height: image-height($lf_bg) - $m;
+           input[type=submit]{
+              @include submitbtn;
+           }
+         }
+         &.search
+         {
+           input[type=search]{
+              @include inputText;
+           }
+           input[type=submit]{
+              @include submitbtn("search.png");
+              margin: 0 $m/2 0 0;
+           }
+         }
+         input{
+           font-family: $blueprint_font_family;
+           margin: $m/2 $m/2 $m/2 0;
+           &[type=text]
+           {
+              @include inputText("login_input_bg.png");
+              &.username
+              {
+                width: image-width("login_input_bg.png") - 50px;
+                background-image: image-url("login_username_bg.png");
+                padding: $m/2 $m/2 $m/2 $m*2;
+              }
+           }
+         }
+       }
+     }
+   }
+
+}
+
+
+
+
+#MainNavigation
+{
+   overflow: hidden;
+   ul
+   {
+     clear: both;
+     padding: 0px;
+     margin:  0 0 $m/2 $leftBorder;
+     border: solid 1px $lightlightGrey;
+     border-width: 0 0 0 1px ;
+     border-bottom: 3px $orange solid;
+     float: left;
+     overflow: hidden;
+     li
+     {
+        float: left;
+        @include no-bullet;
+        padding: 7px;
+        border: solid 1px $lightlightGrey;
+        border-width: 0 1px 0 0 ;
+        &.icon_HOUSE {
+        	text-indent: -119988px;  
+        		background:transparent image-url('icon_HOUSE.png');
+        		background-position: 50% 50%;
+        		background-repeat: no-repeat;
+        		padding: 0 $m 0 $m;
+        		overflow: hidden;
+        		height: 34px;
+        		
+        }
+        a {
+        	color: $MainNavigationColor;
+        	text-decoration: none;
+        }
+ 
+     }
+   }
+
+}
+#Main {
+	background:transparent image-url('main_bg.png') repeat-y;
+	overflow: hidden;
+  	a {
+  		color: $DefaultLinkColor;
+  	}
+  	a:hover {
+  		text-decoration: underline;
+  	}
+}
+
+#MainbColumn 
+{
+	margin-left: $leftBorder;
+	width: $maincolumn;
+	float: left;
+	
+	.bar {
+		display: block;
+		background-color: #053463;
+		color: #fff;
+		padding: $m/3;
+		text-transform: uppercase;
+		font-size: $separationline-font-size;
+		
+	}
+	.pageStrip 
+		{
+			clear: both;
+			overflow: hidden;
+			width: $maincolumn;
+			margin:  0 0 $m/2 0;
+			
+			ul
+			{
+			    @include horizontal-list;
+			    float: right;
+			    
+			
+			}
+			span {
+				float: left;
+				
+			}
+		}
+	h4 {
+		margin: 0 0 $m/2 0;
+	}	
+	aside {
+		margin: -$m/2 0 $m/2 0;
+		display: block;
+		overflow: hidden;
+		clear: both;
+	}
+	
+}
+
+#sideColumn
+{
+	margin-left: $m;
+	width: $Sidecolumn;
+	float: left;
+	overflow: hidden;
+	h4 {
+		margin: 0 0 $m/2 0;
+	}
+	hr {
+		clear: both;
+		border: none;
+		background:transparent image-url("line_dotted.png") repeat-x;
+		background-position: $m/2;
+		margin: 0 0 $m/2 0;
+		
+	}	
+	aside {
+		margin: 0 0 $m/2 0;
+		display: block;
+		overflow: hidden;
+		clear: both;
+	}	
+}
+#AdColumn
+{
+	margin-left: $m;
+	float: left;
+}
