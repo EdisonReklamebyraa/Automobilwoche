@@ -1,0 +1,170 @@
+#Main .template-article {
+
+	header {
+		margin-bottom: $m;
+	}
+	a {
+		color: $orange;
+		text-decoration: none;
+	}
+	.picturecaption {
+		color: $PictureCaption;
+		font-size: 90%;
+	}
+	
+	aside {
+		margin: 0;
+		float: right;
+		margin-left: $m/2;
+		clear: both;
+	}
+	h4 {
+		margin-bottom: $m/4;
+		font-weight: bold;
+	}
+	.box {
+		width: 300px;
+		margin-bottom: $m/2;
+		background-color: $ArticleFactsColor;
+		p {
+			padding: $m/2;
+			margin: 0;
+			clear: both;
+		}
+		img {
+			float: left;
+		}
+		hr {
+   			background: url("../images/line_dotted.png?1302776059") repeat-x scroll 10px 50% transparent;
+    		border: medium none;
+    		clear: both;
+    		margin: 0 0 $m/3;		
+		}
+		.paragraphimage {
+			border-bottom: 1px solid $lightlightGrey;
+		}
+		.facts {
+			padding: $m/2;
+			h4 {
+				margin: 0 0 $m/3;
+				font-weight: normal;
+			}
+			p {
+				margin: 0;
+			}
+			ul {
+				padding:$m/2 0 $m/2 $m;
+				margin: 0;
+			}
+		}
+	}
+	.fl {
+		float: left;
+		margin-right: $m/2;
+	}
+	.fr {
+		float: right;
+		margin-left: $m/2;
+	}
+	.articlecomments {
+		h4 {
+			border-top: double $lightlightGrey; 
+			padding: $m/2 0 $m/2 0;
+			margin: 0;
+		}
+		h5 {
+			border-top: 1px solid $lightlightGrey;
+			padding: $m/2 0 0 0 ;
+			margin: 0;
+		}
+		p {
+			margin: 0 0 $m/2 0;
+		}
+		hr {
+			background: url("../images/articlecomments_line.png") no-repeat transparent;
+			height: 19px;
+			border: none;
+			margin: 0 0 $m/2 0;
+
+		}
+	}
+	.byline {
+		border: 1px solid $lightlightGrey;
+		padding: $m/3;
+		overflow: hidden;
+		margin-bottom: $m;
+		
+		.author {
+			float: left;
+			margin-right: $m/2;
+			border-right: 1px dotted $lightlightGrey;
+			padding-right: $m/2;
+			height: 47px;
+			&.last {
+				border-right: none;
+			}
+			img {
+				float: left;
+				margin-right: $m/2;
+			}
+			.details {
+				float:left;
+				a {
+					float: left;
+					color: $orange;
+					font-size: 80%;
+					text-decoration: none;
+				}
+				p {
+					margin: 0;
+					float: left;
+					clear: left;
+				}
+				.links {
+					float: left;
+					line-height: 80%;
+				}
+			
+			}
+		}
+		.addthis {
+			float: right;
+			a {
+				text-decoration: none;
+				color: $lightGrey;
+				font-size: 80%;
+			
+				span {
+					padding-right: 4px;
+				}
+			}
+			table {
+				padding: 0px;
+				margin: 0px;
+				border-left: 1px dotted $lightlightGrey;
+				hr {
+					padding:0;
+					margin:0;
+					border: none;
+					border-top: 1px dotted $lightlightGrey;
+				}
+				td {
+					border-right: 1px dotted $lightlightGrey;
+					padding: 1px;
+					&.last {
+						border: none;
+					}
+				}
+			}
+		}
+	}
+	#Articlecomment {
+		p {
+			margin:0;
+		}
+		textarea {
+			width: 570px;
+		}
+	}
+}
+

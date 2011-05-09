@@ -4,14 +4,13 @@
 @import "blueprint";
 @import "compass/utilities";
 @import "compass/css3";
-@import "partials/articleviews";
-@import "partials/boxes";
-
+@import "blueprint/form";
 
 body {
   @include blueprint-typography(true);
   @include blueprint-utilities;
   @include blueprint-interaction;
+  @include blueprint-form;
 }
 
 #Top
@@ -180,7 +179,16 @@ body {
 			overflow: hidden;
 			width: $maincolumn;
 			margin:  0 0 $m/2 0;
-			
+			font-size: 11px;
+			text-transform: uppercase;
+			.date {
+				color: #c4c4c4;
+				float: left;
+				margin-right: 5px;
+			}
+			a {
+				color: $orange;
+			}
 			ul
 			{
 			    @include horizontal-list;
@@ -191,6 +199,10 @@ body {
 			span {
 				float: left;
 				
+			}
+			&.underline {
+				border-bottom: 1px solid $lightlightGrey;
+			
 			}
 		}
 	h4 {
@@ -234,3 +246,7 @@ body {
 	margin-left: $m;
 	float: left;
 }
+
+@import "partials/articleviews";
+@import "partials/boxes";
+@import "partials/article";
