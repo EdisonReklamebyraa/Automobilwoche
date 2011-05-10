@@ -6,6 +6,7 @@
 @import "compass/css3";
 @import "blueprint/form";
 
+
 body {
   @include blueprint-typography(true);
   @include blueprint-utilities;
@@ -250,3 +251,4 @@ body {
 @import "partials/articleviews";
 @import "partials/boxes";
 @import "partials/article";
+@import "partials/gallery";

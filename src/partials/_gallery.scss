@@ -1,0 +1,25 @@
+#Main .template-gallery {
+	article {
+		width: $m*7;
+		@include inline_block;
+		vertical-align: top;
+		margin-right: $m/2;
+		&.last {
+			margin-right: 0;
+		}
+		h4 {
+			font-size: 90%;
+		}
+		
+	}
+	hr {
+		clear: both;
+		border: none;
+		height: 1px;
+		background-color:$lightlightGrey;
+		margin: 0 0 $m/2 0;  
+		&.last {
+			margin: 0 0 0 0;
+		}
+	}
+}

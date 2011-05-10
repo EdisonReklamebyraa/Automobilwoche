@@ -26,6 +26,8 @@
 {
 	$blue_bg: "header_bg_blue.png";
 	$orange_bg: "header_bg_orange.png";
+	$arrow_right_orange: "arrow_right_orange.png";
+	$search_button: "button_Search.png";
 	$header_height: 38px;
 	$header_width: 300px;
 	background-color: #f2f2f2!important;
@@ -50,6 +52,52 @@
 	&.orange {
 		background:transparent image-url($orange_bg) no-repeat center top;
 	}
+	&.menu {
+		margin-bottom: $m;
+		background-color: #e5e5e5!important;
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				border-bottom: 1px dotted $lightlightGrey;
+				a {
+					height: $m*2;
+					line-height: $m*2;
+					padding-left: $m*2;
+					display: block;
+					overflow: hidden;
+					&:hover {
+						background:transparent image-url($arrow_right_orange) no-repeat $m center;
+						text-decoration: none!important;
+						background-color: #f2f2f2;
+					}
+					&.active {
+						background:transparent image-url($arrow_right_orange) no-repeat $m center;
+						background-color: #f2f2f2;
+					}
+				}
+				form {
+					padding: 0 $m 0 $m;
+					.search{
+						width: 187px;
+						height: 15px;
+					}
+					.button {
+						@include replace-text($search_button,0,0);
+						height: 28px;
+						width: 57px;
+						border: 0;
+						cursor: pointer;
+
+						&:hover {
+							@include replace-text($search_button,0,-30px);
+						}
+					}
+					
+				}
+			}
+		}
+	}
 	.articleview_picturelist {
 		padding: 0 $m/2;
 	}
@@ -62,6 +110,11 @@
 		padding-left: $m/2;
 			&.icon_video {
 				background:transparent image-url("icon_VIDEO.png") no-repeat;
+				background-position: $m/2 10px;
+				padding-left: $header_height;
+			}
+			&.icon_gallery {
+				background:transparent image-url("icon_GALLERY.png") no-repeat;
 				background-position: $m/2 10px;
 				padding-left: $header_height;
 			}
