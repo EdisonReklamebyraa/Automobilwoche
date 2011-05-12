@@ -46,6 +46,7 @@ body {
    aside{
      background:transparent image-url('top_bg.png') left bottom repeat-x;
      padding: $vm $leftBorder;
+     display: block;
    }
 
    section{
