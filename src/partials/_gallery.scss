@@ -1,4 +1,58 @@
 #Main .template-gallery {
+	.slideshow {
+		$galleryslideshow_leftbutton: "gallery_slideshow_leftbutton.png";
+		$galleryslideshow_rightbutton: "gallery_slideshow_rightbutton.png";
+		p {
+			font-size: 90%;
+		}
+		.slider {
+			.button_left {
+				@include replace-text($galleryslideshow_leftbutton,0,0);
+				height: 93px;
+				width: 18px;
+				border: 0;
+				cursor: pointer;
+				float:left;
+				margin-right: $m/2;
+
+				&:hover {
+					@include replace-text($galleryslideshow_leftbutton,0,-93px);
+				}				
+			}
+			.button_right {
+				@include replace-text($galleryslideshow_rightbutton,0,0);
+				height: 93px;
+				width: 18px;
+				border: 0;
+				cursor: pointer;
+				float:right;
+				margin-left: $m/2;
+
+				&:hover {
+					@include replace-text($galleryslideshow_rightbutton,0,-93px);
+				}				
+			}
+			.imagelist {
+				overflow: hidden;
+				width: 564px;
+				float:left;
+				ul {
+					width: 99999px;
+					display: block;
+					padding:0;
+					margin:0;
+					li {
+						float:left;
+						margin-right: $m/2;
+						padding: 0;
+						@include no-bullets;
+						width: 140px;
+					}
+				}
+			}
+		
+		}
+	}
 	article {
 		width: $m*7;
 		@include inline_block;
