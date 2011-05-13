@@ -177,6 +177,11 @@ body {
 	}
 	.pageStrip 
 		{
+			$articletools_zoomout: "articletools_zoomout.png";
+			$articletools_zoomin: "articletools_zoomin.png";
+			$articletools_zoomout_active: "articletools_zoomout_active.png";
+			$articletools_zoomin_active: "articletools_zoomin_active.png";
+			$articletools_print: "icon_PRINT.png";
 			clear: both;
 			overflow: hidden;
 			width: $maincolumn;
@@ -205,6 +210,37 @@ body {
 			&.underline {
 				border-bottom: 1px solid $lightlightGrey;
 			
+			}
+			.tools {
+				float:right;
+				height: image-height($articletools_zoomout);
+				a {
+					width: image-width($articletools_zoomout);
+					height: image-height($articletools_zoomout);
+					text-indent:-9999px;
+					display: block;
+					float: right;
+					cursor: pointer;
+					&.zoomin {
+						background: transparent image-url($articletools_zoomin) no-repeat;
+						
+						&.active {
+							background: transparent image-url($articletools_zoomin_active) no-repeat;
+						}
+					}
+
+					&.zoomout {
+						background: transparent image-url($articletools_zoomout) no-repeat;
+						&.active {
+							background: transparent image-url($articletools_zoomout_active) no-repeat;
+						}
+					}
+					&.print {
+						background: transparent image-url($articletools_print) no-repeat;
+						margin-right: $m/2;
+					}
+				}
+				
 			}
 		}
 	h4 {
