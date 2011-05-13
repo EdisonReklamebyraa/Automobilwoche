@@ -104,15 +104,16 @@ $.cookie = function(name, value, options) {
 		JavaScript:window.print();
 		return false; auotmoat
 	}
-	
-	
-	if(zoom)
-	{
-		zoom *= 1; 
-		setSize(zoom); 	
+
+	if(!isNaN(zoom*1))
+	{ 
+		zoom *= 1;
+		setSize(zoom);
+			
 	}
 	else
 	{
+		
 		zoom = 0; 
 		$.cookie("zoom", 0);
 	}
@@ -178,6 +179,11 @@ $.cookie = function(name, value, options) {
 	
 	function saveZoom()
 	{
+		if(isNaN(zoom))
+		{
+			zoom = 0; 
+		}
+
 		$.cookie("zoom", zoom);
 		setSize(zoom); 
 	}
