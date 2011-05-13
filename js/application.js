@@ -102,7 +102,7 @@ $.cookie = function(name, value, options) {
 	function printpage()
 	{
 		JavaScript:window.print();
-		return false; 
+		return false; auotmoat
 	}
 	
 	
