@@ -154,9 +154,11 @@ body {
 	overflow: hidden;
   	a {
   		color: $DefaultLinkColor;
-  	}
-  	a:hover {
-  		text-decoration: underline;
+  		text-decoration: none;
+	  	&:hover {
+	  		text-decoration: underline;
+	  	}
+
   	}
 }
 
