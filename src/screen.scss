@@ -34,8 +34,8 @@ body {
          display:inline;
          padding: 0 0 0 10px;
          a {
-			color: $TopNavigationColor;
-			text-decoration: none;
+                        color: $TopNavigationColor;
+                        text-decoration: none;
         }
        }
      }
@@ -51,7 +51,7 @@ body {
 
    section{
      width: $fm;
-     padding: 0 0 $m $leftBorder;    
+     padding: 0 0 $m $leftBorder;
      overflow: hidden;
      h1
      {
@@ -131,163 +131,164 @@ body {
         border: solid 1px $lightlightGrey;
         border-width: 0 1px 0 0 ;
         &.icon_HOUSE {
-        	text-indent: -119988px;  
-        		background:transparent image-url('icon_HOUSE.png');
-        		background-position: 50% 50%;
-        		background-repeat: no-repeat;
-        		padding: 0 $m 0 $m;
-        		overflow: hidden;
-        		height: 34px;
-        		
+                text-indent: -119988px;
+                        background:transparent image-url('icon_HOUSE.png');
+                        background-position: 50% 50%;
+                        background-repeat: no-repeat;
+                        padding: 0 $m 0 $m;
+                        overflow: hidden;
+                        height: 34px;
+
         }
         a {
-        	color: $MainNavigationColor;
-        	text-decoration: none;
+                color: $MainNavigationColor;
+                text-decoration: none;
         }
- 
+
      }
    }
 
 }
 #Main {
-	background:transparent image-url('main_bg.png') repeat-y;
-	overflow: hidden;
-  	a {
-  		color: $DefaultLinkColor;
-  		text-decoration: none;
-	  	&:hover {
-	  		text-decoration: underline;
-	  	}
+        background:transparent image-url('main_bg.png') repeat-y;
+        overflow: hidden;
+        a {
+                color: $DefaultLinkColor;
+                text-decoration: none;
+                &:hover {
+                        text-decoration: underline;
+                }
 
-  	}
+        }
 }
 
-#MainbColumn 
+#MainbColumn
 {
-	margin-left: $leftBorder;
-	width: $maincolumn;
-	float: left;
-	
-	.bar {
-		display: block;
-		background-color: #053463;
-		color: #fff;
-		padding: $m/3;
-		text-transform: uppercase;
-		font-size: $separationline-font-size;
-		
-	}
-	.pageStrip 
-		{
-			$articletools_zoomout: "articletools_zoomout.png";
-			$articletools_zoomin: "articletools_zoomin.png";
-			$articletools_zoomout_active: "articletools_zoomout_active.png";
-			$articletools_zoomin_active: "articletools_zoomin_active.png";
-			$articletools_print: "icon_PRINT.png";
-			clear: both;
-			overflow: hidden;
-			width: $maincolumn;
-			margin:  0 0 $m/2 0;
-			font-size: 11px;
-			text-transform: uppercase;
-			.date {
-				color: #c4c4c4;
-				float: left;
-				margin-right: 5px;
-			}
-			a {
-				color: $orange;
-			}
-			ul
-			{
-			    @include horizontal-list;
-			    float: right;
-			    
-			
-			}
-			span {
-				float: left;
-				
-			}
-			&.underline {
-				border-bottom: 1px solid $lightlightGrey;
-			
-			}
-			.tools {
-				float:right;
-				height: image-height($articletools_zoomout);
-				a {
-					width: image-width($articletools_zoomout);
-					height: image-height($articletools_zoomout);
-					text-indent:-9999px;
-					display: block;
-					float: right;
-					cursor: pointer;
-					&.zoomin {
-						background: transparent image-url($articletools_zoomin) no-repeat;
-						
-						&.active {
-							background: transparent image-url($articletools_zoomin_active) no-repeat;
-						}
-					}
+        margin-left: $leftBorder;
+        width: $maincolumn;
+        float: left;
 
-					&.zoomout {
-						background: transparent image-url($articletools_zoomout) no-repeat;
-						&.active {
-							background: transparent image-url($articletools_zoomout_active) no-repeat;
-						}
-					}
-					&.print {
-						background: transparent image-url($articletools_print) no-repeat;
-						margin-right: $m/2;
-					}
-				}
-				
-			}
-		}
-	h4 {
-		margin: 0 0 $m/2 0;
-	}	
-	aside {
-		margin: -$m/2 0 $m/2 0;
-		display: block;
-		overflow: hidden;
-		clear: both;
-	}
-	
+        .bar {
+                display: block;
+                background-color: #053463;
+                color: #fff;
+                padding: $m/3;
+                text-transform: uppercase;
+                font-size: $separationline-font-size;
+
+        }
+        .pageStrip
+                {
+                        $articletools_zoomout: "articletools_zoomout.png";
+                        $articletools_zoomin: "articletools_zoomin.png";
+                        $articletools_zoomout_active: "articletools_zoomout_active.png";
+                        $articletools_zoomin_active: "articletools_zoomin_active.png";
+                        $articletools_print: "icon_PRINT.png";
+                        clear: both;
+                        overflow: hidden;
+                        width: $maincolumn;
+                        margin:  0 0 $m/2 0;
+                        font-size: 11px;
+                        text-transform: uppercase;
+                        .date {
+                                color: #c4c4c4;
+                                float: left;
+                                margin-right: 5px;
+                        }
+                        a {
+                                color: $orange;
+                        }
+                        ul
+                        {
+                            @include horizontal-list;
+                            float: right;
+
+
+                        }
+                        span {
+                                float: left;
+
+                        }
+                        &.underline {
+                                border-bottom: 1px solid $lightlightGrey;
+
+                        }
+                        .tools {
+                                float:right;
+                                height: image-height($articletools_zoomout);
+                                a {
+                                        width: image-width($articletools_zoomout);
+                                        height: image-height($articletools_zoomout);
+                                        text-indent:-9999px;
+                                        display: block;
+                                        float: right;
+                                        cursor: pointer;
+                                        &.zoomin {
+                                                background: transparent image-url($articletools_zoomin) no-repeat;
+
+                                                &.active {
+                                                        background: transparent image-url($articletools_zoomin_active) no-repeat;
+                                                }
+                                        }
+
+                                        &.zoomout {
+                                                background: transparent image-url($articletools_zoomout) no-repeat;
+                                                &.active {
+                                                        background: transparent image-url($articletools_zoomout_active) no-repeat;
+                                                }
+                                        }
+                                        &.print {
+                                                background: transparent image-url($articletools_print) no-repeat;
+                                                margin-right: $m/2;
+                                        }
+                                }
+
+                        }
+                }
+        h4 {
+                margin: 0 0 $m/2 0;
+        }
+        aside {
+                margin: -$m/2 0 $m/2 0;
+                display: block;
+                overflow: hidden;
+                clear: both;
+        }
+
 }
 
 #sideColumn
 {
-	margin-left: $m;
-	width: $Sidecolumn;
-	float: left;
-	overflow: hidden;
-	h4 {
-		margin: 0 0 $m/2 0;
-	}
-	hr {
-		clear: both;
-		border: none;
-		background:transparent image-url("line_dotted.png") repeat-x;
-		background-position: $m/2;
-		margin: 0 0 $m/2 0;
-		
-	}	
-	aside {
-		margin: 0 0 $m/2 0;
-		display: block;
-		overflow: hidden;
-		clear: both;
-	}	
+        margin-left: $m;
+        width: $Sidecolumn;
+        float: left;
+        overflow: hidden;
+        h4 {
+                margin: 0 0 $m/2 0;
+        }
+        hr {
+                clear: both;
+                border: none;
+                background:transparent image-url("line_dotted.png") repeat-x;
+                background-position: $m/2;
+                margin: 0 0 $m/2 0;
+
+        }
+        aside {
+                margin: 0 0 $m/2 0;
+                display: block;
+                overflow: hidden;
+                clear: both;
+        }
 }
 #AdColumn
 {
-	margin-left: $m;
-	float: left;
+        margin-left: $m;
+        float: left;
 }
 
 @import "partials/articleviews";
 @import "partials/boxes";
 @import "partials/article";
 @import "partials/gallery";
+@import "partials/flyout";

@@ -1,0 +1,97 @@
+#MainNavigation
+{
+  .flyout{
+    display: none
+
+  }
+
+  li:hover .flyout,
+  li.On .flyout
+  {
+    display: block;
+
+    background: #FFF image_url("fallout_bg.png") repeat-x 0 0 ;
+    @include box-shadow;
+    overflow: hidden;
+    margin: 10px 0px 0 0;
+    position: absolute;
+    padding-bottom: $m;
+    border: 1px $lightlightGrey solid;
+    &.wide
+    {
+
+      width: $fm + 8px;
+      left: 30px;
+
+
+    }
+
+    ul{
+      margin: $m $m 0 0 ;
+      float: left;
+      width: $Sidecolumn;
+      width: $Sidecolumn;
+      border-width: 0;
+      li{
+        clear : both;
+        background: none;
+        border: $lightlightGrey dotted;
+        border-width: 0 0 1px 0;
+        display: block;
+        width: 100%;
+        margin: 0 5px 2px 15px ;
+        font-size: 120%;
+        padding: 0 2px 0 2px;
+        a{
+         background: image_url("fallout_arrow.png") no-repeat 100% 50% ;
+         padding-right: image_width("fallout_arrow.png") + 10px;
+        }
+        &.last{
+          border-width: 0px;
+
+        }
+
+      }
+    }
+    .news
+    {
+      float: left;
+      width: $maincolumn;
+      margin: $m 0 0 0 ;
+      h3
+      {
+        margin: 0 $m 5px 0 ;
+        padding: 0 0 4px 0;
+        border: $lightlightGrey dotted;
+        border-width: 0 0 1px 0 ;
+      }
+      img{
+        float: left;
+        padding: 4px $m 5px 0;
+      }
+      article{
+        clear: both;
+        overflow: hidden;
+        border: $lightlightGrey dotted;
+        border-width: 0 0 1px 0 ;
+          padding: 0 0 5px 0 ;
+          margin: 0 $m 5px 0 ;
+
+        p{
+          margin: 0px;
+        }
+        &.last{
+          border: 0;
+        }
+
+      }
+      h4{
+        margin: 0 0 0 0;
+      }
+
+    }
+
+  }
+
+
+}
