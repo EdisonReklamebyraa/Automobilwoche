@@ -71,7 +71,7 @@ body {
            margin: 0 0 $m/2;
            $lf_bg: "login_form_bg.png";
            background: image-url($lf_bg) right bottom no-repeat;
-           
+           display: none;
            width: image-width($lf_bg) -$m/2;
            height: image-height($lf_bg) - $m;
            input[type=submit]{
