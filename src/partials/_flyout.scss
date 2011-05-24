@@ -5,25 +5,26 @@
 
   }
 
-  li:hover .flyout,
-  li.On .flyout
-  {
-    display: block;
 
+  .flyout
+  {
     background: #FFF image_url("fallout_bg.png") repeat-x 0 0 ;
     @include box-shadow;
     overflow: hidden;
-    margin: 10px 0px 0 0;
+    margin: 7px 0px 0 -5px;
     position: absolute;
     padding-bottom: $m;
     border: 1px $lightlightGrey solid;
+    border-top: 0;
+    a
+    {
+      color: $black;
+    }
     &.wide
     {
-
       width: $fm + 8px;
       left: 30px;
-
-
+      margin: 7px 0px 0 0;
     }
 
     ul{

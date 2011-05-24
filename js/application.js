@@ -2,23 +2,23 @@
 google.load("jquery", "1.6.0");
 
 google.setOnLoadCallback(function()
-{ 
-	$('#Filter a').click(function(e) {
-      
+{
+        $('#Filter a').click(function(e) {
+
       if($(this).attr("data-type") == "all")
       {
-      	$("#FilteredGallery article:hidden").show(400); 
+        $("#FilteredGallery article:hidden").show(400);
       }
       else
       {
-     	$("#FilteredGallery article:visible").not("[data-type="+$(this).attr("data-type")+"]").hide(400);
-      	$("#FilteredGallery article[data-type="+$(this).attr("data-type")+"]:hidden").show(400);      
+        $("#FilteredGallery article:visible").not("[data-type="+$(this).attr("data-type")+"]").hide(400);
+        $("#FilteredGallery article[data-type="+$(this).attr("data-type")+"]:hidden").show(400);
       }
-      
-      $("a", $(this).parent().siblings()).removeClass("active"); 
-      $(this).addClass("active"); 
 
-      return false; 
+      $("a", $(this).parent().siblings()).removeClass("active");
+      $(this).addClass("active");
+
+      return false;
     });
 
 
@@ -85,110 +85,131 @@ $.cookie = function(name, value, options) {
         }
         return returnValue;
     }
-	};
-	var CSSFilter = ".template-article",  
-	zoom = $.cookie("zoom"),
-	incFilter = ".zoomin", 
-	
-	decFilter = ".zoomout",
-	resetFilter = ".zoomreset";
-	
-	$(incFilter).click(incZoom);
-	$(decFilter).click(decZoom);
-	$(resetFilter).click(resetZoom);
-	
-	$(".print").click(printpage);
-	
-	function printpage()
-	{
-		JavaScript:window.print();
-		return false; auotmoat
-	}
+        };
+        var CSSFilter = ".template-article",
+        zoom = $.cookie("zoom"),
+        incFilter = ".zoomin",
 
-	if(!isNaN(zoom*1))
-	{ 
-		zoom *= 1;
-		setSize(zoom);
-			
-	}
-	else
-	{
-		
-		zoom = 0; 
-		$.cookie("zoom", 0);
-	}
+        decFilter = ".zoomout",
+        resetFilter = ".zoomreset";
 
-	function setSize(z)
-	{
-		$(CSSFilter).each(function(){
-			
-			if($(this).attr("fs"))
-			{
-				var fs = $(this).attr("fs") * 1; 
-			}
-			else
-			{
-				var fs = $(this).css("font-size").replace("px", "")*1; 
-				$(this).attr("fs", fs)
-			}
-			
-			fs += fs*z; 
-			$(this).css("font-size", fs+"px")
-		});
-		updateButtons(); 
-	}
-	
-	function updateButtons()
-	{
-		if(Math.abs(zoom) < 0.04 & zoom != 0 )
-		{
-			resetZoom(); 
-		}
-		
-		if(zoom > 0){
-			$(incFilter).addClass("active");
-			$(decFilter).removeClass("active");
-		}
-		else if (zoom < 0){
-			$(decFilter).addClass("active");
-			$(incFilter).removeClass("active");
-		}
-		else{
-			$(decFilter).removeClass("active");
-			$(incFilter).removeClass("active");
-		}
-		
-		
-	}
-	
-	function incZoom()
-	{
-		zoom += 0.05; 
-		saveZoom();
-	}
-	function decZoom()
-	{
-		zoom -= 0.05; 
-		saveZoom();
-	}
-	function resetZoom()
-	{
-		zoom = 0; 
-		saveZoom();
-	}
-	
-	function saveZoom()
-	{
-		if(isNaN(zoom))
-		{
-			zoom = 0; 
-		}
+        $(incFilter).click(incZoom);
+        $(decFilter).click(decZoom);
+        $(resetFilter).click(resetZoom);
 
-		$.cookie("zoom", zoom);
-		setSize(zoom); 
-	}
-	
+        $(".print").click(printpage);
 
-	
-	
+        function printpage()
+        {
+                JavaScript:window.print();
+                return false; auotmoat
+        }
+
+        if(!isNaN(zoom*1))
+        {
+                zoom *= 1;
+                setSize(zoom);
+
+        }
+        else
+        {
+
+                zoom = 0;
+                $.cookie("zoom", 0);
+        }
+
+        function setSize(z)
+        {
+                $(CSSFilter).each(function(){
+
+                        if($(this).attr("fs"))
+                        {
+                                var fs = $(this).attr("fs") * 1;
+                        }
+                        else
+                        {
+                                var fs = $(this).css("font-size").replace("px", "")*1;
+                                $(this).attr("fs", fs)
+                        }
+
+                        fs += fs*z;
+                        $(this).css("font-size", fs+"px")
+                });
+                updateButtons();
+        }
+
+        function updateButtons()
+        {
+                if(Math.abs(zoom) < 0.04 & zoom != 0 )
+                {
+                        resetZoom();
+                }
+
+                if(zoom > 0){
+                        $(incFilter).addClass("active");
+                        $(decFilter).removeClass("active");
+                }
+                else if (zoom < 0){
+                        $(decFilter).addClass("active");
+                        $(incFilter).removeClass("active");
+                }
+                else{
+                        $(decFilter).removeClass("active");
+                        $(incFilter).removeClass("active");
+                }
+
+
+        }
+
+        function incZoom()
+        {
+                zoom += 0.05;
+                saveZoom();
+        }
+        function decZoom()
+        {
+                zoom -= 0.05;
+                saveZoom();
+        }
+        function resetZoom()
+        {
+                zoom = 0;
+                saveZoom();
+        }
+
+        function saveZoom()
+        {
+                if(isNaN(zoom))
+                {
+                        zoom = 0;
+                }
+
+                $.cookie("zoom", zoom);
+                setSize(zoom);
+        }
+
+//------------ Menus
+  var  flowOutVisible = false,
+  timeout,
+  overTime = 200,
+  currentMenuOut,
+  hoverTime = 200;
+
+  $("#MainNavigation li:has(.flyout)").hover(function() {
+
+    currentMenuOut = $(".flyout", this);
+    window.clearTimeout(timeout);
+    timeout = window.setTimeout(showMenu, hoverTime);
+
+  }, function() {
+    window.clearTimeout(timeout);
+     $(".flyout", this).fadeOut();
+  });
+
+  function showMenu()
+  {
+    currentMenuOut.fadeIn();
+    window.clearTimeout(timeout);
+  }
+
 });

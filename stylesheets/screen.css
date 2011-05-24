@@ -215,27 +215,33 @@ body textarea { width: 390px; height: 250px; }
 #MainNavigation ul li { float: left; list-style-image: none; list-style-type: none; margin-left: 0px; padding: 7px; border: solid 1px #cfcfcf; border-width: 0 1px 0 0; }
 /* line 133, ../src/screen.scss */
 #MainNavigation ul li.icon_HOUSE { text-indent: -119988px; background: transparent url('../images/icon_HOUSE.png?1306146132'); background-position: 50% 50%; background-repeat: no-repeat; padding: 0 20px 0 20px; overflow: hidden; height: 34px; }
-/* line 143, ../src/screen.scss */
+/* line 145, ../src/screen.scss */
+#MainNavigation ul li.active, #MainNavigation ul li:hover { background: #e09c18 url('../images/menu_active_bg.png?1306220884') 0 0; }
+/* line 148, ../src/screen.scss */
+#MainNavigation ul li.active a, #MainNavigation ul li:hover a { color: #FFF; }
+/* line 152, ../src/screen.scss */
+#MainNavigation ul li.active li a, #MainNavigation ul li:hover li a { color: black; }
+/* line 160, ../src/screen.scss */
 #MainNavigation ul li a { color: black; text-decoration: none; }
 
-/* line 152, ../src/screen.scss */
+/* line 169, ../src/screen.scss */
 #Main { background: transparent url('../images/main_bg.png?1306146132') repeat-y; overflow: hidden; }
-/* line 155, ../src/screen.scss */
+/* line 172, ../src/screen.scss */
 #Main a { color: black; text-decoration: none; }
-/* line 158, ../src/screen.scss */
+/* line 175, ../src/screen.scss */
 #Main a:hover { text-decoration: underline; }
 
-/* line 166, ../src/screen.scss */
+/* line 184, ../src/screen.scss */
 #MainbColumn { margin-left: 33px; width: 620px; float: left; }
-/* line 171, ../src/screen.scss */
+/* line 189, ../src/screen.scss */
 #MainbColumn .bar { display: block; background-color: #053463; color: #fff; padding: 6.667px; text-transform: uppercase; font-size: 10px; }
-/* line 181, ../src/screen.scss */
+/* line 199, ../src/screen.scss */
 #MainbColumn .pageStrip { clear: both; overflow: hidden; width: 620px; margin: 0 0 10px 0; font-size: 11px; text-transform: uppercase; }
-/* line 193, ../src/screen.scss */
+/* line 211, ../src/screen.scss */
 #MainbColumn .pageStrip .date { color: #c4c4c4; float: left; margin-right: 5px; }
-/* line 198, ../src/screen.scss */
+/* line 216, ../src/screen.scss */
 #MainbColumn .pageStrip a { color: #e09c18; }
-/* line 202, ../src/screen.scss */
+/* line 220, ../src/screen.scss */
 #MainbColumn .pageStrip ul { margin: 0; padding: 0; border: 0; overflow: hidden; *zoom: 1; float: right; }
 /* line 60, ../../../../Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 #MainbColumn .pageStrip ul li { list-style-image: none; list-style-type: none; margin-left: 0px; white-space: nowrap; display: inline; float: left; padding-left: 4px; padding-right: 4px; }
@@ -245,39 +251,39 @@ body textarea { width: 390px; height: 250px; }
 #MainbColumn .pageStrip ul li:last-child { padding-right: 0; }
 /* line 50, ../../../../Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 #MainbColumn .pageStrip ul li.last { padding-right: 0; }
-/* line 208, ../src/screen.scss */
-#MainbColumn .pageStrip span { float: left; }
-/* line 212, ../src/screen.scss */
-#MainbColumn .pageStrip.underline { border-bottom: 1px solid #cfcfcf; }
-/* line 216, ../src/screen.scss */
-#MainbColumn .pageStrip .tools { float: right; height: 16px; }
-/* line 219, ../src/screen.scss */
-#MainbColumn .pageStrip .tools a { width: 20px; height: 16px; text-indent: -9999px; display: block; float: right; cursor: pointer; }
 /* line 226, ../src/screen.scss */
-#MainbColumn .pageStrip .tools a.zoomin { background: transparent url('../images/articletools_zoomin.png?1306146132') no-repeat; }
-/* line 229, ../src/screen.scss */
-#MainbColumn .pageStrip .tools a.zoomin.active { background: transparent url('../images/articletools_zoomin_active.png?1306146132') no-repeat; }
+#MainbColumn .pageStrip span { float: left; }
+/* line 230, ../src/screen.scss */
+#MainbColumn .pageStrip.underline { border-bottom: 1px solid #cfcfcf; }
 /* line 234, ../src/screen.scss */
+#MainbColumn .pageStrip .tools { float: right; height: 16px; }
+/* line 237, ../src/screen.scss */
+#MainbColumn .pageStrip .tools a { width: 20px; height: 16px; text-indent: -9999px; display: block; float: right; cursor: pointer; }
+/* line 244, ../src/screen.scss */
+#MainbColumn .pageStrip .tools a.zoomin { background: transparent url('../images/articletools_zoomin.png?1306146132') no-repeat; }
+/* line 247, ../src/screen.scss */
+#MainbColumn .pageStrip .tools a.zoomin.active { background: transparent url('../images/articletools_zoomin_active.png?1306146132') no-repeat; }
+/* line 252, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomout { background: transparent url('../images/articletools_zoomout.png?1306146132') no-repeat; }
-/* line 236, ../src/screen.scss */
+/* line 254, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomout.active { background: transparent url('../images/articletools_zoomout_active.png?1306146132') no-repeat; }
-/* line 240, ../src/screen.scss */
+/* line 258, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.print { background: transparent url('../images/icon_PRINT.png?1306146132') no-repeat; margin-right: 10px; }
-/* line 248, ../src/screen.scss */
+/* line 266, ../src/screen.scss */
 #MainbColumn h4 { margin: 0 0 10px 0; }
-/* line 251, ../src/screen.scss */
+/* line 269, ../src/screen.scss */
 #MainbColumn aside { margin: -10px 0 10px 0; display: block; overflow: hidden; clear: both; }
 
-/* line 261, ../src/screen.scss */
+/* line 279, ../src/screen.scss */
 #sideColumn { margin-left: 20px; width: 300px; float: left; overflow: hidden; }
-/* line 266, ../src/screen.scss */
+/* line 284, ../src/screen.scss */
 #sideColumn h4 { margin: 0 0 10px 0; }
-/* line 269, ../src/screen.scss */
+/* line 287, ../src/screen.scss */
 #sideColumn hr { clear: both; border: none; background: transparent url('../images/line_dotted.png?1306146132') repeat-x; background-position: 10px; margin: 0 0 10px 0; }
-/* line 277, ../src/screen.scss */
+/* line 295, ../src/screen.scss */
 #sideColumn aside { margin: 0 0 10px 0; display: block; overflow: hidden; clear: both; }
 
-/* line 285, ../src/screen.scss */
+/* line 303, ../src/screen.scss */
 #AdColumn { margin-left: 20px; float: left; }
 
 /* line 2, ../src/partials/_articleviews.scss */
@@ -499,28 +505,30 @@ body textarea { width: 390px; height: 250px; }
 /* line 3, ../src/partials/_flyout.scss */
 #MainNavigation .flyout { display: none; }
 /* line 10, ../src/partials/_flyout.scss */
-#MainNavigation li:hover .flyout, #MainNavigation li.On .flyout { display: block; background: white url('../images/fallout_bg.png?1306153791') repeat-x 0 0; -moz-box-shadow: 0px 0px 5px #333333; -webkit-box-shadow: 0px 0px 5px #333333; -o-box-shadow: 0px 0px 5px #333333; box-shadow: 0px 0px 5px #333333; overflow: hidden; margin: 10px 0px 0 0; position: absolute; padding-bottom: 20px; border: 1px #cfcfcf solid; }
-/* line 21, ../src/partials/_flyout.scss */
-#MainNavigation li:hover .flyout.wide, #MainNavigation li.On .flyout.wide { width: 948px; left: 30px; }
-/* line 29, ../src/partials/_flyout.scss */
-#MainNavigation li:hover .flyout ul, #MainNavigation li.On .flyout ul { margin: 20px 20px 0 0; float: left; width: 300px; width: 300px; border-width: 0; }
-/* line 35, ../src/partials/_flyout.scss */
-#MainNavigation li:hover .flyout ul li, #MainNavigation li.On .flyout ul li { clear: both; background: none; border: #cfcfcf dotted; border-width: 0 0 1px 0; display: block; width: 100%; margin: 0 5px 2px 15px; font-size: 120%; padding: 0 2px 0 2px; }
-/* line 45, ../src/partials/_flyout.scss */
-#MainNavigation li:hover .flyout ul li a, #MainNavigation li.On .flyout ul li a { background: url('../images/fallout_arrow.png?1306153952') no-repeat 100% 50%; padding-right: 19px; }
-/* line 49, ../src/partials/_flyout.scss */
-#MainNavigation li:hover .flyout ul li.last, #MainNavigation li.On .flyout ul li.last { border-width: 0px; }
-/* line 57, ../src/partials/_flyout.scss */
-#MainNavigation li:hover .flyout .news, #MainNavigation li.On .flyout .news { float: left; width: 620px; margin: 20px 0 0 0; }
-/* line 62, ../src/partials/_flyout.scss */
-#MainNavigation li:hover .flyout .news h3, #MainNavigation li.On .flyout .news h3 { margin: 0 20px 5px 0; padding: 0 0 4px 0; border: #cfcfcf dotted; border-width: 0 0 1px 0; }
-/* line 68, ../src/partials/_flyout.scss */
-#MainNavigation li:hover .flyout .news img, #MainNavigation li.On .flyout .news img { float: left; padding: 4px 20px 5px 0; }
-/* line 72, ../src/partials/_flyout.scss */
-#MainNavigation li:hover .flyout .news article, #MainNavigation li.On .flyout .news article { clear: both; overflow: hidden; border: #cfcfcf dotted; border-width: 0 0 1px 0; padding: 0 0 5px 0; margin: 0 20px 5px 0; }
-/* line 80, ../src/partials/_flyout.scss */
-#MainNavigation li:hover .flyout .news article p, #MainNavigation li.On .flyout .news article p { margin: 0px; }
-/* line 83, ../src/partials/_flyout.scss */
-#MainNavigation li:hover .flyout .news article.last, #MainNavigation li.On .flyout .news article.last { border: 0; }
-/* line 88, ../src/partials/_flyout.scss */
-#MainNavigation li:hover .flyout .news h4, #MainNavigation li.On .flyout .news h4 { margin: 0 0 0 0; }
+#MainNavigation .flyout { background: white url('../images/fallout_bg.png?1306223417') repeat-x 0 0; -moz-box-shadow: 0px 0px 5px #333333; -webkit-box-shadow: 0px 0px 5px #333333; -o-box-shadow: 0px 0px 5px #333333; box-shadow: 0px 0px 5px #333333; overflow: hidden; margin: 7px 0px 0 -5px; position: absolute; padding-bottom: 20px; border: 1px #cfcfcf solid; border-top: 0; }
+/* line 20, ../src/partials/_flyout.scss */
+#MainNavigation .flyout a { color: black; }
+/* line 24, ../src/partials/_flyout.scss */
+#MainNavigation .flyout.wide { width: 948px; left: 30px; margin: 7px 0px 0 0; }
+/* line 30, ../src/partials/_flyout.scss */
+#MainNavigation .flyout ul { margin: 20px 20px 0 0; float: left; width: 300px; width: 300px; border-width: 0; }
+/* line 36, ../src/partials/_flyout.scss */
+#MainNavigation .flyout ul li { clear: both; background: none; border: #cfcfcf dotted; border-width: 0 0 1px 0; display: block; width: 100%; margin: 0 5px 2px 15px; font-size: 120%; padding: 0 2px 0 2px; }
+/* line 46, ../src/partials/_flyout.scss */
+#MainNavigation .flyout ul li a { background: url('../images/fallout_arrow.png?1306153952') no-repeat 100% 50%; padding-right: 19px; }
+/* line 50, ../src/partials/_flyout.scss */
+#MainNavigation .flyout ul li.last { border-width: 0px; }
+/* line 58, ../src/partials/_flyout.scss */
+#MainNavigation .flyout .news { float: left; width: 620px; margin: 20px 0 0 0; }
+/* line 63, ../src/partials/_flyout.scss */
+#MainNavigation .flyout .news h3 { margin: 0 20px 5px 0; padding: 0 0 4px 0; border: #cfcfcf dotted; border-width: 0 0 1px 0; }
+/* line 69, ../src/partials/_flyout.scss */
+#MainNavigation .flyout .news img { float: left; padding: 4px 20px 5px 0; }
+/* line 73, ../src/partials/_flyout.scss */
+#MainNavigation .flyout .news article { clear: both; overflow: hidden; border: #cfcfcf dotted; border-width: 0 0 1px 0; padding: 0 0 5px 0; margin: 0 20px 5px 0; }
+/* line 81, ../src/partials/_flyout.scss */
+#MainNavigation .flyout .news article p { margin: 0px; }
+/* line 84, ../src/partials/_flyout.scss */
+#MainNavigation .flyout .news article.last { border: 0; }
+/* line 89, ../src/partials/_flyout.scss */
+#MainNavigation .flyout .news h4 { margin: 0 0 0 0; }

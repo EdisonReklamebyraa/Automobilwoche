@@ -140,6 +140,23 @@ body {
                         height: 34px;
 
         }
+
+        &.active,
+        &:hover{
+
+          background: #e09c18 image-url("menu_active_bg.png") 0 0;
+          a{
+            color: #FFF;
+          }
+          li a
+          {
+            color: $MainNavigationColor;
+          }
+
+
+        }
+
+
         a {
                 color: $MainNavigationColor;
                 text-decoration: none;
@@ -157,6 +174,7 @@ body {
                 text-decoration: none;
                 &:hover {
                         text-decoration: underline;
+
                 }
 
         }
