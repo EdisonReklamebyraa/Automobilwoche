@@ -70,7 +70,7 @@ body {
            padding: $m/2 0 $m/2 $m;
            margin: 0 0 $m/2;
            $lf_bg: "login_form_bg.png";
-           background:transparent image-url($lf_bg) right bottom no-repeat;
+           background: image-url($lf_bg) right bottom no-repeat;
            width: image-width($lf_bg) -$m/2;
            height: image-height($lf_bg) - $m;
            input[type=submit]{
