@@ -15,7 +15,7 @@
 	aside {
 		margin: 0;
 		float: right;
-		margin-left: $m/2;
+		margin: 0 0 $m/2 $m/2;
 		clear: both;
 	}
 	h4 {
@@ -50,6 +50,27 @@
 		.paragraphimage {
 			border-bottom: 1px solid $lightlightGrey;
 		}
+		.downloads {
+				@include link_icons;
+				padding: $m/2;
+				h4 {
+					margin: 0 0 $m/3;
+					font-weight: normal;
+				}
+				dl {
+					padding:0;
+					margin: 0;
+					dd {
+						margin: 0 0 $m/3 0;
+						a {
+							color: $black;
+							&:hover {
+								color: $orange;
+							}
+						}
+					}
+				}
+			}
 		.facts {
 			padding: $m/2;
 			h4 {
@@ -82,6 +103,10 @@
 			}
 		}
 	}
+	.no-background {
+		background: none;
+		border-left: 1px solid $lightlightGrey;
+	}	
 	.fl {
 		float: left;
 		margin-right: $m/2;
