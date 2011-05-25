@@ -64,6 +64,23 @@
 				margin: 0;
 			}
 		}
+		.articlelist {
+			padding: $m/2;
+			h4 {
+				margin: 0 0 $m/3;
+				font-weight: normal;
+			}			
+			p {
+				margin: 0;
+			}
+			dl {
+				padding:0;
+				margin: 0;
+				dd {
+					margin: 0 0 $m/3 0;
+				}
+			}
+		}
 	}
 	.fl {
 		float: left;
