@@ -13,6 +13,7 @@ body {
   @include blueprint-utilities;
   @include blueprint-interaction;
   @include blueprint-form;
+  @include min-width(977px);
 
 
  
