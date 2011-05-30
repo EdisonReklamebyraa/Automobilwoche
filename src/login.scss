@@ -1,0 +1,50 @@
+@import "blueprint/reset";
+@import "partials/base";
+@import "partials/functions";
+@import "blueprint";
+@import "compass/utilities";
+@import "compass/css3";
+@import "blueprint/form";
+@import "partials/link_icons";
+.forms
+	{
+       form{
+         float: right;
+         &.login
+         {
+           padding: $m/2 0 $m/2 $m;
+           margin: 0 0 $m/2;
+           $lf_bg: "login_form_bg.png";
+           background: image-url($lf_bg) right bottom no-repeat transparent;
+           width: image-width($lf_bg) -$m/2;
+           height: image-height($lf_bg) - $m;
+           input[type=submit]{
+              @include submitbtn;
+           }
+         }
+         &.search
+         {
+           input[type=search]{
+              @include inputText;
+           }
+           input[type=submit]{
+              @include submitbtn("search.png");
+              margin: 0 $m/2 0 0;
+           }
+         }
+         input{
+           font-family: $blueprint_font_family;
+           margin: $m/2 $m/2 $m/2 0;
+           &[type=text]
+           {
+              @include inputText("login_input_bg.png");
+              &.username
+              {
+                width: image-width("login_input_bg.png") - 50px;
+                background-image: image-url("login_username_bg.png");
+                padding: $m/2 $m/2 $m/2 $m*2;
+              }
+           }
+         }
+       }
+     }
