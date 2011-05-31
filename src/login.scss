@@ -9,9 +9,8 @@
 .forms
 	{
 	   @include blueprint-form;
-       form{
-         &.login
-         {
+       form.login{
+		   float: right;
            padding: $m/2 0 $m/2 $m;
            margin: 0 0 $m/2;
            $lf_bg: "login_form_bg.png";
@@ -19,7 +18,7 @@
            width: image-width($lf_bg) -$m/2;
            height: image-height($lf_bg) - $m;
            input[type=submit]{
-              @include submitbtn;
+              @include submitbtn; 
            }
          }
          &.search
@@ -46,5 +45,5 @@
               }
            }
          }
-       }
+       
      }

@@ -48,17 +48,17 @@ a img { border: none; }
 .forms input.text, .forms input.title, .forms input[type=email], .forms input[type=text], .forms input[type=password] { width: 300px; }
 /* line 50, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 .forms textarea { width: 390px; height: 250px; }
-/* line 14, ../src/login.scss */
-.forms form.login { padding: 10px 0 10px 20px; margin: 0 0 10px; background: url('../images/login_form_bg.png?1302599556') right bottom no-repeat transparent; width: 458px; height: 40px; }
-/* line 21, ../src/login.scss */
+/* line 12, ../src/login.scss */
+.forms form.login { float: right; padding: 10px 0 10px 20px; margin: 0 0 10px; background: url('../images/login_form_bg.png?1302599556') right bottom no-repeat transparent; width: 458px; height: 40px; }
+/* line 20, ../src/login.scss */
 .forms form.login input[type=submit] { background: #053463 url('../images/login_bg.png?1302599556') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; }
-/* line 27, ../src/login.scss */
-.forms form.search input[type=search] { width: 206px; height: 9px; padding: 10px; background: transparent url('../images/input.png?1302599556') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
-/* line 30, ../src/login.scss */
-.forms form.search input[type=submit] { background: #053463 url('../images/search.png?1302599556') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; }
-/* line 35, ../src/login.scss */
-.forms form input { font-family: Arial, Helvetica, sans-serif; margin: 10px 10px 10px 0; }
-/* line 39, ../src/login.scss */
-.forms form input[type=text] { width: 154px; height: 10px; padding: 10px; background: transparent url('../images/login_input_bg.png?1302599556') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
-/* line 42, ../src/login.scss */
-.forms form input[type=text].username { width: 124px; background-image: url('../images/login_username_bg.png?1302599556'); padding: 10px 10px 10px 40px; }
+/* line 26, ../src/login.scss */
+.forms.search input[type=search] { width: 206px; height: 9px; padding: 10px; background: transparent url('../images/input.png?1302599556') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
+/* line 29, ../src/login.scss */
+.forms.search input[type=submit] { background: #053463 url('../images/search.png?1302599556') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; }
+/* line 34, ../src/login.scss */
+.forms input { font-family: Arial, Helvetica, sans-serif; margin: 10px 10px 10px 0; }
+/* line 38, ../src/login.scss */
+.forms input[type=text] { width: 154px; height: 10px; padding: 10px; background: transparent url('../images/login_input_bg.png?1302599556') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
+/* line 41, ../src/login.scss */
+.forms input[type=text].username { width: 124px; background-image: url('../images/login_username_bg.png?1302599556'); padding: 10px 10px 10px 40px; }
