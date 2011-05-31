@@ -8,7 +8,12 @@
 @import "partials/link_icons";
 
 body{
-	@include blueprint-form;
+
+	  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-interaction;
+  @include blueprint-form;
+  @include min-width(977px);
 }
 .forms
 	{
