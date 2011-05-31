@@ -26,10 +26,16 @@
 
 @mixin loginForms(){
    form{
-     a {
-     	  @include submitbtn;
-          margin: 0 $m/2 0 0;
-     }
+	 .logout {
+	 	 padding: $m/2;
+	     a {
+	     	  @include submitbtn;
+	          margin: 0 $m/2 0 0;
+	          text-decoration: none;
+	          margin-left: $m/2;
+	     }
+	 
+	 }
      &.login
      {
        padding: $m/2 0 $m/2 $m;
