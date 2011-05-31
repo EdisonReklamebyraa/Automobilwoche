@@ -27,7 +27,7 @@
 @mixin loginForms(){
    form{
      a {
-     	  @include submitbtn("search.png");
+     	  @include submitbtn;
           margin: 0 $m/2 0 0;
      }
      &.login
