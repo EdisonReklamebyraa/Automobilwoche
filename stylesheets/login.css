@@ -186,4 +186,4 @@ body textarea { width: 390px; height: 250px; }
 /* line 55, ../src/partials/_functions.scss */
 .forms form input[type=text] { width: 154px; height: 10px; padding: 10px; background: transparent url('../images/login_input_bg.png?1302599556') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
 /* line 58, ../src/partials/_functions.scss */
-.forms form input[type=text].username { width: 124px; background-image: url('../images/login_username_bg.png?1302599556'); padding: 10px 10px 10px 40px; }
+.forms form input[type=text].username { width: 124px; background-image: url('../images/login_username_bg.png?1302599556'); padding: 10px 10px 10px 40px; margin-left: 5px; }

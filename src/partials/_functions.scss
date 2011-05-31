@@ -59,6 +59,7 @@
                 width: image-width("login_input_bg.png") - 50px;
                 background-image: image-url("login_username_bg.png");
                 padding: $m/2 $m/2 $m/2 $m*2;
+                margin-left: 5px;
               }
            }
          }
