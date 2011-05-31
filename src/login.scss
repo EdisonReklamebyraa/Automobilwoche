@@ -7,6 +7,7 @@
 @import "blueprint/form";
 @import "partials/link_icons";
 .forms
+@include blueprint-form;
 	{
        form{
          &.login
