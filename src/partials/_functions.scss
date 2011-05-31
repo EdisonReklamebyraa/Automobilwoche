@@ -63,7 +63,22 @@
      input{
        font-family: $blueprint_font_family;
        margin: $m/2 $m/2 $m/2 0;
-       &[type=text]
+       &[type=password]
+       {
+          @include inputText("login_input_bg.png");
+          height: 20px;
+          padding-top: $m/4;
+          padding-bottom: $m/4;
+          &.username
+          {
+            width: image-width("login_input_bg.png") - 50px;
+            background-image: image-url("login_username_bg.png");
+            padding: $m/4 $m/2 $m/4 $m*2;
+            height: 20px;
+            margin-left: 5px;
+          }
+       }
+        &[type=text]
        {
           @include inputText("login_input_bg.png");
           height: 20px;
