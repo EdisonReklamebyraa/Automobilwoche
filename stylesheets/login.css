@@ -1,60 +1,64 @@
-/*
-Syntax error: Invalid CSS after ".forms": expected "{", was "@include bluepr..."
-        on line 10 of /Users/thomas/Jobber/Automobilwoche/src/login.scss
+@charset "UTF-8";
+/* line 4, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html, body { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
 
-Backtrace:
-/Users/thomas/Jobber/Automobilwoche/src/login.scss:10
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/lib/sass/scss/parser.rb:838:in `expected'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/lib/sass/scss/parser.rb:813:in `expected'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/lib/sass/scss/parser.rb:809:in `tok!'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/lib/sass/scss/parser.rb:338:in `block'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/lib/sass/scss/parser.rb:333:in `ruleset'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/lib/sass/scss/parser.rb:356:in `block_child'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/lib/sass/scss/parser.rb:350:in `block_contents'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/lib/sass/scss/parser.rb:57:in `stylesheet'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/lib/sass/scss/parser.rb:26:in `parse'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/lib/sass/engine.rb:213:in `_to_tree'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/lib/sass/engine.rb:197:in `_render'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/lib/sass/engine.rb:169:in `render'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/lib/haml/util.rb:294:in `silence_haml_warnings'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/lib/sass/engine.rb:169:in `render'
-/Users/thomas/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:103:in `compile'
-/Users/thomas/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/logger.rb:43:in `red'
-/Users/thomas/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:102:in `compile'
-/Users/thomas/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:93:in `compile_if_required'
-/Users/thomas/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:84:in `run'
-/Users/thomas/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:82:in `each'
-/Users/thomas/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:82:in `run'
-/Users/thomas/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/commands/watch_project.rb:92:in `recompile'
-/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `to_proc'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/path.rb:71:in `call'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/path.rb:71:in `run_callback'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/path.rb:54:in `callback_action'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/path.rb:34:in `update'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/state/directory.rb:32:in `modified'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/state/directory.rb:31:in `each'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/state/directory.rb:31:in `modified'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/state/directory.rb:16:in `refresh'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/fsevents.rb:15:in `add_handler'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/fsevents.rb:14:in `each'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/fsevents.rb:14:in `add_handler'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/rubycocoa/fsevents.rb:107:in `call'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/rubycocoa/fsevents.rb:107:in `initialize'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/fsevents.rb:27:in `call'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/fsevents.rb:27:in `CFRunLoopRun'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/fsevents.rb:27:in `run'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/monitor.rb:24:in `run'
-/Users/thomas/.gem/ruby/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm.rb:17:in `monitor'
-/Users/thomas/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/commands/watch_project.rb:61:in `perform'
-/Users/thomas/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/commands/base.rb:18:in `execute'
-/Users/thomas/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/thomas/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/exec/sub_command_ui.rb:38:in `perform!'
-/Users/thomas/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/thomas/.gem/ruby/1.8/gems/compass-0.10.6/bin/compass:26
-/usr/bin/compass:19:in `load'
-/usr/bin/compass:19
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \".forms\": expected \"{\", was \"@include bluepr...\"\A         on line 10 of /Users/thomas/Jobber/Automobilwoche/src/login.scss"; }
+/* line 6, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html { font-size: 100.01%; }
+
+/* line 16, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, code, del, dfn, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+
+/* line 18, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote, q { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; quotes: "" ""; }
+/* line 45, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+
+/* line 20, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+th, td, caption { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; text-align: left; font-weight: normal; vertical-align: middle; }
+
+/* line 22, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+table { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; border-collapse: separate; border-spacing: 0; vertical-align: middle; }
+
+/* line 24, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+a img { border: none; }
+
+/* line 18, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.forms label { font-weight: bold; }
+/* line 19, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.forms fieldset { padding: 1.4em; margin: 0 0 1.5em 0; }
+/* line 20, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.forms legend { font-weight: bold; font-size: 1.2em; }
+/* line 26, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.forms input.text, .forms input.title, .forms input[type=email], .forms input[type=text], .forms input[type=password] { margin: 0.5em 0; background-color: white; padding: 5px; }
+/* line 27, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.forms input.title { font-size: 1.5em; }
+/* line 31, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.forms input[type=checkbox], .forms input.checkbox, .forms input[type=radio], .forms input.radio { position: relative; top: 0.25em; }
+/* line 33, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.forms textarea { margin: 0.5em 0; padding: 5px; }
+/* line 34, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.forms select { margin: 0.5em 0; }
+/* line 59, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.forms fieldset { border: 1px solid #cccccc; }
+/* line 62, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.forms input.text, .forms input.title, .forms input[type=email], .forms input[type=text], .forms input[type=password], .forms textarea, .forms select { border: 1px solid #bbbbbb; }
+/* line 64, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.forms input.text:focus, .forms input.title:focus, .forms input[type=email]:focus, .forms input[type=text]:focus, .forms input[type=password]:focus, .forms textarea:focus, .forms select:focus { border: 1px solid #666666; }
+/* line 48, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.forms input.text, .forms input.title, .forms input[type=email], .forms input[type=text], .forms input[type=password] { width: 300px; }
+/* line 50, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.forms textarea { width: 390px; height: 250px; }
+/* line 14, ../src/login.scss */
+.forms form.login { padding: 10px 0 10px 20px; margin: 0 0 10px; background: url('../images/login_form_bg.png?1302599556') right bottom no-repeat transparent; width: 458px; height: 40px; }
+/* line 21, ../src/login.scss */
+.forms form.login input[type=submit] { background: #053463 url('../images/login_bg.png?1302599556') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; }
+/* line 27, ../src/login.scss */
+.forms form.search input[type=search] { width: 206px; height: 9px; padding: 10px; background: transparent url('../images/input.png?1302599556') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
+/* line 30, ../src/login.scss */
+.forms form.search input[type=submit] { background: #053463 url('../images/search.png?1302599556') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; }
+/* line 35, ../src/login.scss */
+.forms form input { font-family: Arial, Helvetica, sans-serif; margin: 10px 10px 10px 0; }
+/* line 39, ../src/login.scss */
+.forms form input[type=text] { width: 154px; height: 10px; padding: 10px; background: transparent url('../images/login_input_bg.png?1302599556') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
+/* line 42, ../src/login.scss */
+.forms form input[type=text].username { width: 124px; background-image: url('../images/login_username_bg.png?1302599556'); padding: 10px 10px 10px 40px; }
