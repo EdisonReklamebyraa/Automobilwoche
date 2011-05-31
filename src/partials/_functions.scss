@@ -26,7 +26,6 @@
 
 @mixin loginForms(){
        form{
-         float: right;
          &.login
          {
            padding: $m/2 0 $m/2 $m;
