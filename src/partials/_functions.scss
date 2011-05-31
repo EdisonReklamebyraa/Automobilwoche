@@ -29,6 +29,7 @@
    	 float: right;
 	 .logout {
 	 	 padding: $m/2;
+	 	 float: right;
 	     a {
 	     	  @include submitbtn;
 	          margin: 0 $m/2 0 0;

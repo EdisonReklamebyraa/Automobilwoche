@@ -176,20 +176,20 @@ body textarea { width: 390px; height: 250px; }
 /* line 28, ../src/partials/_functions.scss */
 .forms form { float: right; }
 /* line 30, ../src/partials/_functions.scss */
-.forms form .logout { padding: 10px; }
-/* line 32, ../src/partials/_functions.scss */
+.forms form .logout { padding: 10px; float: right; }
+/* line 33, ../src/partials/_functions.scss */
 .forms form .logout a { background: #053463 url('../images/login_bg.png?1302599556') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; text-decoration: none; margin-left: 10px; }
-/* line 41, ../src/partials/_functions.scss */
+/* line 42, ../src/partials/_functions.scss */
 .forms form.login { padding: 10px 0 10px 20px; margin: 0 0 10px; background: url('../images/login_form_bg.png?1302599556') right bottom no-repeat transparent; width: 458px; height: 40px; }
-/* line 48, ../src/partials/_functions.scss */
+/* line 49, ../src/partials/_functions.scss */
 .forms form.login input[type=submit] { background: #053463 url('../images/login_bg.png?1302599556') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; }
-/* line 54, ../src/partials/_functions.scss */
+/* line 55, ../src/partials/_functions.scss */
 .forms form.search input[type=search] { width: 206px; height: 9px; padding: 10px; background: transparent url('../images/input.png?1302599556') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
-/* line 57, ../src/partials/_functions.scss */
+/* line 58, ../src/partials/_functions.scss */
 .forms form.search input[type=submit] { background: #053463 url('../images/search.png?1302599556') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; }
-/* line 62, ../src/partials/_functions.scss */
+/* line 63, ../src/partials/_functions.scss */
 .forms form input { font-family: Arial, Helvetica, sans-serif; margin: 10px 10px 10px 0; }
-/* line 66, ../src/partials/_functions.scss */
+/* line 67, ../src/partials/_functions.scss */
 .forms form input[type=text] { width: 154px; height: 10px; padding: 10px; background: transparent url('../images/login_input_bg.png?1302599556') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
-/* line 69, ../src/partials/_functions.scss */
+/* line 70, ../src/partials/_functions.scss */
 .forms form input[type=text].username { width: 124px; background-image: url('../images/login_username_bg.png?1302599556'); padding: 10px 10px 10px 40px; margin-left: 5px; }
