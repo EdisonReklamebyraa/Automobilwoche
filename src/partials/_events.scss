@@ -29,7 +29,7 @@
 		display: block;
 		overflow: hidden;
 		margin-bottom: $m/4;
-		background: #F2F2F2;
+		background: #f9f9f9;
 		.col-1,.col-2,.col-3 {
 			width: $sectioncolumn;
 			float: left;
@@ -38,8 +38,7 @@
 				padding: $m/2;
 			}
 			&.col-2 {
-				background: $lightlightGrey;
-
+				background: #F2F2F2;
 			}
 			&.col-3 {
 				margin-right:0;

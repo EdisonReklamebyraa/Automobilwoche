@@ -599,14 +599,14 @@ body textarea { width: 390px; height: 250px; }
 /* line 22, ../src/partials/_events.scss */
 .template-events .pageingnation a.right { float: right; padding: 10px; }
 /* line 28, ../src/partials/_events.scss */
-.template-events .eventitem { display: block; overflow: hidden; margin-bottom: 5px; background: #F2F2F2; }
+.template-events .eventitem { display: block; overflow: hidden; margin-bottom: 5px; background: #f9f9f9; }
 /* line 33, ../src/partials/_events.scss */
 .template-events .eventitem .col-1, .template-events .eventitem .col-2, .template-events .eventitem .col-3 { width: 193.333px; float: left; margin-right: 20px; }
 /* line 37, ../src/partials/_events.scss */
 .template-events .eventitem .col-1 .wrapper, .template-events .eventitem .col-2 .wrapper, .template-events .eventitem .col-3 .wrapper { padding: 10px; }
 /* line 40, ../src/partials/_events.scss */
-.template-events .eventitem .col-1.col-2, .template-events .eventitem .col-2.col-2, .template-events .eventitem .col-3.col-2 { background: #cfcfcf; }
-/* line 44, ../src/partials/_events.scss */
+.template-events .eventitem .col-1.col-2, .template-events .eventitem .col-2.col-2, .template-events .eventitem .col-3.col-2 { background: #F2F2F2; }
+/* line 43, ../src/partials/_events.scss */
 .template-events .eventitem .col-1.col-3, .template-events .eventitem .col-2.col-3, .template-events .eventitem .col-3.col-3 { margin-right: 0; }
-/* line 46, ../src/partials/_events.scss */
+/* line 45, ../src/partials/_events.scss */
 .template-events .eventitem .col-1.col-3 .wrapper, .template-events .eventitem .col-2.col-3 .wrapper, .template-events .eventitem .col-3.col-3 .wrapper { padding-left: 0; }
