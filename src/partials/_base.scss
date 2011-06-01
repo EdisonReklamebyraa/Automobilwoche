@@ -22,7 +22,7 @@ $fs: $blueprint-font-size;
 $maincolumn: $column*8+(8*$m)-$m;
 $Sidecolumn: $column*4+(4*$m)-$m;
 
-$sectioncolumn: 33%;
+$sectioncolumn: ($maincolumn - (2*$m))/3;
 
 $lightlightGrey: #cfcfcf;
 $black: #000;
