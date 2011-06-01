@@ -27,6 +27,12 @@
 			margin-bottom: $m/2;
 			font-weight: bold;
 		}		
+		a {
+			color: $black!important;
+			&:hover {
+				text-decoration: underline!important;
+			}
+		}
 	}
 	.pubdatetime {
 		border-top: 1px solid $lightlightGrey;
