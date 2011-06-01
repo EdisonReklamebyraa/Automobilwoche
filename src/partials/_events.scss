@@ -25,6 +25,8 @@
 		}
 	}
 	.eventitem {
+		display: block;
+		overflow: hidden;
 		border-bottom: 1px solid $lightlightGrey;
 		.col-1,.col-2,.col-3 {
 			width: $sectioncolumn;
@@ -32,9 +34,9 @@
 			margin-right: $m;
 			&.col-2 {
 				background: $lightlightGrey;
-			}
-			&.col-2 .wrapper{
-				padding: $m/2;
+				.wrapper{
+					padding: $m/2;
+				}
 			}
 			&.col-3 {
 				margin-right:0;
