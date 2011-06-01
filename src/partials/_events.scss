@@ -33,14 +33,18 @@
 			width: $sectioncolumn;
 			float: left;
 			margin-right: $m;
+			.wrapper{
+				padding: $m/2;
+			}
 			&.col-2 {
 				background: $lightlightGrey;
-				.wrapper{
-					padding: $m/2;
-				}
+
 			}
 			&.col-3 {
 				margin-right:0;
+				.wrapper{
+					padding-left: 0;
+				}
 			}
 		}
 
