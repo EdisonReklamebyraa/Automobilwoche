@@ -22,6 +22,12 @@
 		margin-bottom: $m/4;
 		font-weight: bold;
 	}
+	.articleview_picturelist {
+		h4 {
+			margin-bottom: $m/2;
+			font-weight: bold;
+		}		
+	}
 	.pubdatetime {
 		border-top: 1px solid $lightlightGrey;
 		border-bottom: 1px solid $lightlightGrey;
