@@ -28,6 +28,8 @@
 		display: block;
 		overflow: hidden;
 		border-bottom: 1px solid $lightlightGrey;
+		margin-bottom: $m/4;
+		padding-bottom: $m/4;
 		.col-1,.col-2,.col-3 {
 			width: $sectioncolumn;
 			float: left;
