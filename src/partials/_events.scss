@@ -27,8 +27,13 @@
 	.col-1,.col-2,.col-3 {
 		width: $sectioncolumn;
 		float: left;
-		padding: $m/3;
-
+		margin-right: $m;
+		&.col-2 {
+			padding: $m/2;
+		}
+		&.col-3 {
+			margin-right:0;
+		}
 	}
 	.col-2 {
 		background: $lightlightGrey;
