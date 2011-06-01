@@ -28,7 +28,7 @@
 		width: $sectioncolumn;
 		float: left;
 		margin-right: $m;
-		&.col-2 {
+		&.col-2 .wrapper{
 			padding: $m/2;
 		}
 		&.col-3 {
