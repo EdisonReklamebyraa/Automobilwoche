@@ -603,7 +603,7 @@ body textarea { width: 390px; height: 250px; }
 /* line 31, ../src/partials/_events.scss */
 .template-events .eventitem.odd { background: #f9f9f9; }
 /* line 34, ../src/partials/_events.scss */
-.template-events .eventitem .col-1, .template-events .eventitem .col-2, .template-events .eventitem .col-3 { width: 193.333px; float: left; margin-right: 20px; }
+.template-events .eventitem .col-1, .template-events .eventitem .col-2, .template-events .eventitem .col-3 { float: left; margin-right: 20px; }
 /* line 38, ../src/partials/_events.scss */
 .template-events .eventitem .col-1 .wrapper, .template-events .eventitem .col-2 .wrapper, .template-events .eventitem .col-3 .wrapper { padding: 10px; }
 /* line 40, ../src/partials/_events.scss */
@@ -611,8 +611,10 @@ body textarea { width: 390px; height: 250px; }
 /* line 43, ../src/partials/_events.scss */
 .template-events .eventitem .col-1 .wrapper p, .template-events .eventitem .col-2 .wrapper p, .template-events .eventitem .col-3 .wrapper p { margin: 0; }
 /* line 47, ../src/partials/_events.scss */
-.template-events .eventitem .col-1.col-2, .template-events .eventitem .col-2.col-2, .template-events .eventitem .col-3.col-2 { background: #f2f2f2; }
+.template-events .eventitem .col-1.col-1, .template-events .eventitem .col-2.col-1, .template-events .eventitem .col-3.col-1 { width: 80px; }
 /* line 50, ../src/partials/_events.scss */
-.template-events .eventitem .col-1.col-3, .template-events .eventitem .col-2.col-3, .template-events .eventitem .col-3.col-3 { margin-right: 0; }
-/* line 52, ../src/partials/_events.scss */
+.template-events .eventitem .col-1.col-2, .template-events .eventitem .col-2.col-2, .template-events .eventitem .col-3.col-2 { background: #f2f2f2; width: 320px; }
+/* line 54, ../src/partials/_events.scss */
+.template-events .eventitem .col-1.col-3, .template-events .eventitem .col-2.col-3, .template-events .eventitem .col-3.col-3 { width: 180px; margin-right: 0; }
+/* line 57, ../src/partials/_events.scss */
 .template-events .eventitem .col-1.col-3 .wrapper, .template-events .eventitem .col-2.col-3 .wrapper, .template-events .eventitem .col-3.col-3 .wrapper { padding-left: 0; }

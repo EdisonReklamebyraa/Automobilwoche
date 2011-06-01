@@ -32,7 +32,7 @@
 			background: #f9f9f9;
 		}
 		.col-1,.col-2,.col-3 {
-			width: $sectioncolumn;
+			//width: $sectioncolumn;
 			float: left;
 			margin-right: $m;
 			.wrapper{
@@ -44,10 +44,15 @@
 					margin: 0;
 				}
 			}
+			&.col-1 {
+				width: 80px;
+			}
 			&.col-2 {
 				background: #f2f2f2;
+				width: 320px;
 			}
 			&.col-3 {
+				width: 180px;
 				margin-right:0;
 				.wrapper{
 					padding-left: 0;
