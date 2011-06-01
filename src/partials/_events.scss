@@ -37,6 +37,9 @@
 			margin-right: $m;
 			.wrapper{
 				padding: $m/2;
+				a {
+					color: $orange!important;
+				}
 				p {
 					margin: 0;
 				}
