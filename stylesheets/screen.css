@@ -593,20 +593,20 @@ body textarea { width: 390px; height: 250px; }
 /* line 3, ../src/partials/_events.scss */
 .template-events hr { clear: both; border: none; height: 1px; background-color: #cfcfcf; margin: 0 0 5px 0; }
 /* line 10, ../src/partials/_events.scss */
-.template-events .pageingnation { display: block; border-top: 1px solid #cfcfcf; border-bottom: 1px solid #cfcfcf; height: 40px; margin-bottom: 20px; }
-/* line 17, ../src/partials/_events.scss */
+.template-events .pageingnation { display: block; background: url('../images/gray_pattern_bg.png?1302766690'); height: 40px; margin-bottom: 20px; }
+/* line 18, ../src/partials/_events.scss */
 .template-events .pageingnation a.left { float: left; padding-top: 10px; }
-/* line 21, ../src/partials/_events.scss */
+/* line 22, ../src/partials/_events.scss */
 .template-events .pageingnation a.right { float: right; padding-top: 10px; }
-/* line 27, ../src/partials/_events.scss */
+/* line 28, ../src/partials/_events.scss */
 .template-events .eventitem { display: block; overflow: hidden; margin-bottom: 5px; background: #f9f9f9; }
-/* line 32, ../src/partials/_events.scss */
+/* line 33, ../src/partials/_events.scss */
 .template-events .eventitem .col-1, .template-events .eventitem .col-2, .template-events .eventitem .col-3 { width: 193.333px; float: left; margin-right: 20px; }
-/* line 36, ../src/partials/_events.scss */
+/* line 37, ../src/partials/_events.scss */
 .template-events .eventitem .col-1 .wrapper, .template-events .eventitem .col-2 .wrapper, .template-events .eventitem .col-3 .wrapper { padding: 10px; }
-/* line 39, ../src/partials/_events.scss */
+/* line 40, ../src/partials/_events.scss */
 .template-events .eventitem .col-1.col-2, .template-events .eventitem .col-2.col-2, .template-events .eventitem .col-3.col-2 { background: #cfcfcf; }
-/* line 43, ../src/partials/_events.scss */
+/* line 44, ../src/partials/_events.scss */
 .template-events .eventitem .col-1.col-3, .template-events .eventitem .col-2.col-3, .template-events .eventitem .col-3.col-3 { margin-right: 0; }
-/* line 45, ../src/partials/_events.scss */
+/* line 46, ../src/partials/_events.scss */
 .template-events .eventitem .col-1.col-3 .wrapper, .template-events .eventitem .col-2.col-3 .wrapper, .template-events .eventitem .col-3.col-3 .wrapper { padding-left: 0; }

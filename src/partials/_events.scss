@@ -9,8 +9,9 @@
 	}
 	.pageingnation {
 		display: block;
-		border-top: 1px solid $lightlightGrey;
-		border-bottom: 1px solid $lightlightGrey;
+		background: image-url("gray_pattern_bg.png");
+		// border-top: 1px solid $lightlightGrey;
+		// border-bottom: 1px solid $lightlightGrey;
 		height: $m*2;
 		margin-bottom: $m;
 		a {
