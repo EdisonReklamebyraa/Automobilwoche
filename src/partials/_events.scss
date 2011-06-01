@@ -5,7 +5,7 @@
 		border: none;
 		height: 1px;
 		background-color:$lightlightGrey;
-		margin: 0 0 $m/2 0;  
+		margin: 0 0 $m/4 0; 
 	}
 	.pageingnation {
 		display: block;
@@ -27,9 +27,8 @@
 	.eventitem {
 		display: block;
 		overflow: hidden;
-		border-bottom: 1px solid $lightlightGrey;
 		margin-bottom: $m/4;
-		padding-bottom: $m/4;
+		background: #f9f9f9;
 		.col-1,.col-2,.col-3 {
 			width: $sectioncolumn;
 			float: left;
