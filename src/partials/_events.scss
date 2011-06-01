@@ -37,6 +37,9 @@
 			margin-right: $m;
 			.wrapper{
 				padding: $m/2;
+				p {
+					margin: 0;
+				}
 			}
 			&.col-2 {
 				background: #f2f2f2;
