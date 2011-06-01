@@ -591,22 +591,24 @@ body textarea { width: 390px; height: 250px; }
 #MainNavigation .flyout .news h4 { margin: 0 0 0 0; }
 
 /* line 3, ../src/partials/_events.scss */
-.template-events hr { clear: both; border: none; height: 1px; background-color: #cfcfcf; margin: 0 0 5px 0; }
-/* line 10, ../src/partials/_events.scss */
+.template-events hr { background: url("../images/line_dotted.png?1302776059") repeat-x scroll 10px 50% transparent; border: medium none; clear: both; margin: 0 0 3.333px 0; }
+/* line 9, ../src/partials/_events.scss */
 .template-events .pageingnation { display: block; background: url('../images/gray_pattern_bg.png?1302766690'); height: 40px; margin-bottom: 20px; }
-/* line 18, ../src/partials/_events.scss */
+/* line 17, ../src/partials/_events.scss */
 .template-events .pageingnation a.left { float: left; padding: 10px; }
-/* line 22, ../src/partials/_events.scss */
+/* line 21, ../src/partials/_events.scss */
 .template-events .pageingnation a.right { float: right; padding: 10px; }
-/* line 28, ../src/partials/_events.scss */
-.template-events .eventitem { display: block; overflow: hidden; margin-bottom: 5px; background: #f9f9f9; }
-/* line 33, ../src/partials/_events.scss */
+/* line 27, ../src/partials/_events.scss */
+.template-events .eventitem { display: block; overflow: hidden; margin-bottom: 3.333px; }
+/* line 31, ../src/partials/_events.scss */
+.template-events .eventitem.odd { background: #f9f9f9; }
+/* line 34, ../src/partials/_events.scss */
 .template-events .eventitem .col-1, .template-events .eventitem .col-2, .template-events .eventitem .col-3 { width: 193.333px; float: left; margin-right: 20px; }
-/* line 37, ../src/partials/_events.scss */
+/* line 38, ../src/partials/_events.scss */
 .template-events .eventitem .col-1 .wrapper, .template-events .eventitem .col-2 .wrapper, .template-events .eventitem .col-3 .wrapper { padding: 10px; }
-/* line 40, ../src/partials/_events.scss */
-.template-events .eventitem .col-1.col-2, .template-events .eventitem .col-2.col-2, .template-events .eventitem .col-3.col-2 { background: #F2F2F2; }
-/* line 43, ../src/partials/_events.scss */
+/* line 41, ../src/partials/_events.scss */
+.template-events .eventitem .col-1.col-2, .template-events .eventitem .col-2.col-2, .template-events .eventitem .col-3.col-2 { background: #f2f2f2; }
+/* line 44, ../src/partials/_events.scss */
 .template-events .eventitem .col-1.col-3, .template-events .eventitem .col-2.col-3, .template-events .eventitem .col-3.col-3 { margin-right: 0; }
-/* line 45, ../src/partials/_events.scss */
+/* line 46, ../src/partials/_events.scss */
 .template-events .eventitem .col-1.col-3 .wrapper, .template-events .eventitem .col-2.col-3 .wrapper, .template-events .eventitem .col-3.col-3 .wrapper { padding-left: 0; }

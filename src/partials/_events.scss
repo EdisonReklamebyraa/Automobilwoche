@@ -1,11 +1,10 @@
 .template-events
 {
 	hr {
+		background: url("../images/line_dotted.png?1302776059") repeat-x scroll 10px 50% transparent;
+		border: medium none;
 		clear: both;
-		border: none;
-		height: 1px;
-		background-color:$lightlightGrey;
-		margin: 0 0 $m/4 0; 
+		margin: 0 0 $m/6 0; 
 	}
 	.pageingnation {
 		display: block;
@@ -28,8 +27,10 @@
 	.eventitem {
 		display: block;
 		overflow: hidden;
-		margin-bottom: $m/4;
-		background: #f9f9f9;
+		margin-bottom: $m/6;
+		&.odd {
+			background: #f9f9f9;
+		}
 		.col-1,.col-2,.col-3 {
 			width: $sectioncolumn;
 			float: left;
@@ -38,7 +39,7 @@
 				padding: $m/2;
 			}
 			&.col-2 {
-				background: #F2F2F2;
+				background: #f2f2f2;
 			}
 			&.col-3 {
 				margin-right:0;
