@@ -589,3 +589,16 @@ body textarea { width: 390px; height: 250px; }
 #MainNavigation .flyout .news article.last { border: 0; }
 /* line 89, ../src/partials/_flyout.scss */
 #MainNavigation .flyout .news h4 { margin: 0 0 0 0; }
+
+/* line 3, ../src/partials/_events.scss */
+.template-events hr { clear: both; border: none; height: 1px; background-color: #cfcfcf; margin: 0 0 10px 0; }
+/* line 10, ../src/partials/_events.scss */
+.template-events .pageingnation { display: block; border-top: 1px solid #cfcfcf; border-bottom: 1px solid #cfcfcf; height: 40px; margin-bottom: 20px; }
+/* line 17, ../src/partials/_events.scss */
+.template-events .pageingnation a.left { float: left; padding-top: 10px; }
+/* line 21, ../src/partials/_events.scss */
+.template-events .pageingnation a.right { float: right; padding-top: 10px; }
+/* line 27, ../src/partials/_events.scss */
+.template-events .col-1, .template-events .col-2, .template-events .col-3 { width: 33%; float: left; padding: 5px; }
+/* line 32, ../src/partials/_events.scss */
+.template-events .col-2 { background: #cfcfcf; }

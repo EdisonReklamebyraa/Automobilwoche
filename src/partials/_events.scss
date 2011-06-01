@@ -1,0 +1,35 @@
+.template-events
+{
+	hr {
+		clear: both;
+		border: none;
+		height: 1px;
+		background-color:$lightlightGrey;
+		margin: 0 0 $m/2 0;  
+	}
+	.pageingnation {
+		display: block;
+		border-top: 1px solid $lightlightGrey;
+		border-bottom: 1px solid $lightlightGrey;
+		height: $m*2;
+		margin-bottom: $m;
+		a {
+			&.left {
+				float: left;
+				padding-top: $m/2;
+			}
+			&.right {
+				float: right;
+				padding-top: $m/2;
+			}
+		}
+	}
+	.col-1,.col-2,.col-3 {
+		width: $sectioncolumn;
+		float: left;
+		padding: $m/4;
+	}
+	.col-2 {
+		background: $lightlightGrey;
+	}
+}
