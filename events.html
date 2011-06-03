@@ -108,59 +108,45 @@
 				<h3>Veranstaltungen suchen</h3>
 				<p>Hier können Sie nach Terminen suchen. Geben Sie dazu die entsprechenden Kriterien in die einzelnen Felder ein. Interessieren Sie sich für eine Eintragungsmöglichkeit in unseren Veranstaltungskalender? Bitte kontaktieren Sie uns über termine@craincom.de und nennen Sie uns Termin, Datum und die URL der jeweiligen Webseite. </p>
 				
-					<fieldset>
-						<legend class="test">Suche</legend>
-						<form name="searchform" action="<pbs:eventsearch>" method="post">
-							<div class="wrapper">
-								<label>Suchperiode</label>
-								<select class="daterange" name="Interval" OnChange="javascript:ResetDate();">
-									<option value="1">&gt;&gt; Heute</option>
-									<option value="20110603">03.06.11</option>
-									<option value="20110604">04.06.11</option>
-									<option value="20110605">05.06.11</option>
-									<option value="20110606">06.06.11</option>
-									<option value="20110607">07.06.11</option>
-									<option value="20110608">08.06.11</option>
-									<!-- pbs:eventoptions intervals intextended selectdate default="7" -->
-								</select>
-							</div>
-							<div class="wrapper">
-								<label>or choose date</label>
-								<!-- pbs:#DateSelected# -->
-								<input class="Dateselect" type="text" name="dateselected" value="20110609" maxlength="8" readonly>
-								<input class="DateChoice" name="DateChoice" type="image" type="image" onClick="javascript:choosedate();">
-							</div>
-							<div class="wrapper">
-								<label>Themen</label>
-								<select class="Subject" name="Subject">
-									<option selected="" value="0">&gt;&gt; Alle Themen</option>
-									<option value="15385">Kongresse</option>
-									<option value="15510">Markteinführung</option>
-									<option value="15384">Messen</option>
-									<option value="15386">Modell-Vorstellungen</option>
-									<option value="15388">Seminare</option>
-									<option value="15383">Veranstaltungen</option>
-									<option value="15387">Wirtschaftsdaten</option>									
-									<!-- pbs:eventoptions subjects default="0" sub-->
-								</select>
-								<input value="Suche" type="submit">						
-							</div>
-						</form>
-					</fieldset>
-						
-					<!-- br clear="all">
-					<div style=" float:left; width: 297px;">
-						<select style="float: left; width: 296px;" name="Subject">
-							<pbs:eventoptions subjects default="0" sub>
-						</select>
-					</div>
-					<div style="margin-left:10px; float:left;">
-							<span class="button-wrapper2">
-								<img src="/css/images/design/btn2-left.gif" style="float: left;" alt="">
-								<input value="SUCHE" class="button2" type="submit">
-								<img src="/css/images/design/btn2-right.gif" style="float: left;" alt="">
-						</span>
-					</div -->
+				<fieldset>
+					<legend class="test">Suche</legend>
+					<form name="searchform" action="<pbs:eventsearch>" method="post">
+						<div class="wrapper">
+							<label>Suchperiode</label>
+							<select class="daterange" name="Interval" OnChange="javascript:ResetDate();">
+								<option value="1">&gt;&gt; Heute</option>
+								<option value="20110603">03.06.11</option>
+								<option value="20110604">04.06.11</option>
+								<option value="20110605">05.06.11</option>
+								<option value="20110606">06.06.11</option>
+								<option value="20110607">07.06.11</option>
+								<option value="20110608">08.06.11</option>
+								<!-- pbs:eventoptions intervals intextended selectdate default="7" -->
+							</select>
+						</div>
+						<div class="wrapper">
+							<label>or choose date</label>
+							<!-- pbs:#DateSelected# -->
+							<input class="Dateselect" type="text" name="dateselected" value="20110609" maxlength="8" readonly>
+							<input class="DateChoice" name="DateChoice" type="image" type="image" onClick="javascript:choosedate();">
+						</div>
+						<div class="wrapper">
+							<label>Themen</label>
+							<select class="Subject" name="Subject">
+								<option selected="" value="0">&gt;&gt; Alle Themen</option>
+								<option value="15385">Kongresse</option>
+								<option value="15510">Markteinführung</option>
+								<option value="15384">Messen</option>
+								<option value="15386">Modell-Vorstellungen</option>
+								<option value="15388">Seminare</option>
+								<option value="15383">Veranstaltungen</option>
+								<option value="15387">Wirtschaftsdaten</option>									
+								<!-- pbs:eventoptions subjects default="0" sub-->
+							</select>
+							<input value="Suche" type="submit">						
+						</div>
+					</form>
+				</fieldset>
 				
 			</div>
 
