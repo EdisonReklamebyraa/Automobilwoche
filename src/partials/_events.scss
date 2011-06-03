@@ -6,6 +6,66 @@
 		clear: both;
 		margin: 0 0 $m/6 0; 
 	}
+	.eventsearch {
+		display: block;
+		overflow: hidden;
+		form {
+			@include blueprint-form;
+		}
+		fieldset {
+			padding: $m/2;
+			legend {
+				font-size: 90%;
+				font-weight: normal;
+				padding: 2px 6px;
+
+			}
+			form {
+				$eventcalendar_icon: "calendar.png";
+				
+				.wrapper {
+					float: left;
+				}
+				label {
+					display: block;
+					font-weight: normal;
+				}
+				select {
+					clear: both;
+					float: left;
+					&.daterange {
+						margin-right: $m/2;
+						width: 200px;
+						padding: $m/4;
+						height: 26px;
+					}
+					&.Subject {
+						float:left;
+						width: 400px;
+						padding: $m/4;
+						height: 26px;
+					}
+				}
+				input {
+					&.Dateselect {
+						float:left;
+						width: 100px;
+					}
+					&.DateChoice {
+						float:left;
+						background: image-url($eventcalendar_icon) no-repeat scroll left top;
+						@include replace-text-with-dimensions($eventcalendar_icon);
+						padding: $m/4;
+					}
+				}
+				input[type=submit] {
+		        	@include submitbtn("search.png");
+		        	margin: $m/4;
+		       }
+			}
+		}
+	
+	}
 	.pageingnation {
 		display: block;
 		background: image-url("gray_pattern_bg.png");
