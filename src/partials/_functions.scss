@@ -10,7 +10,7 @@
 
 
 @mixin submitbtn($bg:"login_bg.png") {
-  background: #053463 image-url($bg) left top no-repeat transparent;
+  background: #053463 image-url($bg) left top no-repeat;
   width: image-width($bg) ;
   height: image-height($bg);
   border: 0;
