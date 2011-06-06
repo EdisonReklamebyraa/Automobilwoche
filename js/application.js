@@ -301,7 +301,9 @@ $.cookie = function(name, value, options) {
   }
 
 
-
+$(function() {
+	$('a.lightbox').lightBox();
+});
 
 
 

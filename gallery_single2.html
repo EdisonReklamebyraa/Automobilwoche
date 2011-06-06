@@ -6,6 +6,8 @@
 		<script src="https://www.google.com/jsapi?key=ABQIAAAAYAmKm_jiA2_EYm6gJg2echSwg8Oar1LFmg3uW64cC474sxMk6hR6V61sZorHde4102u8QQQzTG5jbA" type="text/javascript"></script>
 		<link rel="stylesheet" href="stylesheets/screen.css">
 		<link href="stylesheets/jquery.thumbnailScroller.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/jquery.lightbox-0.5.css" media="screen" />
+	
 	</head>
 	<body>
 		<div id="Top">
@@ -104,8 +106,10 @@
 					
 				</div>
 				<article class="template-gallery">
-					<div class="slideshow">
-						<img src="http://dummyimage.com/620x400/ccc/fff">
+					<div class="slideshow" id="gallery">
+						<a href="http://dummyimage.com/900x400/ccc/fff" class="lightbox" title="Utilize a flexibilidade dos seletores da jQuery e crie um grupo de imagens como desejar.">
+							<img src="http://dummyimage.com/620x400/ccc/fff">
+						</a>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 						<hr>
 						<p>Total picture: 16</p>
@@ -249,6 +253,7 @@
 		<script src="js/application.js"></script>
 		<script src="js/jquery-ui-1.8.13.custom.min.js"></script>
 		<script src="js/jquery.thumbnailScroller.js"></script>
+		<script src="js/jquery.lightbox-0.5.min.js"></script>
 
 		
 	</body>
