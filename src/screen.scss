@@ -14,7 +14,6 @@ body {
   @include blueprint-utilities;
   @include blueprint-interaction;
   @include blueprint-form;
-  @include blueprint-global-reset;
   @include min-width(977px);
 
 
