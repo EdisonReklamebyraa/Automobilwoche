@@ -6,6 +6,7 @@
 @import "compass/css3";
 @import "blueprint/form";
 @import "partials/link_icons";
+@import "partials/forms";
 
 
 body {
@@ -13,6 +14,7 @@ body {
   @include blueprint-utilities;
   @include blueprint-interaction;
   @include blueprint-form;
+  @include blueprint-global-reset;
   @include min-width(977px);
 
 
