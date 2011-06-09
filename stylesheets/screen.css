@@ -27,7 +27,7 @@ form input[type="radio"] { top: 0!important; margin-right: 5px !important; }
 /* line 6, ../src/partials/_forms.scss */
 form p { margin-bottom: 5px !important; }
 /* line 9, ../src/partials/_forms.scss */
-form label { font-weight: normal; }
+form label { font-weight: normal!important; }
 
 /* line 12, ../src/screen.scss */
 body { line-height: 1.5; font-family: Arial, Helvetica, sans-serif; color: #333333; font-size: 81.25%; min-width: 977px; width: auto !important; width: 977px; }
