@@ -18,16 +18,16 @@
 		.author {
 			border: 0!important;
 			height: auto!important;
-			.details {
-				margin-bottom: $m/2; 
-			}
+			margin-bottom: $m/2;
+		}
 			.pubdatetime {
 				border: 0;
 				padding: 0;
 				font-size: 80%;
 				color: $lightGrey;
+				float: right;
 			}
-		}
+
 	}
 }
 #sideColumn {
