@@ -1,4 +1,4 @@
-#Main .template-article {
+#Main .template-article, #Main .template-blog {
 
 	header {
 		margin-bottom: $m;
@@ -13,6 +13,11 @@
 	}
 	
 	aside {
+		label {
+			float: left;
+			font-weight: normal;
+			color: $lightGrey;
+		}
 		margin: 0;
 		float: right;
 		margin: 0 0 $m/2 $m/2;

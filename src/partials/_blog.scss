@@ -1,0 +1,47 @@
+#Main .template-blog { 
+	font-family: georgia;
+	.addthis {
+		float: left!important;
+		width: 100%;
+		table,td {
+			border:0!important;
+			hr {
+				margin-bottom: $m/2!important;
+			}
+		}
+	}
+	.byline {
+		border-right: 0!important;
+		border-left: 0!important;
+		padding-left: 0!important;
+		padding-right: 0!important;
+		.author {
+			border: 0!important;
+			height: auto!important;
+			.details {
+				margin-bottom: $m/2; 
+			}
+			.pubdatetime {
+				border: 0;
+				padding: 0;
+				font-size: 80%;
+				color: $lightGrey;
+			}
+		}
+	}
+}
+#sideColumn {
+	.sideColumn_box {
+		background-color: #e5e5e5!important;
+		&.orange {
+			.articleview_picturelist {
+				font-family: georgia!important;
+				p {
+					color: $mediumGrey;
+				}
+			}
+			
+		}
+		
+	}
+}
