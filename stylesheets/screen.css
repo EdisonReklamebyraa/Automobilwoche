@@ -36,11 +36,11 @@ form label { font-weight: normal!important; }
 /* line 6, ../src/partials/_blog.scss */
 #Main .template-blog .addthis table, #Main .template-blog .addthis td { border: 0!important; }
 /* line 8, ../src/partials/_blog.scss */
-#Main .template-blog .addthis table hr, #Main .template-blog .addthis td hr { margin-bottom: 10px !important; }
+#Main .template-blog .addthis table hr, #Main .template-blog .addthis td hr { margin-bottom: 6.667px !important; }
 /* line 13, ../src/partials/_blog.scss */
 #Main .template-blog .byline { border-right: 0!important; border-left: 0!important; padding-left: 0!important; padding-right: 0!important; }
 /* line 18, ../src/partials/_blog.scss */
-#Main .template-blog .byline .author { border: 0!important; height: auto!important; margin-bottom: 10px; }
+#Main .template-blog .byline .author { border: 0!important; height: auto!important; margin-bottom: 6.667px; }
 /* line 23, ../src/partials/_blog.scss */
 #Main .template-blog .byline .pubdatetime { border: 0; padding: 0; font-size: 80%; color: #aaaaaa; float: right; }
 
