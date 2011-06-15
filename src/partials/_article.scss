@@ -154,76 +154,8 @@
 
 		}
 	}
-	.byline {
-		border: 1px solid $lightlightGrey;
-		padding: $m/3;
-		overflow: hidden;
-		margin-bottom: $m;
-		
-		.author {
-			float: left;
-			margin-right: $m/2;
-			border-right: 1px dotted $lightlightGrey;
-			padding-right: $m/2;
-			height: 47px;
-			&.last {
-				border-right: none;
-			}
-			img {
-				float: left;
-				margin-right: $m/2;
-			}
-			.details {
-				float:left;
-				a {
-					float: left;
-					color: $orange;
-					font-size: 80%;
-					text-decoration: none;
-				}
-				p {
-					margin: 0;
-					float: left;
-					clear: left;
-				}
-				.links {
-					float: left;
-					line-height: 80%;
-				}
-			
-			}
-		}
-		.addthis {
-			float: right;
-			a {
-				text-decoration: none;
-				color: $lightGrey;
-				font-size: 80%;
-			
-				span {
-					padding-right: 4px;
-				}
-			}
-			table {
-				padding: 0px;
-				margin: 0px;
-				border-left: 1px dotted $lightlightGrey;
-				hr {
-					padding:0;
-					margin:0;
-					border: none;
-					border-top: 1px dotted $lightlightGrey;
-				}
-				td {
-					border-right: 1px dotted $lightlightGrey;
-					padding: 1px;
-					&.last {
-						border: none;
-					}
-				}
-			}
-		}
-	}
+	@include byline;
+	
 	#Articlecomment {
 		p {
 			margin:0;

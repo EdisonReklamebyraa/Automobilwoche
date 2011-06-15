@@ -88,5 +88,53 @@
 	}
 
 }
+.articleview_blogs
+{
+	margin: $m/2 0 $m/2 0;
+	overflow: hidden;
+	clear: both;
+	hr {
+		clear: both;
+		border: none;
+		height: 1px;
+		background-color:$lightlightGrey;
+		margin: 0 0 $m/2 0;  
+		&.last {
+			margin: 0 0 0 0;
+		}
+	}
+	article {
+		padding: 0 0 0 0;
+		float: left;
+		width: 100%;
+		margin-bottom: $m/2;
+		@include byline;
+		&.even {
+			img {
+				float: right;
+				margin: 0 0 $m/2 $m/2;
+			}
+		}
+		&.last {
+			border-bottom-style: none;
+		}
+		p {
+			margin-bottom: $m;
+		}
 
+
+		img {
+			margin-bottom: $m;
+		}
+
+		h4 {
+			margin-bottom: $m/4;
+			font-weight: bold;
+		}
+			.timedate {
+			font-size: 10px;
+		}
+	}
+
+}
 
