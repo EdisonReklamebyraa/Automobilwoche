@@ -176,6 +176,33 @@
 			height: $m;
 		}		
 	}
+	.tickeranim {
+		padding: $m/2;
+		ul {
+			li {
+				list-style-type: none;
+				span.time {
+					width: 60px;
+
+					float: left;
+				}
+
+				table {
+					margin: 0;
+					padding: 0;
+					td.time{
+						width: 60px;
+						font-weight: bold;
+					} 
+					td {
+						top: 0px;
+						vertical-align: top!important;
+					}
+				}
+			}
+		}
+	}
+
 	.videoplaceholder {
 		padding: $m/2 $m/2 0 $m/2;
 		clear: left;

@@ -477,6 +477,18 @@ body textarea { width: 390px; height: 250px; }
 /* line 174, ../src/partials/_boxes.scss */
 .sideColumn_box dl hr { clear: both; height: 20px; }
 /* line 179, ../src/partials/_boxes.scss */
+.sideColumn_box .tickeranim { padding: 10px; }
+/* line 182, ../src/partials/_boxes.scss */
+.sideColumn_box .tickeranim ul li { list-style-type: none; }
+/* line 184, ../src/partials/_boxes.scss */
+.sideColumn_box .tickeranim ul li span.time { width: 60px; float: left; }
+/* line 190, ../src/partials/_boxes.scss */
+.sideColumn_box .tickeranim ul li table { margin: 0; padding: 0; }
+/* line 193, ../src/partials/_boxes.scss */
+.sideColumn_box .tickeranim ul li table td.time { width: 60px; font-weight: bold; }
+/* line 197, ../src/partials/_boxes.scss */
+.sideColumn_box .tickeranim ul li table td { top: 0px; vertical-align: top!important; }
+/* line 206, ../src/partials/_boxes.scss */
 .sideColumn_box .videoplaceholder { padding: 10px 10px 0 10px; clear: left; }
 
 /* line 3, ../src/partials/_article.scss */
