@@ -489,7 +489,7 @@ body textarea { width: 390px; height: 250px; }
 /* line 197, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li table td { top: 0px; vertical-align: top!important; }
 /* line 202, ../src/partials/_boxes.scss */
-.sideColumn_box .tickeranim ul li hr { margin: 0; padding: 0; }
+.sideColumn_box .tickeranim ul li hr { margin: 0!important; padding: 0!important; }
 /* line 210, ../src/partials/_boxes.scss */
 .sideColumn_box .videoplaceholder { padding: 10px 10px 0 10px; clear: left; }
 
