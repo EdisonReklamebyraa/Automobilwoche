@@ -259,6 +259,15 @@ body {
                 display: block;
                 overflow: hidden;
                 clear: both;
+                label {
+                	font-weight: normal;
+                	float: left;
+                	padding: $m/4;
+                	color: $lightGrey;
+                	font-size: 80%;
+                	width: 100%;
+                	text-align: left;
+                }
         }
 
 }
