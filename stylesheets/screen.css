@@ -46,9 +46,9 @@ form label { font-weight: normal!important; }
 
 /* line 34, ../src/partials/_blog.scss */
 #sideColumn .sideColumn_box { background-color: #e5e5e5!important; }
-/* line 37, ../src/partials/_blog.scss */
-#sideColumn .sideColumn_box.orange .articleview_picturelist { font-family: georgia!important; }
-/* line 39, ../src/partials/_blog.scss */
+/* line 36, ../src/partials/_blog.scss */
+#sideColumn .sideColumn_box.bloggers { font-family: georgia!important; }
+/* line 42, ../src/partials/_blog.scss */
 #sideColumn .sideColumn_box.orange .articleview_picturelist p { color: #868686; }
 
 /* line 12, ../src/screen.scss */
@@ -316,8 +316,10 @@ body textarea { width: 390px; height: 250px; }
 #sideColumn hr { clear: both; border: none; background: transparent url('../images/line_dotted.png?1302776059') repeat-x; background-position: 10px; margin: 0 0 10px 0; }
 /* line 272, ../src/screen.scss */
 #sideColumn aside { margin: 0 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
+/* line 278, ../src/screen.scss */
+#sideColumn aside label { font-weight: normal; float: left; padding: 5px; }
 
-/* line 281, ../src/screen.scss */
+/* line 286, ../src/screen.scss */
 #AdColumn { margin-left: 20px; float: left; }
 
 /* line 2, ../src/partials/_articleviews.scss */

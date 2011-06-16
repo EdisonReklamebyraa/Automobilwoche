@@ -33,9 +33,12 @@
 #sideColumn {
 	.sideColumn_box {
 		background-color: #e5e5e5!important;
+		&.bloggers {
+			font-family: georgia!important;
+		}
 		&.orange {
 			.articleview_picturelist {
-				font-family: georgia!important;
+				
 				p {
 					color: $mediumGrey;
 				}

@@ -275,6 +275,11 @@ body {
                 overflow: hidden;
                 clear: both;
                 text-align: center;
+                label {
+                	font-weight: normal;
+                	float: left;
+                	padding: $m/4;
+                }
         }
 }
 #AdColumn
