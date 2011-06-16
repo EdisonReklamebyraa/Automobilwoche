@@ -212,11 +212,13 @@ body textarea { width: 390px; height: 250px; }
 #Top #main ul li a { color: #7f7f7f; text-decoration: none; }
 /* line 53, ../src/screen.scss */
 #Top aside { background: transparent url('../images/top_bg.png?1302599556') left bottom repeat-x; padding: 25px 33px; display: block; }
-/* line 59, ../src/screen.scss */
+/* line 57, ../src/screen.scss */
+#Top aside.hockeystick { position: absolute; left: 978px; top: 175px; padding: 0; margin: 0; background: none; width: 50%; background-color: #fff; padding-left: 5px; }
+/* line 70, ../src/screen.scss */
 #Top .section { width: 940px; padding: 0 0 20px 33px; overflow: hidden; }
-/* line 64, ../src/screen.scss */
+/* line 75, ../src/screen.scss */
 #Top .section h1 { margin: 0 0 20px 0; text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('../images/logo.png?1302599556'); background-repeat: no-repeat; background-position: 50% 50%; width: 408px; height: 90px; float: left; }
-/* line 68, ../src/screen.scss */
+/* line 79, ../src/screen.scss */
 #Top .section h1 a { width: 100%; height: 100%; display: block; }
 /* line 28, ../src/partials/_functions.scss */
 #Top .section .forms form { float: right; }
@@ -241,43 +243,43 @@ body textarea { width: 390px; height: 250px; }
 /* line 81, ../src/partials/_functions.scss */
 #Top .section .forms form input[type=text].username { width: 124px; background-image: url('../images/login_username_bg.png?1302599556'); padding: 5px 10px 5px 40px; height: 20px; margin-left: 5px; }
 
-/* line 89, ../src/screen.scss */
+/* line 100, ../src/screen.scss */
 #MainNavigation { overflow: hidden; }
-/* line 92, ../src/screen.scss */
+/* line 103, ../src/screen.scss */
 #MainNavigation ul { clear: both; padding: 0px; margin: 0 0 10px 33px; border: solid 1px #cfcfcf; border-width: 0 0 0 1px; border-bottom: 3px #e09c18 solid; float: left; overflow: hidden; }
-/* line 102, ../src/screen.scss */
+/* line 113, ../src/screen.scss */
 #MainNavigation ul li { float: left; list-style-image: none; list-style-type: none; margin-left: 0px; padding: 7px; border: solid 1px #cfcfcf; border-width: 0 1px 0 0; }
-/* line 108, ../src/screen.scss */
+/* line 119, ../src/screen.scss */
 #MainNavigation ul li .icon_HOUSE { text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('../images/icon_HOUSE.png?1302860645'); background-repeat: no-repeat; background-position: 50% 50%; width: 16px; height: 15px; display: block; padding: 0 20px 0 20px; overflow: hidden; height: 20px; }
-/* line 118, ../src/screen.scss */
-#MainNavigation ul li.active, #MainNavigation ul li:hover { background: #e09c18 url('../images/menu_active_bg.png?1306225437') 0 0; }
-/* line 121, ../src/screen.scss */
-#MainNavigation ul li.active a, #MainNavigation ul li:hover a { color: #FFF; }
-/* line 124, ../src/screen.scss */
-#MainNavigation ul li.active a.icon_HOUSE, #MainNavigation ul li:hover a.icon_HOUSE { background-image: url('../images/icon_white_House.png?1306314420'); }
 /* line 129, ../src/screen.scss */
+#MainNavigation ul li.active, #MainNavigation ul li:hover { background: #e09c18 url('../images/menu_active_bg.png?1306225437') 0 0; }
+/* line 132, ../src/screen.scss */
+#MainNavigation ul li.active a, #MainNavigation ul li:hover a { color: #FFF; }
+/* line 135, ../src/screen.scss */
+#MainNavigation ul li.active a.icon_HOUSE, #MainNavigation ul li:hover a.icon_HOUSE { background-image: url('../images/icon_white_House.png?1306314420'); }
+/* line 140, ../src/screen.scss */
 #MainNavigation ul li.active li a, #MainNavigation ul li:hover li a { color: black; }
-/* line 137, ../src/screen.scss */
+/* line 148, ../src/screen.scss */
 #MainNavigation ul li a { color: black; text-decoration: none; }
 
-/* line 146, ../src/screen.scss */
+/* line 157, ../src/screen.scss */
 #Main { background: transparent url('../images/main_bg.png?1302768804') repeat-y; overflow: hidden; }
-/* line 149, ../src/screen.scss */
+/* line 160, ../src/screen.scss */
 #Main a { color: black; text-decoration: none; }
-/* line 152, ../src/screen.scss */
+/* line 163, ../src/screen.scss */
 #Main a:hover { text-decoration: underline; }
 
-/* line 161, ../src/screen.scss */
+/* line 172, ../src/screen.scss */
 #MainbColumn { margin-left: 33px; width: 620px; float: left; }
-/* line 166, ../src/screen.scss */
+/* line 177, ../src/screen.scss */
 #MainbColumn .bar { display: block; background-color: #053463; color: #fff; padding: 6.667px; text-transform: uppercase; font-size: 10px; }
-/* line 176, ../src/screen.scss */
+/* line 187, ../src/screen.scss */
 #MainbColumn .pageStrip { clear: both; overflow: hidden; width: 620px; margin: 0 0 10px 0; font-size: 11px; text-transform: uppercase; }
-/* line 188, ../src/screen.scss */
+/* line 199, ../src/screen.scss */
 #MainbColumn .pageStrip .date { color: #c4c4c4; float: left; margin-right: 5px; }
-/* line 193, ../src/screen.scss */
+/* line 204, ../src/screen.scss */
 #MainbColumn .pageStrip a { color: #e09c18; }
-/* line 197, ../src/screen.scss */
+/* line 208, ../src/screen.scss */
 #MainbColumn .pageStrip ul { margin: 0; padding: 0; border: 0; outline: 0; overflow: hidden; *zoom: 1; float: right; }
 /* line 56, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
 #MainbColumn .pageStrip ul li { list-style-image: none; list-style-type: none; margin-left: 0px; white-space: nowrap; display: inline; float: left; padding-left: 4px; padding-right: 4px; }
@@ -285,41 +287,41 @@ body textarea { width: 390px; height: 250px; }
 #MainbColumn .pageStrip ul li:first-child, #MainbColumn .pageStrip ul li.first { padding-left: 0; }
 /* line 46, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
 #MainbColumn .pageStrip ul li:last-child, #MainbColumn .pageStrip ul li.last { padding-right: 0; }
-/* line 203, ../src/screen.scss */
-#MainbColumn .pageStrip span { float: left; }
-/* line 207, ../src/screen.scss */
-#MainbColumn .pageStrip.underline { border-bottom: 1px solid #cfcfcf; }
-/* line 211, ../src/screen.scss */
-#MainbColumn .pageStrip .tools { float: right; height: 16px; }
 /* line 214, ../src/screen.scss */
+#MainbColumn .pageStrip span { float: left; }
+/* line 218, ../src/screen.scss */
+#MainbColumn .pageStrip.underline { border-bottom: 1px solid #cfcfcf; }
+/* line 222, ../src/screen.scss */
+#MainbColumn .pageStrip .tools { float: right; height: 16px; }
+/* line 225, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a { width: 20px; height: 16px; text-indent: -9999px; display: block; float: right; cursor: pointer; }
-/* line 221, ../src/screen.scss */
+/* line 232, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomin { background: transparent url('../images/articletools_zoomin.png?1305293582') no-repeat; }
-/* line 224, ../src/screen.scss */
-#MainbColumn .pageStrip .tools a.zoomin.active { background: transparent url('../images/articletools_zoomin_active.png?1305293607') no-repeat; }
-/* line 229, ../src/screen.scss */
-#MainbColumn .pageStrip .tools a.zoomout { background: transparent url('../images/articletools_zoomout.png?1305293528') no-repeat; }
-/* line 231, ../src/screen.scss */
-#MainbColumn .pageStrip .tools a.zoomout.active { background: transparent url('../images/articletools_zoomout_active.png?1305293655') no-repeat; }
 /* line 235, ../src/screen.scss */
-#MainbColumn .pageStrip .tools a.print { background: transparent url('../images/icon_PRINT.png?1305288989') no-repeat; margin-right: 10px; }
-/* line 243, ../src/screen.scss */
-#MainbColumn h4 { margin: 0 0 10px 0; }
+#MainbColumn .pageStrip .tools a.zoomin.active { background: transparent url('../images/articletools_zoomin_active.png?1305293607') no-repeat; }
+/* line 240, ../src/screen.scss */
+#MainbColumn .pageStrip .tools a.zoomout { background: transparent url('../images/articletools_zoomout.png?1305293528') no-repeat; }
+/* line 242, ../src/screen.scss */
+#MainbColumn .pageStrip .tools a.zoomout.active { background: transparent url('../images/articletools_zoomout_active.png?1305293655') no-repeat; }
 /* line 246, ../src/screen.scss */
+#MainbColumn .pageStrip .tools a.print { background: transparent url('../images/icon_PRINT.png?1305288989') no-repeat; margin-right: 10px; }
+/* line 254, ../src/screen.scss */
+#MainbColumn h4 { margin: 0 0 10px 0; }
+/* line 257, ../src/screen.scss */
 #MainbColumn aside { margin: -10px 0 10px 0; display: block; overflow: hidden; clear: both; }
 
-/* line 256, ../src/screen.scss */
+/* line 267, ../src/screen.scss */
 #sideColumn { margin-left: 20px; width: 300px; float: left; overflow: hidden; }
-/* line 261, ../src/screen.scss */
-#sideColumn h4 { margin: 0 0 5px 0; }
-/* line 264, ../src/screen.scss */
-#sideColumn hr { clear: both; border: none; background: transparent url('../images/line_dotted.png?1302776059') repeat-x; background-position: 10px; margin: 0 0 10px 0; }
 /* line 272, ../src/screen.scss */
+#sideColumn h4 { margin: 0 0 5px 0; }
+/* line 275, ../src/screen.scss */
+#sideColumn hr { clear: both; border: none; background: transparent url('../images/line_dotted.png?1302776059') repeat-x; background-position: 10px; margin: 0 0 10px 0; }
+/* line 283, ../src/screen.scss */
 #sideColumn aside { margin: 0 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 278, ../src/screen.scss */
+/* line 289, ../src/screen.scss */
 #sideColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
-/* line 290, ../src/screen.scss */
+/* line 301, ../src/screen.scss */
 #AdColumn { margin-left: 20px; float: left; }
 
 /* line 2, ../src/partials/_articleviews.scss */
