@@ -324,6 +324,8 @@ $(function () {
         
         $('div.tabs ul.tabNavigation a').removeClass('selected');
         $(this).addClass('selected');
+
+
         
         return false;
     }).filter(':first').click();

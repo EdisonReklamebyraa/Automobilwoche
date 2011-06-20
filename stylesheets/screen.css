@@ -453,64 +453,64 @@ body textarea { width: 390px; height: 250px; }
 /* line 101, ../src/partials/_boxes.scss */
 .sideColumn_box.tabs { overflow: hidden; }
 /* line 103, ../src/partials/_boxes.scss */
-.sideColumn_box.tabs ul { clear: both; padding: 0px; margin: 0; float: left; overflow: hidden; }
-/* line 110, ../src/partials/_boxes.scss */
+.sideColumn_box.tabs ul { clear: both; padding: 0px; margin: 0; overflow: hidden; }
+/* line 109, ../src/partials/_boxes.scss */
 .sideColumn_box.tabs ul li { float: left; list-style-image: none; list-style-type: none; margin-left: 0px; padding: 9px; border: solid 1px #cfcfcf; border-width: 0 1px 0 0; }
-/* line 117, ../src/partials/_boxes.scss */
-.sideColumn_box.tabs ul li.active, .sideColumn_box.tabs ul li:hover { background: #e09c18 url('../images/menu_active_bg.png?1306225437') 0 0; }
-/* line 119, ../src/partials/_boxes.scss */
-.sideColumn_box.tabs ul li.active a, .sideColumn_box.tabs ul li:hover a { color: #FFF; }
-/* line 123, ../src/partials/_boxes.scss */
-.sideColumn_box.tabs ul li.active li a, .sideColumn_box.tabs ul li:hover li a { color: black; }
-/* line 127, ../src/partials/_boxes.scss */
+/* line 116, ../src/partials/_boxes.scss */
+.sideColumn_box.tabs ul li.selected, .sideColumn_box.tabs ul li:hover { background: #e09c18 url('../images/menu_active_bg.png?1306225437') 0 0; }
+/* line 118, ../src/partials/_boxes.scss */
+.sideColumn_box.tabs ul li.selected a, .sideColumn_box.tabs ul li:hover a { color: #FFF; }
+/* line 122, ../src/partials/_boxes.scss */
+.sideColumn_box.tabs ul li.selected li a, .sideColumn_box.tabs ul li:hover li a { color: black; }
+/* line 126, ../src/partials/_boxes.scss */
 .sideColumn_box.tabs ul li a { color: black; text-decoration: none; }
-/* line 136, ../src/partials/_boxes.scss */
+/* line 135, ../src/partials/_boxes.scss */
 .sideColumn_box .articleview_picturelist { padding: 0 10px; }
-/* line 139, ../src/partials/_boxes.scss */
+/* line 138, ../src/partials/_boxes.scss */
 .sideColumn_box h3 { width: 262px; height: 38px; margin-bottom: 0px; color: #fff; line-height: 38px; padding-left: 10px; }
-/* line 146, ../src/partials/_boxes.scss */
+/* line 145, ../src/partials/_boxes.scss */
 .sideColumn_box h3.icon_video { background: transparent url('../images/icon_VIDEO.png?1302779836') no-repeat; background-position: 10px 10px; padding-left: 38px; }
-/* line 151, ../src/partials/_boxes.scss */
+/* line 150, ../src/partials/_boxes.scss */
 .sideColumn_box h3.icon_gallery { background: transparent url('../images/icon_GALLERY.png?1305018295') no-repeat; background-position: 10px 10px; padding-left: 38px; }
-/* line 156, ../src/partials/_boxes.scss */
+/* line 155, ../src/partials/_boxes.scss */
 .sideColumn_box h3.icon_rss { background: transparent url('../images/icon_RSS.png?1302770731') no-repeat; background-position: 10px 10px; padding-left: 38px; }
-/* line 161, ../src/partials/_boxes.scss */
+/* line 160, ../src/partials/_boxes.scss */
 .sideColumn_box h3.icon_FB { background: transparent url('../images/icon_FB.png?1302786968') no-repeat; background-position: 10px 10px; padding-left: 38px; }
-/* line 166, ../src/partials/_boxes.scss */
+/* line 165, ../src/partials/_boxes.scss */
 .sideColumn_box h3 a { color: white !important; }
-/* line 168, ../src/partials/_boxes.scss */
+/* line 167, ../src/partials/_boxes.scss */
 .sideColumn_box h3 a:hover { text-decoration: none!important; }
-/* line 174, ../src/partials/_boxes.scss */
+/* line 173, ../src/partials/_boxes.scss */
 .sideColumn_box a { color: #fff; text-decoration: none; }
-/* line 179, ../src/partials/_boxes.scss */
+/* line 178, ../src/partials/_boxes.scss */
 .sideColumn_box a:hover { color: #fff; text-decoration: underline; }
-/* line 184, ../src/partials/_boxes.scss */
+/* line 183, ../src/partials/_boxes.scss */
 .sideColumn_box small { font-size: 11px; color: #87a5c3; float: right; padding-right: 10px; }
-/* line 190, ../src/partials/_boxes.scss */
+/* line 189, ../src/partials/_boxes.scss */
 .sideColumn_box small a { color: #87a5c3; }
-/* line 194, ../src/partials/_boxes.scss */
+/* line 193, ../src/partials/_boxes.scss */
 .sideColumn_box dl { padding: 10px; clear: both; overflow: hidden; }
-/* line 198, ../src/partials/_boxes.scss */
+/* line 197, ../src/partials/_boxes.scss */
 .sideColumn_box dl dt { float: left; width: 30%; clear: left; }
-/* line 203, ../src/partials/_boxes.scss */
+/* line 202, ../src/partials/_boxes.scss */
 .sideColumn_box dl dd { float: left; width: 70%; margin: 0; }
-/* line 209, ../src/partials/_boxes.scss */
+/* line 208, ../src/partials/_boxes.scss */
 .sideColumn_box dl hr { clear: both; height: 20px; }
-/* line 214, ../src/partials/_boxes.scss */
+/* line 213, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim { padding: 10px; }
-/* line 217, ../src/partials/_boxes.scss */
+/* line 216, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li { list-style-type: none; }
-/* line 219, ../src/partials/_boxes.scss */
+/* line 218, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li span.time { width: 60px; float: left; }
-/* line 225, ../src/partials/_boxes.scss */
+/* line 224, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li table { margin: 0; padding: 0; }
-/* line 228, ../src/partials/_boxes.scss */
+/* line 227, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li table td.time { width: 60px; font-weight: bold; }
-/* line 232, ../src/partials/_boxes.scss */
+/* line 231, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li table td { top: 0px; vertical-align: top!important; }
-/* line 237, ../src/partials/_boxes.scss */
+/* line 236, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li hr { margin: 0!important; padding: 0!important; }
-/* line 245, ../src/partials/_boxes.scss */
+/* line 244, ../src/partials/_boxes.scss */
 .sideColumn_box .videoplaceholder { padding: 10px 10px 0 10px; clear: left; }
 
 /* line 3, ../src/partials/_article.scss */
