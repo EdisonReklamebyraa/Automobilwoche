@@ -98,6 +98,41 @@
 			}
 		}
 	}
+	&.tabs {
+	   overflow: hidden;
+	   ul {
+	     clear: both;
+	     padding: 0px;
+	     margin:  0;
+	     float: left;
+	     overflow: hidden;
+	     li
+	     {
+	        float: left;
+	        @include no-bullet;
+	        padding: 9px;
+	        border: solid 1px $lightlightGrey;
+	        border-width: 0 1px 0 0 ;
+	        &.active,
+	        &:hover{
+	          background: #e09c18 image-url("menu_active_bg.png") 0 0;
+	          a{
+	            color: #FFF;
+	          }
+	          li a
+	          {
+	            color: $MainNavigationColor;
+	          }
+	        }
+	        a {
+	                color: $MainNavigationColor;
+	                text-decoration: none;
+	        }
+	
+	     }
+	   
+		}		
+	}
 	.articleview_picturelist {
 		padding: 0 $m/2;
 	}
