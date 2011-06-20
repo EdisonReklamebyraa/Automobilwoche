@@ -114,17 +114,14 @@
 	        border-width: 0 1px 0 0 ;
 	        &.selected,
 	        &:hover{
-	          background: #e09c18 image-url("menu_active_bg.png") 0 0;
+	          background: #e09c18 image-url("tab_active_bg.png") 0 0;
 	          a{
-	            color: #FFF;
+	            color: #000!important;
 	          }
-	          li a
-	          {
-	            color: $MainNavigationColor;
-	          }
+
 	        }
 	        a {
-	                color: $MainNavigationColor;
+	                color: #fff!important;
 	                text-decoration: none;
 	        }
 	
