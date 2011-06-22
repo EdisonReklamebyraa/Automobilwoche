@@ -151,6 +151,17 @@
 		p {
 			margin: 0 0 $m/2 0;
 		}
+		.actions {
+			margin-bottom: $m/2;
+			a {
+				background: url("../images/articlecomment_report_icon.png") no-repeat transparent;
+				padding-left: 18px;
+				color: $lightGrey;
+				&:hover {
+					text-decoration: underline;
+				} 
+			}
+		}
 		hr {
 			background: url("../images/articlecomments_line.png") no-repeat transparent;
 			height: 19px;
