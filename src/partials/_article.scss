@@ -153,10 +153,12 @@
 		}
 		.actions {
 			margin-bottom: $m/2;
+			overflow: hidden;
 			a {
 				background: url("../images/articlecomment_report_icon.png") no-repeat transparent;
 				padding-left: 18px;
 				color: $lightGrey;
+				float: right;
 				&:hover {
 					text-decoration: underline;
 				} 
