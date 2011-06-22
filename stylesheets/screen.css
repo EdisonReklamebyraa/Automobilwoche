@@ -648,7 +648,7 @@ body textarea { width: 390px; height: 250px; }
 /* line 178, ../src/partials/_article.scss */
 #Main .template-article #Articlecomment p, #Main .template-blog #Articlecomment p { margin: 0; }
 /* line 181, ../src/partials/_article.scss */
-#Main .template-article #Articlecomment textarea, #Main .template-blog #Articlecomment textarea { width: 570px; }
+#Main .template-article #Articlecomment textarea, #Main .template-blog #Articlecomment textarea { width: 570px; height: 100px; }
 
 /* line 5, ../src/partials/_gallery.scss */
 #Main .template-gallery .slideshow p { font-size: 90%; }
