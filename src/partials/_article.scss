@@ -27,6 +27,12 @@
 		margin-bottom: $m/4;
 		font-weight: bold;
 	}
+	hr {
+		background: url("../images/line_dotted.png?1302776059") repeat-x scroll 10px 50% transparent;
+		border: medium none;
+		clear: both;
+		margin: 0 0 $m/3;		
+	}
 	.articleview_picturelist {
 		h4 {
 			margin-bottom: $m/2;
