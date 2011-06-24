@@ -422,11 +422,11 @@ body textarea { width: 390px; height: 250px; }
 /* line 23, ../src/partials/_boxes.scss */
 .quiz .entries div { float: left; }
 /* line 25, ../src/partials/_boxes.scss */
-.quiz .entries div .entryname { width: 50%; }
+.quiz .entries div.entryname { width: 50%; }
 /* line 28, ../src/partials/_boxes.scss */
-.quiz .entries div .graphs { width: 40%; }
+.quiz .entries div.graphs { width: 40%; }
 /* line 31, ../src/partials/_boxes.scss */
-.quiz .entries div .results { width: 10%; }
+.quiz .entries div.results { width: 10%; }
 
 /* line 38, ../src/partials/_boxes.scss */
 .sideColumn_box { background-color: #f2f2f2!important; overflow: hidden; }

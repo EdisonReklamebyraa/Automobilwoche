@@ -22,13 +22,13 @@
 	}
 	.entries div {
 		float: left;
-		.entryname {
+		&.entryname {
 			width: 50%;
 		}
-		.graphs {
+		&.graphs {
 			width: 40%;
 		}
-		.results {
+		&.results {
 			width: 10%;
 		}
 	}
