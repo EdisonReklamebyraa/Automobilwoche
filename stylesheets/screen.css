@@ -420,103 +420,105 @@ body textarea { width: 390px; height: 250px; }
 /* line 17, ../src/partials/_boxes.scss */
 .quiz form input { display: block; clear: both; float: left; }
 /* line 23, ../src/partials/_boxes.scss */
-.quiz .entries div { float: left; }
+.quiz .entries { margin-bottom: 20px; }
 /* line 25, ../src/partials/_boxes.scss */
+.quiz .entries div { float: left; }
+/* line 27, ../src/partials/_boxes.scss */
 .quiz .entries div.entryname { width: 50%; }
-/* line 28, ../src/partials/_boxes.scss */
+/* line 30, ../src/partials/_boxes.scss */
 .quiz .entries div.graphs { width: 40%; }
-/* line 31, ../src/partials/_boxes.scss */
+/* line 33, ../src/partials/_boxes.scss */
 .quiz .entries div.results { width: 10%; }
 
-/* line 38, ../src/partials/_boxes.scss */
+/* line 43, ../src/partials/_boxes.scss */
 .sideColumn_box { background-color: #f2f2f2!important; overflow: hidden; }
-/* line 48, ../src/partials/_boxes.scss */
+/* line 53, ../src/partials/_boxes.scss */
 .sideColumn_box.no-background { background: none; margin-top: 20px; }
-/* line 51, ../src/partials/_boxes.scss */
+/* line 56, ../src/partials/_boxes.scss */
 .sideColumn_box.no-background h3 { color: black; clear: both; border: none; height: 38px; margin: 0; }
-/* line 61, ../src/partials/_boxes.scss */
+/* line 66, ../src/partials/_boxes.scss */
 .sideColumn_box.blue { background: transparent url('../images/header_bg_blue.png?1308901501') no-repeat center top; }
-/* line 64, ../src/partials/_boxes.scss */
+/* line 69, ../src/partials/_boxes.scss */
 .sideColumn_box.orange { background: transparent url('../images/header_bg_orange.png?1308901501') no-repeat center top; }
-/* line 67, ../src/partials/_boxes.scss */
+/* line 72, ../src/partials/_boxes.scss */
 .sideColumn_box.menu { margin-bottom: 20px; background-color: #e5e5e5!important; }
-/* line 70, ../src/partials/_boxes.scss */
-.sideColumn_box.menu ul { margin: 0; padding: 0; }
-/* line 73, ../src/partials/_boxes.scss */
-.sideColumn_box.menu ul li { border-bottom: 1px dotted #cfcfcf; }
 /* line 75, ../src/partials/_boxes.scss */
+.sideColumn_box.menu ul { margin: 0; padding: 0; }
+/* line 78, ../src/partials/_boxes.scss */
+.sideColumn_box.menu ul li { border-bottom: 1px dotted #cfcfcf; }
+/* line 80, ../src/partials/_boxes.scss */
 .sideColumn_box.menu ul li a { height: 40px; line-height: 40px; padding-left: 40px; display: block; overflow: hidden; }
-/* line 81, ../src/partials/_boxes.scss */
-.sideColumn_box.menu ul li a:hover { background: transparent url('../images/arrow_right_orange.png?1308901501') no-repeat 20px center; text-decoration: none!important; background-color: #f2f2f2; }
 /* line 86, ../src/partials/_boxes.scss */
-.sideColumn_box.menu ul li a.active { background: transparent url('../images/arrow_right_orange.png?1308901501') no-repeat 20px center; background-color: #f2f2f2; }
+.sideColumn_box.menu ul li a:hover { background: transparent url('../images/arrow_right_orange.png?1308901501') no-repeat 20px center; text-decoration: none!important; background-color: #f2f2f2; }
 /* line 91, ../src/partials/_boxes.scss */
+.sideColumn_box.menu ul li a.active { background: transparent url('../images/arrow_right_orange.png?1308901501') no-repeat 20px center; background-color: #f2f2f2; }
+/* line 96, ../src/partials/_boxes.scss */
 .sideColumn_box.menu ul li form { padding: 0 20px 0 20px; }
-/* line 93, ../src/partials/_boxes.scss */
+/* line 98, ../src/partials/_boxes.scss */
 .sideColumn_box.menu ul li form .search { width: 187px; height: 15px; }
-/* line 97, ../src/partials/_boxes.scss */
+/* line 102, ../src/partials/_boxes.scss */
 .sideColumn_box.menu ul li form .button { text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('../images/button_search.png?1308901501'); background-repeat: no-repeat; background-position: 0 0; height: 28px; width: 57px; border: 0; cursor: pointer; }
-/* line 104, ../src/partials/_boxes.scss */
+/* line 109, ../src/partials/_boxes.scss */
 .sideColumn_box.menu ul li form .button:hover { text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('../images/button_search.png?1308901501'); background-repeat: no-repeat; background-position: 0 -30px; }
-/* line 113, ../src/partials/_boxes.scss */
+/* line 118, ../src/partials/_boxes.scss */
 .sideColumn_box.tabs { margin: 20px 0 20px 0; overflow: hidden; }
-/* line 116, ../src/partials/_boxes.scss */
+/* line 121, ../src/partials/_boxes.scss */
 .sideColumn_box.tabs ul { clear: both; padding: 0px; margin: 0; overflow: hidden; }
-/* line 122, ../src/partials/_boxes.scss */
+/* line 127, ../src/partials/_boxes.scss */
 .sideColumn_box.tabs ul li { float: left; list-style-image: none; list-style-type: none; margin-left: 0px; padding: 9px; border: solid 1px #cfcfcf; border-width: 0 1px 0 0; height: 20px; }
-/* line 130, ../src/partials/_boxes.scss */
+/* line 135, ../src/partials/_boxes.scss */
 .sideColumn_box.tabs ul li.selected, .sideColumn_box.tabs ul li:hover { background: #e09c18 url('../images/tab_active_bg.png?1308568036') 0 0; }
-/* line 132, ../src/partials/_boxes.scss */
-.sideColumn_box.tabs ul li.selected a, .sideColumn_box.tabs ul li:hover a { color: #000!important; }
 /* line 137, ../src/partials/_boxes.scss */
+.sideColumn_box.tabs ul li.selected a, .sideColumn_box.tabs ul li:hover a { color: #000!important; }
+/* line 142, ../src/partials/_boxes.scss */
 .sideColumn_box.tabs ul li a { color: #fff!important; text-decoration: none; }
-/* line 146, ../src/partials/_boxes.scss */
+/* line 151, ../src/partials/_boxes.scss */
 .sideColumn_box .articleview_picturelist { padding: 0 10px; }
-/* line 149, ../src/partials/_boxes.scss */
+/* line 154, ../src/partials/_boxes.scss */
 .sideColumn_box h3 { width: 262px; height: 38px; margin-bottom: 0px; color: #fff; line-height: 38px; padding-left: 10px; }
-/* line 156, ../src/partials/_boxes.scss */
-.sideColumn_box h3.icon_video { background: transparent url('../images/icon_VIDEO.png?1308901501') no-repeat; background-position: 10px 10px; padding-left: 38px; }
 /* line 161, ../src/partials/_boxes.scss */
-.sideColumn_box h3.icon_gallery { background: transparent url('../images/icon_GALLERY.png?1308901501') no-repeat; background-position: 10px 10px; padding-left: 38px; }
+.sideColumn_box h3.icon_video { background: transparent url('../images/icon_VIDEO.png?1308901501') no-repeat; background-position: 10px 10px; padding-left: 38px; }
 /* line 166, ../src/partials/_boxes.scss */
-.sideColumn_box h3.icon_rss { background: transparent url('../images/icon_RSS.png?1308901501') no-repeat; background-position: 10px 10px; padding-left: 38px; }
+.sideColumn_box h3.icon_gallery { background: transparent url('../images/icon_GALLERY.png?1308901501') no-repeat; background-position: 10px 10px; padding-left: 38px; }
 /* line 171, ../src/partials/_boxes.scss */
-.sideColumn_box h3.icon_FB { background: transparent url('../images/icon_FB.png?1308901501') no-repeat; background-position: 10px 10px; padding-left: 38px; }
+.sideColumn_box h3.icon_rss { background: transparent url('../images/icon_RSS.png?1308901501') no-repeat; background-position: 10px 10px; padding-left: 38px; }
 /* line 176, ../src/partials/_boxes.scss */
+.sideColumn_box h3.icon_FB { background: transparent url('../images/icon_FB.png?1308901501') no-repeat; background-position: 10px 10px; padding-left: 38px; }
+/* line 181, ../src/partials/_boxes.scss */
 .sideColumn_box h3 a { color: white !important; }
-/* line 178, ../src/partials/_boxes.scss */
+/* line 183, ../src/partials/_boxes.scss */
 .sideColumn_box h3 a:hover { text-decoration: none!important; }
-/* line 184, ../src/partials/_boxes.scss */
-.sideColumn_box a { color: #fff; text-decoration: none; }
 /* line 189, ../src/partials/_boxes.scss */
-.sideColumn_box a:hover { color: #fff; text-decoration: underline; }
+.sideColumn_box a { color: #fff; text-decoration: none; }
 /* line 194, ../src/partials/_boxes.scss */
+.sideColumn_box a:hover { color: #fff; text-decoration: underline; }
+/* line 199, ../src/partials/_boxes.scss */
 .sideColumn_box small { font-size: 11px; color: #87a5c3; float: right; padding-right: 10px; }
-/* line 200, ../src/partials/_boxes.scss */
+/* line 205, ../src/partials/_boxes.scss */
 .sideColumn_box small a { color: #87a5c3; }
-/* line 204, ../src/partials/_boxes.scss */
+/* line 209, ../src/partials/_boxes.scss */
 .sideColumn_box dl { padding: 10px; clear: both; overflow: hidden; }
-/* line 208, ../src/partials/_boxes.scss */
-.sideColumn_box dl dt { float: left; width: 30%; clear: left; }
 /* line 213, ../src/partials/_boxes.scss */
+.sideColumn_box dl dt { float: left; width: 30%; clear: left; }
+/* line 218, ../src/partials/_boxes.scss */
 .sideColumn_box dl dd { float: left; width: 70%; margin: 0; }
-/* line 219, ../src/partials/_boxes.scss */
-.sideColumn_box dl hr { clear: both; height: 20px; }
 /* line 224, ../src/partials/_boxes.scss */
-.sideColumn_box .tickeranim { padding: 10px; }
-/* line 227, ../src/partials/_boxes.scss */
-.sideColumn_box .tickeranim ul li { list-style-type: none; }
+.sideColumn_box dl hr { clear: both; height: 20px; }
 /* line 229, ../src/partials/_boxes.scss */
+.sideColumn_box .tickeranim { padding: 10px; }
+/* line 232, ../src/partials/_boxes.scss */
+.sideColumn_box .tickeranim ul li { list-style-type: none; }
+/* line 234, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li span.time { width: 60px; float: left; }
-/* line 235, ../src/partials/_boxes.scss */
+/* line 240, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li table { margin: 0; padding: 0; }
-/* line 238, ../src/partials/_boxes.scss */
+/* line 243, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li table td.time { width: 60px; font-weight: bold; }
-/* line 242, ../src/partials/_boxes.scss */
-.sideColumn_box .tickeranim ul li table td { top: 0px; vertical-align: top!important; }
 /* line 247, ../src/partials/_boxes.scss */
+.sideColumn_box .tickeranim ul li table td { top: 0px; vertical-align: top!important; }
+/* line 252, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li hr { margin: 0!important; padding: 0!important; }
-/* line 255, ../src/partials/_boxes.scss */
+/* line 260, ../src/partials/_boxes.scss */
 .sideColumn_box .videoplaceholder { padding: 10px 10px 0 10px; clear: left; }
 
 /* line 3, ../src/partials/_article.scss */
