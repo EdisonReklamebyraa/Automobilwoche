@@ -112,12 +112,15 @@ body {
      overflow: hidden;
      li
      {
-        z-index: 999999;
+        
         float: left;
         @include no-bullet;
         padding: 7px;
         border: solid 1px $lightlightGrey;
         border-width: 0 1px 0 0 ;
+        div {
+        	z-index: 999999;
+        }
         .icon_HOUSE {
           @include replace-text-with-dimensions("icon_HOUSE.png");
           display: block;
