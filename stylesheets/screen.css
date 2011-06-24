@@ -524,7 +524,7 @@ body textarea { width: 390px; height: 250px; }
 /* line 26, ../src/partials/_article.scss */
 #Main .template-article h4, #Main .template-blog h4 { margin-bottom: 5px; font-weight: bold; }
 /* line 30, ../src/partials/_article.scss */
-#Main .template-article hr, #Main .template-blog hr { background: url("../images/line_dotted.png?1302776059") repeat-x scroll 10px 50% transparent; border: medium none; clear: both; margin: 0 0 6.667px; }
+#Main .template-article hr, #Main .template-blog hr { background: url("../images/line_dotted.png") repeat-x scroll 10px 50% transparent; border: medium none; clear: both; margin: 0 0 20px; }
 /* line 37, ../src/partials/_article.scss */
 #Main .template-article .articleview_picturelist h4, #Main .template-blog .articleview_picturelist h4 { margin-bottom: 10px; font-weight: bold; }
 /* line 41, ../src/partials/_article.scss */
