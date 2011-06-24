@@ -21,7 +21,8 @@
 		}
 	}
 	.entries {
-		margin-bottom: $m;
+		margin-bottom: $m/2;
+		overflow: hidden;
 		div {
 			float: left;
 			&.entryname {
