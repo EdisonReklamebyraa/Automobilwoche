@@ -99,6 +99,7 @@ body {
 #MainNavigation
 {
    overflow: hidden;
+   z-index: 999999;
    ul
    {
      clear: both;
