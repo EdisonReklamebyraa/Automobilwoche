@@ -416,7 +416,7 @@ body textarea { width: 390px; height: 250px; }
 /* line 2, ../src/partials/_boxes.scss */
 .quiz { background: url('../images/gray_pattern_bg.png?1308901501'); padding: 10px; overflow: hidden; margin-bottom: 10px; }
 /* line 8, ../src/partials/_boxes.scss */
-.quiz h4 { margin-bottom: 10px; }
+.quiz h4 { margin-bottom: 10px !important; }
 /* line 12, ../src/partials/_boxes.scss */
 .quiz form label { float: left; display: block; margin-bottom: 10px; }
 /* line 17, ../src/partials/_boxes.scss */
