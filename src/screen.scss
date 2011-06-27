@@ -162,6 +162,9 @@ body {
 #Main {
   background:transparent image-url('main_bg.png') repeat-y;
   overflow: hidden;
+	&.no-sidebar {
+		background: none;
+	}
   a {
     color: $DefaultLinkColor;
     text-decoration: none;

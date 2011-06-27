@@ -267,25 +267,27 @@ body textarea { width: 390px; height: 250px; }
 /* line 162, ../src/screen.scss */
 #Main { background: transparent url('../images/main_bg.png?1308901501') repeat-y; overflow: hidden; }
 /* line 165, ../src/screen.scss */
-#Main a { color: black; text-decoration: none; }
+#Main.no-sidebar { background: none; }
 /* line 168, ../src/screen.scss */
+#Main a { color: black; text-decoration: none; }
+/* line 171, ../src/screen.scss */
 #Main a:hover { text-decoration: underline; }
 
-/* line 177, ../src/screen.scss */
+/* line 180, ../src/screen.scss */
 #MainbColumn { margin-left: 33px; width: 620px; float: left; }
-/* line 181, ../src/screen.scss */
-#MainbColumn.no-sidebar { width: 920px; }
 /* line 184, ../src/screen.scss */
+#MainbColumn.no-sidebar { width: 920px; }
+/* line 187, ../src/screen.scss */
 #MainbColumn .bar { display: block; background-color: #053463; color: #fff; padding: 6.667px; text-transform: uppercase; font-size: 10px; }
-/* line 191, ../src/screen.scss */
+/* line 194, ../src/screen.scss */
 #MainbColumn .bar a { color: #fff; }
-/* line 197, ../src/screen.scss */
+/* line 200, ../src/screen.scss */
 #MainbColumn .pageStrip { clear: both; overflow: hidden; width: 620px; margin: 0 0 10px 0; font-size: 11px; text-transform: uppercase; }
-/* line 209, ../src/screen.scss */
+/* line 212, ../src/screen.scss */
 #MainbColumn .pageStrip .date { color: #c4c4c4; float: left; margin-right: 5px; }
-/* line 214, ../src/screen.scss */
+/* line 217, ../src/screen.scss */
 #MainbColumn .pageStrip a { color: #e09c18; }
-/* line 218, ../src/screen.scss */
+/* line 221, ../src/screen.scss */
 #MainbColumn .pageStrip ul { margin: 0; padding: 0; border: 0; outline: 0; overflow: hidden; *zoom: 1; float: right; }
 /* line 56, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
 #MainbColumn .pageStrip ul li { list-style-image: none; list-style-type: none; margin-left: 0px; white-space: nowrap; display: inline; float: left; padding-left: 4px; padding-right: 4px; }
@@ -293,43 +295,43 @@ body textarea { width: 390px; height: 250px; }
 #MainbColumn .pageStrip ul li:first-child, #MainbColumn .pageStrip ul li.first { padding-left: 0; }
 /* line 46, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
 #MainbColumn .pageStrip ul li:last-child, #MainbColumn .pageStrip ul li.last { padding-right: 0; }
-/* line 224, ../src/screen.scss */
+/* line 227, ../src/screen.scss */
 #MainbColumn .pageStrip span { float: left; }
-/* line 228, ../src/screen.scss */
+/* line 231, ../src/screen.scss */
 #MainbColumn .pageStrip.underline { border-bottom: 1px solid #cfcfcf; }
-/* line 232, ../src/screen.scss */
-#MainbColumn .pageStrip .tools { float: right; height: 16px; }
 /* line 235, ../src/screen.scss */
+#MainbColumn .pageStrip .tools { float: right; height: 16px; }
+/* line 238, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a { width: 20px; height: 16px; text-indent: -9999px; display: block; float: right; cursor: pointer; }
-/* line 242, ../src/screen.scss */
-#MainbColumn .pageStrip .tools a.zoomin { background: transparent url('../images/articletools_zoomin.png?1308901501') no-repeat; }
 /* line 245, ../src/screen.scss */
+#MainbColumn .pageStrip .tools a.zoomin { background: transparent url('../images/articletools_zoomin.png?1308901501') no-repeat; }
+/* line 248, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomin.active { background: transparent url('../images/articletools_zoomin_active.png?1308901501') no-repeat; }
-/* line 250, ../src/screen.scss */
+/* line 253, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomout { background: transparent url('../images/articletools_zoomout.png?1308901501') no-repeat; }
-/* line 252, ../src/screen.scss */
+/* line 255, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomout.active { background: transparent url('../images/articletools_zoomout_active.png?1308901501') no-repeat; }
-/* line 256, ../src/screen.scss */
+/* line 259, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.print { background: transparent url('../images/icon_PRINT.png?1308901501') no-repeat; margin-right: 10px; }
-/* line 264, ../src/screen.scss */
-#MainbColumn h4 { margin: 0 0 10px 0; }
 /* line 267, ../src/screen.scss */
+#MainbColumn h4 { margin: 0 0 10px 0; }
+/* line 270, ../src/screen.scss */
 #MainbColumn aside { margin: -10px 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 273, ../src/screen.scss */
+/* line 276, ../src/screen.scss */
 #MainbColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
-/* line 287, ../src/screen.scss */
+/* line 290, ../src/screen.scss */
 #sideColumn { margin-left: 20px; width: 300px; float: left; overflow: hidden; }
-/* line 292, ../src/screen.scss */
-#sideColumn h4 { margin: 0 0 5px 0; }
 /* line 295, ../src/screen.scss */
+#sideColumn h4 { margin: 0 0 5px 0; }
+/* line 298, ../src/screen.scss */
 #sideColumn hr { clear: both; border: none; background: transparent url('../images/line_dotted.png?1308901501') repeat-x; background-position: 10px; margin: 0 0 10px 0; }
-/* line 303, ../src/screen.scss */
+/* line 306, ../src/screen.scss */
 #sideColumn aside { margin: 0 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 309, ../src/screen.scss */
+/* line 312, ../src/screen.scss */
 #sideColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
-/* line 321, ../src/screen.scss */
+/* line 324, ../src/screen.scss */
 #AdColumn { margin-left: 20px; float: left; }
 
 /* line 2, ../src/partials/_articleviews.scss */
