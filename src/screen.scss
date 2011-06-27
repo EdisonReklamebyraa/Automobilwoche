@@ -178,7 +178,9 @@ body {
         margin-left: $leftBorder;
         width: $maincolumn;
         float: left;
-
+		&.no-sidebar {
+			width: $maincolumn+$Sidecolumn;
+		}
         .bar {
                 display: block;
                 background-color: #053463;
