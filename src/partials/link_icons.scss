@@ -40,6 +40,8 @@
     @include link-icon("doc.png", false); }
   a[href$=".xls"] {
     @include link-icon("xls.png", false); }
+  a[href$=".flv"] {
+    @include link-icon("flv.png", false); }
   a[href$=".rss"],
   a[href$=".rdf"] {
     @include link-icon("feed.png", false); }
