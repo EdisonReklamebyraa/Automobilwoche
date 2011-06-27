@@ -143,6 +143,7 @@
 			border-top: double $lightlightGrey; 
 			padding: $m/2 0 $m/2 0;
 			margin: 0;
+			clear: both;
 		}
 		h5 {
 			border-top: 1px solid $lightlightGrey;
@@ -175,7 +176,6 @@
 			height: 19px;
 			border: none;
 			margin: 0 0 $m/2 0;
-			clear: both;
 
 		}
 	}
