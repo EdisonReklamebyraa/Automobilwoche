@@ -331,6 +331,22 @@ body {
 {
         margin-left: $m;
         float: left;
+        aside {
+                margin: -$m/2 0 $m/2 0;
+                display: block;
+                overflow: hidden;
+                clear: both;
+                text-align: center;
+                label {
+                	font-weight: normal;
+                	float: left;
+                	padding: $m/4;
+                	color: $lightGrey;
+                	font-size: 80%;
+                	width: 100%;
+                	text-align: left;
+                }
+        }
 }
 
 @import "partials/articleviews";

@@ -337,6 +337,10 @@ body textarea { width: 390px; height: 250px; }
 
 /* line 331, ../src/screen.scss */
 #AdColumn { margin-left: 20px; float: left; }
+/* line 334, ../src/screen.scss */
+#AdColumn aside { margin: -10px 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
+/* line 340, ../src/screen.scss */
+#AdColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
 /* line 2, ../src/partials/_articleviews.scss */
 .articleview_grid { margin: 10px 0 20px 0; background-image: url('../images/620_article_horizontal_border.png?1308901501'); overflow: hidden; clear: both; }
