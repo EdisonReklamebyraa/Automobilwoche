@@ -336,10 +336,10 @@ body textarea { width: 390px; height: 250px; }
 #sideColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
 /* line 331, ../src/screen.scss */
-#AdColumn { margin-left: 20px; float: left; }
-/* line 334, ../src/screen.scss */
+#AdColumn { margin-left: 20px; float: left; width: 160px; }
+/* line 335, ../src/screen.scss */
 #AdColumn aside { margin: -10px 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 340, ../src/screen.scss */
+/* line 341, ../src/screen.scss */
 #AdColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
 /* line 2, ../src/partials/_articleviews.scss */
@@ -594,7 +594,7 @@ body textarea { width: 390px; height: 250px; }
 /* line 42, ../src/partials/link_icons.scss */
 #Main .template-article .box .downloads a[href$=".xls"], #Main .template-blog .box .downloads a[href$=".xls"] { background-image: url('../images/link_icons/xls.png?1306316372'); }
 /* line 44, ../src/partials/link_icons.scss */
-#Main .template-article .box .downloads a[href$=".flv"], #Main .template-blog .box .downloads a[href$=".flv"] { background-image: url('../images/link_icons/flv.png?1306316372'); }
+#Main .template-article .box .downloads a[href$=".flv"], #Main .template-blog .box .downloads a[href$=".flv"] { background-image: url('../images/link_icons/flv.png?1309180841'); }
 /* line 47, ../src/partials/link_icons.scss */
 #Main .template-article .box .downloads a[href$=".rss"], #Main .template-article .box .downloads a[href$=".rdf"], #Main .template-blog .box .downloads a[href$=".rss"], #Main .template-blog .box .downloads a[href$=".rdf"] { background-image: url('../images/link_icons/feed.png?1306316372'); }
 /* line 49, ../src/partials/link_icons.scss */
