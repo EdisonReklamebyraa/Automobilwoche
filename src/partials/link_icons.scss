@@ -21,6 +21,7 @@
   a[href$=".xls"],
   a[href$=".xlsx"],
   a[href$=".rss"],
+  a[href$=".flv"],
   a[href$=".rdf"],
   a[href^="aim:"] {
     @include link-icon-base; }
