@@ -603,7 +603,7 @@ body textarea { width: 390px; height: 250px; }
 /* line 51, ../src/partials/link_icons.scss */
 #Main .template-article .box .downloads a[href^="aim:"], #Main .template-blog .box .downloads a[href^="aim:"] { background-image: url('../images/link_icons/im.png?1306316372'); }
 /* line 53, ../src/partials/link_icons.scss */
-#Main .template-article .box .downloads a.icon_flv, #Main .template-blog .box .downloads a.icon_flv { background-image: url('../images/link_icons/flv.png?1309180841'); }
+#Main .template-article .box .downloads a.icon_flv, #Main .template-blog .box .downloads a.icon_flv { padding: 2px 0px 2px 22px; margin: -2px 0; background-repeat: no-repeat; background-position: left center; background-image: url('../images/link_icons/flv.png?1309180841'); }
 /* line 79, ../src/partials/_article.scss */
 #Main .template-article .box .downloads h4, #Main .template-blog .box .downloads h4 { margin: 0 0 6.667px; font-weight: normal; }
 /* line 83, ../src/partials/_article.scss */

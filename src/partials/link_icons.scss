@@ -51,6 +51,7 @@
   a[href^="aim:"] {
     @include link-icon("im.png", false); } 
   a.icon_flv {
+  	@include link-icon-base;
   	@include link-icon("flv.png", false); }
   }
     
