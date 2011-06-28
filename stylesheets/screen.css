@@ -271,7 +271,7 @@ body textarea { width: 390px; height: 250px; }
 /* line 167, ../src/screen.scss */
 #Main.no-sidebar #MainbColumn { width: 920px; }
 /* line 169, ../src/screen.scss */
-#Main.no-sidebar #MainbColumn .pageStrip { width: 450px; }
+#Main.no-sidebar #MainbColumn .pageStrip { width: 920px; }
 /* line 172, ../src/screen.scss */
 #Main.no-sidebar #MainbColumn .articleview_grid { background-image: url('../images/920_article_horizontal_border.png?1309178868'); }
 /* line 174, ../src/screen.scss */
