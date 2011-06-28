@@ -271,27 +271,29 @@ body textarea { width: 390px; height: 250px; }
 /* line 167, ../src/screen.scss */
 #Main.no-sidebar #MainbColumn { width: 920px; }
 /* line 169, ../src/screen.scss */
+#Main.no-sidebar #MainbColumn .pageStrip { width: 450px; }
+/* line 172, ../src/screen.scss */
 #Main.no-sidebar #MainbColumn .articleview_grid { background-image: url('../images/920_article_horizontal_border.png?1309178868'); }
-/* line 171, ../src/screen.scss */
+/* line 174, ../src/screen.scss */
 #Main.no-sidebar #MainbColumn .articleview_grid article { width: 450px; }
-/* line 177, ../src/screen.scss */
-#Main a { color: black; text-decoration: none; }
 /* line 180, ../src/screen.scss */
+#Main a { color: black; text-decoration: none; }
+/* line 183, ../src/screen.scss */
 #Main a:hover { text-decoration: underline; }
 
-/* line 189, ../src/screen.scss */
+/* line 192, ../src/screen.scss */
 #MainbColumn { margin-left: 33px; width: 620px; float: left; }
-/* line 194, ../src/screen.scss */
+/* line 197, ../src/screen.scss */
 #MainbColumn .bar { display: block; background-color: #053463; color: #fff; padding: 6.667px; text-transform: uppercase; font-size: 10px; }
-/* line 201, ../src/screen.scss */
+/* line 204, ../src/screen.scss */
 #MainbColumn .bar a { color: #fff; }
-/* line 207, ../src/screen.scss */
+/* line 210, ../src/screen.scss */
 #MainbColumn .pageStrip { clear: both; overflow: hidden; width: 620px; margin: 0 0 10px 0; font-size: 11px; text-transform: uppercase; }
-/* line 219, ../src/screen.scss */
+/* line 222, ../src/screen.scss */
 #MainbColumn .pageStrip .date { color: #c4c4c4; float: left; margin-right: 5px; }
-/* line 224, ../src/screen.scss */
+/* line 227, ../src/screen.scss */
 #MainbColumn .pageStrip a { color: #e09c18; }
-/* line 228, ../src/screen.scss */
+/* line 231, ../src/screen.scss */
 #MainbColumn .pageStrip ul { margin: 0; padding: 0; border: 0; outline: 0; overflow: hidden; *zoom: 1; float: right; }
 /* line 56, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
 #MainbColumn .pageStrip ul li { list-style-image: none; list-style-type: none; margin-left: 0px; white-space: nowrap; display: inline; float: left; padding-left: 4px; padding-right: 4px; }
@@ -299,47 +301,47 @@ body textarea { width: 390px; height: 250px; }
 #MainbColumn .pageStrip ul li:first-child, #MainbColumn .pageStrip ul li.first { padding-left: 0; }
 /* line 46, ../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
 #MainbColumn .pageStrip ul li:last-child, #MainbColumn .pageStrip ul li.last { padding-right: 0; }
-/* line 234, ../src/screen.scss */
+/* line 237, ../src/screen.scss */
 #MainbColumn .pageStrip span { float: left; }
-/* line 238, ../src/screen.scss */
+/* line 241, ../src/screen.scss */
 #MainbColumn .pageStrip.underline { border-bottom: 1px solid #cfcfcf; }
-/* line 242, ../src/screen.scss */
-#MainbColumn .pageStrip .tools { float: right; height: 16px; }
 /* line 245, ../src/screen.scss */
+#MainbColumn .pageStrip .tools { float: right; height: 16px; }
+/* line 248, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a { width: 20px; height: 16px; text-indent: -9999px; display: block; float: right; cursor: pointer; }
-/* line 252, ../src/screen.scss */
-#MainbColumn .pageStrip .tools a.zoomin { background: transparent url('../images/articletools_zoomin.png?1308901501') no-repeat; }
 /* line 255, ../src/screen.scss */
+#MainbColumn .pageStrip .tools a.zoomin { background: transparent url('../images/articletools_zoomin.png?1308901501') no-repeat; }
+/* line 258, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomin.active { background: transparent url('../images/articletools_zoomin_active.png?1308901501') no-repeat; }
-/* line 260, ../src/screen.scss */
+/* line 263, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomout { background: transparent url('../images/articletools_zoomout.png?1308901501') no-repeat; }
-/* line 262, ../src/screen.scss */
+/* line 265, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomout.active { background: transparent url('../images/articletools_zoomout_active.png?1308901501') no-repeat; }
-/* line 266, ../src/screen.scss */
+/* line 269, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.print { background: transparent url('../images/icon_PRINT.png?1308901501') no-repeat; margin-right: 10px; }
-/* line 274, ../src/screen.scss */
-#MainbColumn h4 { margin: 0 0 10px 0; }
 /* line 277, ../src/screen.scss */
+#MainbColumn h4 { margin: 0 0 10px 0; }
+/* line 280, ../src/screen.scss */
 #MainbColumn aside { margin: -10px 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 283, ../src/screen.scss */
+/* line 286, ../src/screen.scss */
 #MainbColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
-/* line 297, ../src/screen.scss */
+/* line 300, ../src/screen.scss */
 #sideColumn { margin-left: 20px; width: 300px; float: left; overflow: hidden; }
-/* line 302, ../src/screen.scss */
-#sideColumn h4 { margin: 0 0 5px 0; }
 /* line 305, ../src/screen.scss */
+#sideColumn h4 { margin: 0 0 5px 0; }
+/* line 308, ../src/screen.scss */
 #sideColumn hr { clear: both; border: none; background: transparent url('../images/line_dotted.png?1308901501') repeat-x; background-position: 10px; margin: 0 0 10px 0; }
-/* line 313, ../src/screen.scss */
+/* line 316, ../src/screen.scss */
 #sideColumn aside { margin: 0 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 319, ../src/screen.scss */
+/* line 322, ../src/screen.scss */
 #sideColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
-/* line 331, ../src/screen.scss */
+/* line 334, ../src/screen.scss */
 #AdColumn { margin-left: 20px; float: left; width: 160px; }
-/* line 335, ../src/screen.scss */
+/* line 338, ../src/screen.scss */
 #AdColumn aside { margin: -10px 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 341, ../src/screen.scss */
+/* line 344, ../src/screen.scss */
 #AdColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
 /* line 2, ../src/partials/_articleviews.scss */

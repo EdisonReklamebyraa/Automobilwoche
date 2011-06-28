@@ -166,6 +166,9 @@ body {
 		background: none;
 		#MainbColumn {
 			width: $maincolumn+$Sidecolumn;
+			.pageStrip {
+				width: (($maincolumn+$Sidecolumn)-$m)/2;
+			}
 	        .articleview_grid {
 	        	background-image: image-url("920_article_horizontal_border.png");
 	        	article {
