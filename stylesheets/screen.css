@@ -379,7 +379,7 @@ body textarea { width: 390px; height: 250px; }
 .articleview_picturelist article .timedate { font-size: 10px; }
 
 /* line 92, ../src/partials/_articleviews.scss */
-.articleview_bullets ul { padding-left: 10px; }
+.articleview_bullets ul { padding-left: 20px; }
 
 /* line 97, ../src/partials/_articleviews.scss */
 .articleview_blogs { margin: 10px 0 10px 0; overflow: hidden; clear: both; }
