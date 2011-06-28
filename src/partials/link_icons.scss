@@ -49,6 +49,9 @@
   a[href$=".rdf"] {
     @include link-icon("feed.png", false); }
   a[href^="aim:"] {
-    @include link-icon("im.png", false); } }
+    @include link-icon("im.png", false); } 
+  a.icon_flv {
+  	@include link-icon("flv.png", false); }
+  }
     
 
