@@ -17,6 +17,7 @@
   a[href^="http:"]:visited,
   a[href$=".pdf"],
   a[href$=".doc"],
+  a[href$=".PDF"],
   a[href$=".docx"],
   a[href$=".xls"],
   a[href$=".xlsx"],
@@ -31,7 +32,8 @@
     @include link-icon("email.png", false); }
   a[href^="http:"]:visited {
     @include link-icon("visited.png", false); }
-  a[href$=".pdf"] {
+  a[href$=".pdf"],
+  a[href$=".PDF"] {
     @include link-icon("pdf.png", false); }
   a[href$=".doc"] {
     @include link-icon("doc.png", false); }
