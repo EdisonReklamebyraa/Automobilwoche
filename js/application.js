@@ -364,7 +364,8 @@ $(document).ready(function() {
 			$("a#example6").fancybox({
 				'titlePosition'		: 'outside',
 				'overlayColor'		: '#000',
-				'overlayOpacity'	: 0.9
+				'overlayOpacity'	: 0.9,
+				'type' : "image"
 			});
 
 			$("a#example7").fancybox({
@@ -395,6 +396,8 @@ $(document).ready(function() {
 			});
 
 			$("#various2").fancybox();
+			
+			$("#various2_2").fancybox();
 
 			$("#various3").fancybox({
 				'width'				: '75%',
@@ -405,6 +408,48 @@ $(document).ready(function() {
 				'type'				: 'iframe'
 			});
 
+			$("#Registrieren").fancybox({
+				'width'				: '50%',
+				'height'			: '75%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+			
+			$("#Newsletter").fancybox({
+				'width'				: '50%',
+				'height'			: '90%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+			$("#Abo").fancybox({
+				'width'				: '50%',
+				'height'			: '90%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+			$("#Meinedaten").fancybox({
+				'width'				: '50%',
+				'height'			: '90%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+			$("#Lostpassword").fancybox({
+				'width'				: '20%',
+				'height'			: '40%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});			
+			
 			$("#various4").fancybox({
 				'padding'			: 0,
 				'autoScale'			: false,
