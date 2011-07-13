@@ -2,465 +2,462 @@
 google.load("jquery", "1.6.0");
 
 google.setOnLoadCallback(function()
-{
-	
-	
+                         {
+                           /* selector can be id, class, tag name etc. */
+                           $("#tS1").thumbnailScroller({
+                             scrollerType:"hoverAccelerate",
+                             scrollerOrientation:"horizontal",
+                             scrollEasing:"easeOutCirc",
+                             scrollEasingAmount:800,
+                             acceleration:4,
+                             scrollSpeed:800,
+                             noScrollCenterSpace:10,
+                             autoScrolling:0,
+                             autoScrollingSpeed:2000,
+                             autoScrollingEasing:"easeInOutQuad",
+                             autoScrollingDelay:500
+                           });
 
-	/* selector can be id, class, tag name etc. */
-	$("#tS1").thumbnailScroller({ 
-		/* scroller type based on mouse interaction 
-		values: "hoverPrecise", "hoverAccelerate", "clickButtons" 
-		default: "hoverPrecise" */
-		scrollerType:"hoverAccelerate", 
-		/* scroller orientation 
-		values: "horizontal", "vertical" 
-		default: "horizontal" */
-		scrollerOrientation:"horizontal", 
-		/* scroll easing type only for "hoverPrecise" scrollers
-		available values here: http://jqueryui.com/demos/effect/easing.html 
-		default: "easeOutCirc" */
-		scrollEasing:"easeOutCirc", 
-		/* scroll easing amount only for "hoverPrecise" and "clickButtons" scrollers (0 for no easing) 
-		values: milliseconds 
-		default: 800 */
-		scrollEasingAmount:800, 
-		/* acceleration value only for "hoverAccelerate" scrollers 
-		values: integer 
-		default: 2 */
-		acceleration:4, 
-		/* scrolling speed only for "clickButtons" scrollers 
-		values: milliseconds 
-		default: 600 */
-		scrollSpeed:800, 
-		/* scroller null scrolling area only for "hoverAccelerate" scrollers 
-		0 being the absolute center of the scroller
-		values: pixels 
-		default: 0 */
-		noScrollCenterSpace:10, 
-		/* initial auto-scrolling 
-		0 equals no auto-scrolling 
-		values: amount of auto-scrolling loops (integer) 
-		default: 0 */
-		autoScrolling:0, 
-		/* initial auto-scrolling speed 
-		values: milliseconds 
-		default: 8000 */
-		autoScrollingSpeed:2000, 
-		/* initial auto-scrolling easing type 
-		available values here: http://jqueryui.com/demos/effect/easing.html 
-		default: "easeInOutQuad" */
-		autoScrollingEasing:"easeInOutQuad", 
-		/* initial auto-scrolling delay for each loop 
-		values: milliseconds 
-		default: 2500 */
-		autoScrollingDelay:500 
-	});
-	$("#tS2").thumbnailScroller({ 
-		scrollerType:"clickButtons", 
-		scrollerOrientation:"horizontal", 
-		scrollSpeed:2, 
-		scrollEasing:"easeOutCirc", 
-		scrollEasingAmount:600, 
-		acceleration:4, 
-		scrollSpeed:800, 
-		noScrollCenterSpace:10, 
-		autoScrolling:0, 
-		autoScrollingSpeed:2000, 
-		autoScrollingEasing:"easeInOutQuad", 
-		autoScrollingDelay:500 
-	});
-	$("#tS3").thumbnailScroller({ 
-		scrollerType:"hoverPrecise", 
-		scrollerOrientation:"vertical", 
-		scrollSpeed:2, 
-		scrollEasing:"easeOutCirc", 
-		scrollEasingAmount:800, 
-		acceleration:4, 
-		scrollSpeed:800, 
-		noScrollCenterSpace:10, 
-		autoScrolling:0, 
-		autoScrollingSpeed:2000, 
-		autoScrollingEasing:"easeInOutQuad", 
-		autoScrollingDelay:500 
-	});
+                           $("#tS2").thumbnailScroller({
+                             scrollerType:"clickButtons",
+                             scrollerOrientation:"horizontal",
+                             scrollSpeed:2,
+                             scrollEasing:"easeOutCirc",
+                             scrollEasingAmount:600,
+                             acceleration:4,
+                             scrollSpeed:800,
+                             noScrollCenterSpace:10,
+                             autoScrolling:0,
+                             autoScrollingSpeed:2000,
+                             autoScrollingEasing:"easeInOutQuad",
+                             autoScrollingDelay:500
+                           });
 
+                           $("#tS3").thumbnailScroller({
+                             scrollerType:"hoverPrecise",
+                             scrollerOrientation:"vertical",
+                             scrollSpeed:2,
+                             scrollEasing:"easeOutCirc",
+                             scrollEasingAmount:800,
+                             acceleration:4,
+                             scrollSpeed:800,
+                             noScrollCenterSpace:10,
+                             autoScrolling:0,
+                             autoScrollingSpeed:2000,
+                             autoScrollingEasing:"easeInOutQuad",
+                             autoScrollingDelay:500
+                           });
 
+                           $('#Filter a').click(function(e) {
+                             if($(this).attr("data-type") == "all")
+                             {
+                               $("#FilteredGallery article:hidden").show(400);
+                             }
+                             else
+                             {
+                               $("#FilteredGallery article:visible").not("[data-type="+$(this).attr("data-type")+"]").hide(400);
+                               $("#FilteredGallery article[data-type="+$(this).attr("data-type")+"]:hidden").show(400);
+                             }
+                             $("a", $(this).parent().siblings()).removeClass("active");
+                             $(this).addClass("active");
+                             return false;
+                           });
 
+                           $.cookie = function(name, value, options) {
+                             if (typeof value != 'undefined'  ||  (name  &&  typeof name != 'string')) { // name and value given, set cookie
+                               if (typeof name == 'string') {
+                                 options = options || {};
+                                 if (value === null) {
+                                   value = '';
+                                   options.expires = -1;
+                                 }
+                                 var expires = '';
+                                 if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
+                                   var date;
+                                   if (typeof options.expires == 'number') {
+                                     date = new Date();
+                                     date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
+                                   } else {
+                                     date = options.expires;
+                                   }
+                                   expires = '; expires=' + date.toUTCString(); // use expires attribute, max-age is not supported by IE
+                                 }
+                                 // CAUTION: Needed to parenthesize options.path and options.domain
+                                 // in the following expressions, otherwise they evaluate to undefined
+                                 // in the packed version for some reason...
+                                 var path = options.path ? '; path=' + (options.path) : '';
+                                 var domain = options.domain ? '; domain=' + (options.domain) : '';
+                                 var secure = options.secure ? '; secure' : '';
+                                 document.cookie = name + '=' + encodeURIComponent(value) + expires + path + domain + secure;
+                               } else { // `name` is really an object of multiple cookies to be set.
+                                 for (var n in name) { jQuery.cookie(n, name[n], value||options); }
+                               }
+                             } else { // get cookie (or all cookies if name is not provided)
+                               var returnValue = {};
+                               if (document.cookie) {
+                                 var cookies = document.cookie.split(';');
+                                 for (var i = 0; i < cookies.length; i++) {
+                                   var cookie = jQuery.trim(cookies[i]);
+                                   // Does this cookie string begin with the name we want?
+                                   if (!name) {
+                                     var nameLength = cookie.indexOf('=');
+                                     returnValue[ cookie.substr(0, nameLength)] = decodeURIComponent(cookie.substr(nameLength+1));
+                                   } else if (cookie.substr(0, name.length + 1) == (name + '=')) {
+                                     returnValue = decodeURIComponent(cookie.substr(name.length + 1));
+                                     break;
+                                   }
+                                 }
+                               }
+                               return returnValue;
+                             }
+                           };
+                           var CSSFilter = ".template-article",
+                           zoom = $.cookie("zoom"),
+                           incFilter = ".zoomin",
 
-	
-	
-	
-	
-        $('#Filter a').click(function(e) {
+                           decFilter = ".zoomout",
+                           resetFilter = ".zoomreset";
 
-      if($(this).attr("data-type") == "all")
-      {
-        $("#FilteredGallery article:hidden").show(400);
-      }
-      else
-      {
-        $("#FilteredGallery article:visible").not("[data-type="+$(this).attr("data-type")+"]").hide(400);
-        $("#FilteredGallery article[data-type="+$(this).attr("data-type")+"]:hidden").show(400);
-      }
+                           $(incFilter).click(incZoom);
+                           $(decFilter).click(decZoom);
+                           $(resetFilter).click(resetZoom);
 
-      $("a", $(this).parent().siblings()).removeClass("active");
-      $(this).addClass("active");
+                           $(".print").click(printpage);
 
-      return false;
-    });
-
-
-
-
-/**
- * Get the names and values of all cookies for the page.
- *
- * @example $.cookie();
- * @desc Get all the cookies for the page
- *
- * @return an object with the name-value pairs of all available cookies.
- * @type Object
- *
- * @name $.cookie
- * @cat Plugins/Cookie
- * @author Klaus Hartl/klaus.hartl@stilbuero.de
- */
-
-$.cookie = function(name, value, options) {
-    if (typeof value != 'undefined'  ||  (name  &&  typeof name != 'string')) { // name and value given, set cookie
-        if (typeof name == 'string') {
-            options = options || {};
-            if (value === null) {
-                value = '';
-                options.expires = -1;
-            }
-            var expires = '';
-            if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
-                var date;
-                if (typeof options.expires == 'number') {
-                    date = new Date();
-                    date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
-                } else {
-                    date = options.expires;
-                }
-                expires = '; expires=' + date.toUTCString(); // use expires attribute, max-age is not supported by IE
-            }
-            // CAUTION: Needed to parenthesize options.path and options.domain
-            // in the following expressions, otherwise they evaluate to undefined
-            // in the packed version for some reason...
-            var path = options.path ? '; path=' + (options.path) : '';
-            var domain = options.domain ? '; domain=' + (options.domain) : '';
-            var secure = options.secure ? '; secure' : '';
-            document.cookie = name + '=' + encodeURIComponent(value) + expires + path + domain + secure;
-        } else { // `name` is really an object of multiple cookies to be set.
-          for (var n in name) { jQuery.cookie(n, name[n], value||options); }
-        }
-    } else { // get cookie (or all cookies if name is not provided)
-        var returnValue = {};
-        if (document.cookie) {
-            var cookies = document.cookie.split(';');
-            for (var i = 0; i < cookies.length; i++) {
-                var cookie = jQuery.trim(cookies[i]);
-                // Does this cookie string begin with the name we want?
-                if (!name) {
-                    var nameLength = cookie.indexOf('=');
-                    returnValue[ cookie.substr(0, nameLength)] = decodeURIComponent(cookie.substr(nameLength+1));
-                } else if (cookie.substr(0, name.length + 1) == (name + '=')) {
-                    returnValue = decodeURIComponent(cookie.substr(name.length + 1));
-                    break;
-                }
-            }
-        }
-        return returnValue;
-    }
-        };
-        var CSSFilter = ".template-article",
-        zoom = $.cookie("zoom"),
-        incFilter = ".zoomin",
-
-        decFilter = ".zoomout",
-        resetFilter = ".zoomreset";
-
-        $(incFilter).click(incZoom);
-        $(decFilter).click(decZoom);
-        $(resetFilter).click(resetZoom);
-
-        $(".print").click(printpage);
-
-        function printpage()
-        {
-                JavaScript:window.print();
-                return false; auotmoat
-        }
-
-        if(!isNaN(zoom*1))
-        {
-                zoom *= 1;
-                setSize(zoom);
-
-        }
-        else
-        {
-
-                zoom = 0;
-                $.cookie("zoom", 0);
-        }
-
-        function setSize(z)
-        {
-                $(CSSFilter).each(function(){
-
-                        if($(this).attr("fs"))
-                        {
-                                var fs = $(this).attr("fs") * 1;
-                        }
-                        else
-                        {
-                                var fs = $(this).css("font-size").replace("px", "")*1;
-                                $(this).attr("fs", fs)
-                        }
-
-                        fs += fs*z;
-                        $(this).css("font-size", fs+"px")
-                });
-                updateButtons();
-        }
-
-        function updateButtons()
-        {
-                if(Math.abs(zoom) < 0.04 & zoom != 0 )
-                {
-                        resetZoom();
-                }
-
-                if(zoom > 0){
-                        $(incFilter).addClass("active");
-                        $(decFilter).removeClass("active");
-                }
-                else if (zoom < 0){
-                        $(decFilter).addClass("active");
-                        $(incFilter).removeClass("active");
-                }
-                else{
-                        $(decFilter).removeClass("active");
-                        $(incFilter).removeClass("active");
-                }
+                           function printpage()
+                           {
+                             JavaScript:window.print();
+                             return false; auotmoat
+                           }
 
 
-        }
 
-        function incZoom()
-        {
-                zoom += 0.05;
-                saveZoom();
-        }
-        function decZoom()
-        {
-                zoom -= 0.05;
-                saveZoom();
-        }
-        function resetZoom()
-        {
-                zoom = 0;
-                saveZoom();
-        }
+                           if(!isNaN(zoom*1))
+                           {
+                             zoom *= 1;
+                             setSize(zoom);
 
-        function saveZoom()
-        {
-                if(isNaN(zoom))
-                {
-                        zoom = 0;
-                }
+                           }
+                           else
+                           {
 
-                $.cookie("zoom", zoom);
-                setSize(zoom);
-        }
+                             zoom = 0;
+                             $.cookie("zoom", 0);
+                           }
 
-//------------ Menus
-  var  flowOutVisible = false,
-  timeout,
-  overTime = 200,
-  currentMenuOut,
-  hoverTime = 200;
+                           function setSize(z)
+                           {
+                             $(CSSFilter).each(function(){
 
-  $("#MainNavigation li:has(.flyout)").hover(function() {
+                               if($(this).attr("fs"))
+                               {
+                                 var fs = $(this).attr("fs") * 1;
+                               }
+                               else
+                               {
+                                 var fs = $(this).css("font-size").replace("px", "")*1;
+                                 $(this).attr("fs", fs)
+                               }
 
-    currentMenuOut = $(".flyout", this);
-    window.clearTimeout(timeout);
-    timeout = window.setTimeout(showMenu, hoverTime);
+                               fs += fs*z;
+                               $(this).css("font-size", fs+"px")
+                             });
+                             updateButtons();
+                           }
 
-  }, function() {
-    window.clearTimeout(timeout);
-     $(".flyout", this).fadeOut();
-  });
+                           function updateButtons()
+                           {
+                             if(Math.abs(zoom) < 0.04 & zoom != 0 )
+                             {
+                               resetZoom();
+                             }
 
-  function showMenu()
-  {
-    currentMenuOut.fadeIn();
-    window.clearTimeout(timeout);
-  }
+                             if(zoom > 0){
+                               $(incFilter).addClass("active");
+                               $(decFilter).removeClass("active");
+                             }
+                             else if (zoom < 0){
+                               $(decFilter).addClass("active");
+                               $(incFilter).removeClass("active");
+                             }
+                             else{
+                               $(decFilter).removeClass("active");
+                               $(incFilter).removeClass("active");
+                             }
+                           }
+
+                           function incZoom()
+                           {
+                             zoom += 0.05;
+                             saveZoom();
+                           }
+                           function decZoom()
+                           {
+                             zoom -= 0.05;
+                             saveZoom();
+                           }
+                           function resetZoom()
+                           {
+                             zoom = 0;
+                             saveZoom();
+                           }
+
+                           function saveZoom()
+                           {
+                             if(isNaN(zoom))
+                             {
+                               zoom = 0;
+                             }
+
+                             $.cookie("zoom", zoom);
+                             setSize(zoom);
+                           }
+
+                           //------------ Menus
+                           var  flowOutVisible = false,
+                           timeout,
+                           overTime = 200,
+                           currentMenuOut,
+                           hoverTime = 200;
+
+                           $("#MainNavigation li:has(.flyout)").hover(function() {
+
+                             currentMenuOut = $(".flyout", this);
+                             window.clearTimeout(timeout);
+                             timeout = window.setTimeout(showMenu, hoverTime);
+
+                           }, function() {
+                             window.clearTimeout(timeout);
+                             $(".flyout", this).fadeOut();
+                           });
+
+                           function showMenu()
+                           {
+                             currentMenuOut.fadeIn();
+                             window.clearTimeout(timeout);
+                           }
 
 
-// $(function() {
-//	$('a.lightbox').lightBox();
-//});
+
+                           $('.tickeranim').vTicker({
+                             speed: 500,
+                             pause: 3000,
+                             showItems: 3,
+                             animation: 'fade',
+                             mousePause: false,
+                             height: 0,
+                             direction: 'up'
+                           });
 
 
-$('.tickeranim').vTicker({
-   speed: 500,
-   pause: 3000,
-   showItems: 3,
-   animation: 'fade',
-   mousePause: false,
-   height: 0,
-   direction: 'up'
-});
+                           var tabContainers = $('div.tabs > div');
 
-$(function () {
-    var tabContainers = $('div.tabs > div');
-    
-    $('div.tabs ul.tabNavigation a').click(function () {
-        tabContainers.hide().filter(this.hash).show();
-        
-		$('div.tabs ul.tabNavigation li').removeClass('selected');
-		
-		$(this).parent("li").addClass('selected');
+                           $('div.tabs ul.tabNavigation a').click(function () {
+                             tabContainers.hide().filter(this.hash).show();
+
+                             $('div.tabs ul.tabNavigation li').removeClass('selected');
+
+                             $(this).parent("li").addClass('selected');
+
+                             return false;
+                           }).filter(':first').click();
 
 
-        
-        return false;
-    }).filter(':first').click();
-});
 
-// FANCYBOX START //
+                           MainArticleRotator = function() {
+                             this.mainWidth = 619,
+                             this.mainHeight = 348,
+                             this.smallWidth = 179,
+                             this.smallHeight = 118,
+                             this.speed = 1000,
+                             this.intervalTime = 20000,
+                             this.articleContainer = $("#MainbColumn .main .articleview_picturelist"),
+                             this.intervalID = 0 ;
 
-$(document).ready(function() {
-			/*
-			*   Examples - images
-			*/
 
-			$("a#example1").fancybox();
 
-			$("a#example2").fancybox({
-				'overlayShow'	: false,
-				'transitionIn'	: 'elastic',
-				'transitionOut'	: 'elastic'
-			});
 
-			$("a#example3").fancybox({
-				'transitionIn'	: 'none',
-				'transitionOut'	: 'none'	
-			});
+                             this.rotate = function() {
+                               var articles =$("article", this.articleContainer),
+                               lastArticle = articles.last(),
+                               topArticle = $("#MainbColumn .main .top"),
+                               mainArticle = this.createMainArticle(topArticle, lastArticle),
+                               nextArticle = this.createNextArticle(topArticle, lastArticle);
 
-			$("a#example4").fancybox({
-				'opacity'		: true,
-				'overlayShow'	: false,
-				'transitionIn'	: 'elastic',
-				'transitionOut'	: 'none'
-			});
+                               $("#MainbColumn .main .top").slideUp(this.speed, function() { $(this).remove(); }).before(mainArticle);
+                               mainArticle.slideDown(this.speed);
 
-			$("a#example5").fancybox();
+                               this.articleContainer.prepend(nextArticle);
+                               nextArticle.slideDown(this.speed);
+                               lastArticle.slideUp(this.speed, function() { $(this).remove(); });
 
-			$("a#example6").fancybox({
-				'titlePosition'		: 'outside',
-				'overlayColor'		: '#000',
-				'overlayOpacity'	: 0.9,
-				'type' : "image"
-			});
+                             };
 
-			$("a#example7").fancybox({
-				'titlePosition'	: 'inside'
-			});
+                             this.createMainArticle = function(topArticle, lastArticle) {
 
-			$("a#example8").fancybox({
-				'titlePosition'	: 'over'
-			});
+                               linkHtml = $("a:has(img)", lastArticle).html().replace(this.smallWidth, this.mainWidth).replace(this.smallHeight, this.mainHeight),
+                               link = $("a:has(img)", lastArticle).clone(),
 
-			$("a[rel=example_group]").fancybox({
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
-				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return '<span id="fancybox-title-over">Foto ' + (currentIndex + 1) + ' von ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-				}
-			});
+                               newArticle = $("<div class='top'>"),
+                               header = newArticle.append("<header>");
 
-			/*
-			*   Examples - various
-			*/
+                               link.html(linkHtml);
 
-			$("#various1").fancybox({
-				'titlePosition'		: 'inside',
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none'
-			});
+                               header.append("<h1>"+$("h4", lastArticle).html()+"</h1>");
+                               header.append(link);
 
-			$("#various2").fancybox();
-			
-			$("#various2_2").fancybox();
+                               newArticle.append("<p>"+$("p", lastArticle).html()+"</p>");
+                               newArticle.hide();
+                               return newArticle;
+                             }
 
-			$("#various3").fancybox({
-				'width'				: '75%',
-				'height'			: '75%',
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'type'				: 'iframe'
-			});
+                             this.createNextArticle = function(topArticle, lastArticle) {
 
-			$("#Registrieren").fancybox({
-				'width'				: '50%',
-				'height'			: '75%',
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'type'				: 'iframe'
-			});
-			
-			$("#Newsletter").fancybox({
-				'width'				: '50%',
-				'height'			: '90%',
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'type'				: 'iframe'
-			});
-			$("#Abo").fancybox({
-				'width'				: '50%',
-				'height'			: '90%',
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'type'				: 'iframe'
-			});
-			$("#Meinedaten").fancybox({
-				'width'				: '50%',
-				'height'			: '90%',
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'type'				: 'iframe'
-			});
-			$("#Lostpassword").fancybox({
-				'width'				: '20%',
-				'height'			: '40%',
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'type'				: 'iframe'
-			});			
-			
-			$("#various4").fancybox({
-				'padding'			: 0,
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none'
-			});
-		});
-// FANCYBOX END //
+                               smallLinkHtml = $("a:has(img)", topArticle).html().replace(this.mainWidth, this.smallWidth).replace(this.mainHeight, this.smallHeight),
+                               smallLink = $("a:has(img)", topArticle).clone(),
+                               newArticle = $("<article>");
+                               newArticle.attr("class", $(lastArticle).attr("class") );
+                               newArticle.append("<hr>");
+                               smallLink.html(smallLinkHtml);
+                               newArticle.append(smallLink);
+                               newArticle.append("<h4>"+$("h1", topArticle).html()+"</h4>");
+                               newArticle.append("<p>"+$("p", topArticle).html()+"</p>");
 
-});
+                               newArticle.hide();
+                               return newArticle;
+
+
+                             }
+
+                             this.startUpdating = function() {
+                               var self = this;
+                               this.intervalID = setInterval(function(){self.rotate();}, this.intervalTime);
+                             };
+
+
+                           }
+
+                           mar = new MainArticleRotator();
+                           mar.startUpdating();
+
+
+                           $("a#example1").fancybox();
+                           $("a#example2").fancybox({
+                             'overlayShow' : false,
+                             'transitionIn'  : 'elastic',
+                             'transitionOut' : 'elastic'
+                           });
+
+                           $("a#example3").fancybox({
+                             'transitionIn'  : 'none',
+                             'transitionOut' : 'none'
+                           });
+
+                           $("a#example4").fancybox({
+                             'opacity'   : true,
+                             'overlayShow' : false,
+                             'transitionIn'  : 'elastic',
+                             'transitionOut' : 'none'
+                           });
+
+                           $("a#example5").fancybox();
+
+                           $("a#example6").fancybox({
+                             'titlePosition'   : 'outside',
+                             'overlayColor'    : '#000',
+                             'overlayOpacity'  : 0.9,
+                             'type' : "image"
+                           });
+
+                           $("a#example7").fancybox({
+                             'titlePosition' : 'inside'
+                           });
+
+                           $("a#example8").fancybox({
+                             'titlePosition' : 'over'
+                           });
+
+                           $("a[rel=example_group]").fancybox({
+                             'transitionIn'    : 'none',
+                             'transitionOut'   : 'none',
+                             'titlePosition'   : 'over',
+                             'titleFormat'   : function(title, currentArray, currentIndex, currentOpts) {
+                               return '<span id="fancybox-title-over">Foto ' + (currentIndex + 1) + ' von ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+                             }
+                           });
+
+                           $("#various1").fancybox({
+                             'titlePosition'   : 'inside',
+                             'transitionIn'    : 'none',
+                             'transitionOut'   : 'none'
+                           });
+
+                           $("#various2").fancybox();
+
+                           $("#various2_2").fancybox();
+
+                           $("#various3").fancybox({
+                             'width'       : '75%',
+                             'height'      : '75%',
+                             'autoScale'     : false,
+                             'transitionIn'    : 'none',
+                             'transitionOut'   : 'none',
+                             'type'        : 'iframe'
+                           });
+
+                           $("#Registrieren").fancybox({
+                             'width'       : '50%',
+                             'height'      : '75%',
+                             'autoScale'     : false,
+                             'transitionIn'    : 'none',
+                             'transitionOut'   : 'none',
+                             'type'        : 'iframe'
+                           });
+
+                           $("#Newsletter").fancybox({
+                             'width'       : '50%',
+                             'height'      : '90%',
+                             'autoScale'     : false,
+                             'transitionIn'    : 'none',
+                             'transitionOut'   : 'none',
+                             'type'        : 'iframe'
+                           });
+                           $("#Abo").fancybox({
+                             'width'       : '50%',
+                             'height'      : '90%',
+                             'autoScale'     : false,
+                             'transitionIn'    : 'none',
+                             'transitionOut'   : 'none',
+                             'type'        : 'iframe'
+                           });
+                           $("#Meinedaten").fancybox({
+                             'width'       : '50%',
+                             'height'      : '90%',
+                             'autoScale'     : false,
+                             'transitionIn'    : 'none',
+                             'transitionOut'   : 'none',
+                             'type'        : 'iframe'
+                           });
+                           $("#Lostpassword").fancybox({
+                             'width'       : '20%',
+                             'height'      : '40%',
+                             'autoScale'     : false,
+                             'transitionIn'    : 'none',
+                             'transitionOut'   : 'none',
+                             'type'        : 'iframe'
+                           });
+
+                           $("#various4").fancybox({
+                             'padding'     : 0,
+                             'autoScale'     : false,
+                             'transitionIn'    : 'none',
+                             'transitionOut'   : 'none'
+                           });
+                           // FANCYBOX END //
+                         });
+
+
 
 function NewWindow(width,height,url) {
-	window.open(url,"PopUp","menubars=0,scrollbars=0,resizable=1,height="+height+",width="+width);
+  window.open(url,"PopUp","menubars=0,scrollbars=0,resizable=1,height="+height+",width="+width);
 }

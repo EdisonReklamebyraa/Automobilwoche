@@ -17,79 +17,79 @@ body {
   @include min-width(977px);
 
 
- 
+
 
 }
 
 #Top
 {
-   #main{
-     text-align: right;
-     background:transparent image-url('top_bg.png') left bottom repeat-x;
-     overflow: hidden;
-     ul{
-       float: left;
-       width: $fm;
-       color: $lightGrey;
-       font-size: 85%;
-       text-align:right;
-       padding: 0px;
-       margin-right: 0px;
-       margin-left: $leftBorder;
-       li
-       {
-         display:inline;
-         padding: 0 0 0 10px;
-         a {
-                        color: $TopNavigationColor;
-                        text-decoration: none;
+  #main{
+    text-align: right;
+    background:transparent image-url('top_bg.png') left bottom repeat-x;
+    overflow: hidden;
+    ul{
+      float: left;
+      width: $fm;
+      color: $lightGrey;
+      font-size: 85%;
+      text-align:right;
+      padding: 0px;
+      margin-right: 0px;
+      margin-left: $leftBorder;
+      li
+      {
+        display:inline;
+        padding: 0 0 0 10px;
+        a {
+          color: $TopNavigationColor;
+          text-decoration: none;
         }
-       }
-     }
-   }
+      }
+    }
+  }
 
 
 
-   aside{
-     background:transparent image-url('top_bg.png') left bottom repeat-x;
-     padding: $vm $leftBorder;
-     display: block;
-     &.hockeystick {
-     	position: absolute;
-     	left: 978px;
-     	top: 175px;
-     	padding:0;
-     	margin:0;
-     	background: none;
-     	width: 50%;
-     	background-color: #fff;
-     	padding-left: 5px;
-     }
-   }
+  aside{
+    background:transparent image-url('top_bg.png') left bottom repeat-x;
+    padding: $vm $leftBorder;
+    display: block;
+    &.hockeystick {
+      position: absolute;
+      left: 978px;
+      top: 175px;
+      padding:0;
+      margin:0;
+      background: none;
+      width: 50%;
+      background-color: #fff;
+      padding-left: 5px;
+    }
+  }
 
-   .section{
-     width: $fm;
-     padding: 0 0 $m $leftBorder;
-     overflow: hidden;
-     h1
-     {
-        margin: 0 0 $m 0 ;
-        @include replace-text-with-dimensions("logo.png");
-        float: left;
-        a{
-          width: 100%;
-          height: 100%;
-          display: block;
+  .section{
+    width: $fm;
+    padding: 0 0 $m $leftBorder;
+    overflow: hidden;
+    h1
+    {
+      margin: 0 0 $m 0 ;
+      @include replace-text-with-dimensions("logo.png");
+      float: left;
+      a{
+        width: 100%;
+        height: 100%;
+        display: block;
 
-        }
-     }
+      }
+    }
 
-     .forms
-     {
+    .forms
+    {
 
-		@include loginForms;
-     }
-   }
+      @include loginForms;
+    }
+  }
 
 }
 
@@ -98,85 +98,85 @@ body {
 
 #MainNavigation
 {
-   overflow: hidden;
-   
-   ul
-   {
-     clear: both;
-     padding: 0px;
-     margin:  0 0 $m/2 $leftBorder;
-     border: solid 1px $lightlightGrey;
-     border-width: 0 0 0 1px ;
-     border-bottom: 3px $orange solid;
-     float: left;
-     overflow: hidden;
-     li
-     {
-        
-        float: left;
-        @include no-bullet;
-        padding: 7px;
-        border: solid 1px $lightlightGrey;
-        border-width: 0 1px 0 0 ;
-        div {
-        	z-index: 999999;
-        }
-        .icon_HOUSE {
-          @include replace-text-with-dimensions("icon_HOUSE.png");
-          display: block;
-          padding: 0 $m 0 $m;
-          overflow: hidden;
-          height: 20px;
+  overflow: hidden;
 
-        }
+  ul
+  {
+    clear: both;
+    padding: 0px;
+    margin:  0 0 $m/2 $leftBorder;
+    border: solid 1px $lightlightGrey;
+    border-width: 0 0 0 1px ;
+    border-bottom: 3px $orange solid;
+    float: left;
+    overflow: hidden;
+    li
+    {
 
-        &.active,
-        &:hover{
+      float: left;
+      @include no-bullet;
+      padding: 7px;
+      border: solid 1px $lightlightGrey;
+      border-width: 0 1px 0 0 ;
+      div {
+        z-index: 999999;
+      }
+      .icon_HOUSE {
+        @include replace-text-with-dimensions("icon_HOUSE.png");
+        display: block;
+        padding: 0 $m 0 $m;
+        overflow: hidden;
+        height: 20px;
 
-          background: #e09c18 image-url("menu_active_bg.png") 0 0;
-          a{
-            color: #FFF;
-            &.icon_HOUSE
-            {
-              background-image: image-url("icon_white_House.png");
-            }
-          }
-          li a
+      }
+
+      &.active,
+      &:hover{
+
+        background: #e09c18 image-url("menu_active_bg.png") 0 0;
+        a{
+          color: #FFF;
+          &.icon_HOUSE
           {
-            color: $MainNavigationColor;
+            background-image: image-url("icon_white_House.png");
           }
-
-
+        }
+        li a
+        {
+          color: $MainNavigationColor;
         }
 
 
-        a {
-                color: $MainNavigationColor;
-                text-decoration: none;
-        }
+      }
 
-     }
-   }
+
+      a {
+        color: $MainNavigationColor;
+        text-decoration: none;
+      }
+
+    }
+  }
 
 }
 #Main {
   background:transparent image-url('main_bg.png') repeat-y;
   overflow: hidden;
-	&.no-sidebar {
-		background: none;
-		#MainbColumn {
-			width: $maincolumn+$Sidecolumn;
-			.pageStrip {
-				width: $maincolumn+$Sidecolumn;
-			}
-	        .articleview_grid {
-	        	background-image: image-url("920_article_horizontal_border.png");
-	        	article {
-	        		width: (($maincolumn+$Sidecolumn)-$m)/2;
-	        	}
-	        }
-		}
-	}
+  &.no-sidebar {
+    background: none;
+    #MainbColumn {
+      width: $maincolumn+$Sidecolumn;
+      .pageStrip {
+        width: $maincolumn+$Sidecolumn;
+      }
+      .articleview_grid {
+        background-image: image-url("920_article_horizontal_border.png");
+        article {
+          width: (($maincolumn+$Sidecolumn)-$m)/2;
+        }
+      }
+    }
+  }
   a {
     color: $DefaultLinkColor;
     text-decoration: none;
@@ -190,168 +190,168 @@ body {
 
 #MainbColumn
 {
-        margin-left: $leftBorder;
-        width: $maincolumn;
-        float: left;
+  margin-left: $leftBorder;
+  width: $maincolumn;
+  float: left;
 
-        .bar {
-                display: block;
-                background-color: #053463;
-                color: #fff;
-                padding: $m/3;
-                text-transform: uppercase;
-                font-size: $separationline-font-size;
-                overflow: hidden;
-                a {
-                	color: #fff;
-                }
+  .bar {
+    display: block;
+    background-color: #053463;
+    color: #fff;
+    padding: $m/3;
+    text-transform: uppercase;
+    font-size: $separationline-font-size;
+    overflow: hidden;
+    a {
+      color: #fff;
+    }
 
+  }
+  .pageStrip
+  {
+    $articletools_zoomout: "articletools_zoomout.png";
+    $articletools_zoomin: "articletools_zoomin.png";
+    $articletools_zoomout_active: "articletools_zoomout_active.png";
+    $articletools_zoomin_active: "articletools_zoomin_active.png";
+    $articletools_print: "icon_PRINT.png";
+    clear: both;
+    overflow: hidden;
+    width: $maincolumn;
+    margin:  0 0 $m/2 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    .date {
+      color: #c4c4c4;
+      float: left;
+      margin-right: 5px;
+    }
+    a {
+      color: $orange;
+    }
+    ul
+    {
+      @include horizontal-list;
+      float: right;
+
+
+    }
+    span {
+      float: left;
+
+    }
+    &.underline {
+      border-bottom: 1px solid $lightlightGrey;
+
+    }
+    .tools {
+      float:right;
+      height: image-height($articletools_zoomout);
+      a {
+        width: image-width($articletools_zoomout);
+        height: image-height($articletools_zoomout);
+        text-indent:-9999px;
+        display: block;
+        float: right;
+        cursor: pointer;
+        &.zoomin {
+          background: transparent image-url($articletools_zoomin) no-repeat;
+
+          &.active {
+            background: transparent image-url($articletools_zoomin_active) no-repeat;
+          }
         }
-        .pageStrip
-                {
-                        $articletools_zoomout: "articletools_zoomout.png";
-                        $articletools_zoomin: "articletools_zoomin.png";
-                        $articletools_zoomout_active: "articletools_zoomout_active.png";
-                        $articletools_zoomin_active: "articletools_zoomin_active.png";
-                        $articletools_print: "icon_PRINT.png";
-                        clear: both;
-                        overflow: hidden;
-                        width: $maincolumn;
-                        margin:  0 0 $m/2 0;
-                        font-size: 11px;
-                        text-transform: uppercase;
-                        .date {
-                                color: #c4c4c4;
-                                float: left;
-                                margin-right: 5px;
-                        }
-                        a {
-                                color: $orange;
-                        }
-                        ul
-                        {
-                            @include horizontal-list;
-                            float: right;
 
-
-                        }
-                        span {
-                                float: left;
-
-                        }
-                        &.underline {
-                                border-bottom: 1px solid $lightlightGrey;
-
-                        }
-                        .tools {
-                                float:right;
-                                height: image-height($articletools_zoomout);
-                                a {
-                                        width: image-width($articletools_zoomout);
-                                        height: image-height($articletools_zoomout);
-                                        text-indent:-9999px;
-                                        display: block;
-                                        float: right;
-                                        cursor: pointer;
-                                        &.zoomin {
-                                                background: transparent image-url($articletools_zoomin) no-repeat;
-
-                                                &.active {
-                                                        background: transparent image-url($articletools_zoomin_active) no-repeat;
-                                                }
-                                        }
-
-                                        &.zoomout {
-                                                background: transparent image-url($articletools_zoomout) no-repeat;
-                                                &.active {
-                                                        background: transparent image-url($articletools_zoomout_active) no-repeat;
-                                                }
-                                        }
-                                        &.print {
-                                                background: transparent image-url($articletools_print) no-repeat;
-                                                margin-right: $m/2;
-                                        }
-                                }
-
-                        }
-                }
-        h4 {
-                margin: 0 0 $m/2 0;
+        &.zoomout {
+          background: transparent image-url($articletools_zoomout) no-repeat;
+          &.active {
+            background: transparent image-url($articletools_zoomout_active) no-repeat;
+          }
         }
-        aside {
-                margin: -$m/2 0 $m/2 0;
-                display: block;
-                overflow: hidden;
-                clear: both;
-                text-align: center;
-                label {
-                	font-weight: normal;
-                	float: left;
-                	padding: $m/4;
-                	color: $lightGrey;
-                	font-size: 80%;
-                	width: 100%;
-                	text-align: left;
-                }
+        &.print {
+          background: transparent image-url($articletools_print) no-repeat;
+          margin-right: $m/2;
         }
+      }
+
+    }
+  }
+  h4 {
+    margin: 0 0 $m/2 0;
+  }
+  aside {
+    margin: -$m/2 0 $m/2 0;
+    display: block;
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+    label {
+      font-weight: normal;
+      float: left;
+      padding: $m/4;
+      color: $lightGrey;
+      font-size: 80%;
+      width: 100%;
+      text-align: left;
+    }
+  }
 
 }
 
 #sideColumn
 {
-        margin-left: $m;
-        width: $Sidecolumn;
-        float: left;
-        overflow: hidden;
-        h4 {
-                margin: 0 0 $m/4 0;
-        }
-        hr {
-                clear: both;
-                border: none;
-                background:transparent image-url("line_dotted.png") repeat-x;
-                background-position: $m/2;
-                margin: 0 0 $m/2 0;
+  margin-left: $m;
+  width: $Sidecolumn;
+  float: left;
+  overflow: hidden;
+  h4 {
+    margin: 0 0 $m/4 0;
+  }
+  hr {
+    clear: both;
+    border: none;
+    background:transparent image-url("line_dotted.png") repeat-x;
+    background-position: $m/2;
+    margin: 0 0 $m/2 0;
 
-        }
-        aside {
-                margin: 0 0 $m/2 0;
-                display: block;
-                overflow: hidden;
-                clear: both;
-                text-align: center;
-                label {
-                	font-weight: normal;
-                	float: left;
-                	padding: $m/4;
-                	color: $lightGrey;
-                	font-size: 80%;
-                	width: 100%;
-                	text-align: left;
-                }
-        }
+  }
+  aside {
+    margin: 0 0 $m/2 0;
+    display: block;
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+    label {
+      font-weight: normal;
+      float: left;
+      padding: $m/4;
+      color: $lightGrey;
+      font-size: 80%;
+      width: 100%;
+      text-align: left;
+    }
+  }
 }
 #AdColumn
 {
-        margin-left: $m;
-        float: left;
-        width: 160px;
-        aside {
-                margin: -$m/2 0 $m/2 0;
-                display: block;
-                overflow: hidden;
-                clear: both;
-                text-align: center;
-                label {
-                	font-weight: normal;
-                	float: left;
-                	padding: $m/4;
-                	color: $lightGrey;
-                	font-size: 80%;
-                	width: 100%;
-                	text-align: left;
-                }
-        }
+  margin-left: $m;
+  float: left;
+  width: 160px;
+  aside {
+    margin: -$m/2 0 $m/2 0;
+    display: block;
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+    label {
+      font-weight: normal;
+      float: left;
+      padding: $m/4;
+      color: $lightGrey;
+      font-size: 80%;
+      width: 100%;
+      text-align: left;
+    }
+  }
 }
 
 @import "partials/articleviews";
