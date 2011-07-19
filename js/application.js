@@ -270,7 +270,7 @@ google.setOnLoadCallback(function()
                              this.smallWidth = 179,
                              this.smallHeight = 118,
                              this.speed = 1000,
-                             this.intervalTime = 20000,
+                             this.intervalTime = 7000,
                              this.articleContainer = $("#MainbColumn .main .articleview_picturelist"),
                              this.intervalID = 0 ;
 
@@ -278,18 +278,24 @@ google.setOnLoadCallback(function()
 
 
                              this.rotate = function() {
-                               var articles =$("article", this.articleContainer),
+                               var self = this,
+                               articles =$("article", this.articleContainer),
                                lastArticle = articles.last(),
                                topArticle = $("#MainbColumn .main .top"),
                                mainArticle = this.createMainArticle(topArticle, lastArticle),
                                nextArticle = this.createNextArticle(topArticle, lastArticle);
+
+                               clearTimeout(this.intervalID);
 
                                $("#MainbColumn .main .top").slideUp(this.speed, function() { $(this).remove(); }).before(mainArticle);
                                mainArticle.slideDown(this.speed);
 
                                this.articleContainer.prepend(nextArticle);
                                nextArticle.slideDown(this.speed);
-                               lastArticle.slideUp(this.speed, function() { $(this).remove(); });
+                               lastArticle.slideUp(this.speed, function() {
+                                 $(this).remove();
+                                 self.startUpdating();
+                               });
 
                              };
 
@@ -300,9 +306,7 @@ google.setOnLoadCallback(function()
 
                                newArticle = $("<div class='top'>"),
                                header = newArticle.append("<header>");
-
                                link.html(linkHtml);
-
                                header.append("<h1>"+$("h4", lastArticle).html()+"</h1>");
                                header.append(link);
 
@@ -331,7 +335,7 @@ google.setOnLoadCallback(function()
 
                              this.startUpdating = function() {
                                var self = this;
-                               this.intervalID = setInterval(function(){self.rotate();}, this.intervalTime);
+                               this.intervalID = setTimeout(function(){self.rotate();}, this.intervalTime);
                              };
 
 
