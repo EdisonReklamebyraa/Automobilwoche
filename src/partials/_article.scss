@@ -1,194 +1,205 @@
 #Main .template-article, #Main .template-blog {
 
-	header {
-		margin-bottom: $m;
-	}
-	a {
-		color: $orange;
-		text-decoration: none;
-	}
-	.picturecaption {
-		color: $PictureCaption;
-		font-size: 90%;
-	}
-	
-	aside {
-		label {
-			float: left;
-			font-weight: normal;
-			color: $lightGrey;
-		}
-		margin: 0;
-		float: right;
-		margin: 0 0 $m/2 $m/2;
-		clear: both;
-	}
-	h4 {
-		margin-bottom: $m/4;
-		font-weight: bold;
-	}
-	hr {
-		background: url("../images/line_dotted.png") repeat-x scroll 10px 50% transparent;
-		border: medium none;
-		clear: both;
-		margin: 0 0 $m;		
-	}
-	.articleview_picturelist {
-		h4 {
-			margin-bottom: $m/2;
-			font-weight: bold;
-		}		
-		a {
-			color: $darkGrey!important;
-			&:hover {
-				text-decoration: underline!important;
-			}
-		}
-	}
-	.pubdatetime {
-		border-top: 1px solid $lightlightGrey;
-		border-bottom: 1px solid $lightlightGrey;
-		overflow: hidden;
-		padding: $m/4 0 $m/4 0;
-	}
-	.box {
-		width: 300px;
-		margin-bottom: $m/2;
-		background-color: $ArticleFactsColor;
-		clear: both;
-		p {
-			padding: $m/2;
-			margin: 0;
-			clear: both;
-		}
-		img {
-			float: left;
-		}
-		hr {
-   			background: url("../images/line_dotted.png?1302776059") repeat-x scroll 10px 50% transparent;
-    		border: medium none;
-    		clear: both;
-    		margin: 0 0 $m/3;		
-		}
-		.paragraphimage {
-			border-bottom: 1px solid $lightlightGrey;
-		}
-		.downloads {
-				@include link_icons;
-				padding: $m/2;
-				h4 {
-					margin: 0 0 $m/3;
-					font-weight: normal;
-				}
-				dl {
-					padding:0;
-					margin: 0;
-					dd {
-						margin: 0 0 $m/3 0;
-						a {
-							color: $black;
-							&:hover {
-								color: $orange;
-							}
-						}
-					}
-				}
-			}
-		.facts {
-			padding: $m/2;
-			h4 {
-				margin: 0 0 $m/3;
-				font-weight: normal;
-			}
-			p {
-				margin: 0;
-			}
-			ul {
-				padding:$m/2 0 $m/2 $m;
-				margin: 0;
-			}
-		}
-		.articlelist {
-			padding: $m/2;
-			h4 {
-				margin: 0 0 $m/3;
-				font-weight: normal;
-			}			
-			p {
-				margin: 0;
-			}
-			dl {
-				padding:0;
-				margin: 0;
-				dd {
-					margin: 0 0 $m/3 0;
-				}
-			}
-		}
-	}
-	.no-background {
-		background: none;
-		border-left: 1px solid $lightlightGrey;
-	}	
-	.fl {
-		float: left;
-		margin-right: $m/2;
-	}
-	.fr {
-		float: right;
-		margin-left: $m/2;
-	}
-	.articlecomments {
-		h4 {
-			border-top: double $lightlightGrey; 
-			padding: $m/2 0 $m/2 0;
-			margin: 0;
-			clear: both;
-		}
-		h5 {
-			border-top: 1px solid $lightlightGrey;
-			padding: $m/2 0 0 0 ;
-			margin: 0 0 $m/4 0;
-			span {
-				float: right;
-				font-weight: normal;
-				font-style: italic;
-			}
-		}
-		p {
-			margin: 0 0 $m/2 0;
-		}
-		.actions {
-			margin-bottom: $m/2;
-			overflow: hidden;
-			a {
-				background: url("../images/articlecomment_report_icon.png") no-repeat transparent;
-				padding-left: 18px;
-				color: $lightGrey;
-				float: right;
-				&:hover {
-					text-decoration: underline;
-				} 
-			}
-		}
-		hr {
-			background: url("../images/articlecomments_line.png") no-repeat transparent;
-			height: 19px;
-			border: none;
-			margin: 0 0 $m/2 0;
+  header {
+    margin-bottom: $m;
+  }
+  a {
+    color: $orange;
+    text-decoration: none;
+  }
+  .picturecaption {
+    color: $PictureCaption;
+    font-size: 90%;
+  }
 
-		}
-	}
-	@include byline;
-	
-	#Articlecomment {
-		p {
-			margin:0;
-		}
-		textarea {
-			width: 570px;
-			height: 100px;
-		}
-	}
+
+  aside {
+    label {
+      float: left;
+      font-weight: normal;
+      color: $lightGrey;
+    }
+    margin: 0;
+    float: right;
+    margin: 0 0 $m/2 $m/2;
+    clear: both;
+  }
+  h4 {
+    margin-bottom: $m/4;
+    font-weight: bold;
+  }
+  hr {
+    background: url("../images/line_dotted.png") repeat-x scroll 10px 50% transparent;
+    border: medium none;
+    clear: both;
+    margin: 0 0 $m;
+  }
+  .articleview_picturelist {
+    h4 {
+      margin-bottom: $m/2;
+      font-weight: bold;
+    }
+    a {
+      color: $darkGrey!important;
+      &:hover {
+        text-decoration: underline!important;
+      }
+    }
+  }
+  .pubdatetime {
+    border-top: 1px solid $lightlightGrey;
+    border-bottom: 1px solid $lightlightGrey;
+    overflow: hidden;
+    padding: $m/4 0 $m/4 0;
+  }
+  .box {
+    width: 300px;
+    margin-bottom: $m/2;
+    background-color: $ArticleFactsColor;
+    clear: both;
+    p {
+      padding: $m/2;
+      margin: 0;
+      clear: both;
+    }
+    img {
+      float: left;
+    }
+    hr {
+        background: url("../images/line_dotted.png?1302776059") repeat-x scroll 10px 50% transparent;
+        border: medium none;
+        clear: both;
+        margin: 0 0 $m/3;
+    }
+    .paragraphimage {
+      border-bottom: 1px solid $lightlightGrey;
+    }
+    .downloads {
+        @include link_icons;
+        padding: $m/2;
+        h4 {
+          margin: 0 0 $m/3;
+          font-weight: normal;
+        }
+        dl {
+          padding:0;
+          margin: 0;
+          dd {
+            margin: 0 0 $m/3 0;
+            a {
+              color: $black;
+              &:hover {
+                color: $orange;
+              }
+            }
+          }
+        }
+      }
+    .facts {
+      padding: $m/2;
+      h4 {
+        margin: 0 0 $m/3;
+        font-weight: normal;
+      }
+      p {
+        margin: 0;
+      }
+      ul {
+        padding:$m/2 0 $m/2 $m;
+        margin: 0;
+      }
+    }
+    .articlelist {
+      padding: $m/2;
+      h4 {
+        margin: 0 0 $m/3;
+        font-weight: normal;
+      }
+      p {
+        margin: 0;
+      }
+      dl {
+        padding:0;
+        margin: 0;
+        dd {
+          margin: 0 0 $m/3 0;
+        }
+      }
+    }
+  }
+  .no-background {
+    background: none;
+    border-left: 1px solid $lightlightGrey;
+  }
+  .fl {
+    float: left;
+    margin-right: $m/2;
+  }
+  .fr {
+    float: right;
+    margin-left: $m/2;
+  }
+  .articlecomments {
+    h4 {
+      border-top: double $lightlightGrey;
+      padding: $m/2 0 $m/2 0;
+      margin: 0;
+      clear: both;
+    }
+    h5 {
+      border-top: 1px solid $lightlightGrey;
+      padding: $m/2 0 0 0 ;
+      margin: 0 0 $m/4 0;
+      span {
+        float: right;
+        font-weight: normal;
+        font-style: italic;
+      }
+    }
+    p {
+      margin: 0 0 $m/2 0;
+    }
+    .actions {
+      margin-bottom: $m/2;
+      overflow: hidden;
+      a {
+        background: url("../images/articlecomment_report_icon.png") no-repeat transparent;
+        padding-left: 18px;
+        color: $lightGrey;
+        float: right;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    hr {
+      background: url("../images/articlecomments_line.png") no-repeat transparent;
+      height: 19px;
+      border: none;
+      margin: 0 0 $m/2 0;
+
+    }
+  }
+  @include byline;
+
+  #Articlecomment {
+    p {
+      margin:0;
+    }
+    textarea {
+      width: 570px;
+      height: 100px;
+    }
+  }
+}
+
+#MainbColumn{
+  .top{
+
+    height: 530px;
+
+
+  }
+
 }
 
