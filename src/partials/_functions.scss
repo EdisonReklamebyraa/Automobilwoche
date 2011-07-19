@@ -8,6 +8,16 @@
   color: $lightlightGrey;
 };
 
+@mixin bigsearchfield($img-url:"input_big.png") {
+  width: image-width($img-url) - $m;
+  height: image-height($img-url) - $m;
+  padding: $m/2;
+  background:transparent image-url($img-url) left top no-repeat;
+  border: 0;
+  @include fontsize;
+  color: $lightlightGrey;
+};
+
 
 @mixin submitbtn($bg:"login_bg.png") {
   background: #053463 image-url($bg) left top no-repeat ;
@@ -27,6 +37,9 @@
 @mixin loginForms(){
    form{
    	 float: right;
+   	 &.fl {
+   	 	float:left!important;
+   	 }
 	 .logout {
 	 	 padding: $m/2;
 	 	 float: right;
@@ -54,6 +67,16 @@
      {
        input[type=search]{
           @include inputText;
+       }
+       input[type=submit]{
+          @include submitbtn("search.png");
+          margin: 0 $m/2 0 0;
+       }
+     }
+     &.bigsearchfield
+     {
+       input[type=search]{
+          @include bigsearchfield;
        }
        input[type=submit]{
           @include submitbtn("search.png");

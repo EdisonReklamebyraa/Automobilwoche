@@ -8,6 +8,7 @@
 @import "partials/link_icons";
 @import "partials/forms";
 @import "partials/blog";
+@import "partials/search";
 
 body {
   @include blueprint-typography(true);
