@@ -109,6 +109,12 @@ form label { font-weight: normal!important; }
 .template-search .search-result .item p { margin-bottom: 0; font-size: 85%; }
 /* line 60, ../src/partials/_search.scss */
 .template-search .search-result .item .url { color: #aaaaaa !important; font-size: 80%; }
+/* line 65, ../src/partials/_search.scss */
+.template-search .search-result .pageingnation { display: block; height: 40px; margin-bottom: 20px; }
+/* line 72, ../src/partials/_search.scss */
+.template-search .search-result .pageingnation span.left { float: left; padding: 10px; }
+/* line 76, ../src/partials/_search.scss */
+.template-search .search-result .pageingnation span.right { float: right; padding: 10px; }
 
 /* line 13, ../src/screen.scss */
 body { line-height: 1.5; font-family: Arial, Helvetica, sans-serif; color: #333333; font-size: 81.25%; min-width: 977px; width: auto !important; width: 977px; }
