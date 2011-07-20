@@ -2,5 +2,21 @@
      .forms
      {
 		@include loginForms;
+		clear: both;
+     }
+     .left-menu {
+     	float: left;
+     	width: $maincolumn-leftmenu;
+     	border-right: 1px solid $lightGrey;
+     	ul {
+     		padding: 0px;
+     		li {
+     			@include no-bullet;	
+     		}
+     	}
+     	
+     }
+     .search-result {
+		width: ($maincolumn)-($maincolumn-leftmenu);
      }
 }
