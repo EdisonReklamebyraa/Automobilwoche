@@ -491,7 +491,7 @@ body textarea { width: 390px; height: 250px; }
 .quiz .entries div.results { width: 10%; }
 
 /* line 48, ../src/partials/_boxes.scss */
-.sideColumn_box { background-color: #f2f2f2!important; overflow: hidden; margin: 0 0 20px 0; }
+.sideColumn_box { background-color: #f2f2f2!important; overflow: hidden; margin: 0 0 10px 0; }
 /* line 59, ../src/partials/_boxes.scss */
 .sideColumn_box.no-background { background: none; margin-top: 20px; }
 /* line 62, ../src/partials/_boxes.scss */
