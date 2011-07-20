@@ -51,46 +51,64 @@ form label { font-weight: normal!important; }
 /* line 42, ../src/partials/_blog.scss */
 #sideColumn .sideColumn_box.orange .articleview_picturelist p { color: #868686; }
 
-/* line 3, ../src/partials/_search.scss */
-.template-search .forms { clear: both; }
+/* line 2, ../src/partials/_search.scss */
+.template-search a { color: #103365 !important; }
+/* line 6, ../src/partials/_search.scss */
+.template-search .search-top { clear: both; width: 620px; border-bottom: 1px solid #aaaaaa; padding-bottom: 10px; }
 /* line 38, ../src/partials/_functions.scss */
-.template-search .forms form { float: right; }
+.template-search .search-top form { float: right; }
 /* line 40, ../src/partials/_functions.scss */
-.template-search .forms form.fl { float: left!important; }
+.template-search .search-top form.fl { float: left!important; }
 /* line 43, ../src/partials/_functions.scss */
-.template-search .forms form .logout { padding: 10px 0 10px 20px; margin: 0 0 10px; background: url('../images/login_form_bg.png?1308901501') right bottom no-repeat transparent; width: 458px; height: 40px; }
+.template-search .search-top form .logout { padding: 10px 0 10px 20px; margin: 0 0 10px; background: url('../images/login_form_bg.png?1308901501') right bottom no-repeat transparent; width: 458px; height: 40px; }
 /* line 50, ../src/partials/_functions.scss */
-.template-search .forms form .logout .info { padding: 10px; float: right; }
+.template-search .search-top form .logout .info { padding: 10px; float: right; }
 /* line 53, ../src/partials/_functions.scss */
-.template-search .forms form .logout .info a { background: #053463 url('../images/login_bg.png?1308901501') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; text-decoration: none; margin-left: 10px; }
+.template-search .search-top form .logout .info a { background: #053463 url('../images/login_bg.png?1308901501') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; text-decoration: none; margin-left: 10px; }
 /* line 63, ../src/partials/_functions.scss */
-.template-search .forms form.login { padding: 10px 0 10px 20px; margin: 0 0 10px; background: url('../images/login_form_bg.png?1308901501') right bottom no-repeat transparent; width: 458px; height: 40px; }
+.template-search .search-top form.login { padding: 10px 0 10px 20px; margin: 0 0 10px; background: url('../images/login_form_bg.png?1308901501') right bottom no-repeat transparent; width: 458px; height: 40px; }
 /* line 70, ../src/partials/_functions.scss */
-.template-search .forms form.login input[type=submit] { background: #053463 url('../images/login_bg.png?1308901501') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; }
+.template-search .search-top form.login input[type=submit] { background: #053463 url('../images/login_bg.png?1308901501') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; }
 /* line 76, ../src/partials/_functions.scss */
-.template-search .forms form.search input[type=search] { width: 206px; height: 9px; padding: 10px; background: transparent url('../images/input.png?1311070900') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
+.template-search .search-top form.search input[type=search] { width: 206px; height: 9px; padding: 10px; background: transparent url('../images/input.png?1311070900') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
 /* line 79, ../src/partials/_functions.scss */
-.template-search .forms form.search input[type=submit] { background: #053463 url('../images/search.png?1308901501') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; }
+.template-search .search-top form.search input[type=submit] { background: #053463 url('../images/search.png?1308901501') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; }
 /* line 86, ../src/partials/_functions.scss */
-.template-search .forms form.bigsearchfield input[type=search] { width: 496px; height: 9px; padding: 10px; background: transparent url('../images/input_big.png?1311070900') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
+.template-search .search-top form.bigsearchfield input[type=search] { width: 496px; height: 9px; padding: 10px; background: transparent url('../images/input_big.png?1311162816') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
 /* line 89, ../src/partials/_functions.scss */
-.template-search .forms form.bigsearchfield input[type=submit] { background: #053463 url('../images/search.png?1308901501') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; }
+.template-search .search-top form.bigsearchfield input[type=submit] { background: #053463 url('../images/search.png?1308901501') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; }
 /* line 94, ../src/partials/_functions.scss */
-.template-search .forms form input { font-family: Arial, Helvetica, sans-serif; margin: 10px 10px 10px 0; }
+.template-search .search-top form input { font-family: Arial, Helvetica, sans-serif; margin: 10px 10px 10px 0; }
 /* line 98, ../src/partials/_functions.scss */
-.template-search .forms form input[type=password] { width: 154px; height: 10px; padding: 10px; background: transparent url('../images/login_input_bg.png?1308901501') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; height: 20px; padding-top: 5px; padding-bottom: 5px; }
+.template-search .search-top form input[type=password] { width: 154px; height: 10px; padding: 10px; background: transparent url('../images/login_input_bg.png?1308901501') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; height: 20px; padding-top: 5px; padding-bottom: 5px; }
 /* line 106, ../src/partials/_functions.scss */
-.template-search .forms form input[type=text] { width: 154px; height: 10px; padding: 10px; background: transparent url('../images/login_input_bg.png?1308901501') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; height: 20px; padding-top: 5px; padding-bottom: 5px; }
+.template-search .search-top form input[type=text] { width: 154px; height: 10px; padding: 10px; background: transparent url('../images/login_input_bg.png?1308901501') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; height: 20px; padding-top: 5px; padding-bottom: 5px; }
 /* line 112, ../src/partials/_functions.scss */
-.template-search .forms form input[type=text].username { width: 124px; background-image: url('../images/login_username_bg.png?1308901501'); padding: 5px 10px 5px 40px; height: 20px; margin-left: 5px; }
-/* line 7, ../src/partials/_search.scss */
-.template-search .left-menu { float: left; width: 155px; border-right: 1px solid #aaaaaa; }
-/* line 11, ../src/partials/_search.scss */
+.template-search .search-top form input[type=text].username { width: 124px; background-image: url('../images/login_username_bg.png?1308901501'); padding: 5px 10px 5px 40px; height: 20px; margin-left: 5px; }
+/* line 12, ../src/partials/_search.scss */
+.template-search .search-top .bigsearchfield { clear: both; width: 620px; }
+/* line 21, ../src/partials/_search.scss */
+.template-search .left-menu { float: left; width: 155px; border-right: 1px solid #aaaaaa; margin-right: 10px; padding-right: 10px; padding-top: 10px; }
+/* line 28, ../src/partials/_search.scss */
+.template-search .left-menu h5 { margin-bottom: 0; }
+/* line 31, ../src/partials/_search.scss */
 .template-search .left-menu ul { padding: 0px; }
-/* line 13, ../src/partials/_search.scss */
+/* line 33, ../src/partials/_search.scss */
 .template-search .left-menu ul li { list-style-image: none; list-style-type: none; margin-left: 0px; }
-/* line 19, ../src/partials/_search.scss */
-.template-search .search-result { width: 465px; }
+/* line 37, ../src/partials/_search.scss */
+.template-search .left-menu select { width: 155px; margin-bottom: 20px; }
+/* line 43, ../src/partials/_search.scss */
+.template-search .search-result { padding-top: 10px; float: left; width: 444px; }
+/* line 47, ../src/partials/_search.scss */
+.template-search .search-result .item { margin-bottom: 10px; padding-bottom: 10px; }
+/* line 50, ../src/partials/_search.scss */
+.template-search .search-result .item h4 { margin-bottom: 0!important; }
+/* line 52, ../src/partials/_search.scss */
+.template-search .search-result .item h4 a { color: #103365; }
+/* line 56, ../src/partials/_search.scss */
+.template-search .search-result .item p { margin-bottom: 0; font-size: 85%; }
+/* line 60, ../src/partials/_search.scss */
+.template-search .search-result .item .url { color: #aaaaaa !important; font-size: 80%; }
 
 /* line 13, ../src/screen.scss */
 body { line-height: 1.5; font-family: Arial, Helvetica, sans-serif; color: #333333; font-size: 81.25%; min-width: 977px; width: auto !important; width: 977px; }
@@ -280,7 +298,7 @@ body textarea { width: 390px; height: 250px; }
 /* line 79, ../src/partials/_functions.scss */
 #Top .section .forms form.search input[type=submit] { background: #053463 url('../images/search.png?1308901501') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; }
 /* line 86, ../src/partials/_functions.scss */
-#Top .section .forms form.bigsearchfield input[type=search] { width: 496px; height: 9px; padding: 10px; background: transparent url('../images/input_big.png?1311070900') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
+#Top .section .forms form.bigsearchfield input[type=search] { width: 496px; height: 9px; padding: 10px; background: transparent url('../images/input_big.png?1311162816') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
 /* line 89, ../src/partials/_functions.scss */
 #Top .section .forms form.bigsearchfield input[type=submit] { background: #053463 url('../images/search.png?1308901501') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; }
 /* line 94, ../src/partials/_functions.scss */
