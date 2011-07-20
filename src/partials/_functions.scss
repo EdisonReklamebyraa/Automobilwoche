@@ -41,14 +41,22 @@
    	 	float:left!important;
    	 }
 	 .logout {
-	 	 padding: $m/2;
-	 	 float: left;
-	     a {
-	     	  @include submitbtn;
-	          margin: 0 $m/2 0 0;
-	          text-decoration: none;
-	          margin-left: $m/2;
-	     }
+       padding: $m/2 0 $m/2 $m;
+       margin: 0 0 $m/2;
+       $lf_bg: "login_form_bg.png";
+       background: image-url($lf_bg) right bottom no-repeat transparent;
+       width: image-width($lf_bg) -$m/2;
+       height: image-height($lf_bg) - $m;
+       .info {
+		padding: $m/2;
+		float: right;
+		a {
+		 	  @include submitbtn;
+		      margin: 0 $m/2 0 0;
+		      text-decoration: none;
+		      margin-left: $m/2;
+		 }
+       }
 	 
 	 }
      &.login
