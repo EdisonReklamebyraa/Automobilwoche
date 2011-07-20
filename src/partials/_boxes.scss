@@ -54,6 +54,7 @@
 	$header_width: 300px;
 	background-color: #f2f2f2!important;
 	overflow: hidden;
+	margin: $m 0 0 0;
 	
 	&.no-background {
 		background: none;
@@ -121,7 +122,6 @@
 		}
 	}
 	&.tabs {
-	   margin: $m 0 $m 0;
 	   overflow: hidden;
 	   ul {
 	     clear: both;
