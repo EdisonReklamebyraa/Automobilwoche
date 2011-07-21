@@ -194,7 +194,6 @@ body {
   margin-left: $leftBorder;
   width: $maincolumn;
   float: left;
-  @include link_icons;
 
   .bar {
     display: block;

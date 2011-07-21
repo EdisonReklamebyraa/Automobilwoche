@@ -465,3 +465,7 @@ google.setOnLoadCallback(function()
 function NewWindow(width,height,url) {
   window.open(url,"PopUp","menubars=0,scrollbars=0,resizable=1,height="+height+",width="+width);
 }
+function choosedate () {
+	window.open('/g/kalender_ger.html?searchform.dateselected','','menubar=0,titlebar=0,width=268,height=236');
+	document.searchform.Interval.options[document.searchform.Interval.options.length-1].selected = true;
+}
