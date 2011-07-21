@@ -489,7 +489,7 @@ body textarea { width: 390px; height: 250px; }
 /* line 181, ../src/partials/_functions.scss */
 .articleview_blogs article .byline .addthis table { padding: 0px; margin: 0px; border-left: 1px dotted #cfcfcf; }
 /* line 185, ../src/partials/_functions.scss */
-.articleview_blogs article .byline .addthis table hr { padding: 0; margin: 0; border: none; border-top: 1px dotted #cfcfcf; }
+.articleview_blogs article .byline .addthis table hr { padding: 0; margin: 0; border: none; border-top: 0px dotted #cfcfcf; }
 /* line 191, ../src/partials/_functions.scss */
 .articleview_blogs article .byline .addthis table td { border-right: 1px dotted #cfcfcf; padding: 1px; }
 /* line 194, ../src/partials/_functions.scss */
@@ -754,7 +754,7 @@ body textarea { width: 390px; height: 250px; }
 /* line 181, ../src/partials/_functions.scss */
 #Main .template-article .byline .addthis table, #Main .template-blog .byline .addthis table { padding: 0px; margin: 0px; border-left: 1px dotted #cfcfcf; }
 /* line 185, ../src/partials/_functions.scss */
-#Main .template-article .byline .addthis table hr, #Main .template-blog .byline .addthis table hr { padding: 0; margin: 0; border: none; border-top: 1px dotted #cfcfcf; }
+#Main .template-article .byline .addthis table hr, #Main .template-blog .byline .addthis table hr { padding: 0; margin: 0; border: none; border-top: 0px dotted #cfcfcf; }
 /* line 191, ../src/partials/_functions.scss */
 #Main .template-article .byline .addthis table td, #Main .template-blog .byline .addthis table td { border-right: 1px dotted #cfcfcf; padding: 1px; }
 /* line 194, ../src/partials/_functions.scss */
