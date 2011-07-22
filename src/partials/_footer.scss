@@ -1,0 +1,35 @@
+.footer {
+	background:transparent image-url('footer_bg.png') left top repeat-x;
+	height: 200px;
+	.content {
+		padding-top: $m 0 0 0;
+		margin: 0;
+		$crainlogo: "/images/crain-logo.gif";
+		ul {
+			text-align: center;
+			padding: 0;
+			margin: $m 0 $m 0;
+			display: block; 
+			overflow: hidden;
+			li {
+				display: inline;
+				padding: $m/2;
+			}
+		}
+		img {
+			float: left;
+			margin-top: $m;
+			position: absolute;
+			left: $m;
+		}
+		p {
+			display: block;
+			overflow: hidden;
+		}
+		margin-left: $leftBorder;
+		width: ($maincolumn)+($Sidecolumn)+$m;
+		float: left;
+		text-align:center;
+	
+	}
+}
