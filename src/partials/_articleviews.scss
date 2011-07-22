@@ -1,6 +1,8 @@
 .articleview_grid
 {
-
+	&.linkicons {
+		@include link_icons;
+	}
  	margin: $m/2 0 $m 0;
 	background-image: image-url("620_article_horizontal_border.png");
 	overflow: hidden;
@@ -14,7 +16,8 @@
 		&.last {
 			margin: 0 0 0 0;
 		}
-	}	
+	}
+		
 	article {
 
 		padding: 0 $m 0 0;
