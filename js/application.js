@@ -270,7 +270,8 @@ google.setOnLoadCallback(function()
                              this.smallWidth = 179,
                              this.smallHeight = 118,
                              this.speed = 1000,
-                             this.intervalTime = 7000,
+                             this.intervalTime = 12000,
+                             this.afterUpdate,
                              this.articleContainer = $("#MainbColumn .main .articleview_picturelist"),
                              this.intervalID = 0 ;
 
@@ -296,6 +297,12 @@ google.setOnLoadCallback(function()
                                  $(this).remove();
                                  self.startUpdating();
                                });
+
+                               if(this.afterUpdate)
+                               {
+                                 this.afterUpdate();
+                               }
+
 
                              };
 
@@ -343,6 +350,16 @@ google.setOnLoadCallback(function()
 
                            mar = new MainArticleRotator();
                            mar.startUpdating();
+                           mar.afterUpdate = addFancyboxToPage;
+
+                           addFancyboxToPage();
+
+
+
+                         });
+
+function addFancyboxToPage(){
+
 
 
                            $("a#example1").fancybox();
@@ -417,32 +434,7 @@ google.setOnLoadCallback(function()
                              'transitionOut'   : 'none',
                              'type'        : 'iframe'
                            });
-
-                           $("#Newsletter").fancybox({
-                             'width'       : '50%',
-                             'height'      : '90%',
-                             'autoScale'     : false,
-                             'transitionIn'    : 'none',
-                             'transitionOut'   : 'none',
-                             'type'        : 'iframe'
-                           });
-                           $("#Abo").fancybox({
-                             'width'       : '50%',
-                             'height'      : '90%',
-                             'autoScale'     : false,
-                             'transitionIn'    : 'none',
-                             'transitionOut'   : 'none',
-                             'type'        : 'iframe'
-                           });
-                           $(".ABOREG").fancybox({
-                             'width'       : '50%',
-                             'height'      : '90%',
-                             'autoScale'     : false,
-                             'transitionIn'    : 'none',
-                             'transitionOut'   : 'none',
-                             'type'        : 'iframe'
-                           });
-                           $("#Meinedaten").fancybox({
+                           $("#Meinedaten, .ABOREG, #Abo, #Newsletter").fancybox({
                              'width'       : '50%',
                              'height'      : '90%',
                              'autoScale'     : false,
@@ -458,7 +450,6 @@ google.setOnLoadCallback(function()
                              'transitionOut'   : 'none',
                              'type'        : 'iframe'
                            });
-
                            $("#various4").fancybox({
                              'padding'     : 0,
                              'autoScale'     : false,
@@ -466,7 +457,8 @@ google.setOnLoadCallback(function()
                              'transitionOut'   : 'none'
                            });
                            // FANCYBOX END //
-                         });
+}
+
 
 
 
