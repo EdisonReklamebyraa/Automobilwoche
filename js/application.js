@@ -434,6 +434,14 @@ google.setOnLoadCallback(function()
                              'transitionOut'   : 'none',
                              'type'        : 'iframe'
                            });
+                           $("#ABOREG").fancybox({
+                             'width'       : '50%',
+                             'height'      : '90%',
+                             'autoScale'     : false,
+                             'transitionIn'    : 'none',
+                             'transitionOut'   : 'none',
+                             'type'        : 'iframe'
+                           });                           
                            $("#Meinedaten").fancybox({
                              'width'       : '50%',
                              'height'      : '90%',

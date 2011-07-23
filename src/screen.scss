@@ -179,6 +179,17 @@ body {
       }
     }
   }
+  span {
+  	&.lock {
+		background:transparent image-url("icon_LOCK.gif") no-repeat;
+		background-position: $m/2 -2px; 
+		padding-left: 30px;	
+		a {
+			color: #646464;
+		}
+		
+  	}
+  }
   a {
     color: $DefaultLinkColor;
     text-decoration: none;
