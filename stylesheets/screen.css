@@ -363,7 +363,7 @@ body textarea { width: 390px; height: 250px; }
 /* line 176, ../src/screen.scss */
 #Main.no-sidebar #MainbColumn .articleview_grid article { width: 450px; }
 /* line 183, ../src/screen.scss */
-#Main span.lock { background: transparent url('../images/icon_LOCK.gif?1311409245') no-repeat; background-position: 10px -2px; padding-left: 30px; }
+#Main span.lock { padding-left: 10px; }
 /* line 187, ../src/screen.scss */
 #Main span.lock a { color: #646464; }
 /* line 193, ../src/screen.scss */

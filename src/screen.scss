@@ -181,9 +181,9 @@ body {
   }
   span {
   	&.lock {
-		background:transparent image-url("icon_LOCK.gif") no-repeat;
-		background-position: $m/2 -2px; 
-		padding-left: 30px;	
+		// background:transparent image-url("icon_LOCK.gif") no-repeat;
+		// background-position: $m/2 -2px; 
+		padding-left: 10px;	
 		a {
 			color: #646464;
 		}
