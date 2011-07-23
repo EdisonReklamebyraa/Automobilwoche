@@ -241,7 +241,7 @@ google.setOnLoadCallback(function()
 
                            $('.tickeranim').vTicker({
                              speed: 500,
-                             pause: 3000,
+                             pause: 300000,
                              showItems: 3,
                              animation: 'fade',
                              mousePause: false,
