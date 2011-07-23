@@ -300,8 +300,8 @@ google.setOnLoadCallback(function()
                              };
 
                              this.createMainArticle = function(topArticle, lastArticle) {
-
-                               linkHtml = $("a:has(img)", lastArticle).html().replace(this.smallWidth, this.mainWidth).replace(this.smallHeight, this.mainHeight),
+                               var html = $("a:has(img)", lastArticle).html()  || "",
+                               linkHtml = html.replace(this.smallWidth, this.mainWidth).replace(this.smallHeight, this.mainHeight),
                                link = $("a:has(img)", lastArticle).clone(),
 
                                newArticle = $("<div class='top'>"),
@@ -316,8 +316,8 @@ google.setOnLoadCallback(function()
                              }
 
                              this.createNextArticle = function(topArticle, lastArticle) {
-
-                               smallLinkHtml = $("a:has(img)", topArticle).html().replace(this.mainWidth, this.smallWidth).replace(this.mainHeight, this.smallHeight),
+                               var html = $("a:has(img)", topArticle).html()  || "",
+                               smallLinkHtml = html.replace(this.mainWidth, this.smallWidth).replace(this.mainHeight, this.smallHeight),
                                smallLink = $("a:has(img)", topArticle).clone(),
                                newArticle = $("<article>");
                                newArticle.attr("class", $(lastArticle).attr("class") );
@@ -441,7 +441,7 @@ google.setOnLoadCallback(function()
                              'transitionIn'    : 'none',
                              'transitionOut'   : 'none',
                              'type'        : 'iframe'
-                           });                           
+                           });
                            $("#Meinedaten").fancybox({
                              'width'       : '50%',
                              'height'      : '90%',
@@ -474,6 +474,6 @@ function NewWindow(width,height,url) {
   window.open(url,"PopUp","menubars=0,scrollbars=0,resizable=1,height="+height+",width="+width);
 }
 function choosedate () {
-	window.open('/g/kalender_ger.html?searchform.dateselected','','menubar=0,titlebar=0,width=268,height=236');
-	document.searchform.Interval.options[document.searchform.Interval.options.length-1].selected = true;
+  window.open('/g/kalender_ger.html?searchform.dateselected','','menubar=0,titlebar=0,width=268,height=236');
+  document.searchform.Interval.options[document.searchform.Interval.options.length-1].selected = true;
 }
