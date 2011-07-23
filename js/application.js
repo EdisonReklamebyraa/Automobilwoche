@@ -434,7 +434,7 @@ google.setOnLoadCallback(function()
                              'transitionOut'   : 'none',
                              'type'        : 'iframe'
                            });
-                           $("#ABOREG").fancybox({
+                           $(".ABOREG").fancybox({
                              'width'       : '50%',
                              'height'      : '90%',
                              'autoScale'     : false,
