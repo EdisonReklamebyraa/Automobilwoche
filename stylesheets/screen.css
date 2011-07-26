@@ -640,7 +640,7 @@ body textarea { width: 390px; height: 250px; }
 /* line 214, ../src/partials/_boxes.scss */
 .sideColumn_box dl { padding: 10px; clear: both; overflow: hidden; }
 /* line 218, ../src/partials/_boxes.scss */
-.sideColumn_box dl.links { margin-bottom: 0; }
+.sideColumn_box dl.links { margin: 0; }
 /* line 220, ../src/partials/_boxes.scss */
 .sideColumn_box dl.links dd { width: 100%; padding: 4px 0; }
 /* line 226, ../src/partials/_boxes.scss */
