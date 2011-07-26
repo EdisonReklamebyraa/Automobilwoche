@@ -215,6 +215,14 @@
 		padding: $m/2;
 		clear: both;
 		overflow: hidden;
+		&.links {
+			margin-bottom: 0;
+			dd {
+				width: 100%;
+				padding: 4px 0;
+				
+			}
+		}
 		dt {
 			float:left;
 			width: 30%;
