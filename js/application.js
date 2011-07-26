@@ -111,7 +111,7 @@ google.setOnLoadCallback(function()
                                return returnValue;
                              }
                            };
-                           var CSSFilter = ".template-article",
+                           var CSSFilter = "#MainbColumn",
                            zoom = $.cookie("zoom"),
                            incFilter = ".zoomin",
 
