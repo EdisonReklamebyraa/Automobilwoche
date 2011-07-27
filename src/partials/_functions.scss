@@ -10,8 +10,8 @@
 
 @mixin bigsearchfield($img-url:"input_big.png") {
   width: image-width($img-url) - $m;
-  height: image-height($img-url) - $m;
-  padding: $m/2;
+  height: 15px;
+  padding: 7px $m/2 7px $m/2;
   background:transparent image-url($img-url) left top no-repeat;
   border: 0;
   @include fontsize;
