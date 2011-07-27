@@ -5,7 +5,7 @@
   background:transparent image-url($img-url) left top no-repeat;
   border: 0;
   @include fontsize;
-  color: $lightlightGrey;
+  color: $mediumGrey;
 };
 
 @mixin bigsearchfield($img-url:"input_big.png") {
