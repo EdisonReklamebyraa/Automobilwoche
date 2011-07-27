@@ -1,7 +1,7 @@
 @mixin inputText($img-url:"input.png") {
   width: image-width($img-url) - $m;
-  height: image-height($img-url) - $m;
-  padding: $m/2;
+  height: 15px;
+  padding: 7px $m/2 7px $m/2;
   background:transparent image-url($img-url) left top no-repeat;
   border: 0;
   @include fontsize;
@@ -79,6 +79,7 @@
        input[type=submit]{
           @include submitbtn("search.png");
           margin: 0 $m/2 0 0;
+
        }
      }
      &.bigsearchfield
