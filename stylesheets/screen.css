@@ -74,7 +74,7 @@ form label { font-weight: normal!important; }
 /* line 79, ../src/partials/_functions.scss */
 .template-search .search-top form.search input[type=submit] { background: #053463 url('../images/search.png?1308901501') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; }
 /* line 86, ../src/partials/_functions.scss */
-.template-search .search-top form.bigsearchfield input[type=search] { width: 496px; height: 9px; padding: 10px; background: transparent url('../images/input_big.png?1311162816') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
+.template-search .search-top form.bigsearchfield input[type=search] { width: 496px; height: 9px; padding: 10px; background: transparent url('../images/input_big.png?1311162816') left top no-repeat; border: 0; font-size: 100%; color: #868686; }
 /* line 89, ../src/partials/_functions.scss */
 .template-search .search-top form.bigsearchfield input[type=submit] { background: #053463 url('../images/search.png?1308901501') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; }
 /* line 94, ../src/partials/_functions.scss */
@@ -317,7 +317,7 @@ body textarea { width: 390px; height: 250px; }
 /* line 79, ../src/partials/_functions.scss */
 #Top .section .forms form.search input[type=submit] { background: #053463 url('../images/search.png?1308901501') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; }
 /* line 86, ../src/partials/_functions.scss */
-#Top .section .forms form.bigsearchfield input[type=search] { width: 496px; height: 9px; padding: 10px; background: transparent url('../images/input_big.png?1311162816') left top no-repeat; border: 0; font-size: 100%; color: #cfcfcf; }
+#Top .section .forms form.bigsearchfield input[type=search] { width: 496px; height: 9px; padding: 10px; background: transparent url('../images/input_big.png?1311162816') left top no-repeat; border: 0; font-size: 100%; color: #868686; }
 /* line 89, ../src/partials/_functions.scss */
 #Top .section .forms form.bigsearchfield input[type=submit] { background: #053463 url('../images/search.png?1308901501') left top no-repeat; width: 60px; height: 28px; border: 0; margin: 0; color: #fff; padding: 7px; font-weight: bold; font-size: 92.308%; line-height: 14px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; margin: 10px 10px 10px 0; margin: 0 10px 0 0; }
 /* line 94, ../src/partials/_functions.scss */
