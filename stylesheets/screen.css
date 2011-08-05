@@ -814,7 +814,7 @@ body textarea { width: 390px; height: 250px; }
 #Main .template-article #Articlecomment textarea, #Main .template-blog #Articlecomment textarea { width: 570px; height: 100px; }
 
 /* line 202, ../src/partials/_article.scss */
-#MainbColumn .main { height: 790px; }
+#MainbColumn .main { height: 850px; }
 /* line 206, ../src/partials/_article.scss */
 #MainbColumn .top { height: 530px; }
 
