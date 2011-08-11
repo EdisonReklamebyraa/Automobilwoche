@@ -1,148 +1,150 @@
 .articleview_grid
 {
-	&.linkicons {
-		@include link_icons;
-	}
- 	margin: $m/2 0 $m 0;
-	background-image: image-url("620_article_horizontal_border.png");
-	overflow: hidden;
-	clear: both;
-	hr {
-		clear: both;
-		border: none;
-		height: 1px;
-		background-color:$lightlightGrey;
-		margin: 0 0 $m/2 0;  
-		&.last {
-			margin: 0 0 0 0;
-		}
-	}
-		
-	article {
+  &.linkicons {
+    @include link_icons;
+  }
+  margin: $m/2 0 $m 0;
+  background-image: image-url("620_article_horizontal_border.png");
+  overflow: hidden;
+  clear: both;
+  hr {
+    clear: both;
+    border: none;
+    height: 1px;
+    background-color:$lightlightGrey;
+    margin: 0 0 $m/2 0;
+    &.last {
+      margin: 0 0 0 0;
+    }
+  }
 
-		padding: 0 $m 0 0;
-		float: left;
-		width: $column*4+(4*$m)-$m;
-		border-bottom: none!important;
-		margin-bottom: $m/2;
+  article {
 
-		p {
-			margin: 0;
-			padding: 0;
-		}
-		&.even {
-			width: $column*4+(3*$m);
-			padding: 0 0 0 0;
-		}
+    padding: 0 $m 0 0;
+    float: left;
+    width: $column*4+(4*$m)-$m;
+    border-bottom: none!important;
+    margin-bottom: $m/2;
 
-		img {
-			float: left;
-			margin: 0 $m/2 $m/2 0;
-		}
-	}
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    &.even {
+      width: $column*4+(3*$m);
+      padding: 0 0 0 0;
+    }
+
+    img {
+      float: left;
+      margin: 0 $m/2 $m/2 0;
+    }
+  }
 }
 
 
 .articleview_picturelist
 {
-	margin: $m/2 0 0 0;
-	overflow: hidden;
-	clear: both;
-	hr {
-		clear: both;
-		border: none;
-		height: 1px;
-		background-color:$lightlightGrey;
-		margin: 0 0 $m/2 0;  
-		&.last {
-			margin: 0 0 0 0;
-		}
-	}
-	article {
-		padding: 0 0 0 0;
-		float: left;
-		width: 100%;
-		margin-bottom: $m/2;
-		&.even {
-			img {
-				float: right;
-				margin: 0 0 $m/2 $m/2;
-			}
-		}
-		&.last {
-			border-bottom-style: none;
-		}
-		p {
-			margin: 0;
-		}
+  margin: $m/2 0 0 0;
+  overflow: hidden;
+  clear: both;
+  hr {
+    clear: both;
+    border: none;
+    height: 1px;
+    background-color:$lightlightGrey;
+    margin: 0 0 $m/2 0;
+    &.last {
+      margin: 0 0 0 0;
+    }
+  }
+  article {
+    padding: 0 0 0 0;
+    float: left;
+    width: 100%;
+    margin-bottom: $m/2;
+    &.even {
+      img {
+        float: right;
+        margin: 0 0 $m/2 $m/2;
+      }
+    }
+    &.last {
+      border-bottom-style: none;
+    }
+    p {
+      margin: 0;
+    }
 
 
-		img {
-			float: left;
-			margin: 0 $m/2 $m/2 0;
-		}
+    img {
+      float: left;
+      margin: 0 $m/2 $m/2 0;
+    }
 
-		h4 {
-			display: block;
-		}
-		.timedate {
-			font-size: 10px;
-		}
-	}
+    h4 {
+      display: block;
+    }
+    .timedate {
+      font-size: 10px;
+    }
+  }
 
 }
 .articleview_bullets {
-	ul {
-		padding-left: $m;
-	}
+  ul {
+    padding-left: $m;
+  }
 }
 .articleview_blogs
 {
-	margin: $m/2 0 $m/2 0;
-	overflow: hidden;
-	clear: both;
-	hr {
-		clear: both;
-		border: none;
-		height: 1px;
-		background-color:$lightlightGrey;
-		margin: 0 0 $m/2 0;  
-		&.last {
-			margin: 0 0 0 0;
-		}
-	}
-	article {
-		padding: 0 0 0 0;
-		float: left;
-		width: 100%;
-		margin-bottom: $m/2;
-		@include byline;
-		&.even {
-			img {
-				float: right;
-				margin: 0 0 $m/2 $m/2;
-			}
-		}
-		&.last {
-			border-bottom-style: none;
-		}
-		p {
-			margin-bottom: $m;
-		}
+  margin: $m/2 0 $m/2 0;
+  overflow: hidden;
+  clear: both;
+  hr {
+    clear: both;
+    border: none;
+    height: 1px;
+    background-color:$lightlightGrey;
+    margin: 0 0 $m/2 0;
+    &.last {
+      margin: 0 0 0 0;
+    }
+  }
+  article {
+    padding: 0 0 0 0;
+    float: left;
+    width: 100%;
+    margin-bottom: $m/2;
+    @include byline;
+    &.even {
+      img {
+        float: right;
+        margin: 0 0 $m/2 $m/2;
+      }
+    }
+    &.last {
+      border-bottom-style: none;
+    }
+    p {
+      margin-bottom: $m;
+    }
 
 
-		img {
-			margin-bottom: $m;
-		}
+    img {
+      margin-bottom: $m;
+    }
 
-		h4 {
-			margin-bottom: $m/4;
-			font-weight: bold;
-		}
-			.timedate {
-			font-size: 10px;
-		}
-	}
+    h4 {
+      margin-bottom: $m/4;
+      font-weight: bold;
+      clear: left;
+
+    }
+      .timedate {
+      font-size: 10px;
+    }
+  }
 
 }
 
