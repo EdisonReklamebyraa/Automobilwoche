@@ -184,9 +184,9 @@ body {
   {
     background: none;
     #MainbColumn {
-      width: $maincolumn;
+      width: $maincolumn + 100px;
       .pageStrip {
-        width: $maincolumn;
+        width: $maincolumn + 100px;
       }
       .articleview_grid {
         background-image: image-url("920_article_horizontal_border.png");
