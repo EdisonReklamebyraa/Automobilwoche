@@ -108,25 +108,34 @@ $.fn.vTicker = function(options) {
     }
     var tick = function()
     {
+      if(!options.isPaused) {
 
-      if(options.direction == 'up')
-      {
-        moveUp(obj, maxHeight, options);
+        if(options.direction == 'up')
+        {
+          moveUp(obj, maxHeight, options);
+        }
+        else
+        {
+          moveDown(obj, maxHeight, options);
+        }
       }
-      else
+
+
+
+
+      interval = setTimeout(tick, options.pause);
+    }
+
+    if(options.mousePause)
       {
-        moveDown(obj, maxHeight, options);
-      }
-      if(options.mousePause)
-      {
+
         obj.bind("mouseenter",function(){
           options.isPaused = true;
         }).bind("mouseleave",function(){
           options.isPaused = false;
         });
       }
-      interval = setTimeout(tick, options.pause);
-    }
+
     var interval = setTimeout(tick, options.pause);
     return this;
 })

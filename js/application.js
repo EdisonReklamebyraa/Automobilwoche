@@ -241,10 +241,10 @@ google.setOnLoadCallback(function()
 
                            $('.tickeranim').vTicker({
                              speed: 500,
-                             pause: 3000,
+                             pause: 5000,
                              showItems: 3,
                              animation: 'fade',
-                             mousePause: false,
+                             mousePause: true,
                              height: 0,
                              direction: 'up'
                            });

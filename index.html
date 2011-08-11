@@ -1,349 +1,1584 @@
-<!DOCTYPE html>
-<html lang="en">
 
-  <head><meta charset="utf-8">
-  <title>Automobilwoche</title>
-  <link rel="stylesheet" href="stylesheets/screen.css">
-  <link rel="stylesheet" href="stylesheets/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
-  <script src="https://www.google.com/jsapi?key=ABQIAAAAYAmKm_jiA2_EYm6gJg2echSwg8Oar1LFmg3uW64cC474sxMk6hR6V61sZorHde4102u8QQQzTG5jbA" type="text/javascript"></script>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Automobilwoche</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="stylesheets/screen.css">
+    <link rel="stylesheet" href="http://automobilwoche.de/abavo/css/online.css">
+    <!-- link rel="stylesheet" href="/stylesheets/screen.css" -->
+    <link rel="stylesheet" href="http://automobilwoche.de/stylesheets/jquery.thumbnailScroller.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="/stylesheets/jquery.lightbox-0.5.css" media="screen" /> -->
+    <link rel="stylesheet" href="http://automobilwoche.de/stylesheets/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+    <link rel="alternate" type="application/rss+xml" title="Automobilwoche - RSS feed" href="http://www.automobilwoche.de/section/rssfeed&mime=xml&omniture=0">
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="https://www.google.com/jsapi?key=ABQIAAAAYAmKm_jiA2_EYm6gJg2echSwg8Oar1LFmg3uW64cC474sxMk6hR6V61sZorHde4102u8QQQzTG5jbA" type="text/javascript"></script>
+    <script src="js/application.js"></script>
+    <script type="text/javascript" src="http://automobilwoche.de/js/pollMiniAjax.js"></script>
+    <script type="text/javascript" src="http://automobilwoche.de/js/UserCommentsV1.js"></script>
+    <SCRIPT LANGUAGE=JavaScript>
+<!--
+//configuration
+///apps/pbcs.dll/frontpage -- here;
+//;
+///apps/pbcs.dll/fron;
+//OAS_url = 'http://oascentral.automobilwoche.com/RealMedia/ads/';
+//OAS_url = 'http://oas-central.realmedia.com/RealMedia/ads/';
+// kevin hill - use new oas domain
+OAS_url = 'http://oasc14014.247realmedia.com/RealMedia/ads/';
+//OAS_sitepage = window.location.hostname + window.location.pathname;
+OAS_sitepage = 'www.automobilwoche.com/saxo/index';
+OAS_listpos = 'Top1,Top2,Top3,Middle,Middle1,Middle2,Middle3,Right1,Right2,Left1,Position1,Position2,x01,x02,x03,x04,x05,x06,x07,x08,x09,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19,x20,x21,x22,x23,x24,x25,x26,x27,x28,x29';
+OAS_query = '';
+OAS_target = '_blank';
+//end of configuration
+OAS_version = 10;
+OAS_rn = '001234567890'; OAS_rns = '1234567890';
+OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
+//OAS_rns = '5620892959';
+function OAS_RICH(pos) {
+  document.write('<A HREF="' + OAS_url + 'click_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" TARGET=' + OAS_target + '>');
+  document.write('<IMG SRC="' + OAS_url + 'adstream_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + '" BORDER=0></A>');
+}
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE=JavaScript1.1>
+<!--
+OAS_version = 11;
+if (navigator.userAgent.indexOf('Mozilla/3') != -1 || navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1)
+  OAS_version = 10;
+if (OAS_version >= 11)
+  document.write('<SCR' + 'IPT LANGUAGE=JavaScript1.1 SRC="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '?' + '"><\/SCRIPT>');
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+document.write('');
+//-->
+</SCRIPT>
+<!------ OAS SETUP end ------>
+
+    <script language="JavaScript">
+    // Set variabel for numbers of access control views
+    var NumberOfViews = '2';
+    </script>
   </head>
   <body>
-  <div id="Top">
-  <aside>
-    <img src="http://dummyimage.com/1150x150/ccc/fff">
-  </aside>
-  <aside class="hockeystick"><img src="http://dummyimage.com/200x500/ccc/fff"></aside>
-  <div id="main">
-    <ul>
-      <li>
-        <a href="#">Abo 1</a>
-      </li>
-      <li>
-        <a href="#">Registrieren</a>
-      </li>
-      <li>
-        <a href="#">Mobil Dienste</a>
-      </li>
-      <li>
-        <a href="#">Newsletter</a>
-      </li>
-      <li>
-        <a href="#">Kontakt</a>
-      </li>
-      <li>
-        <a href="#">Meine Daten</a>
-      </li>
-      <li>
-        <a href="#">Passwort vergessen</a>
-      </li>
-      <li>
-        <a href="#">Mediadaten</a>
-      </li>
-    </ul>
-    <div class="section">
-      <h1>Automobilwoche</h1>
-      <div class="forms">
-        <form class="login">
-          <!-- div class="logout">
-          You are now logged in <a href="#">Log out</a>
-          </div -->
-          <input type="text" placeholder="Benutzername..." class="username">
-          <input type="password" placeholder="Passwort...">
-          <input type="submit" value="Log in">
-        </form>
-        <form class="search">
-          <input type="search">
-          <input type="submit" value="Suche">
-        </form>
+
+<div id="Top">
+      <aside>
+        <script language="JavaScript">OAS_RICH('x13');</script>
+        <!-- img src="http://dummyimage.com/989x139/ccc/fff"><br / -->
+        <!-- img src="http://dummyimage.com/940x120/ccc/fff"><br / -->
+        <!-- img src="http://dummyimage.com/1150x150/ccc/fff" -->
+      </aside>
+      <!-- aside class="hockeystick"><img src="http://dummyimage.com/200x500/ccc/fff"></aside -->
+      <div id="main">
+        <ul>
+          <li>
+            <a id="Abo" href="http://service.vumedia.de/automobilwoche/abo/">Abo</a>
+          </li>
+          <li>
+            <a id="Registrieren" href="http://service.vumedia.de/automobilwoche/register/register.php">Registrieren</a>
+          </li>
+          <!-- li>
+            <a href="#">Mobil Dienste</a>
+          </li -->
+          <li>
+            <a id="Newsletter" href="http://service.vumedia.de/automobilwoche/newsletter/">Newsletter</a>
+          </li>
+          <li>
+            <a href="/apps/pbcs.dll/misc?url=/misc/contact.pbs&Category=contact">Kontakt</a>
+          </li>
+          <li>
+            <a id="Meinedaten" href="http://service.vumedia.de/automobilwoche/client_data/">Meine Daten</a>
+          </li>
+          <li>
+            <a id="Lostpassword" href="http://service.vumedia.de/automobilwoche/pw/pw.php">Passwort vergessen</a>
+          </li>
+          <li>
+            <a href="/apps/pbcs.dll/article?Date=99999999&Category=REPOSITORY&Lopenr=804605833&Ref=AR&template=info">Mediadaten</a>
+          </li>
+        </ul>
+        <div class="section">
+          <h1><a href="/apps/pbcs.dll/frontpage">Automobilwoche</a></h1>
+          <div class="forms">
+            <iframe src="/apps/pbcs.dll/section?Template=session&Nocache=1" width="478" height="64" frameborder="0" scrolling="no" marginheight="0" ></iframe>
+            <form action="/apps/pbcs.dll/search?category=search" method="get" class="search">
+              <input type="search" name="q">
+              <input type="submit" value="Suche">
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-  <div id="MainNavigation">
-  <ul>
-    <li class="icon_HOUSE">
-      <a href="#">Home</a>
-    </li>
-    <li>
-      <a href="#">Nachrichten</a>
-    </li>
-    <li>
-      <a href="#">Meinung</a>
-    </li>
-    <li>
-      <a href="#">Multimedia</a>
-    </li>
-    <li>
-      <a href="#">Themen</a>
-    </li>
-    <li>
-      <a href="#">Daten</a>
-    </li>
-    <li>
-      <a href="#">Veranstaltungen</a>
-    </li>
-    <li>
-      <a href="#">Termine</a>
-    </li>
-    <li>
-      <a href="#">Marktplatz</a>
-    </li>
-    <li>
-      <a href="#">Stellenmarkt</a>
-    </li>
-    <li>
-      <a href="#">Verlag</a>
-    </li>
-  </ul>
-  </div>
-  <div id="Main">
-  <section id="MainbColumn">
-    <div class="pageStrip underline">
-      <span>
-        JANUAR 12, 2011
-        <a href="#">Startseite</a> / Top Thema
-      </span>
+
+    <div id="MainNavigation">
       <ul>
         <li>
-          1
+          <a href="/apps/pbcs.dll/frontpage" class="icon_HOUSE">Home</a>
         </li>
         <li>
-          2
-        </li>
-        <li>
-          3
-        </li>
-        <li>
-          4
-        </li>
-        <li>
-          5
-        </li>
+  <a id="menu_1263" href="/apps/pbcs.dll/section?category=&profile=1263">Nachrichten</a>
+  <div class="wide flyout">
+    <ul>
+      <li><a href="/apps/pbcs.dll/section?category=&profile=1285">Nachrichtenüberblick</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1285">Nachrichtenüberblick</a></li -->
+<li><a href="/apps/pbcs.dll/section?category=&profile=1276">Hersteller</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1276">Hersteller</a></li -->
+<li><a href="/apps/pbcs.dll/section?category=&profile=1280">Zulieferer</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1280">Zulieferer</a></li -->
+<li><a href="/apps/pbcs.dll/section?category=&profile=1279">Handel</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1279">Handel</a></li -->
+<li><a href="/apps/pbcs.dll/section?category=&profile=1278">Showroom</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1278">Showroom</a></li -->
+<li><a href="/apps/pbcs.dll/section?category=&profile=1282">Marketing</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1282">Marketing</a></li -->
+<li><a href="/apps/pbcs.dll/section?category=&profile=1281">Management</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1281">Management</a></li -->
+<li><a href="/apps/pbcs.dll/section?category=&profile=1283">Personalien</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1283">Personalien</a></li -->
+    </ul>
+    <div class="news">
+          <h3>Nachrichtenüberblick</h3>
+          <article>
+  <a href="/article/20110811/REPOSITORY/110819972/1285/saab-droht-zwangsvollstreckung"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110811&Category=REPOSITORY&ArtNo=110819972&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110811/REPOSITORY/110819972/1285/saab-droht-zwangsvollstreckung" style="color: #000;">Saab droht Zwangsvollstreckung</a></h4>
+  <p>Ständiges Auf und Ab bei Saab: Während das Unternehmen selbst sich zuversichtlich gibt und von "konstruktiven Gesprächen&#8220; mit einem neuen...</p>
+</article><article>
+  <a href="/article/20110811/DPA/308109940/1285/opel-betriebsrat-begrußt-gm-plan"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110811&Category=DPA&ArtNo=308109940&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110811/DPA/308109940/1285/opel-betriebsrat-begrußt-gm-plan" style="color: #000;">Opel-Betriebsrat begrüßt GM-Plan</a></h4>
+  <p>Der Opel-Betriebsrat begrüßt die Überlegung der US-Konzernmutter General Motors, die Marke Chevrolet statt wie bisher ausschließlich in Südkorea...</p>
+</article>
+          <h3>Hersteller</h3>
+          <article>
+  <a href="/article/20110810/REPOSITORY/110819997/1276/audi-zeigt-carbon-auto-auf-der-iaa"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819997&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110810/REPOSITORY/110819997/1276/audi-zeigt-carbon-auto-auf-der-iaa" style="color: #000;">Audi zeigt Carbon-Auto auf der IAA</a></h4>
+  <p>Kaum hat BMW sein Carbonfahrzeug i3 vorgestellt, zieht Erzkonkurrent Audi nach: Die Ingolstädter zeigen eine Zeichnung der neuen Studie "Audi urban...</p>
+</article><article>
+  <a href="/article/20110810/REPOSITORY/110819993/1276/gm-will-opel-hoher-positionieren"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819993&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110810/REPOSITORY/110819993/1276/gm-will-opel-hoher-positionieren" style="color: #000;">GM will Opel höher positionieren</a></h4>
+  <p>General Motors plant einem Medienbericht zufolge, seine deutsche Tochter Opel in Europa höher zu positionieren. Die Marke soll wieder gegen den...</p>
+</article>
+          <h3>Zulieferer</h3>
+          <article>
+  <a href="/article/20110810/REPOSITORY/110819987/1280/anteil-an-tognum-aufgestockt"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819987&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110810/REPOSITORY/110819987/1280/anteil-an-tognum-aufgestockt" style="color: #000;">Anteil an Tognum aufgestockt</a></h4>
+  <p>Die Daimler AG und Rolls-Royce haben weitere Aktien der Tognum AG in Höhe von insgesamt 0,83 Prozent gekauft. Damit hält das Joint-Venture insgesamt...</p>
+</article><article>
+  <a href="/article/20110810/REPOSITORY/110819990/1280/bosch-will-unipoint-gruppe-taiwan-ubernehmen"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819990&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110810/REPOSITORY/110819990/1280/bosch-will-unipoint-gruppe-taiwan-ubernehmen" style="color: #000;">Bosch will Unipoint-Gruppe Taiwan übernehmen</a></h4>
+  <p>Der Geschäftsbereich Automotive Aftermarket vom größten Zulieferer Bosch beabsichtigt die Unipoint-Gruppe mit Schwestergesellschaften und den Marken...</p>
+</article>
+          <h3>Handel</h3>
+          <article>
+  <a href="/article/20110810/REPOSITORY/110819985/1279/carneoo-mit-neuem-finanzierungsrechner"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819985&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110810/REPOSITORY/110819985/1279/carneoo-mit-neuem-finanzierungsrechner" style="color: #000;">Carneoo mit neuem Finanzierungsrechner</a></h4>
+  <p>Individuelle Finanzierungsmodelle können Kaufinteressenten jetzt direkt auf der Homepage des Internet-Neuwagenvermittlers Carneoo berechnen lassen:...</p>
+</article><article>
+  <a href="/article/20110810/DPA/308109967/1279/lieferzeit-von-neuwagen-gesunken"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=DPA&ArtNo=308109967&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110810/DPA/308109967/1279/lieferzeit-von-neuwagen-gesunken" style="color: #000;">Lieferzeit von Neuwagen gesunken</a></h4>
+  <p>Die Lieferfrist von Neuwagen in Deutschland ist wieder kürzer geworden. Im Juli bestellte Autos werden nach durchschnittlich 3,6 Monaten an die...</p>
+</article>
+          <h3>Showroom</h3>
+          <article>
+  <a href="/article/20110809/REPOSITORY/110809917/1278/mehr-motoren-fur-den-bmw-x3"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110809&Category=REPOSITORY&ArtNo=110809917&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110809/REPOSITORY/110809917/1278/mehr-motoren-fur-den-bmw-x3" style="color: #000;">Mehr Motoren für den BMW X3</a></h4>
+  <p>BMW erweitert das Motorenangebot des X3: Ein Zweiliter-Benziner als Einstiegsmotor und ein 3,0-Liter-Sechszylinder-Diesel mit 313 PS runden ab Herbst...</p>
+</article><article>
+  <a href="/article/20110808/REPOSITORY/110809932/1278/hyundai-veloster-soll-deutschland-erobern"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110808&Category=REPOSITORY&ArtNo=110809932&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110808/REPOSITORY/110809932/1278/hyundai-veloster-soll-deutschland-erobern" style="color: #000;">Hyundai Veloster soll Deutschland erobern</a></h4>
+  <p>Der Veloster soll Hyundais Position auf dem deutschen Markt stärken. Um dieses Ziel zu erreichen, hat der südkoreanische Autohersteller in die...</p>
+</article>
+          <h3>Marketing</h3>
+          <article>
+  <a href="/article/20110811/REPOSITORY/110819970/1282/peugeot-oldtimer-im-web"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110811&Category=REPOSITORY&ArtNo=110819970&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110811/REPOSITORY/110819970/1282/peugeot-oldtimer-im-web" style="color: #000;">Peugeot-Oldtimer im Web</a></h4>
+  <p>Die Dachorganisation der deutschen Clubs und Liebhaber von Peugeot, hat ihre Internetpräsenz aufgefrischt. Besucher der Seite bekommen sowohl...</p>
+</article><article>
+  <a href="/article/20110810/REPOSITORY/110819982/1282/lackspezialist-standox-erhalt-design-preis"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819982&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110810/REPOSITORY/110819982/1282/lackspezialist-standox-erhalt-design-preis" style="color: #000;">Lackspezialist Standox erhält Design-Preis</a></h4>
+  <p>Herausragende Leistungen auf den Feldern Markenführung, Markenkommunikation und Design im Bereich Automotive wurden beim ersten internationalen...</p>
+</article>
+          <h3>Management</h3>
+          <article>
+  <a href="/article/20110731/DPA/307319998/1281/kampfansage-vom-daimler-chef"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110731&Category=DPA&ArtNo=307319998&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110731/DPA/307319998/1281/kampfansage-vom-daimler-chef" style="color: #000;">Kampfansage vom Daimler-Chef</a></h4>
+  <p>Daimlers Vorstandschef Dieter Zetsche hat den beiden Konkurrenten Audi und BMW im Dreikampf um den größten Premiumhersteller den Kampf angesagt. Auf...</p>
+</article><article>
+  <a href="/article/20110617/REPOSITORY/110619945/1281/siemens-manager-wechselt-zu-man"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110617&Category=REPOSITORY&ArtNo=110619945&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110617/REPOSITORY/110619945/1281/siemens-manager-wechselt-zu-man" style="color: #000;">Siemens-Manager wechselt zu MAN</a></h4>
+  <p>MAN ernennt Siemens-Manager René Umlauft zum neuen Spartenvorstand. Der 46-Jährige wird ab Herbst stellvertretender Vorstand. Außerdem soll sich der...</p>
+</article>
+          <h3>Personalien</h3>
+          <article>
+  <a href="/article/20110811/REPOSITORY/110819975/1283/chefwechsel-bei-lear"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110811&Category=REPOSITORY&ArtNo=110819975&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110811/REPOSITORY/110819975/1283/chefwechsel-bei-lear" style="color: #000;">Chefwechsel bei Lear</a></h4>
+  <p>Der bisherige Finanzvorstand Matt Simoncini wird neuer Vorstandschef des Zulieferers Lear. Er folgt auf Robert Rossiter, der dem unternehmen...</p>
+</article><article>
+  <a href="/article/20110811/REPOSITORY/110819974/1283/porsche-hat-neuen-motorenchef"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110811&Category=REPOSITORY&ArtNo=110819974&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110811/REPOSITORY/110819974/1283/porsche-hat-neuen-motorenchef" style="color: #000;">Porsche hat neuen Motorenchef</a></h4>
+  <p>Der Porsche-Entwicklungschef Wolfgang Hatz holt sich mit Jörg Kerner einen Vertrauten an seine Seite. Kerner wird ab Oktober neuer Motorenchef bei...</p>
+</article>
+    </div>
+  </div>
+</li>
+<li>
+  <a id="menu_1264" href="/apps/pbcs.dll/section?category=&profile=1264">Meinung</a>
+  <div class="wide flyout">
+    <ul>
+      <li><a href="/apps/pbcs.dll/misc?url=/templates/blogs_section_ovr.pbs&category=blogs&profile=1287">Blogs</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1287">Blogs</a></li -->
+<li><a href="/apps/pbcs.dll/section?category=&profile=1286">Kommentare</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1286">Kommentare</a></li -->
+<li><a href="/apps/pbcs.dll/section?category=&profile=1288">Sternzeichen</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1288">Sternzeichen</a></li -->
+<li><a href="/apps/pbcs.dll/section?Category=UMFRAGE_ERGEBNISSE">Umfragen</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=REPOSITORY&profile=1023">Umfragen</a></li -->
+    </ul>
+    <div class="news">
+          <h3>Blog</h3>
+          <article>
+  <h4><a href="/article/20110809/BLOGS04/110809916/fur-jede-nische-ein-modell" style="color: #000;">Für jede Nische ein Modell</a></h4>
+  <p><hardreturn>Die Baukasten-Strategie ist nicht neu. Schon seit Jahren hat der VW-Konzern mit ihr Erfolg. In der zweiten Hälfte der 90er Jahre...</p>
+</article><article>
+  <h4><a href="/article/20110809/BLOGS04/110809925/borsencrash-und-autokonjunktur" style="color: #000;">Börsencrash und Autokonjunktur</a></h4>
+  <p><hardreturn>Die Börsen sind auf Talfahrt, die USA nur knapp am Staatsbankrott vorbeigekommen, in der EU schlüpft ein Staat nach dem anderen unter den...</p>
+</article>
+          <h3>Kommentar</h3>
+          <article>
+  <h4><a href="/article/20110711/HEFTARCHIV/307119999/1286/klartext---nach-dem-wutburger-nun-der-wutchef-" style="color: #000;">Klartext - Nach dem Wutbürger nun der Wutchef </a></h4>
+  <p>Die Manager der Autoindustrie brechen immer öfter ihr politisches Schweigen. Daimler-Chef Dieter Zetsche kritisierte kürzlich öffentlich die...</p>
+</article><article>
+  <a href="/article/20110627/HEFTARCHIV/306279964/1286/klartext---lieferzeiten-ein-luxusproblem-"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110627&Category=HEFTARCHIV&ArtNo=306279964&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110627/HEFTARCHIV/306279964/1286/klartext---lieferzeiten-ein-luxusproblem-" style="color: #000;">Klartext - Lieferzeiten: ein Luxusproblem </a></h4>
+  <p>"Entschuldigung&#8220;, fragt der Kunde den Audi-Händler, "haben Sie denn keinen X3?&#8220; "Wir haben keinen Q5&#8220;, antwortet der, "keinen X3...</p>
+</article>
+          <h3>Sternzeichen</h3>
+          <article>
+  <a href="/article/20110725/HEFTARCHIV/307259995/1288/sternzeichen---zdk-prasident-rademacher-zum-autokauf-"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110725&Category=HEFTARCHIV&ArtNo=307259995&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110725/HEFTARCHIV/307259995/1288/sternzeichen---zdk-prasident-rademacher-zum-autokauf-" style="color: #000;">Sternzeichen - ZDK-Präsident Rademacher zum Autokauf </a></h4>
+  <p>&#8222;Inzwischen muss &#8211; bildlich gesprochen &#8211; für jeden Kaufvorgang ein ganzer Baum gefällt werden, um das nötige Papier zu...</p>
+</article><article>
+  <a href="/article/20110711/HEFTARCHIV/307119998/1288/sternzeichen---ford-europa-chef-zu-sudkorea-"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110711&Category=HEFTARCHIV&ArtNo=307119998&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110711/HEFTARCHIV/307119998/1288/sternzeichen---ford-europa-chef-zu-sudkorea-" style="color: #000;">Sternzeichen - Ford-Europa-Chef zu Südkorea </a></h4>
+  <p>&#8222;Ford ist für den Freihandel. Aber der Handel muss auch fair sein.&#8220; Stephen Odell, Ford-Europa-Chef, zum Freihandelsabkommen mit Südkorea.</p>
+</article>
+    </div>
+  </div>
+</li>
+<li>
+  <a id="menu_1266" href="/apps/pbcs.dll/section?Category=Special&Profile=1266">Themen</a>
+</li>
+<li>
+  <a id="menu_1265" href="/apps/pbcs.dll/section?category=&profile=1265">Multimedia</a>
+  <div class="wide flyout">
+    <ul>
+      <li><a href="/apps/pbcs.dll/article?Date=99999999&Category=REPOSITORY&Lopenr=112300007&Ref=AR&template=info">Newsticker</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=REPOSITORY&profile=1015">Newsticker</a></li -->
+<li><a href="/apps/pbcs.dll/section?Category=Photogallery">Bildergalerien</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1274">Bildergalerien</a></li -->
+<li><a href="/apps/pbcs.dll/section?category=&profile=1273">Video</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1273">Video</a></li -->
+    </ul>
+    <div class="news">
+          <h3>Bildergalerien</h3>
+          <article>
+  <a href="/apps/pbcs.dll/tngallery?Site=CG&Date=20110811&Category=PHOTOMODEL&ArtNo=811009999&Ref=PH"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110811&Category=PHOTOMODEL&ArtNo=811009999&Ref=PH&NewTbl=1&Item=1&exactW=67&exactH=38"></a>
+  <h4><a href="/apps/pbcs.dll/tngallery?Site=CG&Date=20110811&Category=PHOTOMODEL&ArtNo=811009999&Ref=PH" style="color: #000;">Der neue Opel Insignia</a></h4>
+  <p>Mehr als 50 nationale und internationale Auszeichnungen hat er schon bekommen, über 400.000 Einheiten des Marken-Flagschiffs sind seit seiner Premiere verkauft worden &#8211; 2012 soll der Opel Insignia dank neuer Motoren und hochmoderner Technologie seine Erfolgsserie fortsetzen.</p>
+</article><article>
+  <a href="/apps/pbcs.dll/tngallery?Site=CG&Date=20110808&Category=PHOTOMODEL&ArtNo=808009999&Ref=PH"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110808&Category=PHOTOMODEL&ArtNo=808009999&Ref=PH&NewTbl=1&Item=1&exactW=67&exactH=38"></a>
+  <h4><a href="/apps/pbcs.dll/tngallery?Site=CG&Date=20110808&Category=PHOTOMODEL&ArtNo=808009999&Ref=PH" style="color: #000;">Der neue Hyundai Veloster</a></h4>
+  <p>Mit dem innovativen Veloster tritt Hyundai im August 2011 wieder im Segment der kompakten Sportcoupés an - und gibt sich dabei nicht mit dem Derivat eines bestehenden Modells zufrieden. Denn das 4,22 Meter lange City-Coupé wurde vollständig neu entwickelt - und betritt absolutes Neuland. </p>
+</article>
+          <h3>Video</h3>
+          <article>
+  <a href="/article/20110810/REPOSITORY/110819997/1273/audi-zeigt-carbon-auto-auf-der-iaa"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819997&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110810/REPOSITORY/110819997/1273/audi-zeigt-carbon-auto-auf-der-iaa" style="color: #000;">Audi zeigt Carbon-Auto auf der IAA</a></h4>
+  <p>Kaum hat BMW sein Carbonfahrzeug i3 vorgestellt, zieht Erzkonkurrent Audi nach: Die Ingolstädter zeigen eine Zeichnung der neuen Studie "Audi urban...</p>
+</article><article>
+  <a href="/article/20110803/DPA/308039958/1273/streit-per-werbespot-wie-grun-ist-vw"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110803&Category=DPA&ArtNo=308039958&Ref=AR&exactW=67&exactH=38"></a>
+  <h4><a href="/article/20110803/DPA/308039958/1273/streit-per-werbespot-wie-grun-ist-vw" style="color: #000;">Streit per Werbespot: Wie grün ist VW?</a></h4>
+  <p>Nach der Greenpeace-Persiflage auf einen Werbespot von Volkswagen fühlen sich die Wolfsburger missverstanden - nehmen die Kritik aber mit Humor.</p>
+</article>
+    </div>
+  </div>
+</li>
+<li>
+  <a id="menu_1267" href="/apps/pbcs.dll/misc?url=/misc/pdf_database.pbs&profile=1267">Daten</a>
+</li>
+<li>
+  <a id="menu_1268" href="/apps/pbcs.dll/section?category=&profile=1268">Veranstaltungen</a>
+  <div class="flyout">
+    <ul>
+      <li><a href="http://www.automobilwoche-konferenz.de">Automobilwoche Konferenz</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1292">Automobilwoche Konferenz</a></li -->
+<li><a href="http://www.automobilwoche-kongress.de">Automobilwoche Kongress</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1291">Automobilwoche Kongress</a></li -->
+    </ul>
+  </div>
+</li>
+<li>
+  <a id="menu_1269" href="/apps/pbcs.dll/events?Category=Termine">Termine</a>
+</li>
+<li>
+  <a id="menu_1271" href="/apps/pbcs.dll/section?category=&profile=1271">Stellenmarkt</a>
+</li>
+<li>
+  <a id="menu_1031" href="/apps/pbcs.dll/section?Category=dasteam&smen=uns">Verlag</a>
+  <div class="flyout">
+    <ul>
+      <li><a href="/apps/pbcs.dll/section?Category=dasteam&smen=uns">Das Team</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=REPOSITORY&profile=1033">Das Team</a></li -->
+<li><a href="/apps/pbcs.dll/article?Date=99999999&Category=REPOSITORY&Lopenr=61010001&Ref=AR&smen=uns&template=noside">Crain Communications</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=REPOSITORY&profile=1032">Crain Communications</a></li -->
+<li><a href="/apps/pbcs.dll/article?Date=99999999&Category=REPOSITORY&Lopenr=112300005&Ref=AR&template=noside">Automotive Medien</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1290">Automotive Medien</a></li -->
+<li><a href="/apps/pbcs.dll/misc?url=/misc/contact.pbs&Category=contact">Kontakt</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=REPOSITORY&profile=1041">Kontakt</a></li -->
+<li><a href="/apps/pbcs.dll/article?Date=99999999&Category=REPOSITORY&Lopenr=804605833&Ref=AR&template=noside">Media-Daten</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=REPOSITORY&profile=1045">Media-Daten</a></li -->
+<li><a href="/apps/pbcs.dll/article?Date=99999999&Category=REPOSITORY&Lopenr=110729976&template=noside">ABG/Datenschutz</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=&profile=1296">ABG/Datenschutz</a></li -->
+<li><a href="/apps/pbcs.dll/article?Date=99999999&Category=REPOSITORY&Lopenr=112300002&Ref=AR&smen=uns&template=noside">Impressum</a></li>
+<!-- li><a href="/apps/pbcs.dll/section?category=REPOSITORY&profile=1295">Impressum</a></li -->
+    </ul>
+  </div>
+</li>
+
+        <!-- xxxpbs:profiletree useobjects=1 objectclass=1 topnode=1262 -->
       </ul>
     </div>
-    <article class="main">
-      <header>
-        <h1><a href="#">Autonachfrage in China birgt Gefahr neuer ÃœberkapazitÃ¤ten</a></h1>
-        <img src="images/content/619x272.png">
-      </header>
 
-      <p>
-        Der Vorstandsvorsitzende des VW-Konzerns, Martin Winterkorn, hat in Detroit den Namen der neuen Limousine aus US-amerikanischer Fertigung enthÃ¼llt, mit der das Unternehmen seine Verkaufszahlen in den Vereinigten Staaten wieder nachhaltig verbessern will: Ganz schlicht Passat heiÃŸt der viertÃ¼rige FÃ¼nfsitzer, der im Sommer zum Kampfpreis von rund...
-        <span class="lock"><a class="ABOREG" href="ABOREG.html">ABO</a></span>
-      </p>
-      <div class="articleview_picturelist">
-        <hr />
-        <article class="even">
-          <img src="images/content/139x96a.png">
-          <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-          <p>
-            Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-            <span class="lock"><a class="ABOREG" href="ABOREG.html">ABO</a></span>
-          </p>
-        </article>
-        <hr />
-        <article>
-          <img src="images/content/139x96b.png">
-          <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-          <p>
-            Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-          </p>
-        </article>
-        <hr />
-        <article class="even">
-          <img src="images/content/139x96c.png">
-          <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-          <p>
-            Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-          </p>
-        </article>
-        <hr />
-      </div>
-      <aside>
-        <img src="http://dummyimage.com/468x68/ccc/fff">
-      </aside>
 
-          <p>
-            Der Vorstandsvorsitzende des VW-Konzerns, Martin Winterkorn, hat in Detroit den Namen der neuen Limousine aus US-amerikanischer Fertigung enthÃ¼llt, mit der das Unternehmen seine Verkaufszahlen in den Vereinigten Staaten wieder nachhaltig verbessern will: Ganz schlicht Passat heiÃŸt der viertÃ¼rige FÃ¼nfsitzer, der im Sommer zum Kampfpreis von rund...
+    <div id="Main">
+      <section id="MainbColumn">
+        <div class="pageStrip underline">
+          <span>
+          Donnerstag, 11. August 2011
+          </span>
+          <span class="tools">
+            <!--
+            <a href"#" class="zoomin">Zoom in</a>
+            <a href"#" class="zoomout">Zoom out</a>
+            -->
+            <a href"#" class="print">Print</a>
+          </span>
+          <!--
+          <ul>
+            <li>
+              1
+            </li>
+            <li>
+              2
+            </li>
+            <li>
+              3
+            </li>
+            <li>
+              4
+            </li>
+            <li>
+              5
+            </li>
+          </ul>
+          -->
+        </div>
+        <article class="main">
+                    <div class="top">
+          <header>
+            <h1><a href="/article/20110811/REPOSITORY/110819972/saab-droht-zwangsvollstreckung">Saab droht Zwangsvollstreckung</a></h1>
+            <a href="/article/20110811/REPOSITORY/110819972/saab-droht-zwangsvollstreckung"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110811&Category=REPOSITORY&ArtNo=110819972&Ref=AR&exactW=619&exactH=348"></a>
+          </header>
+          <p>Ständiges Auf und Ab bei Saab: Während das Unternehmen selbst sich zuversichtlich gibt und von "konstruktiven Gesprächen&#8220; mit einem neuen amerikanischen Investor berichtet, drohen die ersten...<br /> <strong>Donnerstag, 11. August 2011, 11.02 Uhr</strong><!--  - akt. 11.08.2011 12:26   --></span>
+
+              <script language="javascript" type="text/javascript">
+            if (NumberOfViews >= 2) {
+              if ('REGISTERED' == 'REGISTERED') {
+                  if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+                  document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+                  } else {
+                  document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+                  }
+                } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+              if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+                document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+              } else {
+                document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+              }
+              }
+                // 20070925 DSS: Changed this according to an email
+                //if (('REGISTERED' == '') && ('' == '')) {
+                //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+                //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+                //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+                //} else {
+                //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+                //}
+            }
+            </script>
+
           </p>
-          <div class="articleview_picturelist">
+
+        </div>
+
+                    <div class="articleview_picturelist">
             <hr />
-            <article class="even">
-              <img src="images/content/139x96a.png">
-              <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-              <p>
-                Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-              </p>
-            </article>
-            <hr />
-            <article>
-              <img src="images/content/139x96b.png">
-              <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-              <p>
-                Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-              </p>
-            </article>
-            <hr />
-            <article class="even">
-              <img src="images/content/139x96c.png">
-              <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-              <p>
-                Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-              </p>
-            </article>
-            <hr />
+              <!-- articleview_picturelist -->
+  <article >
+    <a href="/article/20110811/DPA/308109940/opel-betriebsrat-begrußt-gm-plan"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110811&Category=DPA&ArtNo=308109940&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110811/DPA/308109940/opel-betriebsrat-begrußt-gm-plan">Opel-Betriebsrat begrüßt GM-Plan</a></h4>
+    <p>Der Opel-Betriebsrat begrüßt die Überlegung der US-Konzernmutter General Motors, die Marke Chevrolet statt wie bisher ausschließlich in Südkorea künftig in Europa bauen zu lassen. Klaus Franz,...<br /> <strong>Mittwoch, 10. August 2011, 18.03 Uhr</strong><!--  - akt. 11.08.2011 09:30   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article class="even">
+    <a href="/article/20110810/REPOSITORY/110819997/audi-zeigt-carbon-auto-auf-der-iaa"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819997&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110810/REPOSITORY/110819997/audi-zeigt-carbon-auto-auf-der-iaa">Audi zeigt Carbon-Auto auf der IAA</a></h4>
+    <p>Kaum hat BMW sein Carbonfahrzeug i3 vorgestellt, zieht Erzkonkurrent Audi nach: Die Ingolstädter zeigen eine Zeichnung der neuen Studie "Audi urban concept", ein 1+1-sitziges Fahrzeug für Megacitys.<br /> <strong>Mittwoch, 10. August 2011, 09.37 Uhr</strong><!--  - akt. 11.08.2011 12:05   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+
           </div>
-          <aside>
-            <img src="http://dummyimage.com/468x68/ccc/fff">
-          </aside>
 
-          <div class="articleview_grid">
-            <hr />
-            <article>
-              <img src="images/content/139x96a.png">
-              <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-              <p>
-                Ganz schlicht Passat heiÃŸt der viertÃ¼rige FÃ¼nfsitzer..
-              </p>
-            </article>
-            <article class="even">
-              <img src="images/content/139x96b.png">
-              <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-              <p>
-                Ganz schlicht Passat heiÃŸt der viertÃ¼rige FÃ¼nfsitzer..
-              </p>
-            </article>
-            <hr />
-            <article>
-              <img src="images/content/139x96c.png">
-              <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-              <p>
-                Ganz schlicht Passat heiÃŸt der viertÃ¼rige FÃ¼nfsitzer..
-              </p>
-            </article>
-            <article class="even">
-              <img src="images/content/139x96d.png">
-              <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-              <p>
-                Ganz schlicht Passat heiÃŸt der viertÃ¼rige FÃ¼nfsitzer..
-              </p>
-            </article>
-            <hr class="last" />
-          </div>
-
-          <div class="articleview_picturelist">
-            <hr />
-            <article>
-              <img src="images/content/139x96a.png">
-              <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-              <p>
-                Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-              </p>
-            </article>
-            <hr />
-            <article class="even">
-              <img src="images/content/139x96b.png">
-              <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-              <p>
-                Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-              </p>
-            </article>
-            <hr />
-            <article>
-              <img src="images/content/139x96c.png">
-              <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-              <p>
-                Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-              </p>
-            </article>
-            <hr />
-          </div>
         </article>
-        <aside>
-          <img src="http://dummyimage.com/468x68/ccc/fff">
+        <aside><label>Anzeige:</label>
+          <script language="JavaScript">OAS_RICH('x21');</script>
         </aside>
         <div class="articleview_picturelist">
-          <h4 class="bar"><a href="#">Hersteller</a></h4>
-          <article>
-            <img src="images/content/139x96a.png">
-            <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-            <p>
-              Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-            </p>
-          </article>
-          <hr />
-          <article class="even">
-            <img src="images/content/139x96b.png">
-            <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-            <p>
-              Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-            </p>
-          </article>
-          <hr />
-          <article>
-            <img src="images/content/139x96c.png">
-            <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-            <p>
-              Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-            </p>
-          </article>
-          <hr />
-          <article class="even">
-            <img src="images/content/139x96d.png">
-            <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-            <p>
-              Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-            </p>
-          </article>
-          <hr />
+          <h4 class="bar"><a href="/apps/pbcs.dll/section?category=&profile=1276">Hersteller</a></h4>
+                    <div class="articleview_picturelist">
+            <hr />
+              <!-- articleview_picturelist -->
+  <article >
+    <a href="/article/20110810/REPOSITORY/110819993/gm-will-opel-hoher-positionieren"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819993&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110810/REPOSITORY/110819993/gm-will-opel-hoher-positionieren">GM will Opel höher positionieren</a></h4>
+    <p>General Motors plant einem Medienbericht zufolge, seine deutsche Tochter Opel in Europa höher zu positionieren. Die Marke soll wieder gegen den Konkurrenten Volkswagen antreten. Als Einstiegsmarke...<br /> <strong>Mittwoch, 10. August 2011, 11.28 Uhr</strong><!--  - akt. 10.08.2011 11:37   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article class="even">
+    <a href="/article/20110810/REPOSITORY/308109968/skoda-starkster-juli-aller-zeiten"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=308109968&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110810/REPOSITORY/308109968/skoda-starkster-juli-aller-zeiten">Skoda: stärkster Juli aller Zeiten</a></h4>
+    <p>Der tschechische Autobauer Skoda hat im Juli so viele Autos verkauft wie noch nie zuvor. Insgesamt wurden 68.500 Fahrzeuge ausgeliefert. Auch in den ersten sieben Monaten konnte Skoda Boden gut...<br /> <strong>Mittwoch, 10. August 2011, 12.17 Uhr</strong><!--  - akt. 10.08.2011 16:24   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article >
+    <a href="/article/20110810/REPOSITORY/110819998/man-klagt-gegen-ferrostaal-hv"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819998&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110810/REPOSITORY/110819998/man-klagt-gegen-ferrostaal-hv">MAN klagt gegen Ferrostaal-HV</a></h4>
+    <p>Der Lkw-Bauer MAN hat Klage gegen die Beschlüsse der letzten Jahreshauptversammlung der Ferrostaal AG eingereicht. Damals wurde beschlossen, dass MAN die Kosten für die Aufarbeitung der...<br /> <strong>Mittwoch, 10. August 2011, 09.35 Uhr</strong><!--  - akt. 10.08.2011 12:42   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article class="even">
+    <a href="/article/20110810/REPOSITORY/110819986/digitalradio-fur-alle-bmw-modelle"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819986&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110810/REPOSITORY/110819986/digitalradio-fur-alle-bmw-modelle">Digitalradio für alle BMW-Modelle</a></h4>
+    <p>In allen Baureihen von BMW können die Kunden Digitalradio empfangen. Voraussetzung ist ein DAB-Tuner, der als Sonderausstattung erhältlich ist. Der neue Standard ermöglicht eine bessere Tonqualität...<br /> <strong>Mittwoch, 10. August 2011, 16.21 Uhr</strong><!--  - akt. 10.08.2011 17:43   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+
+          </div>
+
         </div>
-        <aside>
-          <img src="http://dummyimage.com/468x68/ccc/fff">
+        <aside><label>Anzeige:</label>
+          <script language="JavaScript">OAS_RICH('x22');</script>
         </aside>
         <div class="articleview_picturelist">
-          <h4 class="bar">Zulieferer</h4>
-          <article>
-            <img src="images/content/139x96a.png">
-            <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-            <p>
-              Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-            </p>
-          </article>
-          <hr />
-          <article class="even">
-            <img src="images/content/139x96b.png">
-            <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-            <p>
-              Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-            </p>
-          </article>
-          <hr />
-          <article>
-            <img src="images/content/139x96c.png">
-            <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-            <p>
-              Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-            </p>
-          </article>
-          <hr />
-          <article class="even">
-            <img src="images/content/139x96d.png">
-            <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-            <p>
-              Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
-            </p>
-          </article>
-          <hr />
+          <h4 class="bar"><a href="/apps/pbcs.dll/section?category=&profile=1280">Zulieferer</a></h4>
+                    <div class="articleview_picturelist">
+            <hr />
+              <!-- articleview_picturelist -->
+  <article >
+    <a href="/article/20110810/REPOSITORY/110819987/anteil-an-tognum-aufgestockt"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819987&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110810/REPOSITORY/110819987/anteil-an-tognum-aufgestockt">Anteil an Tognum aufgestockt</a></h4>
+    <p>Die Daimler AG und Rolls-Royce haben weitere Aktien der Tognum AG in Höhe von insgesamt 0,83 Prozent gekauft. Damit hält das Joint-Venture insgesamt 95 Prozent der Tognum-Aktien, wenn das...<br /> <strong>Mittwoch, 10. August 2011, 16.00 Uhr</strong><!--  - akt. 10.08.2011 16:32   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article class="even">
+    <a href="/article/20110810/REPOSITORY/110819990/bosch-will-unipoint-gruppe-taiwan-ubernehmen"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819990&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110810/REPOSITORY/110819990/bosch-will-unipoint-gruppe-taiwan-ubernehmen">Bosch will Unipoint-Gruppe Taiwan übernehmen</a></h4>
+    <p>Der Geschäftsbereich Automotive Aftermarket vom größten Zulieferer Bosch beabsichtigt die Unipoint-Gruppe mit Schwestergesellschaften und den Marken Unipoint und NSA übernehmen. Ziel ist die Stärkung...<br /> <strong>Mittwoch, 10. August 2011, 13.56 Uhr</strong><!--  - akt. 10.08.2011 14:18   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article >
+    <a href="/article/20110810/REPOSITORY/110819996/umsatz-von-grammer-gewachsen"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819996&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110810/REPOSITORY/110819996/umsatz-von-grammer-gewachsen">Umsatz von Grammer gewachsen</a></h4>
+    <p>Der Umsatz des Zulieferers Grammer ist im ersten Halbjahr um mehr als 20 Prozent gestiegen. Grund dafür war der hohe Absatz auf allen Märkten. Das EBIT des Konzerns stieg im ersten Halbjahr auf 25,8...<br /> <strong>Mittwoch, 10. August 2011, 09.42 Uhr</strong><!--  - akt. 10.08.2011 12:03   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article class="even">
+    <a href="/article/20110809/DPA/308099984/leoni-auf-rekordkurs-"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110809&Category=DPA&ArtNo=308099984&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110809/DPA/308099984/leoni-auf-rekordkurs-">Leoni auf Rekordkurs </a></h4>
+    <p>Der Automobilzulieferer Leoni hat im zweiten Quartal 2011 einen Überschuss von 45,7 Millionen Euro erwirtschaftet. Leoni selbst sieht sich auf Rekordkurs und hat daher die Ende Juli erhöhte Prognose...<br /> <strong>Dienstag, 09. August 2011, 08.57 Uhr</strong><!--  - akt. 09.08.2011 09:18   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+
+          </div>
+
         </div>
+        <aside><label>Anzeige:</label>
+          <script language="JavaScript">OAS_RICH('x23');</script>
+        </aside>
+        <div class="articleview_picturelist">
+          <h4 class="bar"><a href="/apps/pbcs.dll/section?category=&profile=1279">Handel</a></h4>
+                    <div class="articleview_picturelist">
+            <hr />
+              <!-- articleview_picturelist -->
+  <article >
+    <a href="/article/20110810/REPOSITORY/110819985/carneoo-mit-neuem-finanzierungsrechner"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819985&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110810/REPOSITORY/110819985/carneoo-mit-neuem-finanzierungsrechner">Carneoo mit neuem Finanzierungsrechner</a></h4>
+    <p>Individuelle Finanzierungsmodelle können Kaufinteressenten jetzt direkt auf der Homepage des Internet-Neuwagenvermittlers Carneoo berechnen lassen: Ein integriertes Programm kalkuliert eine...<br /> <strong>Mittwoch, 10. August 2011, 16.22 Uhr</strong><!--  - akt. 10.08.2011 17:12   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article class="even">
+    <a href="/article/20110810/DPA/308109967/lieferzeit-von-neuwagen-gesunken"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=DPA&ArtNo=308109967&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110810/DPA/308109967/lieferzeit-von-neuwagen-gesunken">Lieferzeit von Neuwagen gesunken</a></h4>
+    <p>Die Lieferfrist von Neuwagen in Deutschland ist wieder kürzer geworden. Im Juli bestellte Autos werden nach durchschnittlich 3,6 Monaten an die Kunden übergeben. Das geht aus einer Studie des...<br /> <strong>Mittwoch, 10. August 2011, 12.17 Uhr</strong><!--  - akt. 10.08.2011 13:44   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article >
+    <a href="/article/20110809/REPOSITORY/110809923/preise-fur-gebrauchte-standig-aktualisieren"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110809&Category=REPOSITORY&ArtNo=110809923&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110809/REPOSITORY/110809923/preise-fur-gebrauchte-standig-aktualisieren">Preise für Gebrauchte ständig aktualisieren</a></h4>
+    <p>Der Handel hat sich darauf eingestellt, dass bei der Suche nach Gebrauchtwagen das Internet inzwischen die wichtigste Informationsquelle für Autokäufer ist. Das internet-basierte Preistool von TÜV...<br /> <strong>Dienstag, 09. August 2011, 10.33 Uhr</strong><!--  - akt. 10.08.2011 12:46   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article class="even">
+    <a href="/article/20110808/REPOSITORY/110809927/schwabengarage-will-zukaufen"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110808&Category=REPOSITORY&ArtNo=110809927&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110808/REPOSITORY/110809927/schwabengarage-will-zukaufen">Schwabengarage will zukaufen</a></h4>
+    <p>Die Schwabengarage als Teil der größten Autohandels-Gruppe in Deutschland, Emil Frey, will in Franken zukaufen. Beim Kartellamt haben die Schwaben die Übernahme von drei Standorten mit jeweils einem...<br /> <strong>Montag, 08. August 2011, 17.07 Uhr</strong><!--  - akt. 10.08.2011 17:49   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+
+          </div>
+
+        </div>
+        <aside><label>Anzeige:</label>
+          <script language="JavaScript">OAS_RICH('x24');</script>
+        </aside>
+        <div class="articleview_picturelist">
+          <h4 class="bar"><a href="/apps/pbcs.dll/section?category=&profile=1278">Showroom</a></h4>
+                    <div class="articleview_picturelist">
+            <hr />
+              <!-- articleview_picturelist -->
+  <article >
+    <a href="/article/20110809/REPOSITORY/110809917/mehr-motoren-fur-den-bmw-x3"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110809&Category=REPOSITORY&ArtNo=110809917&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110809/REPOSITORY/110809917/mehr-motoren-fur-den-bmw-x3">Mehr Motoren für den BMW X3</a></h4>
+    <p>BMW erweitert das Motorenangebot des X3: Ein Zweiliter-Benziner als Einstiegsmotor und ein 3,0-Liter-Sechszylinder-Diesel mit 313 PS runden ab Herbst das Motorenangebot ab. Änderungen der Serien- und...<br /> <strong>Dienstag, 09. August 2011, 17.31 Uhr</strong><!--  - akt. 10.08.2011 12:49   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article class="even">
+    <a href="/article/20110808/REPOSITORY/110809932/hyundai-veloster-soll-deutschland-erobern"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110808&Category=REPOSITORY&ArtNo=110809932&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110808/REPOSITORY/110809932/hyundai-veloster-soll-deutschland-erobern">Hyundai Veloster soll Deutschland erobern</a></h4>
+    <p>Der Veloster soll Hyundais Position auf dem deutschen Markt stärken. Um dieses Ziel zu erreichen, hat der südkoreanische Autohersteller in die Trickkiste gegriffen: der Hyundai Veloster verfügt auf...<br /> <strong>Montag, 08. August 2011, 14.37 Uhr</strong><!--  - akt. 08.08.2011 15:07   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article >
+    <a href="/article/20110804/REPOSITORY/110809951/mercedes-studie-reisen-als-erlebnis"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110804&Category=REPOSITORY&ArtNo=110809951&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110804/REPOSITORY/110809951/mercedes-studie-reisen-als-erlebnis">Mercedes-Studie: Reisen als Erlebnis</a></h4>
+    <p>Mercedes stellt auf der IAA das Konzeptfahrzeug Viano Vision Pearl vor. Mit dem Auto will der Hersteller nach eigenen Angaben zeigen, was in der Klasse der Vans technisch möglich ist. Die Ausstattung...<br /> <strong>Donnerstag, 04. August 2011, 16.46 Uhr</strong><!--  - akt. 04.08.2011 17:04   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article class="even">
+    <a href="/article/20110729/DPA/307289907/renault-hat-den-twingo-geliftet"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110729&Category=DPA&ArtNo=307289907&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110729/DPA/307289907/renault-hat-den-twingo-geliftet">Renault hat den Twingo geliftet</a></h4>
+    <p>Der französische Hersteller Renault hat sein Kleinwagen-Modell Twingo einem Facelilft unterzogen. Als erstes Fahrzeug bekommt er das neue Markengesicht, das in Zukunft auch andere Modelle tragen...<br /> <strong>Donnerstag, 28. Juli 2011, 18.03 Uhr</strong><!--  - akt. 29.07.2011 10:07   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+
+          </div>
+
+        </div>
+        <aside><label>Anzeige:</label>
+          <script language="JavaScript">OAS_RICH('x25');</script>
+        </aside>
+        <div class="articleview_picturelist">
+          <h4 class="bar"><a href="/apps/pbcs.dll/section?category=&profile=1282">Marketing</a></h4>
+                    <div class="articleview_picturelist">
+            <hr />
+              <!-- articleview_picturelist -->
+  <article >
+    <a href="/article/20110811/REPOSITORY/110819970/peugeot-oldtimer-im-web"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110811&Category=REPOSITORY&ArtNo=110819970&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110811/REPOSITORY/110819970/peugeot-oldtimer-im-web">Peugeot-Oldtimer im Web</a></h4>
+    <p>Die Dachorganisation der deutschen Clubs und Liebhaber von Peugeot, hat ihre Internetpräsenz aufgefrischt. Besucher der Seite bekommen sowohl Informationen zum Peugeot-Museum als auch eine...<br /> <strong>Donnerstag, 11. August 2011, 13.15 Uhr</strong><!--  - akt. 11.08.2011 13:42   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article class="even">
+    <a href="/article/20110810/REPOSITORY/110819982/lackspezialist-standox-erhalt-design-preis"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819982&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110810/REPOSITORY/110819982/lackspezialist-standox-erhalt-design-preis">Lackspezialist Standox erhält Design-Preis</a></h4>
+    <p>Herausragende Leistungen auf den Feldern Markenführung, Markenkommunikation und Design im Bereich Automotive wurden beim ersten internationalen Marken- und Designwettbewerb für die...<br /> <strong>Mittwoch, 10. August 2011, 17.14 Uhr</strong><!--  - akt. 10.08.2011 21:58   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article >
+    <a href="/article/20110806/REPOSITORY/110809942/renovierte-mercedes-benz-arena-eingeweiht"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110806&Category=REPOSITORY&ArtNo=110809942&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110806/REPOSITORY/110809942/renovierte-mercedes-benz-arena-eingeweiht">Renovierte Mercedes-Benz Arena eingeweiht</a></h4>
+    <p>Daimler-Chef Dieter Zetsche, Stuttgarts Oberbürgermeister Wolfgang Schuster und Gerd Mäuser, Präsident des VfB Stuttgart, haben am 4. August die umgebaute Mercedes-Benz Arena eröffnet. Dieter Zetsche...<br /> <strong>Samstag, 06. August 2011, 11.49 Uhr</strong><!--  - akt. 08.08.2011 13:12   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article class="even">
+    <a href="/article/20110805/REPOSITORY/110809944/porsche-pavillon-in-der-autostadt"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110805&Category=REPOSITORY&ArtNo=110809944&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110805/REPOSITORY/110809944/porsche-pavillon-in-der-autostadt">Porsche Pavillon in der Autostadt</a></h4>
+    <p>Alle Volkswagen-Marken sind in der Autostadt mit einem eigenen Pavillon vertreten. Jetzt soll auch Porsche dort auftreten. Damit wird die Bedeutung der Marke Porsche für den Konzern unterstrichen.<br /> <strong>Freitag, 05. August 2011, 12.20 Uhr</strong><!--  - akt. 05.08.2011 14:20   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+
+          </div>
+
+        </div>
+        <aside><label>Anzeige:</label>
+          <script language="JavaScript">OAS_RICH('x26');</script>
+        </aside>
+        <div class="articleview_picturelist">
+          <h4 class="bar"><a href="/apps/pbcs.dll/section?category=&profile=1281">Management</a></h4>
+                    <div class="articleview_picturelist">
+            <hr />
+              <!-- articleview_picturelist -->
+  <article >
+    <a href="/article/20110731/DPA/307319998/kampfansage-vom-daimler-chef"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110731&Category=DPA&ArtNo=307319998&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110731/DPA/307319998/kampfansage-vom-daimler-chef">Kampfansage vom Daimler-Chef</a></h4>
+    <p>Daimlers Vorstandschef Dieter Zetsche hat den beiden Konkurrenten Audi und BMW im Dreikampf um den größten Premiumhersteller den Kampf angesagt. Auf Sicht plane man mit dem ersten Platz und gebe sich...<br /> <strong>Sonntag, 31. Juli 2011, 13.07 Uhr</strong><!--  - akt. 01.08.2011 12:36   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article class="even">
+    <a href="/article/20110617/REPOSITORY/110619945/siemens-manager-wechselt-zu-man"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110617&Category=REPOSITORY&ArtNo=110619945&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110617/REPOSITORY/110619945/siemens-manager-wechselt-zu-man">Siemens-Manager wechselt zu MAN</a></h4>
+    <p>MAN ernennt Siemens-Manager René Umlauft zum neuen Spartenvorstand. Der 46-Jährige wird ab Herbst stellvertretender Vorstand. Außerdem soll sich der Aufsichtsrat dafür ausgesprochen haben, dass...<br /> <strong>Freitag, 17. Juni 2011, 11.32 Uhr</strong><!--  - akt. 09.08.2011 17:20   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article >
+    <a href="/article/20110609/REPOSITORY/110609952/qualcomm-beruft-neuen-managing-director"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110609&Category=REPOSITORY&ArtNo=110609952&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110609/REPOSITORY/110609952/qualcomm-beruft-neuen-managing-director">Qualcomm beruft neuen Managing Director</a></h4>
+    <p>Mark Warner kommt als neuer Managing Director zu Qualcomm Enterprice Services Europe. Er bringt über 25 Jahre Erfahrung in der Transport- und Logistikbranche im Bereich Flüssigtransporte in Europa...<br /> <strong>Donnerstag, 09. Juni 2011, 09.23 Uhr</strong><!--  - akt. 09.06.2011 13:00   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article class="even">
+    <a href="/article/20110606/REPOSITORY/110609972/engpass-bei-lkw-fahrern"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110606&Category=REPOSITORY&ArtNo=110609972&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110606/REPOSITORY/110609972/engpass-bei-lkw-fahrern">Engpass bei Lkw-Fahrern</a></h4>
+    <p>Wichtige Logistikketten in der Fahrzeugindustrie könnten nach Ansicht von Branchenexperten schon bald vor einer Zerreißprobe stehen. So warnt der Verein Automobillogistik vor Kapazitätsengpässen beim...<br /> <strong>Montag, 06. Juni 2011, 16.19 Uhr</strong><!--  - akt. 06.06.2011 17:19   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+
+          </div>
+
+        </div>
+        <aside><label>Anzeige:</label>
+          <script language="JavaScript">OAS_RICH('x27');</script>
+        </aside>
+        <div class="articleview_picturelist">
+          <h4 class="bar"><a href="/apps/pbcs.dll/section?category=&profile=1283">Personalien</a></h4>
+                    <div class="articleview_picturelist">
+            <hr />
+              <!-- articleview_picturelist -->
+  <article >
+    <a href="/article/20110811/REPOSITORY/110819975/chefwechsel-bei-lear"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110811&Category=REPOSITORY&ArtNo=110819975&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110811/REPOSITORY/110819975/chefwechsel-bei-lear">Chefwechsel bei Lear</a></h4>
+    <p>Der bisherige Finanzvorstand Matt Simoncini wird neuer Vorstandschef des Zulieferers Lear. Er folgt auf Robert Rossiter, der dem unternehmen weiterhin beratend zur Seite steht. Nach der Insolvenz...<br /> <strong>Donnerstag, 11. August 2011, 09.18 Uhr</strong><!--  - akt. 11.08.2011 10:16   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article class="even">
+    <a href="/article/20110811/REPOSITORY/110819974/porsche-hat-neuen-motorenchef"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110811&Category=REPOSITORY&ArtNo=110819974&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110811/REPOSITORY/110819974/porsche-hat-neuen-motorenchef">Porsche hat neuen Motorenchef</a></h4>
+    <p>Der Porsche-Entwicklungschef Wolfgang Hatz holt sich mit Jörg Kerner einen Vertrauten an seine Seite. Kerner wird ab Oktober neuer Motorenchef bei Porsche. Beide kennen sich noch aus gemeinsamen...<br /> <strong>Donnerstag, 11. August 2011, 09.53 Uhr</strong><!--  - akt. 11.08.2011 10:03   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article >
+    <a href="/article/20110810/REPOSITORY/110819988/heitmann-bleibt-lanxess-chef"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819988&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110810/REPOSITORY/110819988/heitmann-bleibt-lanxess-chef">Heitmann bleibt Lanxess-Chef</a></h4>
+    <p>Axel C. Heitmann bleibt für weitere fünf Jahre Vorsitzender des Vorstands beim Zulieferer Lanxess. Das hat der Aufsichtsrat in seiner Sitzung am 10.August beschlossen. Das neue Mandat beginnt am 1.<br /> <strong>Mittwoch, 10. August 2011, 15.50 Uhr</strong><!--  - akt. 10.08.2011 16:23   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+<!-- articleview_picturelist -->
+  <article class="even">
+    <a href="/article/20110810/REPOSITORY/110819991/neuer-einkaufschef-bei-gdhs"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819991&Ref=AR&exactW=179&exactH=118"></a>
+    <h4><a href="/article/20110810/REPOSITORY/110819991/neuer-einkaufschef-bei-gdhs">Neuer Einkaufschef bei GDHS</a></h4>
+    <p>Carsten Pick übernimmt zum 1. August zusätzliche Aufgaben von Hans Behle bei GDHS. Behle verlässt das Unternehmen auf eigenen Wunsch und steigt in die Secura GmbH ein und übernimmt die beiden...<br /> <strong>Mittwoch, 10. August 2011, 12.54 Uhr</strong><!--  - akt. 10.08.2011 15:32   -->
+        <script language="javascript" type="text/javascript">
+      if (NumberOfViews >= 2) {
+        if ('REGISTERED' == 'REGISTERED') {
+            if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+            document.write('<!--<im*g src="/graphics/open_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            } else {
+            document.write('<!--<im*g src="/graphics/lock_reg.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">REG</a>')
+            }
+          } else if ('REGISTERED' == 'SUBSCRIBER') {
+
+        if (FlowAccess.indexOf(',REGISTERED,') > -1) {
+          document.write('<!--<im*g src="/graphics/open_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        } else {
+          document.write('<!--<im*g src="/graphics/lock_abo.gif" alt="">--> <span class="lock"><a href="ABOREG.html" class="ABOREG">ABO</a>')
+        }
+        }
+          // 20070925 DSS: Changed this according to an email
+          //if (('REGISTERED' == '') && ('' == '')) {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //} else if ((FlowAccess.indexOf(',REGISTERED,') > -1) || (SingleSaleAccess.indexOf(',,') > -1)) {
+          //  document.write('<img src="/graphics/lock_reg.gif" alt="">')
+          //} else {
+          //  document.write('<img src="/graphics/open_reg.gif" alt="">')
+          //}
+      }
+      </script>
+    </p>
+  <hr />
+  </article>
+
+
+          </div>
+
+        </div>
+        <aside><label>Anzeige:</label>
+          <script language="JavaScript">OAS_RICH('x28');</script>
+        </aside>
       </section>
+
       <div id="sideColumn">
-        <aside>
-          <img src="http://dummyimage.com/300x250/ccc/fff">
+                <aside><label>Anzeige:</label>
+          <script language="JavaScript">OAS_RICH('x10');</script>
         </aside>
         <div class="quiz">
-          <h4>Welches ist die wichtigste Premiere auf der Detroit Motor Show 2011?</h4>
-          <form>
+          <div name="pollMini" id="pollMini226">
+</div>
+<script>
+var doLoad = true;
+if (doLoad) {
+updatePollMini("/apps/pbcs.dll/miniquery?NoStat=1&TARGET=_top&W=130&H=60&Labels=leading&Category=REPOSITORY&ObjectClass=-1&BGColor=&LabelTrim=");
+}
+</script>
+          <!-- form>
             <input type="radio" id="quize_item1" name="quize">
             <label for="quize_item1">
               Chrysler 300C
@@ -365,17 +1600,115 @@
               VW New Midsize Sedan
             </label>
             <input type="submit" value="Abstimmen">
-          </form>
+          </form -->
         </div>
-        <aside><img src="http://dummyimage.com/234x60/ccc/fff" height=60 border=0></aside>
+        <aside><label>Anzeige:</label><script language="JavaScript">OAS_RICH('x09');</script></aside>
         <div class="sideColumn_box blue">
-          <h3 class="icon_rss">
-          <a href="#">Newsticker</a>
+          <!-- h3 class="icon_rss" -->
+          <h3>
+          <a href="/apps/pbcs.dll/article?Date=99999999&Category=REPOSITORY&Lopenr=112300007&Ref=AR&template=info">Newsticker</a>
           <small>
-            <a href="#">Thema des Tages</a>  |  <a href="#">RSS-Feed</a>
+            <!-- a href="#">Thema des Tages</a>  |  --><!-- a href="/apps/pbcs.dll/article?Date=99999999&Category=REPOSITORY&Lopenr=100709962&template=info">RSS-Feed</a -->
           </small>
           </h3>
-          <dl>
+          <!-- Newsticker (horizontal scroller -->
+<div class="tickeranimwrap">
+<div class="tickeranim">
+  <ul>
+    <li>
+  <table><tr><td class="time" valign="top">13:15 Uhr</td><td valign="top"><a href="/article/20110811/REPOSITORY/110819970/1293/peugeot-oldtimer-im-web">Peugeot-Oldtimer im Web</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">11:02 Uhr</td><td valign="top"><a href="/article/20110811/REPOSITORY/110819972/1293/saab-droht-zwangsvollstreckung">Saab droht Zwangsvollstreckung</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">09:18 Uhr</td><td valign="top"><a href="/article/20110811/REPOSITORY/110819975/1293/chefwechsel-bei-lear">Chefwechsel bei Lear</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">09:53 Uhr</td><td valign="top"><a href="/article/20110811/REPOSITORY/110819974/1293/porsche-hat-neuen-motorenchef">Porsche hat neuen Motorenchef</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">18:03 Uhr</td><td valign="top"><a href="/article/20110811/DPA/308109940/1293/opel-betriebsrat-begrußt-gm-plan">Opel-Betriebsrat begrüßt GM-Plan</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">09:37 Uhr</td><td valign="top"><a href="/article/20110810/REPOSITORY/110819997/1293/audi-zeigt-carbon-auto-auf-der-iaa">Audi zeigt Carbon-Auto auf der IAA</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">17:14 Uhr</td><td valign="top"><a href="/article/20110810/REPOSITORY/110819982/1293/lackspezialist-standox-erhalt-design-preis">Lackspezialist Standox erhält Design-Preis</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">16:21 Uhr</td><td valign="top"><a href="/article/20110810/REPOSITORY/110819986/1293/digitalradio-fur-alle-bmw-modelle">Digitalradio für alle BMW-Modelle</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">17:23 Uhr</td><td valign="top"><a href="/article/20110810/REPOSITORY/110819979/1293/gm-will-weniger-plattformen">GM will weniger Plattformen</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">16:22 Uhr</td><td valign="top"><a href="/article/20110810/REPOSITORY/110819985/1293/carneoo-mit-neuem-finanzierungsrechner">Carneoo mit neuem Finanzierungsrechner</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">16:00 Uhr</td><td valign="top"><a href="/article/20110810/REPOSITORY/110819987/1293/anteil-an-tognum-aufgestockt">Anteil an Tognum aufgestockt</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">11:23 Uhr</td><td valign="top"><a href="/article/20110810/REPOSITORY/110819994/1293/suzuki-swift-sport-feiert-weltpremiere">Suzuki Swift Sport feiert Weltpremiere</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">15:05 Uhr</td><td valign="top"><a href="/article/20110810/REPOSITORY/110819989/1293/opel-insignia-mit-neuen-motoren">Opel Insignia mit neuen Motoren</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">12:17 Uhr</td><td valign="top"><a href="/article/20110810/REPOSITORY/308109968/1293/skoda-starkster-juli-aller-zeiten">Skoda: stärkster Juli aller Zeiten</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">15:50 Uhr</td><td valign="top"><a href="/article/20110810/REPOSITORY/110819988/1293/heitmann-bleibt-lanxess-chef">Heitmann bleibt Lanxess-Chef</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">12:54 Uhr</td><td valign="top"><a href="/article/20110810/REPOSITORY/110819991/1293/neuer-einkaufschef-bei-gdhs">Neuer Einkaufschef bei GDHS</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">13:56 Uhr</td><td valign="top"><a href="/article/20110810/REPOSITORY/110819990/1293/bosch-will-unipoint-gruppe-taiwan-ubernehmen">Bosch will Unipoint-Gruppe Taiwan übernehmen</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">12:17 Uhr</td><td valign="top"><a href="/article/20110810/DPA/308109967/1293/lieferzeit-von-neuwagen-gesunken">Lieferzeit von Neuwagen gesunken</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">09:35 Uhr</td><td valign="top"><a href="/article/20110810/REPOSITORY/110819998/1293/man-klagt-gegen-ferrostaal-hv">MAN klagt gegen Ferrostaal-HV</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">09:01 Uhr</td><td valign="top"><a href="/article/20110810/REPOSITORY/110819999/1293/chevrolet-produktion-in-europa-moglich">Chevrolet: Produktion in Europa möglich</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">09:42 Uhr</td><td valign="top"><a href="/article/20110810/REPOSITORY/110819996/1293/umsatz-von-grammer-gewachsen">Umsatz von Grammer gewachsen</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td class="time" valign="top">11:28 Uhr</td><td valign="top"><a href="/article/20110810/REPOSITORY/110819993/1293/gm-will-opel-hoher-positionieren">GM will Opel höher positionieren</a></td></tr></table>
+  <hr />
+</li>
+
+  </ul>
+</div>
+</div>
+
+          <!-- dl>
             <dt>
               16:74 Uhr
             </dt>
@@ -396,223 +1729,290 @@
             <dd>
               Elektro-Roadster von Irmscher
             </dd>
-          </dl>
+          </dl-->
         </div>
-
-  <div class="sideColumn_box blue">
-          <h3 class="icon_rss">
-          <a href="#">Newsticker</a>
-          <small>
-            <a href="#">Thema des Tages</a>  |  <a href="#">RSS-Feed</a>
-          </small>
-          </h3>
-    <div class="tickeranim">
-          <ul>
-            <li>
-              <table><tr><td class="time" valign="top">16:74 Uhr</td><td valign="top">und Gaz bauen in Russland 100.000 Autos mehr</td></tr></table>
-              <hr />
-            </li>
-            <li>
-              <table><tr><td class="time" valign="top">16:74 Uhr</td><td valign="top">und Gaz bauen in Russland 100.000 Autos mehr</td></tr></table>
-              <hr />
-            </li>
-            <li>
-              <table><tr><td class="time" valign="top">16:74 Uhr</td><td valign="top">und Gaz bauen in Russland 100.000 Autos mehr</td></tr></table>
-              <hr />
-            </li>
-            <li>
-              <table><tr><td class="time" valign="top">16:74 Uhr</td><td valign="top">und Gaz bauen in Russland 100.000 Autos mehr</td></tr></table>
-              <hr />
-            </li>
-            <li>
-              <table><tr><td class="time" valign="top">16:74 Uhr</td><td valign="top">und Gaz bauen in Russland 100.000 Autos mehr</td></tr></table>
-              <hr />
-            </li>
-            <li>
-              <table><tr><td class="time" valign="top">16:74 Uhr</td><td valign="top">und Gaz bauen in Russland 100.000 Autos mehr</td></tr></table>
-              <hr />
-            </li>
-
-          </ul>
-          </div>
-        </div>
- <div class="sideColumn_box orange">
+        <aside><label>Anzeige:</label><script language="JavaScript">OAS_RICH('x12');</script></aside>
+        <div class="sideColumn_box orange">
           <h3>
-          <a href="http://cgstage.redesign.publicus.com/apps/pbcs.dll/section?category=&profile=1271">Stellenmarkt</a>
+          <a href="/apps/pbcs.dll/section?category=&profile=1271">Stellenmarkt</a>
           </h3>
           <!-- Newsticker (horizontal scroller -->
+
+<div class="tickeranimwrap">
 <div class="tickeranim">
   <ul>
     <li>
-  <table><tr><td valign="top"><a href="http://cgstage.redesign.publicus.com/article/20110711/REPOSITORY/110709944/1271&template=info">Customer Engineering Manager VW (m/w)</a></td></tr></table>
+  <table><tr><td valign="top"><a href="/article/20110725/STELLENMARKT/110729963/1271&template=info">Experten und Neueinsteiger (m/w) für das Engineering Center Graz</a></td></tr></table>
   <hr />
 </li>
 <li>
-  <table><tr><td valign="top"><a href="http://cgstage.redesign.publicus.com/article/20110711/REPOSITORY/307129985/1271&template=info">Program Manager Pkw (m/w) asdfas dfsda fs daf asdf sadf asd fas dfs adfas dfas df sadf sadf sadf asdf asdf </a></td></tr></table>
+  <table><tr><td valign="top"><a href="/article/20110725/STELLENMARKT/307249999/1271&template=info">Prozessplaner (m/w) </a></td></tr></table>
   <hr />
 </li>
 <li>
-  <table><tr><td valign="top"><a href="http://cgstage.redesign.publicus.com/article/20110711/REPOSITORY/307129982/1271&template=info">Prozessentwickler (m/w)</a></td></tr></table>
+  <table><tr><td valign="top"><a href="/article/20110725/STELLENMARKT/307259997/1271&template=info">Betriebsleiter (m/w) </a></td></tr></table>
   <hr />
 </li>
 <li>
-  <table><tr><td valign="top"><a href="http://cgstage.redesign.publicus.com/article/20110711/REPOSITORY/307129983/1271&template=info">Account Manager Pkw (m/w)</a></td></tr></table>
+  <table><tr><td valign="top"><a href="/article/20110725/STELLENMARKT/307259999/1271&template=info">Vertriebsingenieur (w/m) - Key Account Management für Top-Automobilkunden</a></td></tr></table>
   <hr />
 </li>
 <li>
-  <table><tr><td valign="top"><a href="http://cgstage.redesign.publicus.com/article/20110711/REPOSITORY/307129984/1271&template=info">Konstruktionsingenieur (m/w)</a></td></tr></table>
+  <table><tr><td valign="top"><a href="/article/20110720/STELLENMARKT/307209980/1271&template=info">Test-Ingenieure (m/w) Automotive</a></td></tr></table>
   <hr />
 </li>
 <li>
-  <table><tr><td valign="top"><a href="http://cgstage.redesign.publicus.com/article/20110711/REPOSITORY/307129985/1271&template=info">Program Manager Pkw (m/w) asdfas dfsda fs daf asdf sadf asd fas dfs adfas dfas df sadf sadf sadf asdf asdf </a></td></tr></table>
+  <table><tr><td valign="top"><a href="/article/20110714/STELLENMARKT/110719979/1271&template=info">Program Manager (m/w)</a></td></tr></table>
   <hr />
 </li>
 <li>
-  <table><tr><td valign="top"><a href="http://cgstage.redesign.publicus.com/article/20110711/REPOSITORY/307129986/1271&template=info">Leiter Operative Logistik (m/w)</a></td></tr></table>
+  <table><tr><td valign="top"><a href="/article/20110714/STELLENMARKT/307159992/1271&template=info">Product Business Manager Rear Seat Mechanisms (m/w)</a></td></tr></table>
   <hr />
 </li>
-
+<li>
+  <table><tr><td valign="top"><a href="/article/20110714/STELLENMARKT/307159993/1271&template=info">Manager New Technologies Structural Composites (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110714/STELLENMARKT/307159991/1271&template=info">Lead Engineer Trim (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110714/STELLENMARKT/307159994/1271&template=info">Lead Engineer Cockpit/IP (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110714/STELLENMARKT/307159998/1271&template=info">Ingenieure für Fertigungsplanung und Prozesstechnik (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110714/STELLENMARKT/307159995/1271&template=info">Engineering Manager & Technical Expert for Seat Structures (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110714/STELLENMARKT/307159996/1271&template=info">Black Belt (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110714/STELLENMARKT/307159997/1271&template=info">Advanced Quality Engineers (m/w) </a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110714/STELLENMARKT/307159999/1271&template=info">Account Financial Manager (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/110709944/1271&template=info">Customer Engineering Manager VW (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129981/1271&template=info">Berechnungsingenieur Thermodynamik (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129982/1271&template=info">Prozessentwickler (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129983/1271&template=info">Account Manager Pkw (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129984/1271&template=info">Konstruktionsingenieur (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129985/1271&template=info">Program Manager Pkw (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129986/1271&template=info">Leiter Operative Logistik (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129987/1271&template=info">Projektleiter (m/w) Strategische Geschäftsfeldentwicklung Neue Technologien Umformtechnik</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129988/1271&template=info">Mitarbeiter (m/w) bei Johnson Controls</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129989/1271&template=info">Serienentwickler Bordnetze BU GM / Opel m/w (747)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129990/1271&template=info">Mitarbeiter Technical Sales GM / Opel m/w (798)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129991/1271&template=info">Entwicklungsingenieur Hochvolt (HV)-Systeme m/w (669)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129992/1271&template=info">Ingenieur Hochvolt (HV)-Komponenten m/w (683)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129993/1271&template=info">Entwickler mit Projektverantwortung / elektromechanische Baugruppen m/w (832)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129994/1271&template=info">Advanced Engineer / Research & Development m/w (564)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129995/1271&template=info">Entwicklungsingenieur Underbody (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129996/1271&template=info">Project Manager (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129997/1271&template=info">Projektleiter Hybrid- und Elektrofahrzeuge (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129998/1271&template=info">Launch Manager Airbags & Electronics (m/w)</a></td></tr></table>
+  <hr />
+</li>
+<li>
+  <table><tr><td valign="top"><a href="/article/20110711/STELLENMARKT/307129999/1271&template=info">Project Manager Electronic Safety Systems (m/w)</a></td></tr></table>
+  <hr />
+</li>
 
   </ul>
 </div>
+</div>
+
+        </div>
+        <!-- THEMENBOX -->
+
+        <div class="sideColumn_box orange">
+          <!-- THEMENBOX -->
+  <h3>Spezial Sicherheit</h3>
+<div class="videoplaceholder">
+  <a href="http://www.automobilwoche.de/apps/pbcs.dll/section?Category=specials&Profile=1087&ExpNodes=1087"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=99999999&Category=THEMENBOX&ArtNo=110729971&Ref=AR&maxw=275"></a>
+</div>
+
+
 
         </div>
 
         <div class="sideColumn_box orange">
-
-          <h3 class="icon_video">Aktuelle Videos</h3>
+          <h3 class="icon_video"><a href="/apps/pbcs.dll/section?category=&profile=1273">Aktuelle Videos</a></h3>
           <div class="videoplaceholder">
-            <img src="images/content/275x183.png">
+            <h4><a href="/article/20110810/REPOSITORY/110819997/1273/audi-zeigt-carbon-auto-auf-der-iaa">Audi zeigt Carbon-Auto auf der IAA</a></h4>
+            <a href="/article/20110810/REPOSITORY/110819997/1273/audi-zeigt-carbon-auto-auf-der-iaa"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819997&Ref=AR&maxw=280"></a>
           </div>
-          <div class="articleview_picturelist">
+<div class="articleview_picturelist">
             <article>
-              <img src="images/content/67x42a.png">
-              <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-              <div class="timedate">
+              <a href="/article/20110803/DPA/308039958/1273/streit-per-werbespot-wie-grun-ist-vw"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110803&Category=DPA&ArtNo=308039958&Ref=AR&maxw=67"></a>
+              <h4><a href="/article/20110803/DPA/308039958/1273/streit-per-werbespot-wie-grun-ist-vw">Streit per Werbespot: Wie grün ist VW?</a></h4>
+              <!-- div class="timedate">
                 01:22 min
-              </div>
+              </div -->
             </article>
             <hr />
-            <article class="last">
-              <img src="images/content/67x42d.png">
-              <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
-              <div class="timedate">
+            <article>
+              <a href="/article/20110722/REPOSITORY/110729970/1273/porsche-macht-den-diesel-sportlich"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110722&Category=REPOSITORY&ArtNo=110729970&Ref=AR&maxw=67"></a>
+              <h4><a href="/article/20110722/REPOSITORY/110729970/1273/porsche-macht-den-diesel-sportlich">Porsche macht den Diesel sportlich</a></h4>
+              <!-- div class="timedate">
                 01:22 min
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="sideColumn_box orange">
-          <h3>Most read</h3>
-            <div class="articleview_picturelist">
-            <article>
-              <img src="images/content/67x42a.png">
-              <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+              </div -->
             </article>
             <hr />
             <article>
-              <img src="images/content/67x42b.png">
-              <h4><a href="#">Praesent tempor varius augue, quis porta nisl pellentesque ac.</a></h4>
-            </article>
-            <hr />
-            <article>
-              <img src="images/content/67x42c.png">
-              <h4><a href="#">Sed vitae mauris odio, in ultrices diam.</a></h4>
-            </article>
-            <hr />
-            <article>
-              <img src="images/content/67x42d.png">
-              <h4><a href="#">Vestibulum non odio dolor, at commodo libero.</a></h4>
+              <a href="/article/20110720/REPOSITORY/110719937/1273/die-katze-kann-auch-sparen"><img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110720&Category=REPOSITORY&ArtNo=110719937&Ref=AR&maxw=67"></a>
+              <h4><a href="/article/20110720/REPOSITORY/110719937/1273/die-katze-kann-auch-sparen">Die Katze kann auch sparen</a></h4>
+              <!-- div class="timedate">
+                01:22 min
+              </div -->
             </article>
           </div>
         </div>
         <div class="sideColumn_box orange tabs">
-
-        <!-- tabs -->
-        <ul class="tabNavigation">
-          <li><a href="#Tab1">Most read</a></li>
-          <li><a href="#Tab2">Most comented</a></li>
-        </ul>
-
-        <!-- tab containers -->
-
-        <div class="articleview_picturelist" id="Tab1">
-        <article>
-          <img src="images/content/67x42a.png">
-          <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
-          <div class="timedate">
-            415 times
-          </div>
-        </article>
-        <hr />
-        <article>
-          <img src="images/content/67x42b.png">
-          <h4><a href="#">Praesent tempor varius augue, quis porta nisl pellentesque ac.</a></h4>
-          <div class="timedate">
-            324 times
-          </div>
-        </article>
-        </div>
-        <div class="articleview_picturelist" id="Tab2">
-        <article>
-          <img src="images/content/67x42a.png">
-          <h4><a href="#">Tab 2Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
-          <div class="timedate">
-            415 times
-          </div>
-        </article>
-        <hr />
-        <article>
-          <img src="images/content/67x42b.png">
-          <h4><a href="#">Praesent tempor varius augue, quis porta nisl pellentesque ac.</a></h4>
-          <div class="timedate">
-            324 times
-          </div>
-        </article>
-        </div>
-    </div>
-        <div class="sideColumn_box orange">
-          <h3>Most recommended</h3>
-            <div class="articleview_picturelist">
+          <!-- tabs -->
+          <ul class="tabNavigation">
+            <li><a href="#Tab1">Meistgelesen</a></li>
+            <li><a href="#Tab2">Meistkommentiert</a></li>
+          </ul>
+          <div class="articleview_picturelist" id="Tab1">
             <article>
-              <img src="images/content/67x42a.png">
-              <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+              <a href="/article/20110810/REPOSITORY/110819997/0/FRONTPAGE"><img src="http://CGimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819997&Ref=AR&maxw=67"></a>
+              <h4><a href="/article/20110810/REPOSITORY/110819997/0/FRONTPAGE">Audi zeigt Carbon-Auto auf der IAA</a></h4>
+            </article>
+            <hr />
+            <article>
+              <a href="/article/20110810/REPOSITORY/110819993/0/FRONTPAGE"><img src="http://CGimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819993&Ref=AR&maxw=67"></a>
+              <h4><a href="/article/20110810/REPOSITORY/110819993/0/FRONTPAGE">GM will Opel höher positionieren</a></h4>
+            </article>
+            <hr />
+            <article>
+              <a href="/article/20110810/REPOSITORY/110819999/0/FRONTPAGE"><img src="http://CGimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819999&Ref=AR&maxw=67"></a>
+              <h4><a href="/article/20110810/REPOSITORY/110819999/0/FRONTPAGE">Chevrolet: Produktion in Europa möglich</a></h4>
+            </article>
+            <hr />
+            <article>
+              <a href="/article/20110810/REPOSITORY/110819998/0/FRONTPAGE"><img src="http://CGimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110810&Category=REPOSITORY&ArtNo=110819998&Ref=AR&maxw=67"></a>
+              <h4><a href="/article/20110810/REPOSITORY/110819998/0/FRONTPAGE">MAN klagt gegen Ferrostaal-HV</a></h4>
+            </article>
+            <hr />
+            <article>
+              <a href="/article/20110809/REPOSITORY/110809918/0/FRONTPAGE"><img src="http://CGimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110809&Category=REPOSITORY&ArtNo=110809918&Ref=AR&maxw=67"></a>
+              <h4><a href="/article/20110809/REPOSITORY/110809918/0/FRONTPAGE">Honda denkt über Produktion im Ausland nach</a></h4>
+            </article>
+          </div>
+          <div class="articleview_picturelist" id="Tab2">
+            <article>
+              <img src="&maxw=67">
+              <h4><a href="/article/20110725/BLOGS01/110729967">Das Porsche-993-Phänomen</a></h4>
               <div class="timedate">
-                415 times
+                Anzahl der Leser-Kommentare: 4
               </div>
             </article>
             <hr />
             <article>
-              <img src="images/content/67x42b.png">
-              <h4><a href="#">Praesent tempor varius augue, quis porta nisl pellentesque ac.</a></h4>
+              <img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110725&Category=DPA&ArtNo=307259973&Ref=AR&maxw=67">
+              <h4><a href="/article/20110725/DPA/307259973">Maybach: Zukunft weiter offen</a></h4>
               <div class="timedate">
-                324 times
+                Anzahl der Leser-Kommentare: 2
               </div>
             </article>
             <hr />
             <article>
-              <img src="images/content/67x42c.png">
-              <h4><a href="#">Sed vitae mauris odio, in ultrices diam.</a></h4>
+              <img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110726&Category=REPOSITORY&ArtNo=110729949&Ref=AR&maxw=67">
+              <h4><a href="/article/20110726/REPOSITORY/110729949">VW hält Kurs bei Flotten</a></h4>
               <div class="timedate">
-                142 times
+                Anzahl der Leser-Kommentare: 1
               </div>
             </article>
             <hr />
             <article>
-              <img src="images/content/67x42d.png">
-              <h4><a href="#">Vestibulum non odio dolor, at commodo libero.</a></h4>
+              <img src="http://cgimg.no.publicus.com/apps/pbcsi.dll/bilde?Site=CG&Date=20110803&Category=DPA&ArtNo=308039958&Ref=AR&maxw=67">
+              <h4><a href="/article/20110803/DPA/308039958">Streit per Werbespot: Wie grün ist VW?</a></h4>
               <div class="timedate">
-                95 times
+                Anzahl der Leser-Kommentare: 1
               </div>
             </article>
+            <hr />
           </div>
         </div>
-        <div class="sideColumn_box no-background">
+            <div class="sideColumn_box blue">
+              <h3>Schwesterzeitungen</h3>
+              <dl class="links">
+                <dd><a href="http://www.autonews.com/" target="_blank">Automotive News</a></dd>
+                <dd><a href="http://www.autonews.com/section/ane" target="_blank">Automotive News Europe</a></dd>
+                <dd><a href="http://www.autoweek.com/" target="_blank">Autoweek</a></dd>
+              </ul>
+            </div>
+        <!-- div class="sideColumn_box no-background">
           <h3 class="icon_FB">PopulÃ¤rste auf Facebook</h3>
           <hr />
             <div class="articleview_picturelist">
             <article>
-              <img src="images/content/67x42a.png">
+              <img src="/images/content/67x42a.png">
               <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
               <p>
                 Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
@@ -620,7 +2020,7 @@
             </article>
             <hr />
             <article>
-              <img src="images/content/67x42b.png">
+              <img src="/images/content/67x42b.png">
               <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
               <p>
                 Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
@@ -628,7 +2028,7 @@
             </article>
             <hr />
             <article>
-              <img src="images/content/67x42c.png">
+              <img src="/images/content/67x42c.png">
               <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
               <p>
                 Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
@@ -636,7 +2036,7 @@
             </article>
             <hr />
             <article>
-              <img src="images/content/67x42d.png">
+              <img src="/images/content/67x42d.png">
               <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
               <p>
                 Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
@@ -644,49 +2044,41 @@
             </article>
             <hr />
             <article>
-              <img src="images/content/67x42e.png">
-              <h4>Mercedes hebt Preise fÃ¼r C-Klasse - PING</h4>
+              <img src="/images/content/67x42e.png">
+              <h4>Mercedes hebt Preise fÃ¼r C-Klasse</h4>
               <p>
                 Mercedes Benz hat seine VerkÃ¤ufe in China im vergangenen Jahr verdoppelt. Der Absatz stieg um 115 Prozent auf 147.670 Fahrzeuge, wie das Untern- ehmen am Mittwoch in Peking mitteilte. Allein von der luxuriÃ¶sen S-Klasse seien 25.000 StÃ¼ck verkauft...
               </p>
             </article>
           </div>
-        </div>
+        </div -->
 
       </div>
       <div id="AdColumn">
-        <aside>
-          <img src="images/content/ad160x600.png">
+        <aside><label>Anzeige:</label>
+          <script language="JavaScript">OAS_RICH('x11');</script>
         </aside>
       </div>
     </div>
     <div class="footer">
       <div class="content">
-        <img src="images/crain-logo.gif">
+        <img src="/images/crain-logo.gif">
         <ul>
-          <li><a href="#">Impressum</a></li>
-          <li><a href="#">Disclaimer</a></li>
-          <li><a href="#">Kontakt</a></li>
-          <li><a href="#">Newsletter</a></li>
-          <li><a href="#">Abonnement</a></li>
-          <li><a href="#">Mediadaten</a></li>
+          <li><a href="/apps/pbcs.dll/article?Date=99999999&Category=REPOSITORY&Lopenr=112300002&Ref=AR&smen=uns&template=info">Impressum</a></li>
+          <li><a href="/apps/pbcs.dll/article?Date=99999999&Category=REPOSITORY&Lopenr=112300002&Ref=AR&template=info">Disclaimer</a></li>
+          <li><a href="/apps/pbcs.dll/misc?url=/misc/contact.pbs&Category=contact">Kontakt</a></li>
+          <li><a id="Newsletter2" href="http://service.vumedia.de/automobilwoche/newsletter/">Newsletter</a></li>
+          <li><a id="Abo2" href="http://service.vumedia.de/automobilwoche/abo/">Abonnement</a></li>
+          <li><a href="/apps/pbcs.dll/article?Date=99999999&Category=REPOSITORY&Lopenr=804605833&Ref=AR&template=info">Mediadaten</a></li>
         </ul>
-        <p>Alle Inhalte sind urheberrechtlich geschï¿½tzt ï¿½ Crain Communications GmbH.<br/>Unerlaubte Vervielfï¿½ltigung ist untersagt. Alle Rechte beim Verlag.</p>
+        <p>Alle Inhalte sind urheberrechtlich geschützt © Crain Communications GmbH.<br/>Unerlaubte Vervielfältigung ist untersagt. Alle Rechte beim Verlag.</p>
       </div>
     </div>
-    <script src="js/application.js"></script>
-    <script src="js/jquery-ui-1.8.13.custom.min.js"></script>
-    <script src="js/jquery.thumbnailScroller.js"></script>
-
-<!--
-    <script src="js/jquery.lightbox-0.5.min.js"></script>
--->
-
-
-    <script type="text/javascript" src="js/jquery.mousewheel-3.0.4.pack.js"></script>
-    <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
-
-    <script type="text/javascript" src="js/jquery.easing-1.4.pack.js"></script>
-    <script type="text/javascript" src="js/jquery.vticker.1.4.js"></script>
+  <script src="http://automobilwoche.de/js/jquery-ui-1.8.13.custom.min.js"></script>
+  <script src="http://automobilwoche.de/js/jquery.thumbnailScroller.js"></script>
+<!-- script src="/js/jquery.lightbox-0.5.min.js"></script -->
+  <script type="text/javascript" src="http://automobilwoche.de/js/jquery.mousewheel-3.0.4.pack.js"></script>
+  <script type="text/javascript" src="http://automobilwoche.de/js/jquery.fancybox-1.3.4.pack.js"></script>
+  <script src="js/jquery.vticker.1.4.js"></script>
   </body>
 </html>
