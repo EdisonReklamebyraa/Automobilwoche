@@ -179,16 +179,32 @@ body {
       }
     }
   }
+
+  &.no-sidebar-narrow
+  {
+    background: none;
+    #MainbColumn {
+      width: $maincolumn+$Sidecolumn;
+      .pageStrip {
+        width: $maincolumn+$Sidecolumn;
+      }
+      .articleview_grid {
+        background-image: image-url("920_article_horizontal_border.png");
+        article {
+          width: 719px;
+
+
+  }
   span {
-  	&.lock {
-		// background:transparent image-url("icon_LOCK.gif") no-repeat;
-		// background-position: $m/2 -2px; 
-		padding-left: 10px;	
-		a {
-			color: #646464;
-		}
-		
-  	}
+    &.lock {
+    // background:transparent image-url("icon_LOCK.gif") no-repeat;
+    // background-position: $m/2 -2px;
+    padding-left: 10px;
+    a {
+      color: #646464;
+    }
+
+    }
   }
   a {
     color: $DefaultLinkColor;
