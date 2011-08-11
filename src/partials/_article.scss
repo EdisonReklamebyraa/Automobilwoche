@@ -25,12 +25,14 @@
     clear: both;
   }
   h3 {
-  	font-size: 1.3em;
-  	line-height: 1.3em;
+    font-size: 1.3em;
+    line-height: 1.3em;
   }
   h4 {
     margin-bottom: $m/4;
     font-weight: bold;
+    clear: left;
+
   }
   hr {
     background: url("../images/line_dotted.png") repeat-x scroll 10px 50% transparent;

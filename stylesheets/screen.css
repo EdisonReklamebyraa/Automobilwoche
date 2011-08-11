@@ -684,28 +684,28 @@ body textarea { width: 390px; height: 250px; }
 /* line 27, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article h3, #Main .template-blog h3 { font-size: 1.3em; line-height: 1.3em; }
 /* line 31, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
-#Main .template-article h4, #Main .template-blog h4 { margin-bottom: 5px; font-weight: bold; }
-/* line 35, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+#Main .template-article h4, #Main .template-blog h4 { margin-bottom: 5px; font-weight: bold; clear: left; }
+/* line 37, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article hr, #Main .template-blog hr { background: url("../images/line_dotted.png") repeat-x scroll 10px 50% transparent; border: medium none; clear: both; margin: 0 0 20px; }
-/* line 42, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 44, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .articleview_picturelist h4, #Main .template-blog .articleview_picturelist h4 { margin-bottom: 10px; font-weight: bold; }
-/* line 46, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
-#Main .template-article .articleview_picturelist a, #Main .template-blog .articleview_picturelist a { color: #222222 !important; }
 /* line 48, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+#Main .template-article .articleview_picturelist a, #Main .template-blog .articleview_picturelist a { color: #222222 !important; }
+/* line 50, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .articleview_picturelist a:hover, #Main .template-blog .articleview_picturelist a:hover { text-decoration: underline!important; }
-/* line 53, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 55, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .pubdatetime, #Main .template-blog .pubdatetime { border-top: 1px solid #cfcfcf; border-bottom: 1px solid #cfcfcf; overflow: hidden; padding: 5px 0 5px 0; }
-/* line 59, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 61, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .box, #Main .template-blog .box { width: 300px; margin-bottom: 10px; background-color: #f6f6f6; clear: both; }
-/* line 64, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 66, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .box p, #Main .template-blog .box p { padding: 10px; margin: 0; clear: both; }
-/* line 69, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 71, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .box img, #Main .template-blog .box img { float: left; }
-/* line 72, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 74, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .box hr, #Main .template-blog .box hr { background: url("../images/line_dotted.png?1302776059") repeat-x scroll 10px 50% transparent; border: medium none; clear: both; margin: 0 0 6.667px; }
-/* line 78, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 80, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .box .paragraphimage, #Main .template-blog .box .paragraphimage { border-bottom: 1px solid #cfcfcf; }
-/* line 81, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 83, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .box .downloads, #Main .template-blog .box .downloads { padding: 10px; }
 /* line 27, /Library/WebServer/Documents/Automobilwoche/src/partials/link_icons.scss */
 #Main .template-article .box .downloads a[href^="http:"], #Main .template-article .box .downloads a[href^="mailto:"], #Main .template-article .box .downloads a[href^="http:"]:visited, #Main .template-article .box .downloads a[href$=".pdf"], #Main .template-article .box .downloads a[href$=".doc"], #Main .template-article .box .downloads a[href$=".PDF"], #Main .template-article .box .downloads a[href$=".docx"], #Main .template-article .box .downloads a[href$=".xls"], #Main .template-article .box .downloads a[href$=".xlsx"], #Main .template-article .box .downloads a[href$=".rss"], #Main .template-article .box .downloads a[href$=".flv"], #Main .template-article .box .downloads a[href$=".rdf"], #Main .template-article .box .downloads a[href^="aim:"], #Main .template-blog .box .downloads a[href^="http:"], #Main .template-blog .box .downloads a[href^="mailto:"], #Main .template-blog .box .downloads a[href^="http:"]:visited, #Main .template-blog .box .downloads a[href$=".pdf"], #Main .template-blog .box .downloads a[href$=".doc"], #Main .template-blog .box .downloads a[href$=".PDF"], #Main .template-blog .box .downloads a[href$=".docx"], #Main .template-blog .box .downloads a[href$=".xls"], #Main .template-blog .box .downloads a[href$=".xlsx"], #Main .template-blog .box .downloads a[href$=".rss"], #Main .template-blog .box .downloads a[href$=".flv"], #Main .template-blog .box .downloads a[href$=".rdf"], #Main .template-blog .box .downloads a[href^="aim:"] { padding: 2px 0px 2px 22px; margin: -2px 0; background-repeat: no-repeat; background-position: left center; }
@@ -733,55 +733,55 @@ body textarea { width: 390px; height: 250px; }
 #Main .template-article .box .downloads a[href^="aim:"], #Main .template-blog .box .downloads a[href^="aim:"] { background-image: url('../images/link_icons/im.png?1308810754'); }
 /* line 53, /Library/WebServer/Documents/Automobilwoche/src/partials/link_icons.scss */
 #Main .template-article .box .downloads a.icon_flv, #Main .template-blog .box .downloads a.icon_flv { padding: 2px 0px 2px 22px; margin: -2px 0; background-repeat: no-repeat; background-position: left center; background-image: url('../images/link_icons/flv.png?1310537253'); }
-/* line 84, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 86, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .box .downloads h4, #Main .template-blog .box .downloads h4 { margin: 0 0 6.667px; font-weight: normal; }
-/* line 88, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 90, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .box .downloads dl, #Main .template-blog .box .downloads dl { padding: 0; margin: 0; }
-/* line 91, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
-#Main .template-article .box .downloads dl dd, #Main .template-blog .box .downloads dl dd { margin: 0 0 6.667px 0; }
 /* line 93, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
-#Main .template-article .box .downloads dl dd a, #Main .template-blog .box .downloads dl dd a { color: black; }
+#Main .template-article .box .downloads dl dd, #Main .template-blog .box .downloads dl dd { margin: 0 0 6.667px 0; }
 /* line 95, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+#Main .template-article .box .downloads dl dd a, #Main .template-blog .box .downloads dl dd a { color: black; }
+/* line 97, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .box .downloads dl dd a:hover, #Main .template-blog .box .downloads dl dd a:hover { color: #e09c18; }
-/* line 102, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
-#Main .template-article .box .facts, #Main .template-blog .box .facts { padding: 10px; }
 /* line 104, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+#Main .template-article .box .facts, #Main .template-blog .box .facts { padding: 10px; }
+/* line 106, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .box .facts h4, #Main .template-blog .box .facts h4 { margin: 0 0 6.667px; font-weight: normal; }
-/* line 108, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 110, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .box .facts p, #Main .template-blog .box .facts p { margin: 0; }
-/* line 111, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 113, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .box .facts ul, #Main .template-blog .box .facts ul { padding: 10px 0 10px 20px; margin: 0; }
-/* line 116, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
-#Main .template-article .box .articlelist, #Main .template-blog .box .articlelist { padding: 10px; }
 /* line 118, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+#Main .template-article .box .articlelist, #Main .template-blog .box .articlelist { padding: 10px; }
+/* line 120, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .box .articlelist h4, #Main .template-blog .box .articlelist h4 { margin: 0 0 6.667px; font-weight: normal; }
-/* line 122, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 124, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .box .articlelist p, #Main .template-blog .box .articlelist p { margin: 0; }
-/* line 125, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 127, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .box .articlelist dl, #Main .template-blog .box .articlelist dl { padding: 0; margin: 0; }
-/* line 128, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 130, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .box .articlelist dl dd, #Main .template-blog .box .articlelist dl dd { margin: 0 0 6.667px 0; }
-/* line 134, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 136, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .no-background, #Main .template-blog .no-background { background: none; border-left: 1px solid #cfcfcf; }
-/* line 138, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 140, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .fl, #Main .template-blog .fl { float: left; margin-right: 10px; }
-/* line 142, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 144, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .fr, #Main .template-blog .fr { float: right; margin-left: 10px; }
-/* line 147, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 149, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .articlecomments h4, #Main .template-blog .articlecomments h4 { border-top: double #cfcfcf; padding: 10px 0 10px 0; margin: 0; clear: both; }
-/* line 153, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 155, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .articlecomments h5, #Main .template-blog .articlecomments h5 { border-top: 1px solid #cfcfcf; padding: 10px 0 0 0; margin: 0 0 5px 0; }
-/* line 157, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 159, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .articlecomments h5 span, #Main .template-blog .articlecomments h5 span { float: right; font-weight: normal; font-style: italic; }
-/* line 163, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 165, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .articlecomments p, #Main .template-blog .articlecomments p { margin: 0 0 10px 0; }
-/* line 166, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 168, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .articlecomments .actions, #Main .template-blog .articlecomments .actions { margin-bottom: 10px; overflow: hidden; }
-/* line 169, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 171, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .articlecomments .actions a, #Main .template-blog .articlecomments .actions a { background: url("../images/articlecomment_report_icon.png") no-repeat transparent; padding-left: 18px; color: #aaaaaa; float: right; }
-/* line 174, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 176, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .articlecomments .actions a:hover, #Main .template-blog .articlecomments .actions a:hover { text-decoration: underline; }
-/* line 179, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 181, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article .articlecomments hr, #Main .template-blog .articlecomments hr { background: url("../images/articlecomments_line.png") no-repeat transparent; height: 19px; border: none; margin: 0 0 10px 0; }
 /* line 132, /Library/WebServer/Documents/Automobilwoche/src/partials/_functions.scss */
 #Main .template-article .byline, #Main .template-blog .byline { border: 1px solid #cfcfcf; padding: 6.667px; overflow: hidden; margin-bottom: 20px; }
@@ -813,14 +813,14 @@ body textarea { width: 390px; height: 250px; }
 #Main .template-article .byline .addthis table td, #Main .template-blog .byline .addthis table td { border-right: 1px dotted #cfcfcf; padding: 1px; }
 /* line 195, /Library/WebServer/Documents/Automobilwoche/src/partials/_functions.scss */
 #Main .template-article .byline .addthis table td.last, #Main .template-blog .byline .addthis table td.last { border: none; }
-/* line 190, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 192, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article #Articlecomment p, #Main .template-blog #Articlecomment p { margin: 0; }
-/* line 193, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 195, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #Main .template-article #Articlecomment textarea, #Main .template-blog #Articlecomment textarea { width: 570px; height: 100px; }
 
-/* line 202, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 204, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #MainbColumn .main { height: 850px; }
-/* line 206, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
+/* line 208, /Library/WebServer/Documents/Automobilwoche/src/partials/_article.scss */
 #MainbColumn .top { height: 530px; }
 
 /* line 5, /Library/WebServer/Documents/Automobilwoche/src/partials/_gallery.scss */
