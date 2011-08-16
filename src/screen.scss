@@ -227,17 +227,7 @@ body {
   float: left;
 
   .bar {
-    display: block;
-    background-color: #053463;
-    color: #fff;
-    padding: $m/3;
-    text-transform: uppercase;
-    font-size: $separationline-font-size;
-    overflow: hidden;
-    a {
-      color: #fff;
-    }
-
+     @include bar;
   }
   .pageStrip
   {
