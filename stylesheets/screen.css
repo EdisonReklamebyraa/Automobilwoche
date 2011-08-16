@@ -837,9 +837,9 @@ body textarea { width: 390px; height: 250px; }
 /* line 220, ../src/partials/_article.scss */
 #Main.no-sidebar-narrow .template-article a { color: #053463; }
 /* line 226, ../src/partials/_article.scss */
-#Main.no-sidebar-narrow .template-article .center a { text-align: center; }
+#Main.no-sidebar-narrow .template-article .center { text-align: center; }
 /* line 228, ../src/partials/_article.scss */
-#Main.no-sidebar-narrow .template-article .center a a { padding: 0 5px; }
+#Main.no-sidebar-narrow .template-article .center a { padding: 0 5px; }
 
 /* line 241, ../src/partials/_article.scss */
 #MainbColumn .main { height: 850px; }
