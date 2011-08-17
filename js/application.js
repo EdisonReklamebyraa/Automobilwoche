@@ -270,7 +270,7 @@ google.setOnLoadCallback(function()
                              this.smallWidth = 179,
                              this.smallHeight = 118,
                              this.speed = 1000,
-                             this.intervalTime = 12000,
+                             this.intervalTime = 16000,
                              this.afterUpdate,
                              this.articleContainer = $("#MainbColumn .main .articleview_picturelist"),
                              this.intervalID = 0 ;
