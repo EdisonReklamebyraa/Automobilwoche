@@ -311,11 +311,13 @@ google.setOnLoadCallback(function()
                                linkHtml = html.replace(this.smallWidth, this.mainWidth).replace(this.smallHeight, this.mainHeight),
                                link = $("a:has(img)", lastArticle).clone(),
 
-                               newArticle = $("<div class='top'>"),
-                               header = newArticle.append("<header>");
+                               newArticle = $("<div class='top'></div>"),
+                               header = $("<header></header");
                                link.html(linkHtml);
                                header.append("<h1>"+$("h4", lastArticle).html()+"</h1>");
                                header.append(link);
+                               newArticle.append(header);
+
 
                                newArticle.append("<p>"+$("p", lastArticle).html()+"</p>");
                                newArticle.hide();
@@ -434,7 +436,7 @@ function addFancyboxToPage(){
                              'transitionOut'   : 'none',
                              'type'        : 'iframe'
                            });
-                           $("#Meinedaten, .ABOREG, #Abo, #Newsletter").fancybox({
+                           $("#Meinedaten, .ABOREG, #Abo,#Abo2, #Newsletter, #Newsletter2").fancybox({
                              'width'       : '50%',
                              'height'      : '90%',
                              'autoScale'     : false,

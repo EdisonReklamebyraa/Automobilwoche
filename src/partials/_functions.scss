@@ -41,7 +41,7 @@
     color: #fff;
     padding: $m/3;
     text-transform: uppercase;
-    font-size: $separationline-font-size;
+    font-size: $separationline-font-size + 3px;
     overflow: hidden;
     a {
       color: #fff;

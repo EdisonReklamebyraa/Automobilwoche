@@ -33,14 +33,22 @@ $lightGrey: #aaa;
 $mediumGrey: #868686;
 $blue: #103365;
 $darkGrey: #222;
-$MainNavigationColor: #000;
+$MainNavigationColor: $black;
 $TopNavigationColor: #7f7f7f;
 $separationline-font-size: 10px;
 
-$DefaultLinkColor: #000;
-$SideColumnBox-Header-LinkColor: #fff;
+$DefaultLinkColor: $black;
+$white: #fff;
+$SideColumnBox-Header-LinkColor: $white;
+
 
 // Article settings
 
-$PictureCaption: #767676; 
+$PictureCaption: #767676;
 $ArticleFactsColor: #f6f6f6;
+
+
+
+$default-text-shadow-color: rgba($black, 0.8);
+$default-text-shadow-blur: 3px;
+$default-text-shadow-v-offset: 2px;
