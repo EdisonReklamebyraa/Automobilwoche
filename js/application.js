@@ -1,8 +1,14 @@
-// Custom sorting plugin
+var addthis_config = {"data_track_clickback":true, ui_language: "de"};
 google.load("jquery", "1.6.0");
 
 google.setOnLoadCallback(function()
                          {
+
+
+
+
+
+
                            /* selector can be id, class, tag name etc. */
                            $("#tS1").thumbnailScroller({
                              scrollerType:"hoverAccelerate",
@@ -269,8 +275,8 @@ google.setOnLoadCallback(function()
                              this.mainHeight = 348,
                              this.smallWidth = 179,
                              this.smallHeight = 118,
-                             this.speed = 1000,
-                             this.intervalTime = 16000,
+                             this.speed = 1500,
+                             this.intervalTime = 18000,
                              this.afterUpdate,
                              this.articleContainer = $("#MainbColumn .main .articleview_picturelist"),
                              this.intervalID = 0 ;
@@ -287,13 +293,14 @@ google.setOnLoadCallback(function()
                                nextArticle = this.createNextArticle(topArticle, lastArticle);
 
                                clearTimeout(this.intervalID);
+                               var top = $("#MainbColumn .main .top header");
 
-                               $("#MainbColumn .main .top").slideUp(this.speed, function() { $(this).remove(); }).before(mainArticle);
-                               mainArticle.slideDown(this.speed);
+                               $(top).after(mainArticle);
+                               $(mainArticle).fadeIn(this.speed, function() { top.remove(); }) ;
 
                                this.articleContainer.prepend(nextArticle);
                                nextArticle.slideDown(this.speed);
-                               lastArticle.slideUp(this.speed, function() {
+                               lastArticle.fadeOut(this.speed, function() {
                                  $(this).remove();
                                  self.startUpdating();
                                });
@@ -311,17 +318,17 @@ google.setOnLoadCallback(function()
                                linkHtml = html.replace(this.smallWidth, this.mainWidth).replace(this.smallHeight, this.mainHeight),
                                link = $("a:has(img)", lastArticle).clone(),
 
-                               newArticle = $("<div class='top'></div>"),
-                               header = $("<header></header");
+
+                               header = $("<header></header"),
+                               caption = $("<div class='caption'>");
                                link.html(linkHtml);
-                               header.append("<h1>"+$("h4", lastArticle).html()+"</h1>");
+                               caption.append("<h1>"+$("h4", lastArticle).html()+"</h1>");
+                               header.append(caption);
                                header.append(link);
-                               newArticle.append(header);
 
-
-                               newArticle.append("<p>"+$("p", lastArticle).html()+"</p>");
-                               newArticle.hide();
-                               return newArticle;
+                               caption.append("<p>"+$("p", lastArticle).html()+"</p>");
+                               header.hide();
+                               return header;
                              }
 
                              this.createNextArticle = function(topArticle, lastArticle) {
