@@ -850,15 +850,15 @@ body textarea { width: 390px; height: 250px; }
 /* line 255, ../src/partials/_article.scss */
 #MainbColumn .top header { position: absolute; top: 0; }
 /* line 258, ../src/partials/_article.scss */
-#MainbColumn .top header .caption { position: absolute; bottom: 0px; width: 619px; left: 0px; background: url('../images/black.png?1313746584'); color: white; }
-/* line 266, ../src/partials/_article.scss */
-#MainbColumn .top header .caption p { padding: 5px 15px 10px; margin: 0; }
-/* line 270, ../src/partials/_article.scss */
+#MainbColumn .top header .caption { position: absolute; bottom: 0px; width: 619px; left: 0px; background: url('../images/black.png?1313746584'); color: white; text-shadow: black 0px 1px 3px; }
+/* line 267, ../src/partials/_article.scss */
+#MainbColumn .top header .caption p { padding: 5px 15px 10px; margin: 0; text-shadow: black 0px 1px 3px; }
+/* line 272, ../src/partials/_article.scss */
 #MainbColumn .top header .caption p strong, #MainbColumn .top header .caption p .lock { display: none; }
-/* line 276, ../src/partials/_article.scss */
+/* line 278, ../src/partials/_article.scss */
 #MainbColumn .top header .caption h1 { font-size: 2em; padding: 10px 15px 0; margin: 0; }
-/* line 280, ../src/partials/_article.scss */
-#MainbColumn .top header .caption h1 a { color: white; display: block; text-shadow: rgba(0, 0, 0, 0.8) 0px 2px 3px; }
+/* line 282, ../src/partials/_article.scss */
+#MainbColumn .top header .caption h1 a { color: white; display: block; }
 
 /* line 5, ../src/partials/_gallery.scss */
 #Main .template-gallery .slideshow p { font-size: 90%; }

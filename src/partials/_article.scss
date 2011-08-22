@@ -262,10 +262,12 @@
         left: 0px;
         background: image_url("black.png");
         color: $white;
+        @include single-text-shadow;
         p
         {
           padding: 5px 15px 10px;
           margin: 0;
+          @include single-text-shadow;
           strong, .lock
           {
             display: none;
@@ -281,7 +283,7 @@
 
             color: $white;
             display: block;
-            @include single-text-shadow;
+
 
         }
         }
