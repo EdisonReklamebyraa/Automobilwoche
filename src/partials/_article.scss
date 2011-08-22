@@ -264,7 +264,8 @@
         color: $white;
         p
         {
-          padding: 5px 15px 0;
+          padding: 5px 15px 10px;
+          margin: 0;
           strong, .lock
           {
             display: none;
@@ -274,7 +275,7 @@
         h1
         {
           font-size: 2em;
-          padding: 5px 15px 0;
+          padding: 10px 15px 0;
           margin: 0 ;
           a{
 
