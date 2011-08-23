@@ -1,126 +1,126 @@
 .template-events
 {
-	hr {
-		background: url("../images/line_dotted.png?1302776059") repeat-x scroll 10px 50% transparent;
-		border: medium none;
-		clear: both;
-		margin: 0 0 $m/6 0; 
-	}
-	.eventsearch {
-		display: block;
-		overflow: hidden;
-		form {
-			@include blueprint-form;
-		}
-		fieldset {
-			padding: $m/2;
-			legend {
-				font-size: 90%;
-				font-weight: normal;
-				padding: 2px 6px;
+  hr {
+    background: url("../images/line_dotted.png?1302776059") repeat-x scroll 10px 50% transparent;
+    border: medium none;
+    clear: both;
+    margin: 0 0 $m/6 0;
+  }
+  .eventsearch {
+    display: block;
+    overflow: hidden;
+    form {
+      @include blueprint-form;
+    }
+    fieldset {
+      padding: $m/2;
+      legend {
+        font-size: 90%;
+        font-weight: normal;
+        padding: 2px 6px;
 
-			}
-			form {
-				$eventcalendar_icon: "calendar.png";
-				.wrapper {
-					float: left;
-				}
-				label {
-					display: block;
-					font-weight: normal;
-				}
-				select {
-					clear: both;
-					float: left;
-					&.daterange {
-						margin-right: $m/2;
-						width: 200px;
-						padding: $m/4;
-						height: 26px;
-					}
-					&.Subject {
-						float:left;
-						width: 400px;
-						padding: $m/4;
-						height: 26px;
-					}
-				}
-				input {
-					&.Dateselect {
-						float:left;
-						width: 100px;
-					}
-				}
-				a.DateChoice {
-					float:left;
-					background: image-url($eventcalendar_icon) no-repeat scroll left top;
-					@include replace-text-with-dimensions($eventcalendar_icon);
-					padding: $m/4;
-					cursor: pointer;
-				}
+      }
+      form {
+        $eventcalendar_icon: "calendar.png";
+        .wrapper {
+          float: left;
+        }
+        label {
+          display: block;
+          font-weight: normal;
+        }
+        select {
+          clear: both;
+          float: left;
+          &.daterange {
+            margin-right: $m/2;
+            width: 200px;
+            padding: $m/4;
 
-				input[type=submit] {
-		        	@include submitbtn("search.png");
-		        	margin: $m/4;
-		       }
-			}
-		}
-	
-	}
-	.pageingnation {
-		display: block;
-		background: image-url("gray_pattern_bg.png");
-		// border-top: 1px solid $lightlightGrey;
-		// border-bottom: 1px solid $lightlightGrey;
-		height: $m*2;
-		margin-bottom: $m;
-		span {
-			&.left {
-				float: left;
-				padding: $m/2;
-			}
-			&.right {
-				float: right;
-				padding: $m/2;
-			}
-		}
-	}
-	.eventitem {
-		display: block;
-		overflow: hidden;
-		margin-bottom: $m/6;
-		&.odd {
-			background: #f9f9f9;
-		}
-		.col-1,.col-2,.col-3 {
-			//width: $sectioncolumn;
-			float: left;
-			margin-right: $m;
-			.wrapper{
-				padding: $m/2;
-				a {
-					color: $orange!important;
-				}
-				p {
-					margin: 0;
-				}
-			}
-			&.col-1 {
-				width: 80px;
-			}
-			&.col-2 {
-				background: #f2f2f2;
-				width: 320px;
-			}
-			&.col-3 {
-				width: 180px;
-				margin-right:0;
-				.wrapper{
-					padding-left: 0;
-				}
-			}
-		}
+          }
+          &.Subject {
+            float:left;
+            width: 400px;
+            padding: $m/4;
+            height: 26px;
+          }
+        }
+        input {
+          &.Dateselect {
+            float:left;
+            width: 100px;
+          }
+        }
+        a.DateChoice {
+          float:left;
+          background: image-url($eventcalendar_icon) no-repeat scroll left top;
+          @include replace-text-with-dimensions($eventcalendar_icon);
+          padding: $m/4;
+          cursor: pointer;
+        }
 
-	}
+        input[type=submit] {
+              @include submitbtn("search.png");
+              margin: $m/4;
+           }
+      }
+    }
+
+  }
+  .pageingnation {
+    display: block;
+    background: image-url("gray_pattern_bg.png");
+    // border-top: 1px solid $lightlightGrey;
+    // border-bottom: 1px solid $lightlightGrey;
+    height: $m*2;
+    margin-bottom: $m;
+    span {
+      &.left {
+        float: left;
+        padding: $m/2;
+      }
+      &.right {
+        float: right;
+        padding: $m/2;
+      }
+    }
+  }
+  .eventitem {
+    display: block;
+    overflow: hidden;
+    margin-bottom: $m/6;
+    &.odd {
+      background: #f9f9f9;
+    }
+    .col-1,.col-2,.col-3 {
+      //width: $sectioncolumn;
+      float: left;
+      margin-right: $m;
+      .wrapper{
+        padding: $m/2;
+        a {
+          color: $orange!important;
+        }
+        p {
+          margin: 0;
+        }
+      }
+      &.col-1 {
+        width: 80px;
+      }
+      &.col-2 {
+        background: #f2f2f2;
+        width: 320px;
+      }
+      &.col-3 {
+        width: 180px;
+        margin-right:0;
+        .wrapper{
+          padding-left: 0;
+        }
+      }
+    }
+
+  }
 
 }

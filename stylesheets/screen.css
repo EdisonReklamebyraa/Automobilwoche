@@ -965,7 +965,7 @@ body textarea { width: 390px; height: 250px; }
 /* line 32, ../src/partials/_events.scss */
 .template-events .eventsearch fieldset form select { clear: both; float: left; }
 /* line 35, ../src/partials/_events.scss */
-.template-events .eventsearch fieldset form select.daterange { margin-right: 10px; width: 200px; padding: 5px; height: 26px; }
+.template-events .eventsearch fieldset form select.daterange { margin-right: 10px; width: 200px; padding: 5px; }
 /* line 41, ../src/partials/_events.scss */
 .template-events .eventsearch fieldset form select.Subject { float: left; width: 400px; padding: 5px; height: 26px; }
 /* line 49, ../src/partials/_events.scss */
