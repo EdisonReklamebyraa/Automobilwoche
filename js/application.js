@@ -315,7 +315,7 @@ google.setOnLoadCallback(function($)
                                link = $("a:has(img)", lastArticle).clone(),
 
 
-                               header = $("<header></header"),
+                               header = $("<header></header>"),
                                caption = $("<div class='caption'></div>");
                                link.html(linkHtml);
                                caption.append("<h1>"+$("h4", lastArticle).html()+"</h1>");
