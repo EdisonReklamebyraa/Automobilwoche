@@ -1,7 +1,7 @@
 var addthis_config = {"data_track_clickback":true, ui_language: "de"};
 google.load("jquery", "1.6.0");
 
-google.setOnLoadCallback(function($)
+google.setOnLoadCallback(function()
                          {
 
                            /* selector can be id, class, tag name etc. */
@@ -316,7 +316,7 @@ google.setOnLoadCallback(function($)
 
 
                                header = $("<header></header>"),
-                               caption = $("<div class='caption'></div>");
+                               caption = $("<div class='caption'>");
                                link.html(linkHtml);
                                caption.append("<h1>"+$("h4", lastArticle).html()+"</h1>");
                                header.append(caption);
@@ -331,7 +331,7 @@ google.setOnLoadCallback(function($)
                                var html = $("a:has(img)", topArticle).html()  || "",
                                smallLinkHtml = html.replace(this.mainWidth, this.smallWidth).replace(this.mainHeight, this.smallHeight),
                                smallLink = $("a:has(img)", topArticle).clone(),
-                               newArticle = $("<article></article>");
+                               newArticle = $("<article>");
                                newArticle.attr("class", $(lastArticle).attr("class") );
                                newArticle.append("<hr>");
                                smallLink.html(smallLinkHtml);
