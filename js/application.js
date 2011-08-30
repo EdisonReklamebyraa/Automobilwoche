@@ -1,13 +1,8 @@
 var addthis_config = {"data_track_clickback":true, ui_language: "de"};
 google.load("jquery", "1.6.0");
 
-google.setOnLoadCallback(function()
+google.setOnLoadCallback(function($)
                          {
-
-
-
-
-
 
                            /* selector can be id, class, tag name etc. */
                            $("#tS1").thumbnailScroller({
@@ -116,6 +111,7 @@ google.setOnLoadCallback(function()
                                }
                                return returnValue;
                              }
+                               return false;
                            };
                            var CSSFilter = "#MainbColumn",
                            zoom = $.cookie("zoom"),
@@ -133,7 +129,7 @@ google.setOnLoadCallback(function()
                            function printpage()
                            {
                              JavaScript:window.print();
-                             return false; auotmoat
+                             return false; 
                            }
 
 
@@ -162,11 +158,11 @@ google.setOnLoadCallback(function()
                                else
                                {
                                  var fs = $(this).css("font-size").replace("px", "")*1;
-                                 $(this).attr("fs", fs)
+                                 $(this).attr("fs", fs);
                                }
 
                                fs += fs*z;
-                               $(this).css("font-size", fs+"px")
+                               $(this).css("font-size", fs+"px");
                              });
                              updateButtons();
                            }
@@ -270,7 +266,7 @@ google.setOnLoadCallback(function()
 
 
 
-                           MainArticleRotator = function() {
+                          var MainArticleRotator = function() {
                              this.mainWidth = 619,
                              this.mainHeight = 348,
                              this.smallWidth = 179,
@@ -320,7 +316,7 @@ google.setOnLoadCallback(function()
 
 
                                header = $("<header></header"),
-                               caption = $("<div class='caption'>");
+                               caption = $("<div class='caption'></div>");
                                link.html(linkHtml);
                                caption.append("<h1>"+$("h4", lastArticle).html()+"</h1>");
                                header.append(caption);
@@ -329,13 +325,13 @@ google.setOnLoadCallback(function()
                                caption.append("<p>"+$("p", lastArticle).html()+"</p>");
                                header.hide();
                                return header;
-                             }
+                             };
 
                              this.createNextArticle = function(topArticle, lastArticle) {
                                var html = $("a:has(img)", topArticle).html()  || "",
                                smallLinkHtml = html.replace(this.mainWidth, this.smallWidth).replace(this.mainHeight, this.smallHeight),
                                smallLink = $("a:has(img)", topArticle).clone(),
-                               newArticle = $("<article>");
+                               newArticle = $("<article></article>");
                                newArticle.attr("class", $(lastArticle).attr("class") );
                                newArticle.append("<hr>");
                                smallLink.html(smallLinkHtml);
@@ -347,7 +343,7 @@ google.setOnLoadCallback(function()
                                return newArticle;
 
 
-                             }
+                             };
 
                              this.startUpdating = function() {
                                var self = this;
@@ -355,9 +351,9 @@ google.setOnLoadCallback(function()
                              };
 
 
-                           }
+                           };
 
-                           mar = new MainArticleRotator();
+                           var mar = new MainArticleRotator();
                            mar.startUpdating();
                            mar.afterUpdate = addFancyboxToPage;
 
