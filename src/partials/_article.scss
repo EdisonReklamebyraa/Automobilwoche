@@ -38,6 +38,15 @@
       float: left;
       font-weight: normal;
       color: $lightGrey;
+
+    }
+    &.full
+    {
+      float: none;
+      margin: 0 auto;
+      text-align: center;
+
+
     }
     margin: 0;
     float: right;

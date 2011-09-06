@@ -3,6 +3,15 @@ google.load("jquery", "1.6.0");
 
 google.setOnLoadCallback(function()
                          {
+                             
+                             //set wmode for all the flash banners, bad hack I know. 
+
+                             $("param[name=wmode]").attr("value", "Transparent");
+                             $("object, embed").attr("wmode", "Transparent"); 
+                             $("object").each(function() {
+                                                  $(this).html($(this).html( ) ); 
+                                              }); 
+
 
                            /* selector can be id, class, tag name etc. */
                            $("#tS1").thumbnailScroller({
