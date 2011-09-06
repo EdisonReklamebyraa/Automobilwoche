@@ -3,16 +3,6 @@ google.load("jquery", "1.6.0");
 
 google.setOnLoadCallback(function()
                          {
-                             
-                             //set wmode for all the flash banners, bad hack I know. 
-
-                             $("param[name=wmode]").attr("value", "Transparent");
-                             $("object, embed").attr("wmode", "Transparent"); 
-                             $("object").each(function() {
-                                                  $(this).html($(this).html( ) ); 
-                                              }); 
-
-
                            /* selector can be id, class, tag name etc. */
                            $("#tS1").thumbnailScroller({
                              scrollerType:"hoverAccelerate",
@@ -138,7 +128,7 @@ google.setOnLoadCallback(function()
                            function printpage()
                            {
                              JavaScript:window.print();
-                             return false; 
+                             return false;
                            }
 
 
@@ -360,7 +350,7 @@ google.setOnLoadCallback(function()
                              };
 
 
-                           };
+                          };
 
                            var mar = new MainArticleRotator();
                            mar.startUpdating();
@@ -369,8 +359,34 @@ google.setOnLoadCallback(function()
                            addFancyboxToPage();
 
 
+                           //set wmode for all the flash banners, bad hack I know.
+
+                           $("param[name=wmode]").attr("value", "Transparent");
+                           $("object, embed").attr("wmode", "Transparent");
+                           $("object").each(function() {
+                             $(this).html($(this).html( ) );
+                           });
+
+                           $(".DateChoice").glDatePicker({ onChange: function(target, newDate)
+                                                           {
+                                                             $(".Dateselect").val
+                                                             (
+                                                               doubleDigit(newDate.getDate()) + "." + doubleDigit(newDate.getMonth() + 1) + "." +newDate.getFullYear()
+                                                             );
+                                                             $(".DateselectFilter").val(
+                                                               newDate.getFullYear() + "" +doubleDigit(newDate.getMonth() + 1) + "" +doubleDigit(newDate.getDate())
+                                                             )
+                                                           }})
+
+
 
                          });
+
+ function doubleDigit(n)
+    {
+      var s = n + 1000 + "";
+      return s.substring(s.length -2, s.length );
+    }
 
 function addFancyboxToPage(){
 
