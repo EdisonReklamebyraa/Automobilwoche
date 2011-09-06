@@ -376,6 +376,8 @@ google.setOnLoadCallback(function()
                                                              $(".DateselectFilter").val(
                                                                newDate.getFullYear() + "" +doubleDigit(newDate.getMonth() + 1) + "" +doubleDigit(newDate.getDate())
                                                              )
+                                                             $(".daterange").val(-1);
+
                                                            }})
 
 
