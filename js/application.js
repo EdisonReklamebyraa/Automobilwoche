@@ -127,7 +127,7 @@ google.setOnLoadCallback(function()
 
                            function printpage()
                            {
-                             JavaScript:window.print();
+                             window.print();
                              return false;
                            }
 
@@ -148,15 +148,16 @@ google.setOnLoadCallback(function()
 
                            function setSize(z)
                            {
+                             var fs;
                              $(CSSFilter).each(function(){
 
                                if($(this).attr("fs"))
                                {
-                                 var fs = $(this).attr("fs") * 1;
+                                 fs = $(this).attr("fs") * 1;
                                }
                                else
                                {
-                                 var fs = $(this).css("font-size").replace("px", "")*1;
+                                 fs = $(this).css("font-size").replace("px", "")*1;
                                  $(this).attr("fs", fs);
                                }
 
@@ -168,7 +169,7 @@ google.setOnLoadCallback(function()
 
                            function updateButtons()
                            {
-                             if(Math.abs(zoom) < 0.04 & zoom != 0 )
+                             if(Math.abs(zoom) < 0.04 & zoom !== 0 )
                              {
                                resetZoom();
                              }
@@ -266,14 +267,14 @@ google.setOnLoadCallback(function()
 
 
                           var MainArticleRotator = function() {
-                             this.mainWidth = 619,
-                             this.mainHeight = 348,
-                             this.smallWidth = 179,
-                             this.smallHeight = 118,
-                             this.speed = 1500,
-                             this.intervalTime = 18000,
-                             this.afterUpdate,
-                             this.articleContainer = $("#MainbColumn .main .articleview_picturelist"),
+                            this.mainWidth = 619;
+                            this.mainHeight = 348;
+                            this.smallWidth = 179;
+                            this.smallHeight = 118;
+                            this.speed = 1500;
+                            this.intervalTime = 18000;
+                            this.afterUpdate;
+                            this.articleContainer = $("#MainbColumn .main .articleview_picturelist");
                              this.intervalID = 0 ;
 
 
@@ -367,21 +368,23 @@ google.setOnLoadCallback(function()
                              $(this).html($(this).html( ) );
                            });
 
-                           $(".DateChoice").glDatePicker({ onChange: function(target, newDate)
-                                                           {
-                                                             $(".Dateselect").val
-                                                             (
-                                                               doubleDigit(newDate.getDate()) + "." + doubleDigit(newDate.getMonth() + 1) + "." +newDate.getFullYear()
-                                                             );
-                                                             $(".DateselectFilter").val(
-                                                               newDate.getFullYear() + "" +doubleDigit(newDate.getMonth() + 1) + "" +doubleDigit(newDate.getDate())
-                                                             )
-                                                             $(".daterange").val(-1);
+                           //Date dropdown in Termine
 
-                                                           }})
+                           $(".DateChoice, .Dateselect").glDatePicker({ onChange: function(target, newDate)
+                                                                        {
+                                                                          $(".Dateselect").val(doubleDigit(newDate.getDate()) + "." + doubleDigit(newDate.getMonth() + 1) + "." +newDate.getFullYear());
+                                                                          $(".DateselectFilter").val(newDate.getFullYear() + "" +doubleDigit(newDate.getMonth() + 1) + "" +doubleDigit(newDate.getDate()));
+                                                                          $(".daterange").val(-1);
 
+                                                                        }});
 
-
+                           var date = $(".DateselectFilter").val();
+                           if(date.length === 8){
+                             var year = date.substr(0,4),
+                             month = date.substr(4,2),
+                             day = date.substr(6,2);
+                             $(".Dateselect").val(day+"."+month+"."+year );
+                           }
                          });
 
  function doubleDigit(n)
