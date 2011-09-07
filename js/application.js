@@ -1,7 +1,5 @@
 var addthis_config = {"data_track_clickback":true, ui_language: "de"};
-google.load("jquery", "1.6.0");
-
-google.setOnLoadCallback(function()
+$(function()
                          {
                            /* selector can be id, class, tag name etc. */
                            $("#tS1").thumbnailScroller({
@@ -361,13 +359,13 @@ google.setOnLoadCallback(function()
 
 
                            //set wmode for all the flash banners, bad hack I know.
-
+                           /*
                            $("param[name=wmode]").attr("value", "Transparent");
                            $("object, embed").attr("wmode", "Transparent");
                            $("object").each(function() {
                              $(this).html($(this).html( ) );
                            });
-
+                           */
                            //Date dropdown in Termine
 
                            $(".DateChoice, .Dateselect").glDatePicker({ onChange: function(target, newDate)
@@ -379,7 +377,7 @@ google.setOnLoadCallback(function()
                                                                         }});
 
                            var date = $(".DateselectFilter").val();
-                           if(date.length === 8){
+                           if(date && date.length === 8){
                              var year = date.substr(0,4),
                              month = date.substr(4,2),
                              day = date.substr(6,2);
