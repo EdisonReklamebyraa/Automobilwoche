@@ -383,6 +383,11 @@ $(function()
                              day = date.substr(6,2);
                              $(".Dateselect").val(day+"."+month+"."+year );
                            }
+
+
+                           //update a banner with a gif
+                           $("img[src*=110819984]").attr("src","/images/Banner_IAA_300x250.gif");
+
                          });
 
  function doubleDigit(n)
