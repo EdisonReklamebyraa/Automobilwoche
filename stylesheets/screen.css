@@ -32,6 +32,8 @@ form label { font-weight: normal!important; }
 #TipForm input, #TipForm label, #TipForm textarea { float: left; }
 /* line 23, ../src/partials/_forms.scss */
 #TipForm label { width: 200px; clear: both; }
+/* line 28, ../src/partials/_forms.scss */
+#TipForm p { overflow: hidden; clear: both; }
 
 /* line 1, ../src/partials/_blog.scss */
 #Main .template-blog { font-family: georgia; }
