@@ -1,8 +1,31 @@
-@import "blueprint";
+@import "screen";
 
 // To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
 // @include blueprint-print
 
 //Recommended Blueprint configuration with scoping and semantic layout:
-body.bp {
-  @include blueprint-print(true); }
+body {
+  @include blueprint-print;
+}
+
+
+aside,
+#sideColumn,
+#MainNavigation,
+#main,
+.footer,
+.pageStrip,
+.articleview_picturelist,
+#Articlecomment,
+#Main .template-article .box, #Main .template-blog .box,
+.addthis_toolbox
+{
+  display: none !important;
+
+}
+
+#MainbColumn
+{
+  width: 95%;
+}
+
