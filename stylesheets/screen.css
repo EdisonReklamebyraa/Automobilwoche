@@ -28,8 +28,8 @@ form p { margin-bottom: 5px !important; }
 /* line 9, ../src/partials/_forms.scss */
 form label { font-weight: normal!important; }
 
-/* line 15, ../src/partials/_forms.scss */
-#TipForm { label: clear; display: block; }
+/* line 14, ../src/partials/_forms.scss */
+#TipForm label { display: block; }
 
 /* line 1, ../src/partials/_blog.scss */
 #Main .template-blog { font-family: georgia; }
