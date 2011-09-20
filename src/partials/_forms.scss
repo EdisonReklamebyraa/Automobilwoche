@@ -14,14 +14,15 @@ form {
 
 #TipForm{
   input,
-  label
+  label,
+  textarea
   {
     float: left;
-
   }
-  label{
-    clear: both;
 
+  label{
+    width: 200px;
+    clear: both;
   }
 
 }
