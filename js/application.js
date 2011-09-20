@@ -398,103 +398,110 @@ $(function()
 
 function addFancyboxToPage(){
 
+  $(".addthis .email").fancybox({
+    'width'       : 243,
+    'height'      : 220,
+    'autoScale'       : false,
+    'transitionIn'    : 'none',
+    'transitionOut'   : 'none',
+    'type'        : 'iframe'
+  });
 
+  $("a#example1").fancybox();
+  $("a#example2").fancybox({
+    'overlayShow' : false,
+    'transitionIn'  : 'elastic',
+    'transitionOut' : 'elastic'
+  });
 
-                           $("a#example1").fancybox();
-                           $("a#example2").fancybox({
-                             'overlayShow' : false,
-                             'transitionIn'  : 'elastic',
-                             'transitionOut' : 'elastic'
-                           });
+  $("a#example3").fancybox({
+    'transitionIn'  : 'none',
+    'transitionOut' : 'none'
+  });
 
-                           $("a#example3").fancybox({
-                             'transitionIn'  : 'none',
-                             'transitionOut' : 'none'
-                           });
+  $("a#example4").fancybox({
+    'opacity'   : true,
+    'overlayShow' : false,
+    'transitionIn'  : 'elastic',
+    'transitionOut' : 'none'
+  });
 
-                           $("a#example4").fancybox({
-                             'opacity'   : true,
-                             'overlayShow' : false,
-                             'transitionIn'  : 'elastic',
-                             'transitionOut' : 'none'
-                           });
+  $("a#example5").fancybox();
 
-                           $("a#example5").fancybox();
+  $("a#example6").fancybox({
+    'titlePosition'   : 'outside',
+    'overlayColor'    : '#000',
+    'overlayOpacity'  : 0.9,
+    'type' : "image"
+  });
 
-                           $("a#example6").fancybox({
-                             'titlePosition'   : 'outside',
-                             'overlayColor'    : '#000',
-                             'overlayOpacity'  : 0.9,
-                             'type' : "image"
-                           });
+  $("a#example7").fancybox({
+    'titlePosition' : 'inside'
+  });
 
-                           $("a#example7").fancybox({
-                             'titlePosition' : 'inside'
-                           });
+  $("a#example8").fancybox({
+    'titlePosition' : 'over'
+  });
 
-                           $("a#example8").fancybox({
-                             'titlePosition' : 'over'
-                           });
+  $("a[rel=example_group]").fancybox({
+    'transitionIn'    : 'none',
+    'transitionOut'   : 'none',
+    'titlePosition'   : 'over',
+    'titleFormat'   : function(title, currentArray, currentIndex, currentOpts) {
+      return '<span id="fancybox-title-over">Foto ' + (currentIndex + 1) + ' von ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+    }
+  });
 
-                           $("a[rel=example_group]").fancybox({
-                             'transitionIn'    : 'none',
-                             'transitionOut'   : 'none',
-                             'titlePosition'   : 'over',
-                             'titleFormat'   : function(title, currentArray, currentIndex, currentOpts) {
-                               return '<span id="fancybox-title-over">Foto ' + (currentIndex + 1) + ' von ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-                             }
-                           });
+  $("#various1").fancybox({
+    'titlePosition'   : 'inside',
+    'transitionIn'    : 'none',
+    'transitionOut'   : 'none'
+  });
 
-                           $("#various1").fancybox({
-                             'titlePosition'   : 'inside',
-                             'transitionIn'    : 'none',
-                             'transitionOut'   : 'none'
-                           });
+  $("#various2").fancybox();
 
-                           $("#various2").fancybox();
+  $("#various2_2").fancybox();
 
-                           $("#various2_2").fancybox();
+  $("#various3").fancybox({
+    'width'       : '75%',
+    'height'      : '75%',
+    'autoScale'     : false,
+    'transitionIn'    : 'none',
+    'transitionOut'   : 'none',
+    'type'        : 'iframe'
+  });
 
-                           $("#various3").fancybox({
-                             'width'       : '75%',
-                             'height'      : '75%',
-                             'autoScale'     : false,
-                             'transitionIn'    : 'none',
-                             'transitionOut'   : 'none',
-                             'type'        : 'iframe'
-                           });
-
-                           $("#Registrieren").fancybox({
-                             'width'       : '50%',
-                             'height'      : '75%',
-                             'autoScale'     : false,
-                             'transitionIn'    : 'none',
-                             'transitionOut'   : 'none',
-                             'type'        : 'iframe'
-                           });
-                           $("#Meinedaten, .ABOREG, #Abo,#Abo2, #Newsletter, #Newsletter2").fancybox({
-                             'width'       : '50%',
-                             'height'      : '90%',
-                             'autoScale'     : false,
-                             'transitionIn'    : 'none',
-                             'transitionOut'   : 'none',
-                             'type'        : 'iframe'
-                           });
-                           $("#Lostpassword").fancybox({
-                             'width'       : '20%',
-                             'height'      : '40%',
-                             'autoScale'     : false,
-                             'transitionIn'    : 'none',
-                             'transitionOut'   : 'none',
-                             'type'        : 'iframe'
-                           });
-                           $("#various4").fancybox({
-                             'padding'     : 0,
-                             'autoScale'     : false,
-                             'transitionIn'    : 'none',
-                             'transitionOut'   : 'none'
-                           });
-                           // FANCYBOX END //
+  $("#Registrieren").fancybox({
+    'width'       : '50%',
+    'height'      : '75%',
+    'autoScale'     : false,
+    'transitionIn'    : 'none',
+    'transitionOut'   : 'none',
+    'type'        : 'iframe'
+  });
+  $("#Meinedaten, .ABOREG, #Abo,#Abo2, #Newsletter, #Newsletter2").fancybox({
+    'width'       : '50%',
+    'height'      : '90%',
+    'autoScale'     : false,
+    'transitionIn'    : 'none',
+    'transitionOut'   : 'none',
+    'type'        : 'iframe'
+  });
+  $("#Lostpassword").fancybox({
+    'width'       : '20%',
+    'height'      : '40%',
+    'autoScale'     : false,
+    'transitionIn'    : 'none',
+    'transitionOut'   : 'none',
+    'type'        : 'iframe'
+  });
+  $("#various4").fancybox({
+    'padding'     : 0,
+    'autoScale'     : false,
+    'transitionIn'    : 'none',
+    'transitionOut'   : 'none'
+  });
+  // FANCYBOX END //
 }
 
 
