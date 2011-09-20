@@ -38,7 +38,7 @@ form label { font-weight: normal!important; }
 #TipForm p { overflow: hidden; clear: both; }
 
 /* line 42, ../src/partials/_forms.scss */
-body#Tips { min-width: 0; }
+#Tips { min-width: 0; width: 650px; }
 
 /* line 1, ../src/partials/_blog.scss */
 #Main .template-blog { font-family: georgia; }
