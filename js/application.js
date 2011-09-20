@@ -399,8 +399,8 @@ $(function()
 function addFancyboxToPage(){
 
   $(".addthis .email").fancybox({
-    'width'       : "50%",
-    'height'      : 500,
+    'width'       : 600,
+    'height'      : 450,
     'autoScale'       : false,
     'transitionIn'    : 'none',
     'transitionOut'   : 'none',

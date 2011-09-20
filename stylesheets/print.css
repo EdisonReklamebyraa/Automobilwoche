@@ -33,9 +33,12 @@ form label { font-weight: normal!important; }
 /* line 21, ../src/partials/_forms.scss */
 #TipForm input, #TipForm label, #TipForm textarea { float: left; }
 /* line 25, ../src/partials/_forms.scss */
-#TipForm label { width: 200px; clear: both; }
+#TipForm label { width: 150px; clear: both; }
 /* line 30, ../src/partials/_forms.scss */
 #TipForm p { overflow: hidden; clear: both; }
+
+/* line 42, ../src/partials/_forms.scss */
+body#Tips { min-width: 0; }
 
 /* line 1, ../src/partials/_blog.scss */
 #Main .template-blog { font-family: georgia; }
