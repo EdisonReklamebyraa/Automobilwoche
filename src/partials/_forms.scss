@@ -1,12 +1,21 @@
 form {
-	input[type="radio"] {
-		top: 0!important;
-		margin-right: $m/4!important;
-	}
-	p {
-		margin-bottom: $m/4!important;
-	}
-	label {
-		font-weight: normal!important;
-	}
+  input[type="radio"] {
+    top: 0!important;
+    margin-right: $m/4!important;
+  }
+  p {
+    margin-bottom: $m/4!important;
+  }
+  label {
+    font-weight: normal!important;
+  }
+}
+
+#TipForm
+{
+  label: clear;
+  display: block;
+
+
+
 }
