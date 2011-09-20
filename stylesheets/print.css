@@ -1040,4 +1040,7 @@ body .hide { display: none; }
 aside, #sideColumn, #MainNavigation, #main, .footer, .pageStrip, #Articlecomment, #Main .template-article .box, #Main .template-blog .box, .addthis_toolbox { display: none !important; }
 
 /* line 27, ../src/print.scss */
+#MainbColumn .top header .caption { background: #000; }
+
+/* line 32, ../src/print.scss */
 #MainbColumn { width: 95%; }
