@@ -11,6 +11,19 @@ form {
   }
 }
 
-#TipForm label {
-  display: block;
+
+#TipForm{
+  input,
+  label
+  {
+    float: left;
+
+  }
+  label{
+    clear: both;
+
+  }
+
 }
+
+
