@@ -25,11 +25,12 @@ aside,
 
 
 #MainbColumn .top header .caption p,
-#MainbColumn .top header .caption h1 a
+#MainbColumn .top header .caption h1 a,
+#MainbColumn .top header .caption h1
 {
   padding: 5px 0;
   color: #000;
-  @include single-text-shadow(#FFF);
+  @include single-text-shadow(#ddd);
 }
 
 #MainbColumn
