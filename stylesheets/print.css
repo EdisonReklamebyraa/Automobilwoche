@@ -1040,7 +1040,7 @@ body .hide { display: none; }
 aside, #sideColumn, #MainNavigation, #main, .footer, .pageStrip, #Articlecomment, #Main .template-article .box, #Main .template-blog .box, .addthis_toolbox { display: none !important; }
 
 /* line 29, ../src/print.scss */
-#MainbColumn .top header .caption p, #MainbColumn .top header .caption h1 { padding: 5px 0; color: #000; }
+#MainbColumn .top header .caption p, #MainbColumn .top header .caption h1 a { padding: 5px 0; color: #000; text-shadow: white 0px 1px 3px; }
 
-/* line 35, ../src/print.scss */
+/* line 36, ../src/print.scss */
 #MainbColumn { width: 95%; }
