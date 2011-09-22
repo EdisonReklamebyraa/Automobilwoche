@@ -299,25 +299,25 @@ body textarea { width: 390px; height: 250px; }
 .printLogo { display: none; }
 
 /* line 33, ../src/screen.scss */
-.addthis .email span { padding-left: 21px; margin-left: 2px; }
+.addthis .email span { margin-left: 2px; }
 
-/* line 43, ../src/screen.scss */
+/* line 42, ../src/screen.scss */
 #Top #main { text-align: right; background: transparent url('../images/top_bg.png?1308810816') left bottom repeat-x; overflow: hidden; }
-/* line 47, ../src/screen.scss */
+/* line 46, ../src/screen.scss */
 #Top #main ul { float: left; width: 940px; color: #aaaaaa; font-size: 85%; text-align: right; padding: 0px; margin-right: 0px; margin-left: 33px; }
-/* line 57, ../src/screen.scss */
+/* line 56, ../src/screen.scss */
 #Top #main ul li { display: inline; padding: 0 0 0 10px; }
-/* line 60, ../src/screen.scss */
+/* line 59, ../src/screen.scss */
 #Top #main ul li a { color: #7f7f7f; text-decoration: none; }
-/* line 70, ../src/screen.scss */
+/* line 69, ../src/screen.scss */
 #Top aside { background: transparent url('../images/top_bg.png?1308810816') left bottom repeat-x; padding: 25px 33px; display: block; }
-/* line 74, ../src/screen.scss */
+/* line 73, ../src/screen.scss */
 #Top aside.hockeystick { position: absolute; left: 978px; top: 175px; padding: 0; margin: 0; background: none; width: 50%; background-color: #fff; padding-left: 5px; }
-/* line 87, ../src/screen.scss */
+/* line 86, ../src/screen.scss */
 #Top .section { width: 940px; padding: 0 0 20px 33px; overflow: hidden; float: left; }
-/* line 93, ../src/screen.scss */
+/* line 92, ../src/screen.scss */
 #Top .section h1 { margin: 0 0 20px 0; text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('../images/logo.png?1308810816'); background-repeat: no-repeat; background-position: 50% 50%; width: 408px; height: 90px; float: left; }
-/* line 97, ../src/screen.scss */
+/* line 96, ../src/screen.scss */
 #Top .section h1 a { width: 100%; height: 100%; display: block; }
 /* line 53, ../src/partials/_functions.scss */
 #Top .section .forms form { float: right; }
@@ -350,71 +350,71 @@ body textarea { width: 390px; height: 250px; }
 /* line 128, ../src/partials/_functions.scss */
 #Top .section .forms form input[type=text].username { width: 124px; background-image: url('../images/login_username_bg.png?1308810816'); padding: 5px 10px 5px 40px; height: 20px; margin-left: 5px; }
 
-/* line 118, ../src/screen.scss */
+/* line 117, ../src/screen.scss */
 #MainNavigation { overflow: hidden; }
-/* line 122, ../src/screen.scss */
+/* line 121, ../src/screen.scss */
 #MainNavigation ul { clear: both; padding: 0px; margin: 0 0 10px 33px; border: solid 1px #cfcfcf; border-width: 0 0 0 1px; border-bottom: 3px #e09c18 solid; float: left; overflow: hidden; }
-/* line 132, ../src/screen.scss */
+/* line 131, ../src/screen.scss */
 #MainNavigation ul li { float: left; list-style-image: none; list-style-type: none; margin-left: 0px; padding: 7px; border: solid 1px #cfcfcf; border-width: 0 1px 0 0; }
-/* line 139, ../src/screen.scss */
+/* line 138, ../src/screen.scss */
 #MainNavigation ul li div { z-index: 999999; }
-/* line 142, ../src/screen.scss */
+/* line 141, ../src/screen.scss */
 #MainNavigation ul li .icon_HOUSE { text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('../images/icon_HOUSE.png?1308810816'); background-repeat: no-repeat; background-position: 50% 50%; width: 16px; height: 15px; display: block; padding: 0 20px 0 20px; overflow: hidden; height: 20px; }
-/* line 152, ../src/screen.scss */
+/* line 151, ../src/screen.scss */
 #MainNavigation ul li.active, #MainNavigation ul li:hover { background: #e09c18 url('../images/menu_active_bg.png?1308810816') 0 0; }
-/* line 155, ../src/screen.scss */
+/* line 154, ../src/screen.scss */
 #MainNavigation ul li.active a, #MainNavigation ul li:hover a { color: #FFF; }
-/* line 158, ../src/screen.scss */
+/* line 157, ../src/screen.scss */
 #MainNavigation ul li.active a.icon_HOUSE, #MainNavigation ul li:hover a.icon_HOUSE { background-image: url('../images/icon_white_House.png?1308810816'); }
-/* line 163, ../src/screen.scss */
+/* line 162, ../src/screen.scss */
 #MainNavigation ul li.active li a, #MainNavigation ul li:hover li a { color: black; }
-/* line 171, ../src/screen.scss */
+/* line 170, ../src/screen.scss */
 #MainNavigation ul li a { color: black; text-decoration: none; }
 
-/* line 180, ../src/screen.scss */
+/* line 179, ../src/screen.scss */
 #Main { background: transparent url('../images/main_bg.png?1308810816') repeat-y; overflow: hidden; }
-/* line 183, ../src/screen.scss */
+/* line 182, ../src/screen.scss */
 #Main.no-sidebar { background: none; }
-/* line 185, ../src/screen.scss */
+/* line 184, ../src/screen.scss */
 #Main.no-sidebar #MainbColumn { width: 920px; }
-/* line 187, ../src/screen.scss */
+/* line 186, ../src/screen.scss */
 #Main.no-sidebar #MainbColumn .pageStrip { width: 920px; }
-/* line 190, ../src/screen.scss */
+/* line 189, ../src/screen.scss */
 #Main.no-sidebar #MainbColumn .articleview_grid { background-image: url('../images/920_article_horizontal_border.png?1310537253'); }
-/* line 192, ../src/screen.scss */
+/* line 191, ../src/screen.scss */
 #Main.no-sidebar #MainbColumn .articleview_grid article { width: 450px; }
-/* line 200, ../src/screen.scss */
+/* line 199, ../src/screen.scss */
 #Main.no-sidebar-narrow { background: none; }
-/* line 202, ../src/screen.scss */
+/* line 201, ../src/screen.scss */
 #Main.no-sidebar-narrow #MainbColumn { width: 720px; }
-/* line 204, ../src/screen.scss */
+/* line 203, ../src/screen.scss */
 #Main.no-sidebar-narrow #MainbColumn .pageStrip { width: 720px; }
-/* line 207, ../src/screen.scss */
+/* line 206, ../src/screen.scss */
 #Main.no-sidebar-narrow #MainbColumn .articleview_grid { background-image: url('../images/920_article_horizontal_border.png?1310537253'); }
-/* line 209, ../src/screen.scss */
+/* line 208, ../src/screen.scss */
 #Main.no-sidebar-narrow #MainbColumn .articleview_grid article { width: 450px; }
-/* line 218, ../src/screen.scss */
+/* line 217, ../src/screen.scss */
 #Main span.lock { padding-left: 10px; }
-/* line 222, ../src/screen.scss */
+/* line 221, ../src/screen.scss */
 #Main span.lock a { color: #646464; }
-/* line 228, ../src/screen.scss */
+/* line 227, ../src/screen.scss */
 #Main a { color: black; text-decoration: none; }
-/* line 231, ../src/screen.scss */
+/* line 230, ../src/screen.scss */
 #Main a:hover { text-decoration: underline; }
 
-/* line 240, ../src/screen.scss */
+/* line 239, ../src/screen.scss */
 #MainbColumn { margin-left: 33px; width: 620px; float: left; }
-/* line 245, ../src/screen.scss */
+/* line 244, ../src/screen.scss */
 #MainbColumn .bar { display: block; background-color: #053463; color: #fff; padding: 6.667px; text-transform: uppercase; font-size: 13px; overflow: hidden; }
 /* line 46, ../src/partials/_functions.scss */
 #MainbColumn .bar a { color: #fff; }
-/* line 249, ../src/screen.scss */
+/* line 248, ../src/screen.scss */
 #MainbColumn .pageStrip { clear: both; overflow: hidden; width: 620px; margin: 0 0 10px 0; font-size: 11px; text-transform: uppercase; }
-/* line 261, ../src/screen.scss */
+/* line 260, ../src/screen.scss */
 #MainbColumn .pageStrip .date { color: #c4c4c4; float: left; margin-right: 5px; }
-/* line 266, ../src/screen.scss */
+/* line 265, ../src/screen.scss */
 #MainbColumn .pageStrip a { color: #e09c18; }
-/* line 270, ../src/screen.scss */
+/* line 269, ../src/screen.scss */
 #MainbColumn .pageStrip ul { margin: 0; padding: 0; border: 0; overflow: hidden; *zoom: 1; float: right; }
 /* line 60, ../../../../../Users/mario/.gem/ruby/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 #MainbColumn .pageStrip ul li { list-style-image: none; list-style-type: none; margin-left: 0px; white-space: nowrap; display: inline; float: left; padding-left: 4px; padding-right: 4px; }
@@ -424,47 +424,47 @@ body textarea { width: 390px; height: 250px; }
 #MainbColumn .pageStrip ul li:last-child { padding-right: 0; }
 /* line 50, ../../../../../Users/mario/.gem/ruby/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 #MainbColumn .pageStrip ul li.last { padding-right: 0; }
-/* line 276, ../src/screen.scss */
+/* line 275, ../src/screen.scss */
 #MainbColumn .pageStrip span { float: left; }
-/* line 280, ../src/screen.scss */
+/* line 279, ../src/screen.scss */
 #MainbColumn .pageStrip.underline { border-bottom: 1px solid #cfcfcf; padding-bottom: 10px; }
-/* line 285, ../src/screen.scss */
+/* line 284, ../src/screen.scss */
 #MainbColumn .pageStrip .tools { float: right; height: 16px; }
-/* line 288, ../src/screen.scss */
+/* line 287, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a { width: 20px; height: 16px; text-indent: -9999px; display: block; float: right; cursor: pointer; }
-/* line 295, ../src/screen.scss */
+/* line 294, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomin { background: transparent url('../images/articletools_zoomin.png?1308810816') no-repeat; }
-/* line 298, ../src/screen.scss */
+/* line 297, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomin.active { background: transparent url('../images/articletools_zoomin_active.png?1308810816') no-repeat; }
-/* line 303, ../src/screen.scss */
+/* line 302, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomout { background: transparent url('../images/articletools_zoomout.png?1308810816') no-repeat; }
-/* line 305, ../src/screen.scss */
+/* line 304, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomout.active { background: transparent url('../images/articletools_zoomout_active.png?1308810816') no-repeat; }
-/* line 309, ../src/screen.scss */
+/* line 308, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.print { background: transparent url('../images/icon_PRINT.png?1308810816') no-repeat; margin-right: 10px; }
-/* line 317, ../src/screen.scss */
+/* line 316, ../src/screen.scss */
 #MainbColumn h4 { margin: 0 0 10px 0; }
-/* line 320, ../src/screen.scss */
+/* line 319, ../src/screen.scss */
 #MainbColumn aside { margin: -10px 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 326, ../src/screen.scss */
+/* line 325, ../src/screen.scss */
 #MainbColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
-/* line 340, ../src/screen.scss */
+/* line 339, ../src/screen.scss */
 #sideColumn { margin-left: 20px; width: 300px; float: left; overflow: hidden; }
-/* line 345, ../src/screen.scss */
+/* line 344, ../src/screen.scss */
 #sideColumn h4 { margin: 0 0 5px 0; }
-/* line 348, ../src/screen.scss */
+/* line 347, ../src/screen.scss */
 #sideColumn hr { clear: both; border: none; background: transparent url('../images/line_dotted.png?1308810816') repeat-x; background-position: 10px; margin: 0 0 10px 0; }
-/* line 356, ../src/screen.scss */
+/* line 355, ../src/screen.scss */
 #sideColumn aside { margin: 0 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 362, ../src/screen.scss */
+/* line 361, ../src/screen.scss */
 #sideColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
-/* line 374, ../src/screen.scss */
+/* line 373, ../src/screen.scss */
 #AdColumn { margin-left: 20px; float: left; width: 160px; }
-/* line 378, ../src/screen.scss */
+/* line 377, ../src/screen.scss */
 #AdColumn aside { margin: -10px 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 384, ../src/screen.scss */
+/* line 383, ../src/screen.scss */
 #AdColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
 /* line 2, ../src/partials/_articleviews.scss */
