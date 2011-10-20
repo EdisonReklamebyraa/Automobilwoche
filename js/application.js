@@ -400,7 +400,7 @@ function addFancyboxToPage(){
 
   $(".addthis .email").fancybox({
     'width'       : 600,
-    'height'      : 450,
+    'height'      : 500,
     'autoScale'       : false,
     'transitionIn'    : 'none',
     'transitionOut'   : 'none',
