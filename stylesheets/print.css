@@ -453,18 +453,20 @@ body textarea { width: 390px; height: 250px; }
 #sideColumn { margin-left: 20px; width: 300px; float: left; overflow: hidden; }
 /* line 344, /Library/WebServer/Documents/Automobilwoche/src/screen.scss */
 #sideColumn h4 { margin: 0 0 5px 0; }
-/* line 347, /Library/WebServer/Documents/Automobilwoche/src/screen.scss */
+/* line 348, /Library/WebServer/Documents/Automobilwoche/src/screen.scss */
+#sideColumn h5 { margin: 0 0 5px 0; }
+/* line 351, /Library/WebServer/Documents/Automobilwoche/src/screen.scss */
 #sideColumn hr { clear: both; border: none; background: transparent url('../images/line_dotted.png?1308810816') repeat-x; background-position: 10px; margin: 0 0 10px 0; }
-/* line 355, /Library/WebServer/Documents/Automobilwoche/src/screen.scss */
+/* line 359, /Library/WebServer/Documents/Automobilwoche/src/screen.scss */
 #sideColumn aside { margin: 0 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 361, /Library/WebServer/Documents/Automobilwoche/src/screen.scss */
+/* line 365, /Library/WebServer/Documents/Automobilwoche/src/screen.scss */
 #sideColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
-/* line 373, /Library/WebServer/Documents/Automobilwoche/src/screen.scss */
-#AdColumn { margin-left: 20px; float: left; width: 160px; }
 /* line 377, /Library/WebServer/Documents/Automobilwoche/src/screen.scss */
+#AdColumn { margin-left: 20px; float: left; width: 160px; }
+/* line 381, /Library/WebServer/Documents/Automobilwoche/src/screen.scss */
 #AdColumn aside { margin: -10px 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 383, /Library/WebServer/Documents/Automobilwoche/src/screen.scss */
+/* line 387, /Library/WebServer/Documents/Automobilwoche/src/screen.scss */
 #AdColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
 /* line 2, /Library/WebServer/Documents/Automobilwoche/src/partials/_articleviews.scss */
