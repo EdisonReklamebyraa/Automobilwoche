@@ -455,18 +455,20 @@ body textarea { width: 390px; height: 250px; }
 #sideColumn h4 { margin: 0 0 5px 0; }
 /* line 348, ../src/screen.scss */
 #sideColumn h5 { margin: 0 0 0 0; }
-/* line 351, ../src/screen.scss */
+/* line 352, ../src/screen.scss */
+#sideColumn .txt { overflow: hidden; }
+/* line 355, ../src/screen.scss */
 #sideColumn hr { clear: both; border: none; background: transparent url('../images/line_dotted.png?1308810816') repeat-x; background-position: 10px; margin: 0 0 10px 0; }
-/* line 359, ../src/screen.scss */
+/* line 363, ../src/screen.scss */
 #sideColumn aside { margin: 0 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 365, ../src/screen.scss */
+/* line 369, ../src/screen.scss */
 #sideColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
-/* line 377, ../src/screen.scss */
-#AdColumn { margin-left: 20px; float: left; width: 160px; }
 /* line 381, ../src/screen.scss */
+#AdColumn { margin-left: 20px; float: left; width: 160px; }
+/* line 385, ../src/screen.scss */
 #AdColumn aside { margin: -10px 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 387, ../src/screen.scss */
+/* line 391, ../src/screen.scss */
 #AdColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
 /* line 2, ../src/partials/_articleviews.scss */
