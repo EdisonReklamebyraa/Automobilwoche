@@ -21,7 +21,11 @@ body {
 
   article table
   {
-    vertical-align: top;
+    th, td, caption
+    {
+       vertical-align: top;
+    }
+
   }
 
 }
