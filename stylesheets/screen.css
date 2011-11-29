@@ -887,17 +887,19 @@ body article table th, body article table td, body article table caption { verti
 #MainbColumn .main { height: 660px; }
 /* line 282, ../src/partials/_article.scss */
 #MainbColumn .top { height: 348px; position: relative; overflow: hidden; }
-/* line 287, ../src/partials/_article.scss */
+/* line 288, ../src/partials/_article.scss */
 #MainbColumn .top header { position: absolute; top: 0; }
-/* line 290, ../src/partials/_article.scss */
+/* line 291, ../src/partials/_article.scss */
 #MainbColumn .top header .caption { position: absolute; bottom: 0px; width: 619px; left: 0px; background: url('../images/black.png?1322575946'); color: white; text-shadow: black 0px 1px 3px; }
-/* line 299, ../src/partials/_article.scss */
+/* line 300, ../src/partials/_article.scss */
 #MainbColumn .top header .caption p { padding: 5px 15px 10px; margin: 0; text-shadow: black 0px 1px 3px; }
-/* line 304, ../src/partials/_article.scss */
+/* line 305, ../src/partials/_article.scss */
 #MainbColumn .top header .caption p strong, #MainbColumn .top header .caption p .lock { display: none; }
-/* line 310, ../src/partials/_article.scss */
-#MainbColumn .top header .caption h1 { font-size: 2em; padding: 10px 15px 0; margin: 0; }
+/* line 309, ../src/partials/_article.scss */
+#MainbColumn .top header .caption p .aboreg { display: none; }
 /* line 314, ../src/partials/_article.scss */
+#MainbColumn .top header .caption h1 { font-size: 2em; padding: 10px 15px 0; margin: 0; }
+/* line 318, ../src/partials/_article.scss */
 #MainbColumn .top header .caption h1 a { color: white; display: block; }
 
 /* line 5, ../src/partials/_gallery.scss */

@@ -283,9 +283,7 @@
     height: 348px;
     position: relative;
     overflow: hidden;
-    .aboreg {
-      display: none;
-    }
+
 
     header{
       position: absolute;
@@ -308,6 +306,9 @@
             display: none;
 
           }
+        .aboreg {
+          display: none;
+        }          
         }
         h1
         {
