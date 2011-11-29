@@ -259,10 +259,14 @@ body {
     border-style: solid; 
     font-size: 10px; 
     padding: 2px; 
-    color: #B40000;
     border-color: #F3F3F3 #C8C8C8 #C8C8C8 #F3F3F3;
     background-color: #FBFBFB;
-    
+    &.reg {
+      color: #376a00;
+    }
+    &.abo {
+      color: #B40000;
+    }    
   }
 
   .bar {
