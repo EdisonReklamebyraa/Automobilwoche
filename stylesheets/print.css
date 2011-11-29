@@ -895,9 +895,11 @@ body article table th, body article table td, body article table caption { verti
 #MainbColumn .top header .caption p { padding: 5px 15px 10px; margin: 0; text-shadow: black 0px 1px 3px; }
 /* line 305, ../src/partials/_article.scss */
 #MainbColumn .top header .caption p strong, #MainbColumn .top header .caption p .lock { display: none; }
-/* line 312, ../src/partials/_article.scss */
+/* line 309, ../src/partials/_article.scss */
+#MainbColumn .top header .caption p span { display: none; }
+/* line 314, ../src/partials/_article.scss */
 #MainbColumn .top header .caption h1 { font-size: 2em; padding: 10px 15px 0; margin: 0; }
-/* line 316, ../src/partials/_article.scss */
+/* line 318, ../src/partials/_article.scss */
 #MainbColumn .top header .caption h1 a { color: white; display: block; }
 
 /* line 5, ../src/partials/_gallery.scss */
