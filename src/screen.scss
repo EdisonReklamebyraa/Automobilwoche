@@ -247,6 +247,23 @@ body {
   margin-left: $leftBorder;
   width: $maincolumn;
   float: left;
+  
+  .aboreg {
+    margin-left: 10px;
+    line-height: 10px; 
+    width: 19px; 
+    position: relative; 
+    top: -2px; 
+    text-transform: uppercase; 
+    border-width: 1px; 
+    border-style: solid; 
+    font-size: 10px; 
+    padding: 2px; 
+    color: #B40000;
+    border-color: #F3F3F3 #C8C8C8 #C8C8C8 #F3F3F3;
+    background-color: #FBFBFB;
+    
+  }
 
   .bar {
      @include bar;
