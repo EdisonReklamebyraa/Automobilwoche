@@ -216,3 +216,27 @@
     }
   }
 }
+
+@mixin aboreg(){
+  .aboreg {
+    margin-left: 10px;
+    line-height: 10px; 
+    width: 19px; 
+    position: relative; 
+    top: -2px; 
+    text-transform: uppercase; 
+    border-width: 1px; 
+    border-style: solid; 
+    font-size: 10px; 
+    padding: 2px; 
+    border-color: #F3F3F3 #C8C8C8 #C8C8C8 #F3F3F3;
+    background-color: #FBFBFB;
+    text-shadow: none;
+    &.REG {
+      color: #376a00;
+    }
+    &.ABO {
+      color: #B40000;
+    }    
+  }
+}

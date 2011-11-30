@@ -406,23 +406,23 @@ body article table th, body article table td, body article table caption { verti
 
 /* line 246, ../src/screen.scss */
 #MainbColumn { margin-left: 33px; width: 620px; float: left; }
-/* line 251, ../src/screen.scss */
+/* line 221, ../src/partials/_functions.scss */
 #MainbColumn .aboreg { margin-left: 10px; line-height: 10px; width: 19px; position: relative; top: -2px; text-transform: uppercase; border-width: 1px; border-style: solid; font-size: 10px; padding: 2px; border-color: #F3F3F3 #C8C8C8 #C8C8C8 #F3F3F3; background-color: #FBFBFB; text-shadow: none; }
-/* line 265, ../src/screen.scss */
+/* line 235, ../src/partials/_functions.scss */
 #MainbColumn .aboreg.REG { color: #376a00; }
-/* line 268, ../src/screen.scss */
+/* line 238, ../src/partials/_functions.scss */
 #MainbColumn .aboreg.ABO { color: #B40000; }
-/* line 273, ../src/screen.scss */
+/* line 253, ../src/screen.scss */
 #MainbColumn .bar { display: block; background-color: #053463; color: #fff; padding: 6.667px; text-transform: uppercase; font-size: 13px; overflow: hidden; }
 /* line 46, ../src/partials/_functions.scss */
 #MainbColumn .bar a { color: #fff; }
-/* line 277, ../src/screen.scss */
+/* line 257, ../src/screen.scss */
 #MainbColumn .pageStrip { clear: both; overflow: hidden; width: 620px; margin: 0 0 10px 0; font-size: 11px; text-transform: uppercase; }
-/* line 289, ../src/screen.scss */
+/* line 269, ../src/screen.scss */
 #MainbColumn .pageStrip .date { color: #c4c4c4; float: left; margin-right: 5px; }
-/* line 294, ../src/screen.scss */
+/* line 274, ../src/screen.scss */
 #MainbColumn .pageStrip a { color: #e09c18; }
-/* line 298, ../src/screen.scss */
+/* line 278, ../src/screen.scss */
 #MainbColumn .pageStrip ul { margin: 0; padding: 0; border: 0; overflow: hidden; *zoom: 1; float: right; }
 /* line 60, ../../../.gem/ruby/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 #MainbColumn .pageStrip ul li { list-style-image: none; list-style-type: none; margin-left: 0px; white-space: nowrap; display: inline; float: left; padding-left: 4px; padding-right: 4px; }
@@ -432,51 +432,51 @@ body article table th, body article table td, body article table caption { verti
 #MainbColumn .pageStrip ul li:last-child { padding-right: 0; }
 /* line 50, ../../../.gem/ruby/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 #MainbColumn .pageStrip ul li.last { padding-right: 0; }
-/* line 304, ../src/screen.scss */
+/* line 284, ../src/screen.scss */
 #MainbColumn .pageStrip span { float: left; }
-/* line 308, ../src/screen.scss */
+/* line 288, ../src/screen.scss */
 #MainbColumn .pageStrip.underline { border-bottom: 1px solid #cfcfcf; padding-bottom: 10px; }
-/* line 313, ../src/screen.scss */
+/* line 293, ../src/screen.scss */
 #MainbColumn .pageStrip .tools { float: right; height: 16px; }
-/* line 316, ../src/screen.scss */
+/* line 296, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a { width: 20px; height: 16px; text-indent: -9999px; display: block; float: right; cursor: pointer; }
-/* line 323, ../src/screen.scss */
+/* line 303, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomin { background: transparent url('../images/articletools_zoomin.png?1308901501') no-repeat; }
-/* line 326, ../src/screen.scss */
+/* line 306, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomin.active { background: transparent url('../images/articletools_zoomin_active.png?1308901501') no-repeat; }
-/* line 331, ../src/screen.scss */
+/* line 311, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomout { background: transparent url('../images/articletools_zoomout.png?1308901501') no-repeat; }
-/* line 333, ../src/screen.scss */
+/* line 313, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.zoomout.active { background: transparent url('../images/articletools_zoomout_active.png?1308901501') no-repeat; }
-/* line 337, ../src/screen.scss */
+/* line 317, ../src/screen.scss */
 #MainbColumn .pageStrip .tools a.print { background: transparent url('../images/icon_PRINT.png?1308901501') no-repeat; margin-right: 10px; }
-/* line 345, ../src/screen.scss */
+/* line 325, ../src/screen.scss */
 #MainbColumn h4 { margin: 0 0 10px 0; }
-/* line 348, ../src/screen.scss */
+/* line 328, ../src/screen.scss */
 #MainbColumn aside { margin: -10px 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 354, ../src/screen.scss */
+/* line 334, ../src/screen.scss */
 #MainbColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
-/* line 368, ../src/screen.scss */
+/* line 348, ../src/screen.scss */
 #sideColumn { margin-left: 20px; width: 300px; float: left; overflow: hidden; }
-/* line 373, ../src/screen.scss */
+/* line 353, ../src/screen.scss */
 #sideColumn h4 { margin: 0 0 5px 0; }
-/* line 377, ../src/screen.scss */
+/* line 357, ../src/screen.scss */
 #sideColumn h5 { margin: 0 0 0 0; }
-/* line 381, ../src/screen.scss */
+/* line 361, ../src/screen.scss */
 #sideColumn .txt { overflow: hidden; }
-/* line 384, ../src/screen.scss */
+/* line 364, ../src/screen.scss */
 #sideColumn hr { clear: both; border: none; background: transparent url('../images/line_dotted.png?1308901501') repeat-x; background-position: 10px; margin: 0 0 10px 0; }
-/* line 392, ../src/screen.scss */
+/* line 372, ../src/screen.scss */
 #sideColumn aside { margin: 0 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 398, ../src/screen.scss */
+/* line 378, ../src/screen.scss */
 #sideColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
-/* line 411, ../src/screen.scss */
+/* line 391, ../src/screen.scss */
 #AdColumn { margin-left: 20px; float: left; width: 160px; }
-/* line 415, ../src/screen.scss */
+/* line 395, ../src/screen.scss */
 #AdColumn aside { margin: -10px 0 10px 0; display: block; overflow: hidden; clear: both; text-align: center; }
-/* line 421, ../src/screen.scss */
+/* line 401, ../src/screen.scss */
 #AdColumn aside label { font-weight: normal; float: left; padding: 5px; color: #aaaaaa; font-size: 80%; width: 100%; text-align: left; }
 
 /* line 2, ../src/partials/_articleviews.scss */
@@ -957,6 +957,12 @@ body article table th, body article table td, body article table caption { verti
 #MainNavigation .flyout .news img { float: left; padding: 4px 20px 5px 0; }
 /* line 73, ../src/partials/_flyout.scss */
 #MainNavigation .flyout .news article { clear: both; overflow: hidden; border: #cfcfcf dotted; border-width: 0 0 1px 0; padding: 0 0 5px 0; margin: 0 20px 5px 0; }
+/* line 221, ../src/partials/_functions.scss */
+#MainNavigation .flyout .news article .aboreg { margin-left: 10px; line-height: 10px; width: 19px; position: relative; top: -2px; text-transform: uppercase; border-width: 1px; border-style: solid; font-size: 10px; padding: 2px; border-color: #F3F3F3 #C8C8C8 #C8C8C8 #F3F3F3; background-color: #FBFBFB; text-shadow: none; }
+/* line 235, ../src/partials/_functions.scss */
+#MainNavigation .flyout .news article .aboreg.REG { color: #376a00; }
+/* line 238, ../src/partials/_functions.scss */
+#MainNavigation .flyout .news article .aboreg.ABO { color: #B40000; }
 /* line 81, ../src/partials/_flyout.scss */
 #MainNavigation .flyout .news article p { margin: 0px; }
 /* line 84, ../src/partials/_flyout.scss */
