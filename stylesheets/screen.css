@@ -957,18 +957,18 @@ body article table th, body article table td, body article table caption { verti
 #MainNavigation .flyout .news img { float: left; padding: 4px 20px 5px 0; }
 /* line 73, ../src/partials/_flyout.scss */
 #MainNavigation .flyout .news article { clear: both; overflow: hidden; border: #cfcfcf dotted; border-width: 0 0 1px 0; padding: 0 0 5px 0; margin: 0 20px 5px 0; }
-/* line 221, ../src/partials/_functions.scss */
-#MainNavigation .flyout .news article .aboreg { margin-left: 10px; line-height: 10px; width: 19px; position: relative; top: -2px; text-transform: uppercase; border-width: 1px; border-style: solid; font-size: 10px; padding: 2px; border-color: #F3F3F3 #C8C8C8 #C8C8C8 #F3F3F3; background-color: #FBFBFB; text-shadow: none; }
-/* line 235, ../src/partials/_functions.scss */
-#MainNavigation .flyout .news article .aboreg.REG { color: #376a00; }
-/* line 238, ../src/partials/_functions.scss */
-#MainNavigation .flyout .news article .aboreg.ABO { color: #B40000; }
 /* line 81, ../src/partials/_flyout.scss */
 #MainNavigation .flyout .news article p { margin: 0px; }
 /* line 84, ../src/partials/_flyout.scss */
 #MainNavigation .flyout .news article.last { border: 0; }
 /* line 89, ../src/partials/_flyout.scss */
 #MainNavigation .flyout .news h4 { margin: 0 0 0 0; }
+/* line 221, ../src/partials/_functions.scss */
+#MainNavigation .flyout .news h4 .aboreg { margin-left: 10px; line-height: 10px; width: 19px; position: relative; top: -2px; text-transform: uppercase; border-width: 1px; border-style: solid; font-size: 10px; padding: 2px; border-color: #F3F3F3 #C8C8C8 #C8C8C8 #F3F3F3; background-color: #FBFBFB; text-shadow: none; }
+/* line 235, ../src/partials/_functions.scss */
+#MainNavigation .flyout .news h4 .aboreg.REG { color: #376a00; }
+/* line 238, ../src/partials/_functions.scss */
+#MainNavigation .flyout .news h4 .aboreg.ABO { color: #B40000; }
 
 /* line 3, ../src/partials/_events.scss */
 .template-events hr { background: url("../images/line_dotted.png?1302776059") repeat-x scroll 10px 50% transparent; border: medium none; clear: both; margin: 0 0 3.333px 0; }
