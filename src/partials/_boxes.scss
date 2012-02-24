@@ -69,6 +69,10 @@
     }
 
   }
+  &.hidden{
+    display:none;
+
+  }
   &.blue {
     background:transparent image-url($blue_bg) no-repeat center top;
   }
