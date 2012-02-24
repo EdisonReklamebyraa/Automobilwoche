@@ -43,7 +43,9 @@
   }
 
 }
-
+.hidden{
+  display: none;
+}
 .sideColumn_box
 {
   $blue_bg: "header_bg_blue.png";
@@ -69,10 +71,7 @@
     }
 
   }
-  &.hidden{
-    display:none;
 
-  }
   &.blue {
     background:transparent image-url($blue_bg) no-repeat center top;
   }
