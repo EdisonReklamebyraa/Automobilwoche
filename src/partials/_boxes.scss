@@ -62,9 +62,8 @@
   }
   .all
   {
-    padding: $m;
-
-
+    padding: $m/2;
+    margin-top: 1px dotted #ddd;
   }
   &.no-background {
     background: none;
