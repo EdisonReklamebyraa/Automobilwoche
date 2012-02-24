@@ -624,7 +624,7 @@ body article table th, body article table td, body article table caption { verti
 /* line 60, ../src/partials/_boxes.scss */
 .sideColumn_box .sideColumn_box { margin-bottom: 0; }
 /* line 64, ../src/partials/_boxes.scss */
-.sideColumn_box .all { padding: 10px; border-top: 1px dashed #AAA; text-align: center; }
+.sideColumn_box .all { padding: 10px; border-top: 1px solid #BBB; text-align: center; }
 /* line 69, ../src/partials/_boxes.scss */
 .sideColumn_box.no-background { background: none; margin-top: 20px; }
 /* line 72, ../src/partials/_boxes.scss */
