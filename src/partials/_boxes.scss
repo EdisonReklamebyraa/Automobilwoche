@@ -63,7 +63,8 @@
   .all
   {
     padding: $m/2;
-    margin-top: 1px dotted #ddd;
+    border-top: 1px dashed #AAA;
+    text-align: center;
   }
   &.no-background {
     background: none;
