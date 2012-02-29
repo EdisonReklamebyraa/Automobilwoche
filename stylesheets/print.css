@@ -706,20 +706,20 @@ body article table th, body article table td, body article table caption { verti
 /* line 256, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranimwrap { padding: 10px; }
 /* line 260, ../src/partials/_boxes.scss */
-.sideColumn_box .tickeranim { height: 200px; }
-/* line 263, ../src/partials/_boxes.scss */
+.sideColumn_box .tickeranim { height: 200px; overflow: hidden; }
+/* line 264, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li { list-style-type: none; }
-/* line 265, ../src/partials/_boxes.scss */
+/* line 266, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li span.time { width: 60px; float: left; }
-/* line 271, ../src/partials/_boxes.scss */
+/* line 272, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li table { margin: 0; padding: 0; }
-/* line 274, ../src/partials/_boxes.scss */
+/* line 275, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li table td.time { width: 60px; font-weight: bold; }
-/* line 278, ../src/partials/_boxes.scss */
+/* line 279, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li table td { top: 0px; vertical-align: top!important; }
-/* line 283, ../src/partials/_boxes.scss */
+/* line 284, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li hr { margin: 0!important; padding: 0!important; }
-/* line 291, ../src/partials/_boxes.scss */
+/* line 292, ../src/partials/_boxes.scss */
 .sideColumn_box .videoplaceholder { padding: 10px 10px 0 10px; clear: left; }
 
 /* line 3, ../src/partials/_article.scss */

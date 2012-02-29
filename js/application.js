@@ -240,7 +240,7 @@ $(function()
 
 
                            $('.tickeranim').vTicker({
-                             speed: 500,
+                       
                              pause: 5000,
                              showItems: 3,
                              animation: 'fade',

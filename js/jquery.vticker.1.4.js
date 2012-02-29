@@ -1,143 +1,69 @@
-/*
-* vertical news ticker
-* Tadas Juozapaitis ( kasp3rito@gmail.com )
-* http://www.jugbit.com/jquery-vticker-vertical-news-ticker/
-*/
+
 (function($){
-$.fn.vTicker = function(options) {
-  var defaults = {
-    speed: 700,
-    pause: 4000,
-    showItems: 3,
-    animation: '',
-    mousePause: true,
-    isPaused: false,
-    direction: 'up',
-    height: 0
-  };
-
-  var options = $.extend(defaults, options);
-
-  moveUp = function(obj2, height, options){
-    if(options.isPaused)
-      return;
-
-    var obj = obj2.children('ul');
-
-      var clone = obj.children('li:first').clone(true);
-
-    if(options.height > 0)
-    {
-      height = obj.children('li:first').height();
-    }
-
-    obj.clearQueue().stop().animate({top: '-=' + height + 'px'}, options.speed, function() {
-          $(this).children('li:first').remove();
-          $(this).css('top', '0px');
+    $.fn.vTicker = function(_options) {
+        return this.each(function(){
+            this.ticker = new VTicker(this, _options); 
         });
-
-    if(options.animation == 'fade')
-    {
-      obj.children('li:first').fadeOut(options.speed);
-      if(options.height == 0)
-      {
-      obj.children('li:eq(' + options.showItems + ')').hide().fadeIn(options.speed).show();
-      }
-    }
-
-      clone.appendTo(obj);
-  };
-
-  moveDown = function(obj2, height, options){
-    if(options.isPaused)
-      return;
-
-    var obj = obj2.children('ul');
-
-      var clone = obj.children('li:last').clone(true);
-
-    if(options.height > 0)
-    {
-      height = obj.children('li:first').height();
-    }
-
-    obj.css('top', '-' + height + 'px')
-      .prepend(clone);
-
-      obj.clearQueue().stop().animate({top: 0}, options.speed, function() {
-          $(this).children('li:last').remove();
-        });
-
-    if(options.animation == 'fade')
-    {
-      if(options.height == 0)
-      {
-        obj.children('li:eq(' + options.showItems + ')').fadeOut(options.speed);
-      }
-      obj.children('li:first').hide().fadeIn(options.speed).show();
-    }
-  };
-
-  return this.each(function() {
-    var obj = $(this);
-    var maxHeight = 0;
-
-
-    obj.css({overflow: 'hidden', position: 'relative'})
-      .children('ul').css({position: 'absolute', margin: 0, padding: 0})
-      .children('li').css({margin: 0, padding: 0});
-
-    if(options.height == 0)
-    {
-      obj.children('ul').children('li').each(function(){
-        if($(this).height() > maxHeight)
-        {
-          maxHeight = $(this).height();
-        }
-      });
-
-      obj.children('ul').children('li').each(function(){
-        $(this).height(maxHeight);
-      });
-
-      obj.height(maxHeight * options.showItems);
-    }
-    else
-    {
-      obj.height(options.height);
-    }
-    var tick = function()
-    {
-      if(!options.isPaused) {
-
-        if(options.direction == 'up')
-        {
-          moveUp(obj, maxHeight, options);
-        }
-        else
-        {
-          moveDown(obj, maxHeight, options);
-        }
-      }
-
-
-
-
-      interval = setTimeout(tick, options.pause);
-    }
-
-    if(options.mousePause)
-      {
-
-        obj.bind("mouseenter",function(){
-          options.isPaused = true;
-        }).bind("mouseleave",function(){
-          options.isPaused = false;
-        });
-      }
-
-    var interval = setTimeout(tick, options.pause);
-    return this;
-})
     };
 })(jQuery);
+
+
+VTicker = function(_el, _options){
+
+    var defaults = {
+        speed: 2000,
+        pause: 4000,
+        showItems: 3,
+    }
+
+    , el = $(_el)
+    , options = $.extend(defaults, _options) 
+    , isPaused = false
+    , moveUp = function(){
+        var last  = $("li",el).last();
+        $("ul", el).prepend(last); 
+        last.css("margin-top", -1 * last.height());
+
+        last.animate({
+            "margin-top": 0
+   
+        }, options.speed);
+
+        // $("li:visible",el).last().slideUp(options.speed); 
+    }
+
+    , togglePause = function(){
+
+        el.hover(function(){
+            isPaused = true; 
+        },function(){
+            isPaused = false; 
+        }) ; 
+    }
+
+    , tick = function(){
+        if(!isPaused){
+            moveUp();   
+        }
+        setTimeout(tick, options.pause);
+    }
+
+    , hideExtras = function(){
+        $("li",el).each(function(i,e){
+            if(i < options.showItems){
+                $(e).show(); 
+            } else {
+                $(e).hide(); 
+            }
+        });
+    }
+
+    ,init = function(){
+     //  hideExtras(); 
+        togglePause();
+        tick();
+    };
+    
+    init();
+    return this; 
+}; 
