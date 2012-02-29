@@ -59,6 +59,9 @@
   margin: 0 0 $m/2 0;
   .sideColumn_box{
     margin-bottom: 0;
+    .tickeranimwrap{
+      margin-bottom: 0;
+    }
   }
   .all
   {
@@ -252,8 +255,8 @@
   }
   .tickeranimwrap{
     padding: $m/2;
-
   }
+
   .tickeranim {
     height: 200px;
     ul {
