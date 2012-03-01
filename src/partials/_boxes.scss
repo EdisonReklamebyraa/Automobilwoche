@@ -261,6 +261,8 @@
     height: 200px;
     overflow:hidden;
     ul {
+    	padding-left: 0px;
+    	margin-right: 0px;
       li {
         list-style-type: none;
         span.time {
