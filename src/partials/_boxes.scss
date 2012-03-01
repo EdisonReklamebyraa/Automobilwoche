@@ -277,6 +277,7 @@
             font-weight: bold;
           }
           td {
+          	@include aboreg;
             top: 0px;
             vertical-align: top!important;
           }
