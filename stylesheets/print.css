@@ -413,7 +413,7 @@ body article table th, body article table td, body article table caption { verti
 /* line 238, ../src/partials/_functions.scss */
 #MainbColumn .aboreg.ABO { color: #B40000; }
 /* line 241, ../src/partials/_functions.scss */
-#MainbColumn .aboreg.HEFT { background-color: #f1f1f1; border-color: #F3F3F3 #999999 #999999 #F3F3F3; color: #B40000; float: right; font-family: verdana; font-size: 8px; height: 9px; margin-top: 4px; padding: 3px 0 3px 4px; width: 23px; }
+#MainbColumn .aboreg.HEFT { background-color: #f1f1f1; border-color: #F3F3F3 #999999 #999999 #F3F3F3; color: #B40000; float: right; font-family: verdana; font-size: 8px; height: 9px; margin-top: 4px; padding: 2px 0 3px 3px; width: 23px; }
 /* line 253, ../src/screen.scss */
 #MainbColumn .bar { display: block; background-color: #053463; color: #fff; padding: 6.667px; text-transform: uppercase; font-size: 13px; overflow: hidden; }
 /* line 46, ../src/partials/_functions.scss */
@@ -728,7 +728,7 @@ body article table th, body article table td, body article table caption { verti
 /* line 238, ../src/partials/_functions.scss */
 .sideColumn_box .tickeranim ul li table td .aboreg.ABO { color: #B40000; }
 /* line 241, ../src/partials/_functions.scss */
-.sideColumn_box .tickeranim ul li table td .aboreg.HEFT { background-color: #f1f1f1; border-color: #F3F3F3 #999999 #999999 #F3F3F3; color: #B40000; float: right; font-family: verdana; font-size: 8px; height: 9px; margin-top: 4px; padding: 3px 0 3px 4px; width: 23px; }
+.sideColumn_box .tickeranim ul li table td .aboreg.HEFT { background-color: #f1f1f1; border-color: #F3F3F3 #999999 #999999 #F3F3F3; color: #B40000; float: right; font-family: verdana; font-size: 8px; height: 9px; margin-top: 4px; padding: 2px 0 3px 3px; width: 23px; }
 /* line 287, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li hr { margin: 0!important; padding: 0!important; }
 /* line 295, ../src/partials/_boxes.scss */
@@ -991,7 +991,7 @@ body article table th, body article table td, body article table caption { verti
 /* line 238, ../src/partials/_functions.scss */
 #MainNavigation .flyout .news h4 .aboreg.ABO { color: #B40000; }
 /* line 241, ../src/partials/_functions.scss */
-#MainNavigation .flyout .news h4 .aboreg.HEFT { background-color: #f1f1f1; border-color: #F3F3F3 #999999 #999999 #F3F3F3; color: #B40000; float: right; font-family: verdana; font-size: 8px; height: 9px; margin-top: 4px; padding: 3px 0 3px 4px; width: 23px; }
+#MainNavigation .flyout .news h4 .aboreg.HEFT { background-color: #f1f1f1; border-color: #F3F3F3 #999999 #999999 #F3F3F3; color: #B40000; float: right; font-family: verdana; font-size: 8px; height: 9px; margin-top: 4px; padding: 2px 0 3px 3px; width: 23px; }
 
 /* line 3, ../src/partials/_events.scss */
 .template-events hr { background: url("../images/line_dotted.png?1302776059") repeat-x scroll 10px 50% transparent; border: medium none; clear: both; margin: 0 0 3.333px 0; }
