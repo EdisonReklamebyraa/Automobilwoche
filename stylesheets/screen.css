@@ -733,6 +733,8 @@ body article table th, body article table td, body article table caption { verti
 .sideColumn_box .tickeranim ul li hr { margin: 0!important; padding: 0!important; }
 /* line 295, ../src/partials/_boxes.scss */
 .sideColumn_box .videoplaceholder { padding: 10px 10px 0 10px; clear: left; }
+/* line 298, ../src/partials/_boxes.scss */
+.sideColumn_box .videoplaceholder.banner { padding: 0px; line-height: 0px; }
 
 /* line 3, ../src/partials/_article.scss */
 #Main .template-article header, #Main .template-blog header { margin-bottom: 20px; overflow: hidden; }

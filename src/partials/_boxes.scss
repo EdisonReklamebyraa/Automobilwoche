@@ -295,6 +295,9 @@
   .videoplaceholder {
     padding: $m/2 $m/2 0 $m/2;
     clear: left;
-
+	&.banner {
+		padding: 0px;
+		line-height: 0px;
+	}
   }
 }
