@@ -39,7 +39,6 @@
         width: 10%;
       }
     }
-
   }
 
 }
@@ -265,6 +264,8 @@
     height: 200px;
     overflow:hidden;
     ul {
+      padding-left: 0px;
+      margin-right: 0px;
       li {
         list-style-type: none;
         span.time {
@@ -281,6 +282,7 @@
             font-weight: bold;
           }
           td {
+            @include aboreg;
             top: 0px;
             vertical-align: top!important;
           }
@@ -296,6 +298,9 @@
   .videoplaceholder {
     padding: $m/2 $m/2 0 $m/2;
     clear: left;
-
+  &.banner {
+    padding: 0px;
+    line-height: 0px;
+  }
   }
 }
