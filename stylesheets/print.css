@@ -297,7 +297,7 @@ body textarea { width: 390px; height: 250px; }
 /* line 22, ../src/screen.scss */
 body .red { color: #FF0000; }
 /* line 27, ../src/screen.scss */
-body .green { color: #FF0000; }
+body .green { color: #00FF00; }
 /* line 34, ../src/screen.scss */
 body article table th, body article table td, body article table caption { vertical-align: top; }
 
