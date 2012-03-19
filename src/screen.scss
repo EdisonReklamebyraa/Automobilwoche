@@ -18,6 +18,15 @@ body {
   @include blueprint-form;
   @include min-width(977px);
 
+  .red
+  {
+    color: #FF0000;
+  }
+
+  .green
+  {
+    color: #FF0000;
+  }
 
   article table
   {
@@ -247,7 +256,7 @@ body {
   margin-left: $leftBorder;
   width: $maincolumn;
   float: left;
-  
+
   @include aboreg;
 
   .bar {

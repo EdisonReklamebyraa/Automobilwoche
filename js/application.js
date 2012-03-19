@@ -392,7 +392,7 @@ $(function()
 
 
 
-                             $(".aboreg.HEFT").click(function() {
+                             $(".aboreg.HEFT").hover(function() {
                                  ui.dialog("Die mit Abo gekennzeichneten Artikel/Angebote sind f&#252;r:",
                                            $('<p>Leser mit Basis-Zugang auf zwei Zugriffe pro Tag begrenzt.<br/>Jetzt Testangebot nutzen: <a href="http://service.vumedia.de/automobilwoche/register/register.php">Premium-Zugang (Abonnement)</a><br/><br/>Premium-Leser (Abonnenten) uneingeschr&#228;nkt lesbar</p>'))
                                      .closable()
@@ -401,7 +401,7 @@ $(function()
                                  return false;
                              });
 
-                             $(".aboreg.ABO").click(function() {
+                             $(".aboreg.ABO").hover(function() {
                                  ui.dialog("Die mit Heft gekennzeichneten Artikel/Angebote sind f&#252;r:",
                                            $('<p>Leser mit Basis-Zugang gesperrt.<br/>Jetzt Testangebot nutzen:<a href="http://service.vumedia.de/automobilwoche/register/register.php"> Premium-Zugang (Abonnement)</a><br/><br/>Premium-Leser (Abonnenten) komplett lesbar</p>'))
                                      .closable()
