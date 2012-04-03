@@ -1,6 +1,8 @@
 var addthis_config = {"data_track_clickback":true, ui_language: "de"};
 $(function()
                          {
+
+                             $("#story_120209946").append($("#newsTicker_120209946").removeClass("hidden")) ;
                            /* selector can be id, class, tag name etc. */
                            $("#tS1").thumbnailScroller({
                              scrollerType:"hoverAccelerate",
@@ -240,7 +242,7 @@ $(function()
 
 
                            $('.tickeranim').vTicker({
-                       
+
                              pause: 5000,
                              showItems: 3,
                              animation: 'fade',
@@ -385,8 +387,52 @@ $(function()
                            }
 
 
-                           //update a banner with a gif
-                           $("img[src*=110819984]").attr("src","/images/Banner_IAA_300x250.gif");
+                             //update a banner with a gif
+                             $("img[src*=110819984]").attr("src","/images/Banner_IAA_300x250.gif");
+
+                             var dialog;
+                             $(".aboreg.ABO").hoverIntent({sensitivity: 2, timeout: 500, out:function() { }, over:function() {
+                                 
+                                 dialog = ui.dialog("Die mit Abo gekennzeichneten Artikel/Angebote sind f&#252;r:",
+                                                 $('<p> <span class="red"> Leser mit Basis-Zugang auf zwei Zugriffe pro Tag begrenzt.</span>'
+                                                   + '<br/>Jetzt Testangebot nutzen: <a  href="http://www.automobilwoche.de/testabo">Premium-Zugang (Abonnement)</a><br/><br/>'
+                                                   + '<span class="green">Premium-Leser (Abonnenten) uneingeschr&#228;nkt lesbar</span></p>'));
+                                 dialog.el.css($(this).position());
+                                 $("#overlay").remove();
+                                 dialog.overlay();
+                                 dialog.show();
+                                 
+                                 $("#overlay").hoverIntent( {sensitivity: 2, timeout: 100, over:function() {
+                                     if(dialog){
+                                         dialog.hide();
+                                         dialog = null;
+                                         
+                                     } 
+                                     
+                                   }  });
+                             } }); 
+
+                             $(".aboreg.HEFT").hoverIntent({sensitivity: 2,timeout: 500, over:function() {
+                                 
+                                 dialog = ui.dialog("Die mit Heft gekennzeichneten Artikel/Angebote sind f&#252;r:",
+                                           $('<p><span class="red">Leser mit Basis-Zugang gesperrt.</span><br/>Jetzt Testangebot nutzen:<a href="http://www.automobilwoche.de/testabo"> Premium-Zugang (Abonnement)</a><br/><br/>'
+                                             + '<span class="green">Premium-Leser (Abonnenten) komplett lesbar</span></p>'));
+                                 dialog.el.css($(this).position());
+                                 $("#overlay").remove();
+                                 dialog.overlay();
+                                 dialog.show();
+                                 $("#overlay").hoverIntent({sensitivity: 2, timeout: 100, over: function() {
+                                     if(dialog){
+                                         dialog.hide();
+                                         dialog = null; 
+                                     
+                                     } 
+                                     
+                                    } });
+                             } });                            
+                             
+                    
+
 
                          });
 

@@ -18,6 +18,15 @@ body {
   @include blueprint-form;
   @include min-width(977px);
 
+  .red
+  {
+    color: #FF0000;
+  }
+
+  .green
+  {
+    color: #00FF00;
+  }
 
   article table
   {
@@ -38,10 +47,7 @@ body {
 {
   .email span
   {
-
     margin-left: 2px;
-
-
   }
 }
 #Top
@@ -247,7 +253,7 @@ body {
   margin-left: $leftBorder;
   width: $maincolumn;
   float: left;
-  
+
   @include aboreg;
 
   .bar {
