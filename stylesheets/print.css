@@ -322,7 +322,7 @@ body article table th, body article table td, body article table caption { verti
 /* line 99, ../src/screen.scss */
 #Top .section { width: 940px; padding: 0 0 20px 33px; overflow: hidden; float: left; }
 /* line 105, ../src/screen.scss */
-#Top .section h1 { margin: 0 0 20px 0; text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('../images/logo.png?1333449579'); background-repeat: no-repeat; background-position: 50% 50%; width: 408px; height: 88px; float: left; }
+#Top .section h1 { margin: 0 0 20px 0; text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('../images/logo.png?1333449600'); background-repeat: no-repeat; background-position: 50% 50%; width: 408px; height: 88px; float: left; }
 /* line 109, ../src/screen.scss */
 #Top .section h1 a { width: 100%; height: 100%; display: block; }
 /* line 53, ../src/partials/_functions.scss */
@@ -616,116 +616,116 @@ body article table th, body article table td, body article table caption { verti
 /* line 30, ../src/partials/_boxes.scss */
 .quiz .entries div { float: left; }
 /* line 32, ../src/partials/_boxes.scss */
-.quiz .entries div.entryname { width: 50%; }
-/* line 35, ../src/partials/_boxes.scss */
+.quiz .entries div.entryname { width: 50%; clear: both; }
+/* line 36, ../src/partials/_boxes.scss */
 .quiz .entries div.graphs { width: 40%; }
-/* line 38, ../src/partials/_boxes.scss */
+/* line 39, ../src/partials/_boxes.scss */
 .quiz .entries div.results { width: 10%; }
 
-/* line 45, ../src/partials/_boxes.scss */
+/* line 46, ../src/partials/_boxes.scss */
 .hidden { display: none; }
 
-/* line 49, ../src/partials/_boxes.scss */
+/* line 50, ../src/partials/_boxes.scss */
 .sideColumn_box { background-color: #f2f2f2!important; overflow: hidden; margin: 0 0 10px 0; }
-/* line 59, ../src/partials/_boxes.scss */
+/* line 60, ../src/partials/_boxes.scss */
 .sideColumn_box .sideColumn_box { margin-bottom: 0; }
-/* line 61, ../src/partials/_boxes.scss */
+/* line 62, ../src/partials/_boxes.scss */
 .sideColumn_box .sideColumn_box .tickeranimwrap { padding-bottom: 0; }
-/* line 66, ../src/partials/_boxes.scss */
+/* line 67, ../src/partials/_boxes.scss */
 .sideColumn_box .all { padding: 10px; border-top: 1px solid #BBB; text-align: center; }
-/* line 71, ../src/partials/_boxes.scss */
+/* line 72, ../src/partials/_boxes.scss */
 .sideColumn_box.no-background { background: none; margin-top: 20px; }
-/* line 74, ../src/partials/_boxes.scss */
+/* line 75, ../src/partials/_boxes.scss */
 .sideColumn_box.no-background h3 { color: black; clear: both; border: none; height: 38px; margin: 0; }
-/* line 85, ../src/partials/_boxes.scss */
+/* line 86, ../src/partials/_boxes.scss */
 .sideColumn_box.blue { background: transparent url('../images/header_bg_blue.png?1308901501') no-repeat center top; }
-/* line 88, ../src/partials/_boxes.scss */
+/* line 89, ../src/partials/_boxes.scss */
 .sideColumn_box.orange { background: transparent url('../images/header_bg_orange.png?1308901501') no-repeat center top; }
-/* line 91, ../src/partials/_boxes.scss */
+/* line 92, ../src/partials/_boxes.scss */
 .sideColumn_box.menu { margin-bottom: 20px; background-color: #e5e5e5!important; }
-/* line 94, ../src/partials/_boxes.scss */
+/* line 95, ../src/partials/_boxes.scss */
 .sideColumn_box.menu ul { margin: 0; padding: 0; }
-/* line 97, ../src/partials/_boxes.scss */
+/* line 98, ../src/partials/_boxes.scss */
 .sideColumn_box.menu ul li { border-bottom: 1px dotted #cfcfcf; }
-/* line 99, ../src/partials/_boxes.scss */
+/* line 100, ../src/partials/_boxes.scss */
 .sideColumn_box.menu ul li a { height: 40px; line-height: 40px; padding-left: 40px; display: block; overflow: hidden; }
-/* line 105, ../src/partials/_boxes.scss */
+/* line 106, ../src/partials/_boxes.scss */
 .sideColumn_box.menu ul li a:hover { background: transparent url('../images/arrow_right_orange.png?1308901501') no-repeat 20px center; text-decoration: none!important; background-color: #f2f2f2; }
-/* line 110, ../src/partials/_boxes.scss */
+/* line 111, ../src/partials/_boxes.scss */
 .sideColumn_box.menu ul li a.active { background: transparent url('../images/arrow_right_orange.png?1308901501') no-repeat 20px center; background-color: #f2f2f2; }
-/* line 115, ../src/partials/_boxes.scss */
+/* line 116, ../src/partials/_boxes.scss */
 .sideColumn_box.menu ul li form { padding: 0 20px 0 20px; }
-/* line 117, ../src/partials/_boxes.scss */
+/* line 118, ../src/partials/_boxes.scss */
 .sideColumn_box.menu ul li form .search { width: 187px; height: 15px; }
-/* line 121, ../src/partials/_boxes.scss */
+/* line 122, ../src/partials/_boxes.scss */
 .sideColumn_box.menu ul li form .button { text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('../images/button_search.png?1308901501'); background-repeat: no-repeat; background-position: 0 0; height: 28px; width: 57px; border: 0; cursor: pointer; }
-/* line 128, ../src/partials/_boxes.scss */
+/* line 129, ../src/partials/_boxes.scss */
 .sideColumn_box.menu ul li form .button:hover { text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('../images/button_search.png?1308901501'); background-repeat: no-repeat; background-position: 0 -30px; }
-/* line 137, ../src/partials/_boxes.scss */
+/* line 138, ../src/partials/_boxes.scss */
 .sideColumn_box.tabs { overflow: hidden; }
-/* line 139, ../src/partials/_boxes.scss */
+/* line 140, ../src/partials/_boxes.scss */
 .sideColumn_box.tabs ul { clear: both; padding: 0px; margin: 0; overflow: hidden; }
-/* line 145, ../src/partials/_boxes.scss */
+/* line 146, ../src/partials/_boxes.scss */
 .sideColumn_box.tabs ul li { float: left; list-style-image: none; list-style-type: none; margin-left: 0px; padding: 9px; border: solid 1px #cfcfcf; border-width: 0 1px 0 0; height: 20px; }
-/* line 153, ../src/partials/_boxes.scss */
+/* line 154, ../src/partials/_boxes.scss */
 .sideColumn_box.tabs ul li.selected, .sideColumn_box.tabs ul li:hover { background: #e09c18 url('../images/tab_active_bg.png?1308568036') 0 0; }
-/* line 155, ../src/partials/_boxes.scss */
+/* line 156, ../src/partials/_boxes.scss */
 .sideColumn_box.tabs ul li.selected a, .sideColumn_box.tabs ul li:hover a { color: #000!important; }
-/* line 160, ../src/partials/_boxes.scss */
+/* line 161, ../src/partials/_boxes.scss */
 .sideColumn_box.tabs ul li a { color: #fff!important; text-decoration: none; }
-/* line 169, ../src/partials/_boxes.scss */
+/* line 170, ../src/partials/_boxes.scss */
 .sideColumn_box .articleview_picturelist { padding: 0 10px; }
-/* line 172, ../src/partials/_boxes.scss */
+/* line 173, ../src/partials/_boxes.scss */
 .sideColumn_box h3 { width: 262px; height: 38px; margin-bottom: 0px; color: #fff; line-height: 38px; padding-left: 10px; }
-/* line 179, ../src/partials/_boxes.scss */
+/* line 180, ../src/partials/_boxes.scss */
 .sideColumn_box h3.icon_video { background: transparent url('../images/icon_VIDEO.png?1308901501') no-repeat; background-position: 10px 10px; padding-left: 38px; }
-/* line 184, ../src/partials/_boxes.scss */
+/* line 185, ../src/partials/_boxes.scss */
 .sideColumn_box h3.icon_gallery { background: transparent url('../images/icon_GALLERY.png?1308901501') no-repeat; background-position: 10px 10px; padding-left: 38px; }
-/* line 189, ../src/partials/_boxes.scss */
+/* line 190, ../src/partials/_boxes.scss */
 .sideColumn_box h3.icon_rss { background: transparent url('../images/icon_RSS.png?1308901501') no-repeat; background-position: 10px 10px; padding-left: 38px; }
-/* line 194, ../src/partials/_boxes.scss */
+/* line 195, ../src/partials/_boxes.scss */
 .sideColumn_box h3.icon_FB { background: transparent url('../images/icon_FB.png?1308901501') no-repeat; background-position: 10px 10px; padding-left: 38px; }
-/* line 199, ../src/partials/_boxes.scss */
+/* line 200, ../src/partials/_boxes.scss */
 .sideColumn_box h3 a { color: white !important; }
-/* line 201, ../src/partials/_boxes.scss */
+/* line 202, ../src/partials/_boxes.scss */
 .sideColumn_box h3 a:hover { text-decoration: none!important; }
-/* line 207, ../src/partials/_boxes.scss */
+/* line 208, ../src/partials/_boxes.scss */
 .sideColumn_box a { color: #fff; text-decoration: none; }
-/* line 212, ../src/partials/_boxes.scss */
+/* line 213, ../src/partials/_boxes.scss */
 .sideColumn_box a:hover { color: #fff; text-decoration: underline; }
-/* line 217, ../src/partials/_boxes.scss */
+/* line 218, ../src/partials/_boxes.scss */
 .sideColumn_box small { font-size: 11px; color: #87a5c3; float: right; padding-right: 10px; }
-/* line 223, ../src/partials/_boxes.scss */
+/* line 224, ../src/partials/_boxes.scss */
 .sideColumn_box small a { color: #87a5c3; }
-/* line 227, ../src/partials/_boxes.scss */
+/* line 228, ../src/partials/_boxes.scss */
 .sideColumn_box dl { padding: 10px; clear: both; overflow: hidden; }
-/* line 231, ../src/partials/_boxes.scss */
+/* line 232, ../src/partials/_boxes.scss */
 .sideColumn_box dl.links { margin: 0; }
-/* line 233, ../src/partials/_boxes.scss */
+/* line 234, ../src/partials/_boxes.scss */
 .sideColumn_box dl.links dd { width: 100%; padding: 4px 0; }
-/* line 239, ../src/partials/_boxes.scss */
+/* line 240, ../src/partials/_boxes.scss */
 .sideColumn_box dl dt { float: left; width: 30%; clear: left; }
-/* line 244, ../src/partials/_boxes.scss */
+/* line 245, ../src/partials/_boxes.scss */
 .sideColumn_box dl dd { float: left; width: 70%; margin: 0; }
-/* line 250, ../src/partials/_boxes.scss */
+/* line 251, ../src/partials/_boxes.scss */
 .sideColumn_box dl hr { clear: both; height: 20px; }
-/* line 255, ../src/partials/_boxes.scss */
+/* line 256, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranimwrap { padding: 10px; }
-/* line 259, ../src/partials/_boxes.scss */
+/* line 260, ../src/partials/_boxes.scss */
 .sideColumn_box .HEFT, .sideColumn_box .ABO { cursor: pointer; }
-/* line 263, ../src/partials/_boxes.scss */
+/* line 264, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim { height: 200px; overflow: hidden; }
-/* line 266, ../src/partials/_boxes.scss */
+/* line 267, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul { padding-left: 0px; margin-right: 0px; }
-/* line 269, ../src/partials/_boxes.scss */
+/* line 270, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li { list-style-type: none; }
-/* line 271, ../src/partials/_boxes.scss */
+/* line 272, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li span.time { width: 60px; float: left; }
-/* line 277, ../src/partials/_boxes.scss */
+/* line 278, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li table { margin: 0; padding: 0; }
-/* line 280, ../src/partials/_boxes.scss */
+/* line 281, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li table td.time { width: 60px; font-weight: bold; }
-/* line 284, ../src/partials/_boxes.scss */
+/* line 285, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li table td { top: 0px; vertical-align: top!important; }
 /* line 221, ../src/partials/_functions.scss */
 .sideColumn_box .tickeranim ul li table td .aboreg { margin-left: 10px; line-height: 10px; width: 19px; position: relative; top: -2px; text-transform: uppercase; border-width: 1px; border-style: solid; font-size: 10px; padding: 2px; border-color: #F3F3F3 #C8C8C8 #C8C8C8 #F3F3F3; background-color: #FBFBFB; text-shadow: none; }
@@ -735,11 +735,11 @@ body article table th, body article table td, body article table caption { verti
 .sideColumn_box .tickeranim ul li table td .aboreg.ABO { color: #B40000; }
 /* line 242, ../src/partials/_functions.scss */
 .sideColumn_box .tickeranim ul li table td .aboreg.HEFT { background-color: #f1f1f1; border-color: #F3F3F3 #999999 #999999 #F3F3F3; color: #B40000; float: right; font-family: verdana; font-size: 8px; height: 9px; margin-top: 4px; padding: 2px 0 3px 3px; width: 23px; }
-/* line 290, ../src/partials/_boxes.scss */
+/* line 291, ../src/partials/_boxes.scss */
 .sideColumn_box .tickeranim ul li hr { margin: 0!important; padding: 0!important; }
-/* line 298, ../src/partials/_boxes.scss */
+/* line 299, ../src/partials/_boxes.scss */
 .sideColumn_box .videoplaceholder { padding: 10px 10px 0 10px; clear: left; }
-/* line 301, ../src/partials/_boxes.scss */
+/* line 302, ../src/partials/_boxes.scss */
 .sideColumn_box .videoplaceholder.banner { padding: 0px; line-height: 0px; }
 
 /* line 3, ../src/partials/_article.scss */
